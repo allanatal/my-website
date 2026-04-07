@@ -7,6 +7,7 @@ const translations = {
     "hero-subtitle": "Informações sobre câncer para pacientes e familiares, além de conteúdo em pesquisa e bioestatística para profissionais de saúde.",
     "hero-cta-phone": "Ligar agora",
     "hero-cta-book": "Agendar consulta",
+    "hero-cta-intl": "Paciente Internacional",
 
     // Features section
     "features-label": "Conteúdo",
@@ -23,7 +24,7 @@ const translations = {
 
     // Contact section labels
     "contact-label": "Contato",
-    "contact-subtitle": "Envie uma mensagem ou agende diretamente pelo WhatsApp",
+    "contact-subtitle": "Envie uma mensagem ou ligue diretamente para nossa equipe",
 
     // Navbar
     "nav-home": "Início",
@@ -74,18 +75,18 @@ const translations = {
     "tab-media": "Na mídia",
 
     // Career bullet points
-    "career-1": "Oncologista clínico titular do Hospital Sírio-Libanês.",
-    "career-2": "Chefe do Serviço de Oncologia do Hospital de Base do DF.",
-    "career-3": "Pós-doutorado na Universidade do Texas - M.D. Anderson Cancer Center (Houston, Tx, EUA).",
-    "career-4": "Doutorado no programa de oncologia pela Universidade de São Paulo (USP).",
-    "career-5": "Oncologista Clínico formado pelo Hospital Sírio-Libanês (São Paulo).",
-    "career-6": "Título de especialista em Oncologia Clínica pela Sociedade Brasileira de Oncologia Clínica (SBOC).",
-    "career-7": "Fez parte do Grupo de Tumores Gastrointestinais e do Grupo de Câncer de Mama do Instituto do Câncer do Estado de São Paulo (ICESP/FM USP).",
-    "career-8": "É autor de publicações em periódicos internacionais e capítulos de livros em temas diversos da oncologia.",
-    "career-9": "Membro da European Society for Medical Oncology (ESMO), da American Society of Clinical Oncology (ASCO) e da American Association for Cancer Research (AACR).",
-    "career-10": "Graduação em medicina pela Universidade Federal do Rio Grande do Norte - UFRN (2007).",
+    "career-1": "Médico Oncologista do Moffitt Cancer Center - Tampa, FL.",
+    "career-2": "Professor Assistente - Morsani College of Medicine, University of South Florida.",
+    "career-3": "Ex-Chefe do Serviço de Oncologia do Hospital de Base do DF e Ex-Oncologista Titular do Hospital Sírio-Libanês - Brasil.",
+    "career-4": "Pós-doutorado na Universidade do Texas - M.D. Anderson Cancer Center (Houston, TX, EUA).",
+    "career-5": "Doutorado no programa de oncologia pela Universidade de São Paulo (USP - Brasil).",
+    "career-6": "Oncologista Clínico formado pelo Hospital Sírio-Libanês (São Paulo).",
+    "career-7": "Título de especialista em Oncologia Clínica pela Sociedade Brasileira de Oncologia Clínica (SBOC).",
+    "career-8": "Fez parte do Grupo de Tumores Gastrointestinais e do Grupo de Câncer de Mama do Instituto do Câncer do Estado de São Paulo (ICESP/FM USP).",
+    "career-9": "É autor de publicações em periódicos internacionais e capítulos de livros em temas diversos da oncologia.",
+    "career-10": "Membro da European Society for Medical Oncology (ESMO), da American Society of Clinical Oncology (ASCO) e da American Association for Cancer Research (AACR).",
     "career-11": "Título de Residência Médica em Clínica Médica pela Irmandade Santa Casa de Misericórdia de São Paulo - ISCMSP (2010).",
-    "career-12": "Credenciado pelo Educational Commission of Foreign Medical Graduates (ECFMG) / United States Medical Licensing Examination (USMLE).",
+    "career-12": "Graduação em medicina pela Universidade Federal do Rio Grande do Norte - UFRN (2007).",
 
     // Media tab video titles
     "media-video-1": "Apresentação - Hospital Sírio-Libanês",
@@ -95,9 +96,9 @@ const translations = {
     "media-video-5": "Julho Verde",
 
     // Footer
-    "footer-offices-title": "Consultórios",
+    "footer-offices-title": "Localização",
     "footer-offices-cta": "Clique para detalhes:",
-    "footer-unit1": "Unidade 1",
+    "footer-unit1": "Moffitt Magnolia Campus",
     "footer-unit2": "Unidade 2",
     "footer-social-title": "Redes Sociais",
     "footer-appointment-title": "Marque uma consulta",
@@ -149,6 +150,7 @@ const translations = {
     "hero-subtitle": "Cancer information for patients and families, plus research and biostatistics content for healthcare professionals.",
     "hero-cta-phone": "Call now",
     "hero-cta-book": "Book appointment",
+    "hero-cta-intl": "International Patient Appointment",
 
     // Features section
     "features-label": "Content",
@@ -165,7 +167,7 @@ const translations = {
 
     // Contact section labels
     "contact-label": "Contact",
-    "contact-subtitle": "Send a message or book directly via WhatsApp",
+    "contact-subtitle": "Send a message or call our team directly",
 
     // Navbar
     "nav-home": "Home",
@@ -216,18 +218,18 @@ const translations = {
     "tab-media": "In the media",
 
     // Career bullet points
-    "career-1": "Clinical Oncologist at Hospital Sírio-Libanês.",
-    "career-2": "Head of Oncology at Hospital de Base do Distrito Federal.",
-    "career-3": "Post-doctoral fellowship at The University of Texas MD Anderson Cancer Center (Houston, TX, USA).",
+    "career-1": "Medical Oncologist – Associate Member, Department of Gastrointestinal Oncology, H. Lee Moffitt Cancer Center.",
+    "career-2": "Assistant Professor – Morsani College of Medicine, University of South Florida.",
+    "career-3": "GI medical oncology fellowship at The University of Texas MD Anderson Cancer Center (Houston, TX, USA).",
     "career-4": "PhD in Oncology, University of São Paulo (USP).",
-    "career-5": "Clinical Oncology residency at Hospital Sírio-Libanês (São Paulo).",
+    "career-5": "Member of the European Society for Medical Oncology (ESMO), the American Society of Clinical Oncology (ASCO), and the American Association for Cancer Research (AACR).",
     "career-6": "Board-certified in Clinical Oncology by the Brazilian Society of Clinical Oncology (SBOC).",
-    "career-7": "Member of the Gastrointestinal Tumor and Breast Cancer Groups at Instituto do Câncer do Estado de São Paulo (ICESP/FM USP).",
-    "career-8": "Author of publications in international journals and book chapters on various oncology topics.",
-    "career-9": "Member of the European Society for Medical Oncology (ESMO), the American Society of Clinical Oncology (ASCO), and the American Association for Cancer Research (AACR).",
-    "career-10": "Medical degree from Universidade Federal do Rio Grande do Norte – UFRN (2007).",
-    "career-11": "Internal Medicine residency at Irmandade Santa Casa de Misericórdia de São Paulo – ISCMSP (2010).",
-    "career-12": "Certified by the Educational Commission for Foreign Medical Graduates (ECFMG) / United States Medical Licensing Examination (USMLE).",
+    "career-7": "Author of publications in international journals and book chapters on various oncology topics.",
+    "career-8": "Former Graduate Program Faculty Member (MSc/PhD), Hospital Sírio-Libanês – Brazil.",
+    "career-9": "Former Head of Oncology at Hospital de Base do DF – Brazil.",
+    "career-10": "Internal Medicine residency at Irmandade Santa Casa de Misericórdia de São Paulo – ISCMSP – Brazil.",
+    "career-11": "Medical degree from Universidade Federal do Rio Grande do Norte – Brazil.",
+    "career-12": "",
 
     // Media tab video titles
     "media-video-1": "Introduction – Hospital Sírio-Libanês",
@@ -237,9 +239,9 @@ const translations = {
     "media-video-5": "July Green (Head & Neck Cancer Awareness)",
 
     // Footer
-    "footer-offices-title": "Offices",
+    "footer-offices-title": "Locations & Directions",
     "footer-offices-cta": "Click for details:",
-    "footer-unit1": "Unit 1",
+    "footer-unit1": "Moffitt Magnolia Campus",
     "footer-unit2": "Unit 2",
     "footer-social-title": "Social Media",
     "footer-appointment-title": "Book an Appointment",
@@ -292,17 +294,21 @@ function applyLanguage(lang) {
 
   // Textos com data-i18n
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
-    const key = el.getAttribute("data-i18n");
-    const value = translations[lang] && translations[lang][key];
-    if (value) {
-      el.textContent = value;
+    var key = el.getAttribute("data-i18n");
+    var dict = translations[lang];
+    if (!dict || !(key in dict)) return;
+    var value = dict[key];
+    el.textContent = value;
+    // Hide list items that have no text in this language
+    if (el.tagName === "LI") {
+      el.style.display = value.trim() ? "" : "none";
     }
   });
 
   // Elements needing innerHTML (text with embedded links)
   document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
-    const key = el.getAttribute("data-i18n-html");
-    const value = translations[lang] && translations[lang][key];
+    var key = el.getAttribute("data-i18n-html");
+    var value = translations[lang] && translations[lang][key];
     if (value) {
       el.innerHTML = value;
     }
@@ -310,22 +316,20 @@ function applyLanguage(lang) {
 
   // Placeholders (inputs, textarea etc)
   document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-    const key = el.getAttribute("data-i18n-placeholder");
-    const value = translations[lang] && translations[lang][key];
+    var key = el.getAttribute("data-i18n-placeholder");
+    var value = translations[lang] && translations[lang][key];
     if (value) {
       el.setAttribute("placeholder", value);
     }
   });
 
   // Salva preferência no navegador
-  if (window.localStorage) {
-    localStorage.setItem("site-lang", lang);
-  }
+  try { localStorage.setItem("site-lang", lang); } catch (e) {}
 }
 
 function initLanguageSwitcher() {
-  const btnPt = document.getElementById("btn-pt");
-  const btnEn = document.getElementById("btn-en");
+  var btnPt = document.getElementById("btn-pt");
+  var btnEn = document.getElementById("btn-en");
 
   if (btnPt) {
     btnPt.addEventListener("click", function () {
@@ -340,13 +344,13 @@ function initLanguageSwitcher() {
   }
 
   // Língua inicial: tenta carregar do localStorage, senão pt
-  let lang = "pt";
-  if (window.localStorage) {
-    const stored = localStorage.getItem("site-lang");
+  var lang = "pt";
+  try {
+    var stored = localStorage.getItem("site-lang");
     if (stored === "pt" || stored === "en") {
       lang = stored;
     }
-  }
+  } catch (e) {}
   applyLanguage(lang);
 }
 

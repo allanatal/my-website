@@ -1,537 +1,634 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="BSA and Capecitabine dose calculator for clinical oncology use.">
+    <meta name="author" content="Allan Andresson Lima Pereira">
 
-    <!-- Bootstrap CSS (same pattern as your site) -->
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <!-- Bootstrap 4.6.2 (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.15.4 (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts – Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="site.css?v=3">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BSA & Capecitabine Calculator – Dr. Allan Pereira</title>
 
-    <title>Allies Against Cancer – BSA and Capecitabine Calculator</title>
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
 
     <style>
-      body {
-        background-color: antiquewhite;
+      /* Calculator-specific overrides */
+      .calc-page-header {
+        background: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+        padding: 48px 0 40px;
       }
+      .calc-page-header .section-label { margin-bottom: .35rem; }
+      .calc-page-header .section-title { margin-bottom: .4rem; }
+      .calc-page-header .section-subtitle { max-width: 620px; margin: 0 auto; }
+
+      .calc-body {
+        background: var(--color-bg);
+        padding: 48px 0 64px;
+      }
+
       .calc-card {
-        max-width: 1000px;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: 1.5rem;
       }
+      .calc-card-header {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--color-border);
+        font-size: .875rem;
+        font-weight: 600;
+        color: var(--color-text);
+        letter-spacing: .01em;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
+      .calc-card-header i { color: var(--color-accent); }
+      .calc-card-body { padding: 1.5rem; }
+
       .calc-label {
-        font-weight: 500;
+        font-size: .875rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin-bottom: .35rem;
+        display: block;
       }
-      .result-table td,
+      .calc-hint {
+        font-size: .8rem;
+        color: var(--color-text-secondary);
+        margin-top: .25rem;
+      }
+
+      .form-control {
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-border);
+        font-size: .9375rem;
+        padding: .55rem 1rem;
+        color: var(--color-text);
+        background: var(--color-surface);
+        font-family: 'Inter', sans-serif;
+        transition: border-color .15s, box-shadow .15s;
+      }
+      .form-control:focus {
+        border-color: var(--color-accent);
+        box-shadow: 0 0 0 3px rgba(14,116,144,.15);
+        outline: none;
+        background: var(--color-surface);
+        color: var(--color-text);
+      }
+      .form-control[readonly] {
+        background: var(--color-bg);
+        color: var(--color-text-secondary);
+        cursor: default;
+      }
+      .input-group-append .form-control {
+        border-left: none;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+      select.form-control { cursor: pointer; }
+
+      .scenario-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin-bottom: .4rem;
+      }
+      .scenario-desc {
+        font-size: .875rem;
+        color: var(--color-text-secondary);
+        margin-bottom: 1.25rem;
+      }
+      .scenario-desc strong { color: var(--color-text); }
+
+      .result-table { font-size: .875rem; }
       .result-table th {
-        vertical-align: middle !important;
+        font-weight: 600;
+        font-size: .8rem;
+        color: var(--color-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        border-color: var(--color-border) !important;
+        background: var(--color-bg);
       }
-      textarea[readonly] {
-        background-color: #f8f9fa;
+      .result-table td {
+        vertical-align: middle !important;
+        border-color: var(--color-border) !important;
+        color: var(--color-text);
+        background: var(--color-surface);
+      }
+      .result-table td:first-child { color: var(--color-text-secondary); }
+
+      .divider {
+        border: none;
+        border-top: 1px solid var(--color-border);
+        margin: 1.5rem 0;
+      }
+
+      .form-check-label { font-size: .875rem; color: var(--color-text); }
+      .form-check-input { cursor: pointer; }
+
+      .btn-copy {
+        display: inline-flex;
+        align-items: center;
+        gap: .375rem;
+        font-size: .8rem;
+        font-weight: 600;
+        padding: .35rem .9rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        color: var(--color-text-secondary);
+        background: transparent;
+        cursor: pointer;
+        transition: all .15s;
+        margin-top: .5rem;
+      }
+      .btn-copy:hover {
+        background: var(--color-accent-light);
+        color: var(--color-accent);
+        border-color: var(--color-accent-light);
+      }
+
+      .disclaimer {
+        background: var(--color-accent-light);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        padding: .75rem 1rem;
+        font-size: .8125rem;
+        color: var(--color-text-secondary);
+        margin-top: 2rem;
+      }
+      .disclaimer i { color: var(--color-accent); margin-right: .35rem; }
+
+      /* Dark mode: form controls */
+      :root[data-theme="dark"] .form-control { background: var(--color-surface); border-color: var(--color-border); color: var(--color-text); }
+      :root[data-theme="dark"] .form-control[readonly] { background: #0f172a; }
+      :root[data-theme="dark"] .result-table th { background: #0f172a; }
+      :root[data-theme="dark"] .result-table td { background: var(--color-surface); }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]):not([data-theme="dark"]) .form-control { background: var(--color-surface); border-color: var(--color-border); color: var(--color-text); }
+        :root:not([data-theme="light"]):not([data-theme="dark"]) .form-control[readonly] { background: #0f172a; }
+        :root:not([data-theme="light"]):not([data-theme="dark"]) .result-table th { background: #0f172a; }
+        :root:not([data-theme="light"]):not([data-theme="dark"]) .result-table td { background: var(--color-surface); }
       }
     </style>
   </head>
 
-  <body>
+  <body id="page-top">
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-left" id="collapseExample"> 
-      <a class="navbar-brand h1 mb-0" href="index.html"> Home </a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Dr. Allan Pereira</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSite">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts"> Contacts </a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#curriculo">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
 
-        <ul class="navbar-nav mr-auto">
-          <li id="excluir1" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse" 
-               aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">
-              Social media
-            </a>
-            <div>
-              <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#collapseExample">
-                <a class="dropdown-item" href="https://www.facebook.com/allan.pereira.311" data-target="#navbarSite" target="_blank">
-                  <i class="fa fa-facebook-square" style="font-size:24px"></i> Facebook
-                </a>
-                <a class="dropdown-item" href="https://twitter.com/DrAllanPereira" data-target="#navbarSite" target="_blank">
-                  <i class="fa fa-twitter" style="font-size:24px"></i> Twitter
-                </a>
-                <a class="dropdown-item" href="https://www.instagram.com/DrAllanPereira/" data-target="#navbarSite" target="_blank">
-                  <i class="fa fa-instagram" style="font-size:24px"></i> Instagram
-                </a>
-                <a class="dropdown-item" href="https://www.linkedin.com/in/allan-pereira-onco/" data-target="#navbarSite" target="_blank">
-                  <i class="fa fa-linkedin" style="font-size:24px"></i> Linkedin
-                </a>
+            <!-- Dropdown: Social Media -->
+            <li id="excluir1" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse"
+                aria-haspopup="true" aria-expanded="false" data-target="#dropdown-menu01">Social Media</a>
+              <div>
+                <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#collapseExample">
+                  <a class="dropdown-item" href="https://www.facebook.com/allan.pereira.311" target="_blank">
+                    <i class="fab fa-facebook-square fa-fw mr-1"></i> Facebook
+                  </a>
+                  <a class="dropdown-item" href="https://twitter.com/DrAllanPereira" target="_blank">
+                    <i class="fab fa-twitter fa-fw mr-1"></i> Twitter
+                  </a>
+                  <a class="dropdown-item" href="https://www.instagram.com/DrAllanPereira/" target="_blank">
+                    <i class="fab fa-instagram fa-fw mr-1"></i> Instagram
+                  </a>
+                  <a class="dropdown-item" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank">
+                    <i class="fab fa-linkedin fa-fw mr-1"></i> LinkedIn
+                  </a>
+                  <a class="dropdown-item" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank">
+                    <i class="fab fa-youtube fa-fw mr-1"></i> YouTube
+                  </a>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
 
-        <ul class="navbar-nav mr-auto">
-          <li id="excluir2" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="collapse" 
-               aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu02">
-              Medical Calculators
-            </a>
-            <div>
-              <div id="dropdown-menu02" class="dropdown-menu collapse" aria-labelledby="dropdown02" data-parent="#collapseExample">
-                <a class="dropdown-item" href="Calc_creatinine.html">GFR (CG, MDRD, CKD-EPI)</a>
-                <a class="dropdown-item" href="Calc_capecitabine_dose.html">BSA &amp; Capecitabine</a>
-                <a class="dropdown-item" href="#">Body Surface Area (BSA)</a>
-                <a class="dropdown-item" href="#">Carboplatin Dose</a>
-                <a class="dropdown-item" href="#">PSA Kinetics</a>
+            <!-- Dropdown: Onc Calcs -->
+            <li id="excluir2" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="collapse"
+                aria-haspopup="true" aria-expanded="false" data-target="#dropdown-menu02">Onc Calcs</a>
+              <div>
+                <div id="dropdown-menu02" class="dropdown-menu collapse" aria-labelledby="dropdown02" data-parent="#collapseExample">
+                  <a class="dropdown-item" href="Calc_capecitabine_dose.html">BSA &amp; Capecitabine</a>
+                  <a class="dropdown-item" href="Calc_creatinine.html">Creatinine Clearance</a>
+                  <a class="dropdown-item" href="#">Body Surface Area (BSA)</a>
+                  <a class="dropdown-item" href="#">Carboplatin Dose</a>
+                  <a class="dropdown-item" href="#">PSA Kinetics</a>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-        <form class="form-inline ml-0 ml-lg-5">
-          <input class="form-control ml-4 mr-2" type="search" placeholder="Search...">
-          <button class="btn btn-primary" type="Submit">OK</button>
-        </form>
-      </div>              
+          <!-- Theme toggle -->
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <div class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center mb-4">
-          <h1 class="display-4">BSA and Capecitabine Dose Calculator</h1>
-          <p class="lead">
-            Calculates BSA from height and weight (or uses a given BSA) and suggests Capecitabine doses and tablet counts for two scenarios.
-          </p>
-          <small class="text-muted d-block">
-            For adults only. Capecitabine tablets assumed to be 500 mg each. This tool is for educational support and does not replace clinical judgment.
-          </small>
-        </div>
+    <!-- PAGE HEADER -->
+    <div class="calc-page-header text-center">
+      <div class="container">
+        <p class="section-label">Onc Calcs</p>
+        <h1 class="section-title">BSA &amp; Capecitabine Dose Calculator</h1>
+        <p class="section-subtitle">
+          Calculates BSA from height and weight (or uses a given BSA) and suggests Capecitabine doses and tablet counts for two clinical scenarios.
+        </p>
       </div>
+    </div>
 
-      <div class="row justify-content-center mt-4">
-        <div class="col-12 calc-card">
-          <div class="card shadow">
-            <div class="card-header">
-              Patient data and BSA
-            </div>
-            <div class="card-body">
-              <form id="capForm" novalidate>
-                <div class="form-row mb-3">
-                  <div class="form-group col-md-4">
-                    <label for="bsa" class="calc-label">BSA (m²)</label>
-                    <input
-                      type="number"
-                      min="0"
-                      step="0.01"
-                      class="form-control form-control-lg"
-                      id="bsa"
-                      placeholder="If known, enter directly"
-                    >
-                    <small class="form-text text-muted">
-                      If BSA is provided, height and weight are not required.
-                    </small>
-                  </div>
-                </div>
+    <!-- CALCULATOR BODY -->
+    <div class="calc-body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
 
-                <hr>
-
-                <div class="form-row mb-3">
-                  <div class="form-group col-md-4">
-                    <label for="weight" class="calc-label">Weight</label>
-                    <div class="input-group input-group-lg">
-                      <input
-                        type="number"
-                        min="0"
-                        step="0.1"
-                        class="form-control"
-                        id="weight"
-                        placeholder="e.g. 70"
-                      >
-                      <div class="input-group-append">
-                        <select class="form-control" id="weightUnit">
-                          <option value="kg" selected>kg</option>
-                          <option value="lb">lb</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label for="height" class="calc-label">Height</label>
-                    <div class="input-group input-group-lg">
-                      <input
-                        type="number"
-                        min="0"
-                        step="0.1"
-                        class="form-control"
-                        id="height"
-                        placeholder="e.g. 170"
-                      >
-                      <div class="input-group-append">
-                        <select class="form-control" id="heightUnit">
-                          <option value="cm" selected>cm</option>
-                          <option value="in">in</option>
-                        </select>
-                      </div>
-                    </div>
-                    <small class="form-text text-muted">
-                      If BSA is not provided, BSA will be calculated using the Mosteller formula.
-                    </small>
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label class="calc-label d-block">Calculated BSA (Mosteller)</label>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="bsaDisplay"
-                      readonly
-                      placeholder="—"
-                    >
-                    <small class="form-text text-muted">
-                      This is the BSA that will be used for dose calculations.
-                    </small>
-                  </div>
-                </div>
-
-                <hr class="my-4">
-
-                <!-- Scenario 1: chemoRT -->
-                <h4 class="mb-3">Scenario 1 – Capecitabine with chemoRT</h4>
-                <p>
-                  <strong>Regimen:</strong> Capecitabine 825 mg/m² PO BID, Monday–Friday, on each day that RT is given throughout the duration of RT.
-                </p>
-                <div class="form-row mb-3">
-                  <div class="form-group col-md-4">
-                    <label for="fractions" class="calc-label">Number of RT fractions</label>
-                    <input
-                      type="number"
-                      min="1"
-                      step="1"
-                      class="form-control form-control-lg"
-                      id="fractions"
-                      value="30"
-                    >
-                    <small class="form-text text-muted">
-                      Preselected value is 30. Change if needed.
-                    </small>
-                  </div>
-                </div>
-
-                <hr class="my-4">
-
-                <!-- Scenario 2: Capecitabine only -->
-                <h4 class="mb-3">Scenario 2 – Capecitabine (systemic)</h4>
-                <p>
-                  <strong>Regimen options:</strong> dose per day based on BSA (total daily dose).
-                </p>
-                <div class="form-row mb-3">
-                  <div class="form-group col-md-6">
-                    <label for="dosePerDay" class="calc-label">Capecitabine dose per day (mg/m²)</label>
-                    <select class="form-control form-control-lg" id="dosePerDay">
-                      <option value="2000" selected>2000 mg/m² per day</option>
-                      <option value="1700">1700 mg/m² per day</option>
-                    </select>
-                    <small class="form-text text-muted">
-                      Total daily dose; the calculator will split tablets into morning and night.
-                    </small>
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label class="calc-label d-block">Rounding for tablets per day</label>
-                    <div class="mt-1">
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="roundingMode"
-                          id="roundDown"
-                          value="down"
-                          checked
-                        >
-                        <label class="form-check-label" for="roundDown">Round down (to lower integer)</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="roundingMode"
-                          id="roundUp"
-                          value="up"
-                        >
-                        <label class="form-check-label" for="roundUp">Round up (to higher integer)</label>
-                      </div>
-                    </div>
-                    <small class="form-text text-muted">
-                      Exact tablets/day (with decimals) will be displayed; prescription uses the rounded value.
-                    </small>
-                  </div>
-                </div>
-
-                <div class="form-row mt-4">
-                  <div class="col">
-                    <button type="button" class="btn btn-primary btn-lg mr-3" id="calculateBtn">
-                      Calculate doses
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg" id="clearBtn">
-                      Clear
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <!-- RESULTS: Scenario 1 -->
-          <div class="card shadow mt-4">
-            <div class="card-header">
-              Scenario 1 – chemoRT results
-            </div>
-            <div class="card-body">
-              <div class="table-responsive mb-3">
-                <table class="table table-bordered table-sm result-table mb-0">
-                  <thead class="thead-light">
-                    <tr>
-                      <th></th>
-                      <th>Morning</th>
-                      <th>Night</th>
-                      <th>Units</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Capecitabine dose per administration</td>
-                      <td id="s1DoseMorning">—</td>
-                      <td id="s1DoseNight">—</td>
-                      <td>mg</td>
-                    </tr>
-                    <tr>
-                      <td>Number of tablets per administration</td>
-                      <td id="s1TabsMorning">—</td>
-                      <td id="s1TabsNight">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>Total tablets for full RT course</td>
-                      <td colspan="2" id="s1TotalTabs">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>BSA used</td>
-                      <td colspan="2" id="s1BsaUsed">—</td>
-                      <td>m²</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <!-- Card: Patient data & BSA -->
+            <div class="calc-card">
+              <div class="calc-card-header">
+                <i class="fas fa-user"></i> Patient data &amp; BSA
               </div>
+              <div class="calc-card-body">
+                <form id="capForm" novalidate>
 
-              <label class="calc-label">Prescription text (chemoRT)</label>
-              <textarea
-                class="form-control"
-                id="s1Text"
-                rows="4"
-                readonly
-                placeholder="Calculated prescription text will appear here..."
-              ></textarea>
+                  <div class="form-row mb-3">
+                    <div class="form-group col-md-4 mb-0">
+                      <label for="bsa" class="calc-label">BSA (m²)</label>
+                      <input type="number" min="0" step="0.01" class="form-control form-control-lg"
+                        id="bsa" placeholder="If known, enter directly">
+                      <p class="calc-hint">If BSA is provided, height and weight are not required.</p>
+                    </div>
+                  </div>
 
-                <button
-                  type="button"
-                  class="btn btn-sm btn-outline-secondary mt-2"
-                  onclick="copyPrescriptionText('s1Text')">
-                  📋 Copy
+                  <hr class="divider">
+
+                  <div class="form-row mb-3">
+                    <div class="form-group col-md-4">
+                      <label for="weight" class="calc-label">Weight</label>
+                      <div class="input-group input-group-lg">
+                        <input type="number" min="0" step="0.1" class="form-control"
+                          id="weight" placeholder="e.g. 70">
+                        <div class="input-group-append">
+                          <select class="form-control" id="weightUnit">
+                            <option value="kg" selected>kg</option>
+                            <option value="lb">lb</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label for="height" class="calc-label">Height</label>
+                      <div class="input-group input-group-lg">
+                        <input type="number" min="0" step="0.1" class="form-control"
+                          id="height" placeholder="e.g. 170">
+                        <div class="input-group-append">
+                          <select class="form-control" id="heightUnit">
+                            <option value="cm" selected>cm</option>
+                            <option value="in">in</option>
+                          </select>
+                        </div>
+                      </div>
+                      <p class="calc-hint">If BSA is not provided, BSA will be calculated using the Mosteller formula.</p>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label class="calc-label d-block">Calculated BSA (Mosteller)</label>
+                      <input type="text" class="form-control form-control-lg" id="bsaDisplay" readonly placeholder="—">
+                      <p class="calc-hint">This is the BSA that will be used for dose calculations.</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider">
+
+                  <!-- Scenario 1 -->
+                  <p class="scenario-title">Scenario 1 – Capecitabine with chemoRT</p>
+                  <p class="scenario-desc">
+                    <strong>Regimen:</strong> Capecitabine 825 mg/m² PO BID, Monday–Friday, on each day that RT is given throughout the duration of RT.
+                  </p>
+                  <div class="form-row mb-3">
+                    <div class="form-group col-md-4 mb-0">
+                      <label for="fractions" class="calc-label">Number of RT fractions</label>
+                      <input type="number" min="1" step="1" class="form-control form-control-lg"
+                        id="fractions" value="30">
+                      <p class="calc-hint">Preselected value is 30. Change if needed.</p>
+                    </div>
+                  </div>
+
+                  <hr class="divider">
+
+                  <!-- Scenario 2 -->
+                  <p class="scenario-title">Scenario 2 – Capecitabine (systemic)</p>
+                  <p class="scenario-desc">
+                    <strong>Regimen options:</strong> dose per day based on BSA (total daily dose).
+                  </p>
+                  <div class="form-row mb-3">
+                    <div class="form-group col-md-6">
+                      <label for="dosePerDay" class="calc-label">Capecitabine dose per day (mg/m²)</label>
+                      <select class="form-control form-control-lg" id="dosePerDay">
+                        <option value="2000" selected>2000 mg/m² per day</option>
+                        <option value="1700">1700 mg/m² per day</option>
+                      </select>
+                      <p class="calc-hint">Total daily dose; the calculator will split tablets into morning and night.</p>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="calc-label d-block">Rounding for tablets per day</label>
+                      <div class="mt-2">
+                        <div class="form-check mb-1">
+                          <input class="form-check-input" type="radio" name="roundingMode"
+                            id="roundDown" value="down" checked>
+                          <label class="form-check-label" for="roundDown">Round down (to lower integer)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="roundingMode"
+                            id="roundUp" value="up">
+                          <label class="form-check-label" for="roundUp">Round up (to higher integer)</label>
+                        </div>
+                      </div>
+                      <p class="calc-hint mt-2">Exact tablets/day (with decimals) will be displayed; prescription uses the rounded value.</p>
+                    </div>
+                  </div>
+
+                  <div class="form-row mt-3">
+                    <div class="col">
+                      <button type="button" class="btn-accent mr-2" id="calculateBtn">
+                        <i class="fas fa-calculator mr-2"></i>Calculate doses
+                      </button>
+                      <button type="button" class="btn-ghost" id="clearBtn">
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+            <!-- Results: Scenario 1 -->
+            <div class="calc-card">
+              <div class="calc-card-header">
+                <i class="fas fa-radiation-alt"></i> Scenario 1 – chemoRT results
+              </div>
+              <div class="calc-card-body">
+                <div class="table-responsive mb-3">
+                  <table class="table table-bordered table-sm result-table mb-0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Morning</th>
+                        <th>Night</th>
+                        <th>Units</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Capecitabine dose per administration</td>
+                        <td id="s1DoseMorning">—</td>
+                        <td id="s1DoseNight">—</td>
+                        <td>mg</td>
+                      </tr>
+                      <tr>
+                        <td>Number of tablets per administration</td>
+                        <td id="s1TabsMorning">—</td>
+                        <td id="s1TabsNight">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>Total tablets for full RT course</td>
+                        <td colspan="2" id="s1TotalTabs">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>BSA used</td>
+                        <td colspan="2" id="s1BsaUsed">—</td>
+                        <td>m²</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <label class="calc-label">Prescription text (chemoRT)</label>
+                <textarea class="form-control" id="s1Text" rows="4" readonly
+                  placeholder="Calculated prescription text will appear here..."></textarea>
+                <button type="button" class="btn-copy" onclick="copyPrescriptionText('s1Text')">
+                  <i class="far fa-copy"></i> Copy
                 </button>
-
-            </div>
-          </div>
-
-          <!-- RESULTS: Scenario 2 -->
-          <div class="card shadow mt-4 mb-5">
-            <div class="card-header">
-              Scenario 2 – Capecitabine results
-            </div>
-            <div class="card-body">
-              <div class="table-responsive mb-3">
-                <table class="table table-bordered table-sm result-table mb-0">
-                  <thead class="thead-light">
-                    <tr>
-                      <th></th>
-                      <th>Morning</th>
-                      <th>Night</th>
-                      <th>Units</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Capecitabine dose per dose (AM/PM)</td>
-                      <td id="s2DoseMorning">—</td>
-                      <td id="s2DoseNight">—</td>
-                      <td>mg</td>
-                    </tr>
-                    <tr>
-                      <td>Number of tablets per dose</td>
-                      <td id="s2TabsMorning">—</td>
-                      <td id="s2TabsNight">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>Total tablets per day (exact, not rounded)</td>
-                      <td colspan="2" id="s2TotalTabsPerDayExact">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>Total tablets per day (rounded for prescription)</td>
-                      <td colspan="2" id="s2TotalTabsPerDayRounded">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>Total tablets per 14-day cycle (rounded)</td>
-                      <td colspan="2" id="s2TotalTabsCycle">—</td>
-                      <td>500 mg tablets</td>
-                    </tr>
-                    <tr>
-                      <td>BSA used</td>
-                      <td colspan="2" id="s2BsaUsed">—</td>
-                      <td>m²</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
-
-              <label class="calc-label">Prescription text (Capecitabine)</label>
-              <textarea
-                class="form-control"
-                id="s2Text"
-                rows="5"
-                readonly
-                placeholder="Calculated prescription text will appear here..."
-              ></textarea>
-
-              <button
-                type="button"
-                class="btn btn-sm btn-outline-secondary mt-2"
-                onclick="copyPrescriptionText('s2Text')">
-                📋 Copy
-              </button>
-
             </div>
+
+            <!-- Results: Scenario 2 -->
+            <div class="calc-card">
+              <div class="calc-card-header">
+                <i class="fas fa-pills"></i> Scenario 2 – Capecitabine (systemic) results
+              </div>
+              <div class="calc-card-body">
+                <div class="table-responsive mb-3">
+                  <table class="table table-bordered table-sm result-table mb-0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Morning</th>
+                        <th>Night</th>
+                        <th>Units</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Capecitabine dose per dose (AM/PM)</td>
+                        <td id="s2DoseMorning">—</td>
+                        <td id="s2DoseNight">—</td>
+                        <td>mg</td>
+                      </tr>
+                      <tr>
+                        <td>Number of tablets per dose</td>
+                        <td id="s2TabsMorning">—</td>
+                        <td id="s2TabsNight">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>Total tablets per day (exact, not rounded)</td>
+                        <td colspan="2" id="s2TotalTabsPerDayExact">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>Total tablets per day (rounded for prescription)</td>
+                        <td colspan="2" id="s2TotalTabsPerDayRounded">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>Total tablets per 14-day cycle (rounded)</td>
+                        <td colspan="2" id="s2TotalTabsCycle">—</td>
+                        <td>500 mg tablets</td>
+                      </tr>
+                      <tr>
+                        <td>BSA used</td>
+                        <td colspan="2" id="s2BsaUsed">—</td>
+                        <td>m²</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <label class="calc-label">Prescription text (Capecitabine systemic)</label>
+                <textarea class="form-control" id="s2Text" rows="5" readonly
+                  placeholder="Calculated prescription text will appear here..."></textarea>
+                <button type="button" class="btn-copy" onclick="copyPrescriptionText('s2Text')">
+                  <i class="far fa-copy"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+              <i class="fas fa-info-circle"></i>
+              For adults only. Capecitabine tablets assumed to be 500 mg each. This tool is for educational support and does not replace clinical judgment.
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div><hr></div>
-
-    <footer class="footer text-center">
+    <!-- FOOTER -->
+    <footer class="site-footer">
       <div class="container">
-          <div class="row">
-              <!-- Footer Location-->
-              <div class="col-lg-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-2">Offices</h4>
-                  <p class="lead mb-2">
-                      Click for more information
-                  </p>
-                  <div class="text-center">
-                    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalRegular">Location 1</button>
-                    <br>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalCustom">Location 2</button>
-                  </div>
-              </div>
-              <!-- Footer Social Icons-->
-              <div class="col-lg-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Social media</h4>
-                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.facebook.com/allan.pereira.311"><i class="fab fa-fw fa-facebook-f"></i></a>
-                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://twitter.com/DrAllanPereira"><i class="fab fa-fw fa-twitter"></i></a>
-                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.linkedin.com/in/allan-pereira-onco/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.instagram.com/DrAllanPereira/"><i class="fab fa-fw fa-instagram"></i></a>
-                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A"><i class="fab fa-fw fa-youtube"></i></a>
-              </div>
+        <div class="row">
 
-              <!-- Footer About Text-->
-              <div class="col-lg-4" id="contacts">
-                  <h4 class="text-uppercase mb-2">Book an appointment</h4>
-                  <p class="lead mb-0"> Send a message. </p>
-                  <button class="btn btn-success mb-2">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp: +55 61 99955-4558
-                  </button>
-                  <p class="lead mb-0"> Or click the button below: </p>
-                  <a id="zl-url" class="btn btn-primary ml-2" role="button" href="https://www.doctoralia.com.br/allan-pereira/oncologista/brasilia"> 
-                    <i class="fa fa-calendar" aria-hidden="true"></i>  Schedule appointment
-                  </a>
-              </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p>Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;">Book appointment</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;">
+              International Patient Appointment</a>
           </div>
+
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Locations &amp; Directions</h5>
+            <p style="font-size:.875rem;">Click for details:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;"
+              data-toggle="modal" data-target="#modalRegular">Moffitt Magnolia Campus</button>
+          </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright © Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
       </div>
     </footer>
-    
-    <br>
-    
-    <!-- Copyright Section-->
-    <div class="copyright text-center text-white">
-        <div class="container"><small>Copyright © Allan Pereira 2020</small></div>
-    </div>
 
-    <!-- Back to top button -->
-    <a id="back-to-top" href="#" class="btn btn-dark btn-default" 
-       role="button" style="position: fixed; bottom: 25px; right: 25px; display: none; opacity: 0.5;">
+    <!-- Back to top -->
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top">
       <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- Modals: Office locations (same as your other pages) -->
-    <!-- Modal: Location 1 -->
-    <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
+    <!-- Modal: Moffitt Magnolia Campus -->
+    <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body mb-0 p-0">
-            <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.425244586116!2d-47.91378628581617!3d-15.834231889026452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a255b44000001%3A0xfef7f48cfdbfa748!2sS%C3%ADrio-Liban%C3%AAs%20Bras%C3%ADlia%20-%20Centro%20de%20Oncologia%20Asa%20Sul!5e0!3m2!1spt-BR!2sbr!4v1595706756045!5m2!1spt-BR!2sbr"
-                      frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map-container-9" style="height:400px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.6936548414246!2d-82.42413542408617!3d28.064376975979883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7a2d161d6d3%3A0xa59933ca9527a5ae!2s12902%20USF%20Magnolia%20Drive%2C%20Tampa%2C%20FL%2033612!5e0!3m2!1sen!2sus!4v1775567323007!5m2!1sen!2sus"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
-            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+            <button type="button" class="btn btn-info btn-sm">Save Location <i class="fas fa-map-marker-alt ml-1"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal: Location 2 -->
-    <div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body mb-0 p-0">
-            <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.191190828034!2d-47.88545838581584!3d-15.846545589018842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2502a867b86b%3A0x86fef77ded9faf97!2sS%C3%ADrio-Liban%C3%AAs%20Bras%C3%ADlia%20-%20Centro%20de%20Oncologia%20Lago%20Sul!5e0!3m2!1spt-BR!2sbr!4v1595706925248!5m2!1spt-BR!2sbr"
-                      frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-success btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
-            <button type="button" class="btn btn-outline-success btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JS: jQuery, Popper, Bootstrap -->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="slidenav.js"></script>
     <script src="scroolsmooth.js"></script>
-    <script src="navbar-hide.js"></script>    
+    <script src="navbar-hide.js"></script>
 
-    <!-- Calculator logic -->
     <script>
+      // Dark mode toggle
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' ||
+            (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+
+      // Back to top
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('#back-to-top').fadeIn(200);
+        } else {
+          $('#back-to-top').fadeOut(200);
+        }
+      });
+
+      // Calculator logic
       (function () {
         function parseNumber(value) {
           const v = parseFloat(value);
@@ -543,18 +640,15 @@
         }
 
         function computeBsa() {
-          // If BSA is provided directly, use it
           const bsaDirect = parseNumber(document.getElementById('bsa').value);
           if (bsaDirect != null && bsaDirect > 0) {
             return bsaDirect;
           }
 
-          // Otherwise, compute from height and weight using Mosteller
           const weightInput = parseNumber(document.getElementById('weight').value);
-          const weightUnit = document.getElementById('weightUnit').value; // kg or lb
-
+          const weightUnit = document.getElementById('weightUnit').value;
           const heightInput = parseNumber(document.getElementById('height').value);
-          const heightUnit = document.getElementById('heightUnit').value; // cm or in
+          const heightUnit = document.getElementById('heightUnit').value;
 
           if (!(weightInput != null && weightInput > 0 && heightInput != null && heightInput > 0)) {
             return null;
@@ -563,35 +657,42 @@
           const weightKg = (weightUnit === 'kg') ? weightInput : weightInput * 0.45359237;
           const heightCm = (heightUnit === 'cm') ? heightInput : heightInput * 2.54;
 
-          const bsa = Math.sqrt((heightCm * weightKg) / 3600);
-          return bsa;
+          return Math.sqrt((heightCm * weightKg) / 3600);
         }
 
         const form = document.getElementById('capForm');
         const btnCalc = document.getElementById('calculateBtn');
         const btnClear = document.getElementById('clearBtn');
-
         const bsaDisplay = document.getElementById('bsaDisplay');
 
-        // Scenario 1 elements
         const s1DoseMorningEl = document.getElementById('s1DoseMorning');
-        const s1DoseNightEl = document.getElementById('s1DoseNight');
+        const s1DoseNightEl   = document.getElementById('s1DoseNight');
         const s1TabsMorningEl = document.getElementById('s1TabsMorning');
-        const s1TabsNightEl = document.getElementById('s1TabsNight');
-        const s1TotalTabsEl = document.getElementById('s1TotalTabs');
-        const s1BsaUsedEl = document.getElementById('s1BsaUsed');
-        const s1TextEl = document.getElementById('s1Text');
+        const s1TabsNightEl   = document.getElementById('s1TabsNight');
+        const s1TotalTabsEl   = document.getElementById('s1TotalTabs');
+        const s1BsaUsedEl     = document.getElementById('s1BsaUsed');
+        const s1TextEl        = document.getElementById('s1Text');
 
-        // Scenario 2 elements
-        const s2DoseMorningEl = document.getElementById('s2DoseMorning');
-        const s2DoseNightEl = document.getElementById('s2DoseNight');
-        const s2TabsMorningEl = document.getElementById('s2TabsMorning');
-        const s2TabsNightEl = document.getElementById('s2TabsNight');
-        const s2TotalTabsPerDayExactEl = document.getElementById('s2TotalTabsPerDayExact');
-        const s2TotalTabsPerDayRoundedEl = document.getElementById('s2TotalTabsPerDayRounded');
-        const s2TotalTabsCycleEl = document.getElementById('s2TotalTabsCycle');
-        const s2BsaUsedEl = document.getElementById('s2BsaUsed');
-        const s2TextEl = document.getElementById('s2Text');
+        const s2DoseMorningEl         = document.getElementById('s2DoseMorning');
+        const s2DoseNightEl           = document.getElementById('s2DoseNight');
+        const s2TabsMorningEl         = document.getElementById('s2TabsMorning');
+        const s2TabsNightEl           = document.getElementById('s2TabsNight');
+        const s2TotalTabsPerDayExactEl  = document.getElementById('s2TotalTabsPerDayExact');
+        const s2TotalTabsPerDayRoundedEl= document.getElementById('s2TotalTabsPerDayRounded');
+        const s2TotalTabsCycleEl      = document.getElementById('s2TotalTabsCycle');
+        const s2BsaUsedEl             = document.getElementById('s2BsaUsed');
+        const s2TextEl                = document.getElementById('s2Text');
+
+        function clearOutputs() {
+          s1DoseMorningEl.textContent = '—'; s1DoseNightEl.textContent = '—';
+          s1TabsMorningEl.textContent = '—'; s1TabsNightEl.textContent = '—';
+          s1TotalTabsEl.textContent = '—'; s1BsaUsedEl.textContent = '—'; s1TextEl.value = '';
+
+          s2DoseMorningEl.textContent = '—'; s2DoseNightEl.textContent = '—';
+          s2TabsMorningEl.textContent = '—'; s2TabsNightEl.textContent = '—';
+          s2TotalTabsPerDayExactEl.textContent = '—'; s2TotalTabsPerDayRoundedEl.textContent = '—';
+          s2TotalTabsCycleEl.textContent = '—'; s2BsaUsedEl.textContent = '—'; s2TextEl.value = '';
+        }
 
         btnCalc.addEventListener('click', function () {
           const bsa = computeBsa();
@@ -599,172 +700,105 @@
 
           if (!(bsa != null && bsa > 0)) {
             alert('Please provide either a valid BSA or height and weight to calculate BSA.');
-          }
-
-          // Proceed with calculations only if BSA is valid
-          if (!(bsa != null && bsa > 0)) {
-            // Clear outputs
-            s1DoseMorningEl.textContent = '—';
-            s1DoseNightEl.textContent = '—';
-            s1TabsMorningEl.textContent = '—';
-            s1TabsNightEl.textContent = '—';
-            s1TotalTabsEl.textContent = '—';
-            s1BsaUsedEl.textContent = '—';
-            s1TextEl.value = '';
-
-            s2DoseMorningEl.textContent = '—';
-            s2DoseNightEl.textContent = '—';
-            s2TabsMorningEl.textContent = '—';
-            s2TabsNightEl.textContent = '—';
-            s2TotalTabsPerDayExactEl.textContent = '—';
-            s2TotalTabsPerDayRoundedEl.textContent = '—';
-            s2TotalTabsCycleEl.textContent = '—';
-            s2BsaUsedEl.textContent = '—';
-            s2TextEl.value = '';
+            clearOutputs();
             return;
           }
 
           const bsaStr = bsa.toFixed(2);
 
-          /***** Scenario 1 – chemoRT *****/
+          // Scenario 1
           const fractionsVal = parseNumber(document.getElementById('fractions').value);
           const fractions = (fractionsVal != null && fractionsVal > 0) ? Math.round(fractionsVal) : null;
 
           if (fractions != null) {
-            const dosePerAdminMg = bsa * 825; // mg per administration (morning or night)
+            const dosePerAdminMg = bsa * 825;
             const tabsPerAdminRaw = dosePerAdminMg / 500;
             let tabsPerAdmin = Math.round(tabsPerAdminRaw);
-            if (tabsPerAdmin < 1 && dosePerAdminMg > 0) {
-              tabsPerAdmin = 1; // at least 1 tablet if dose > 0
-            }
+            if (tabsPerAdmin < 1 && dosePerAdminMg > 0) tabsPerAdmin = 1;
 
-            const totalTabsCourse = tabsPerAdmin * 2 * fractions; // BID for each RT fraction day
+            const totalTabsCourse = tabsPerAdmin * 2 * fractions;
 
             s1DoseMorningEl.textContent = formatResult(dosePerAdminMg, 0);
-            s1DoseNightEl.textContent = formatResult(dosePerAdminMg, 0);
+            s1DoseNightEl.textContent   = formatResult(dosePerAdminMg, 0);
             s1TabsMorningEl.textContent = tabsPerAdmin;
-            s1TabsNightEl.textContent = tabsPerAdmin;
-            s1TotalTabsEl.textContent = totalTabsCourse;
-            s1BsaUsedEl.textContent = bsaStr;
+            s1TabsNightEl.textContent   = tabsPerAdmin;
+            s1TotalTabsEl.textContent   = totalTabsCourse;
+            s1BsaUsedEl.textContent     = bsaStr;
 
-            const n1 = tabsPerAdmin;
-            const n2 = tabsPerAdmin;
-
-            const s1Text = `Take ${n1} tablets (500mg each) by mouth in the morning and ${n2} tablets at night. `
+            s1TextEl.value = `Take ${tabsPerAdmin} tablets (500mg each) by mouth in the morning and ${tabsPerAdmin} tablets at night. `
               + `Take within 30 minutes after a meal. TAKE ONLY ON RADIATION DAYS. `
               + `BSA ${bsaStr} m2 ; ICD 10 C "ADD ICD HERE"`;
-
-            s1TextEl.value = s1Text;
           } else {
-            s1DoseMorningEl.textContent = '—';
-            s1DoseNightEl.textContent = '—';
-            s1TabsMorningEl.textContent = '—';
-            s1TabsNightEl.textContent = '—';
-            s1TotalTabsEl.textContent = '—';
-            s1BsaUsedEl.textContent = bsaStr;
-            s1TextEl.value = '';
+            s1DoseMorningEl.textContent = '—'; s1DoseNightEl.textContent = '—';
+            s1TabsMorningEl.textContent = '—'; s1TabsNightEl.textContent = '—';
+            s1TotalTabsEl.textContent = '—'; s1BsaUsedEl.textContent = bsaStr; s1TextEl.value = '';
           }
 
-          /***** Scenario 2 – Capecitabine systemic *****/
-          const dosePerDayM2 = parseNumber(document.getElementById('dosePerDay').value); // mg/m² per day
+          // Scenario 2
+          const dosePerDayM2 = parseNumber(document.getElementById('dosePerDay').value);
           const roundingInput = document.querySelector('input[name="roundingMode"]:checked');
-          const roundingMode = roundingInput ? roundingInput.value : 'down'; // "down" or "up"
+          const roundingMode = roundingInput ? roundingInput.value : 'down';
 
           if (dosePerDayM2 != null && dosePerDayM2 > 0) {
-            const totalDailyDoseMg = bsa * dosePerDayM2; // mg/day
-            const totalDailyTabsExact = totalDailyDoseMg / 500; // can be decimal
+            const totalDailyDoseMg = bsa * dosePerDayM2;
+            const totalDailyTabsExact = totalDailyDoseMg / 500;
 
-            // Apply rounding mode
-            let totalDailyTabsRounded;
-            if (roundingMode === 'up') {
-              totalDailyTabsRounded = Math.ceil(totalDailyTabsExact);
-            } else {
-              totalDailyTabsRounded = Math.floor(totalDailyTabsExact);
-            }
-            if (totalDailyTabsRounded < 1 && totalDailyDoseMg > 0) {
-              totalDailyTabsRounded = 1;
-            }
+            let totalDailyTabsRounded = (roundingMode === 'up')
+              ? Math.ceil(totalDailyTabsExact)
+              : Math.floor(totalDailyTabsExact);
+            if (totalDailyTabsRounded < 1 && totalDailyDoseMg > 0) totalDailyTabsRounded = 1;
 
-            // Split rounded tablets between morning and night
-            const n1 = Math.floor(totalDailyTabsRounded / 2); // morning
-            const n2 = totalDailyTabsRounded - n1;            // night
-
+            const n1 = Math.floor(totalDailyTabsRounded / 2);
+            const n2 = totalDailyTabsRounded - n1;
             const doseMorningMg = n1 * 500;
-            const doseNightMg = n2 * 500;
+            const doseNightMg   = n2 * 500;
+            const totalTabsCycle = totalDailyTabsRounded * 14;
 
-            const totalTabsCycle = totalDailyTabsRounded * 14; // rounded tablets for each of 14 days
-
-            s2DoseMorningEl.textContent = (totalDailyTabsRounded > 0) ? doseMorningMg.toString() : '—';
-            s2DoseNightEl.textContent = (totalDailyTabsRounded > 0) ? doseNightMg.toString() : '—';
-            s2TabsMorningEl.textContent = (totalDailyTabsRounded > 0) ? n1.toString() : '—';
-            s2TabsNightEl.textContent = (totalDailyTabsRounded > 0) ? n2.toString() : '—';
+            s2DoseMorningEl.textContent          = (totalDailyTabsRounded > 0) ? doseMorningMg.toString() : '—';
+            s2DoseNightEl.textContent            = (totalDailyTabsRounded > 0) ? doseNightMg.toString() : '—';
+            s2TabsMorningEl.textContent          = (totalDailyTabsRounded > 0) ? n1.toString() : '—';
+            s2TabsNightEl.textContent            = (totalDailyTabsRounded > 0) ? n2.toString() : '—';
             s2TotalTabsPerDayExactEl.textContent = formatResult(totalDailyTabsExact, 2);
             s2TotalTabsPerDayRoundedEl.textContent = (totalDailyTabsRounded > 0) ? totalDailyTabsRounded.toString() : '—';
-            s2TotalTabsCycleEl.textContent = (totalDailyTabsRounded > 0) ? totalTabsCycle.toString() : '—';
-            s2BsaUsedEl.textContent = bsaStr;
+            s2TotalTabsCycleEl.textContent       = (totalDailyTabsRounded > 0) ? totalTabsCycle.toString() : '—';
+            s2BsaUsedEl.textContent              = bsaStr;
 
-            const s2Text = `Take ${n1} tablet(s) (500mg each) by mouth in the morning and `
+            s2TextEl.value = `Take ${n1} tablet(s) (500mg each) by mouth in the morning and `
               + `${n2} tablet(s) (500mg each) by mouth at night (${totalDailyTabsRounded} tabs/day). `
               + `Take within 30 minutes after a meal for the first 14 days of each 21-day cycle. `
               + `BSA ${bsaStr} m2 ; ICD 10 C "ADD ICD HERE"`;
-
-            s2TextEl.value = s2Text;
           } else {
-            s2DoseMorningEl.textContent = '—';
-            s2DoseNightEl.textContent = '—';
-            s2TabsMorningEl.textContent = '—';
-            s2TabsNightEl.textContent = '—';
-            s2TotalTabsPerDayExactEl.textContent = '—';
-            s2TotalTabsPerDayRoundedEl.textContent = '—';
-            s2TotalTabsCycleEl.textContent = '—';
-            s2BsaUsedEl.textContent = bsaStr;
-            s2TextEl.value = '';
+            s2DoseMorningEl.textContent = '—'; s2DoseNightEl.textContent = '—';
+            s2TabsMorningEl.textContent = '—'; s2TabsNightEl.textContent = '—';
+            s2TotalTabsPerDayExactEl.textContent = '—'; s2TotalTabsPerDayRoundedEl.textContent = '—';
+            s2TotalTabsCycleEl.textContent = '—'; s2BsaUsedEl.textContent = bsaStr; s2TextEl.value = '';
           }
         });
 
         btnClear.addEventListener('click', function () {
           form.reset();
-          // Reset selects and radios to defaults
           document.getElementById('weightUnit').value = 'kg';
           document.getElementById('heightUnit').value = 'cm';
           document.getElementById('dosePerDay').value = '2000';
           document.getElementById('roundDown').checked = true;
           document.getElementById('fractions').value = '30';
-
-          bsaDisplay.value = '—';
-
-          s1DoseMorningEl.textContent = '—';
-          s1DoseNightEl.textContent = '—';
-          s1TabsMorningEl.textContent = '—';
-          s1TabsNightEl.textContent = '—';
-          s1TotalTabsEl.textContent = '—';
-          s1BsaUsedEl.textContent = '—';
-          s1TextEl.value = '';
-
-          s2DoseMorningEl.textContent = '—';
-          s2DoseNightEl.textContent = '—';
-          s2TabsMorningEl.textContent = '—';
-          s2TabsNightEl.textContent = '—';
-          s2TotalTabsPerDayExactEl.textContent = '—';
-          s2TotalTabsPerDayRoundedEl.textContent = '—';
-          s2TotalTabsCycleEl.textContent = '—';
-          s2BsaUsedEl.textContent = '—';
-          s2TextEl.value = '';
+          bsaDisplay.value = '';
+          clearOutputs();
         });
       })();
 
       function copyPrescriptionText(textareaId) {
-        const textarea = document.getElementById(textareaId);
+        var textarea = document.getElementById(textareaId);
         if (!textarea || !textarea.value) return;
-
-        navigator.clipboard.writeText(textarea.value).then(() => {
-          const btn = event.target;
-          const original = btn.innerHTML;
-          btn.innerHTML = "✅ Copied";
-          setTimeout(() => btn.innerHTML = original, 1500);
+        navigator.clipboard.writeText(textarea.value).then(function () {
+          var btn = event.target.closest('.btn-copy');
+          if (!btn) return;
+          var original = btn.innerHTML;
+          btn.innerHTML = '<i class="fas fa-check"></i> Copied';
+          setTimeout(function () { btn.innerHTML = original; }, 1500);
         });
       }
-
     </script>
+
   </body>
 </html>

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS (same pattern as your site) -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Allies Against Cancer – GFR Calculator</title>
+
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      .gfr-card {
+        max-width: 900px;
+      }
+      .gfr-label {
+        font-weight: 500;
+      }
+      .gfr-result-table td,
+      .gfr-result-table th {
+        vertical-align: middle !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-left" id="collapseExample"> 
+      <a class="navbar-brand h1 mb-0" href="index.html"> Home </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts"> Contacts </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+          <li id="excluir1" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse" 
+               aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu01">
+              Social media
+            </a>
+            <div>
+              <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#collapseExample">
+                <a class="dropdown-item" href="https://www.facebook.com/allan.pereira.311" data-target="#navbarSite" target="_blank">
+                  <i class="fa fa-facebook-square" style="font-size:24px"></i> Facebook
+                </a>
+                <a class="dropdown-item" href="https://twitter.com/DrAllanPereira" data-target="#navbarSite" target="_blank">
+                  <i class="fa fa-twitter" style="font-size:24px"></i> Twitter
+                </a>
+                <a class="dropdown-item" href="https://www.instagram.com/DrAllanPereira/" data-target="#navbarSite" target="_blank">
+                  <i class="fa fa-instagram" style="font-size:24px"></i> Instagram
+                </a>
+                <a class="dropdown-item" href="https://www.linkedin.com/in/allan-pereira-onco/" data-target="#navbarSite" target="_blank">
+                  <i class="fa fa-linkedin" style="font-size:24px"></i> Linkedin
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+          <li id="excluir2" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="collapse" 
+               aria-haspopup="true" aria-expanded="false" data-toggle="collapse" data-target="#dropdown-menu02">
+              Medical Calculators
+            </a>
+            <div>
+              <div id="dropdown-menu02" class="dropdown-menu collapse" aria-labelledby="dropdown02" data-parent="#collapseExample">
+                <!-- Adjust href if you change this file name -->
+                <a class="dropdown-item" href="gfr.html">GFR (CG, MDRD, CKD-EPI)</a>
+                <a class="dropdown-item" href="Calc_capecitabine_dose.html">BSA &amp; Capecitabine</a>
+                <a class="dropdown-item" href="#">Body Surface Area</a>
+                <a class="dropdown-item" href="#">Carboplatin Dose</a>
+                <a class="dropdown-item" href="#">PSA Kinetics</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <form class="form-inline ml-0 ml-lg-5">
+          <input class="form-control ml-4 mr-2" type="search" placeholder="Search...">
+          <button class="btn btn-primary" type="Submit">OK</button>
+        </form>
+      </div>              
+    </nav>
+
+    <!-- MAIN CONTENT: GFR CALCULATOR -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <h1 class="display-4">Glomerular Filtration Rate (GFR) Calculator</h1>
+          <p class="lead">
+            Cockcroft–Gault, MDRD (4-variable) and CKD-EPI 2009 (creatinine).
+          </p>
+          <small class="text-muted">
+            Adults only. Serum creatinine in <strong>mg/dL</strong>. These values are estimates and do not replace clinical judgment.
+          </small>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 gfr-card">
+          <div class="card shadow">
+            <div class="card-header">
+              Patient data
+            </div>
+            <div class="card-body">
+              <form id="gfrForm" novalidate>
+                <div class="form-row mb-3">
+                  <div class="form-group col-md-3">
+                    <label for="age" class="gfr-label">Age (years)</label>
+                    <input type="number" min="0" step="1" class="form-control form-control-lg" id="age" placeholder="e.g. 65">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="gfr-label d-block">Sex</label>
+                    <div class="mt-1">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="sexMale" value="male">
+                        <label class="form-check-label" for="sexMale">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="sexFemale" value="female">
+                        <label class="form-check-label" for="sexFemale">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label for="race" class="gfr-label">Race</label>
+                    <select class="form-control form-control-lg" id="race">
+                      <option value="other" selected>Non-Black / Other</option>
+                      <option value="black">Black / African American</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row mb-3">
+                  <div class="form-group col-md-4">
+                    <label for="weight" class="gfr-label">Weight</label>
+                    <div class="input-group input-group-lg">
+                      <input
+                        type="number"
+                        min="0"
+                        step="0.1"
+                        class="form-control"
+                        id="weight"
+                        placeholder="e.g. 70"
+                      >
+                      <div class="input-group-append">
+                        <select class="form-control" id="weightUnit">
+                          <option value="kg" selected>kg</option>
+                          <option value="lb">lb</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="height" class="gfr-label">Height</label>
+                    <div class="input-group input-group-lg">
+                      <input
+                        type="number"
+                        min="0"
+                        step="0.1"
+                        class="form-control"
+                        id="height"
+                        placeholder="e.g. 170"
+                      >
+                      <div class="input-group-append">
+                        <select class="form-control" id="heightUnit">
+                          <option value="cm" selected>cm</option>
+                          <option value="in">in</option>
+                        </select>
+                      </div>
+                    </div>
+                    <small class="form-text text-muted">
+                      Height is used to calculate BSA (Mosteller) to normalize Cockcroft–Gault.
+                    </small>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="scr" class="gfr-label">Serum creatinine</label>
+                    <div class="input-group input-group-lg">
+                      <input
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        class="form-control"
+                        id="scr"
+                        placeholder="e.g. 1.1"
+                      >
+                      <div class="input-group-append">
+                        <span class="input-group-text">mg/dL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row mt-4">
+                  <div class="col">
+                    <button type="button" class="btn btn-primary btn-lg mr-3" id="calculateBtn">
+                      Calculate GFR
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg" id="clearBtn">
+                      Clear
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="card shadow mt-4">
+            <div class="card-header">
+              Results
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-sm gfr-result-table mb-0">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Equation</th>
+                      <th>Estimate</th>
+                      <th>Units</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Cockcroft–Gault (CrCl)</td>
+                      <td id="cgResult">—</td>
+                      <td>mL/min</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Cockcroft–Gault (indexed to 1.73 m²)<br>
+                        <small class="text-muted">Using Mosteller body surface area</small>
+                      </td>
+                      <td id="cgBsaResult">—</td>
+                      <td>mL/min/1.73 m²</td>
+                    </tr>
+                    <tr>
+                      <td>MDRD-4 (IDMS)</td>
+                      <td id="mdrdResult">—</td>
+                      <td>mL/min/1.73 m²</td>
+                    </tr>
+                    <tr>
+                      <td>CKD-EPI 2009 (creatinine)</td>
+                      <td id="ckdepiResult">—</td>
+                      <td>mL/min/1.73 m²</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <small class="text-muted d-block mt-3">
+                <strong>Important:</strong> These equations are valid for stable kidney function in adults.
+                Always interpret in the clinical context; not for pediatric patients or rapidly changing creatinine.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div><hr></div>
+
+    <footer class="footer text-center">
+      <div class="container">
+          <div class="row">
+              <!-- Footer Location-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-2">Offices</h4>
+                  <p class="lead mb-2">
+                      Click for more information
+                  </p>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalRegular">Location 1</button>
+                    <br>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalCustom">Location 2</button>
+                  </div>
+              </div>
+              <!-- Footer Social Icons-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Social media</h4>
+                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.facebook.com/allan.pereira.311"><i class="fab fa-fw fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://twitter.com/DrAllanPereira"><i class="fab fa-fw fa-twitter"></i></a>
+                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.linkedin.com/in/allan-pereira-onco/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.instagram.com/DrAllanPereira/"><i class="fab fa-fw fa-instagram"></i></a>
+                  <a class="btn btn-outline-dark btn-social mx-1 mb-3" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A"><i class="fab fa-fw fa-youtube"></i></a>
+              </div>
+
+              <!-- Footer About Text-->
+              <div class="col-lg-4" id="contacts">
+                  <h4 class="text-uppercase mb-2">Book an appointment</h4>
+                  <p class="lead mb-0"> Send a message. </p>
+                  <button class="btn btn-success mb-2">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp: +55 61 99955-4558
+                  </button>
+                  <p class="lead mb-0"> Or click the button below: </p>
+                  <a id="zl-url" class="btn btn-primary ml-2" role="button" href="https://www.doctoralia.com.br/allan-pereira/oncologista/brasilia"> 
+                    <i class="fa fa-calendar" aria-hidden="true"></i>  Schedule appointment
+                  </a>
+              </div>
+          </div>
+      </div>
+    </footer>
+    
+    <br>
+    
+    <!-- Copyright Section-->
+    <div class="copyright text-center text-white">
+        <div class="container"><small>Copyright © Allan Pereira 2020</small></div>
+    </div>
+
+    <!-- Back to top button -->
+    <a id="back-to-top" href="#" class="btn btn-dark btn-default" 
+       role="button" style="position: fixed; bottom: 25px; right: 25px; display: none; opacity: 0.5;">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Modals: Office locations -->
+    <!-- Modal: Location 1 -->
+    <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.425244586116!2d-47.91378628581617!3d-15.834231889026452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a255b44000001%3A0xfef7f48cfdbfa748!2sS%C3%ADrio-Liban%C3%AAs%20Bras%C3%ADlia%20-%20Centro%20de%20Oncologia%20Asa%20Sul!5e0!3m2!1spt-BR!2sbr!4v1595706756045!5m2!1spt-BR!2sbr"
+                      frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Location 2 -->
+    <div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.191190828034!2d-47.88545838581584!3d-15.846545589018842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2502a867b86b%3A0x86fef77ded9faf97!2sS%C3%ADrio-Liban%C3%AAs%20Bras%C3%ADlia%20-%20Centro%20de%20Oncologia%20Lago%20Sul!5e0!3m2!1spt-BR!2sbr!4v1595706925248!5m2!1spt-BR!2sbr"
+                      frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-success btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+            <button type="button" class="btn btn-outline-success btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS: jQuery, Popper, Bootstrap -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="slidenav.js"></script>
+    <script src="scroolsmooth.js"></script>
+    <script src="navbar-hide.js"></script>    
+
+    <!-- Calculator logic -->
+    <script>
+      (function () {
+        function parseNumber(value) {
+          const v = parseFloat(value);
+          return isNaN(v) ? null : v;
+        }
+
+        function formatResult(value) {
+          return (typeof value === 'number' && isFinite(value)) ? value.toFixed(1) : '—';
+        }
+
+        const form = document.getElementById('gfrForm');
+        const btnCalc = document.getElementById('calculateBtn');
+        const btnClear = document.getElementById('clearBtn');
+
+        const cgResultEl = document.getElementById('cgResult');
+        const cgBsaResultEl = document.getElementById('cgBsaResult');
+        const mdrdResultEl = document.getElementById('mdrdResult');
+        const ckdepiResultEl = document.getElementById('ckdepiResult');
+
+        btnCalc.addEventListener('click', function () {
+          const age = parseNumber(document.getElementById('age').value);
+          const sexInput = document.querySelector('input[name="sex"]:checked');
+          const sex = sexInput ? sexInput.value : null; // "male" or "female"
+          const race = document.getElementById('race').value; // "other" or "black"
+
+          const weightInput = parseNumber(document.getElementById('weight').value);
+          const weightUnit = document.getElementById('weightUnit').value; // "kg" or "lb"
+
+          const heightInput = parseNumber(document.getElementById('height').value);
+          const heightUnit = document.getElementById('heightUnit').value; // "cm" or "in"
+
+          const scr = parseNumber(document.getElementById('scr').value); // mg/dL
+
+          // Weight in kg
+          let weightKg = null;
+          if (weightInput != null && weightInput > 0) {
+            weightKg = (weightUnit === 'kg') ? weightInput : weightInput * 0.45359237;
+          }
+
+          // Height in cm
+          let heightCm = null;
+          if (heightInput != null && heightInput > 0) {
+            heightCm = (heightUnit === 'cm') ? heightInput : heightInput * 2.54;
+          }
+
+          // Cockcroft–Gault (mL/min)
+          // CrCl = [(140 - age) * weight(kg)] / (72 * Scr) * (0.85 if female)
+          let cg = null;
+          if (age != null && age > 0 && weightKg != null && scr != null && scr > 0 && sex) {
+            cg = ((140 - age) * weightKg) / (72 * scr);
+            if (sex === 'female') {
+              cg *= 0.85;
+            }
+          }
+
+          // Cockcroft–Gault indexed to 1.73 m² (Mosteller BSA)
+          // BSA = sqrt((height(cm) * weight(kg)) / 3600)
+          let cgBsa = null;
+          if (cg != null && heightCm != null && weightKg != null && heightCm > 0 && weightKg > 0) {
+            const bsa = Math.sqrt((heightCm * weightKg) / 3600);
+            if (bsa > 0) {
+              cgBsa = cg * (1.73 / bsa);
+            }
+          }
+
+          // MDRD-4 (IDMS)
+          // eGFR = 175 × Scr^-1.154 × Age^-0.203 × (0.742 if female) × (1.212 if Black)
+          let mdrd = null;
+          if (age != null && age > 0 && scr != null && scr > 0 && sex && race) {
+            const sexFactor = (sex === 'female') ? 0.742 : 1;
+            const raceFactor = (race === 'black') ? 1.212 : 1;
+            mdrd = 175 * Math.pow(scr, -1.154) * Math.pow(age, -0.203) * sexFactor * raceFactor;
+          }
+
+          // CKD-EPI 2009 (creatinine)
+          // eGFR = 141 × min(Scr/k, 1)^a × max(Scr/k, 1)^-1.209 × 0.993^Age × (1.018 if female) × (1.159 if Black)
+          // k = 0.7 (female), 0.9 (male); a = -0.329 (female), -0.411 (male)
+          let ckdepi = null;
+          if (age != null && age > 0 && scr != null && scr > 0 && sex && race) {
+            const k = (sex === 'female') ? 0.7 : 0.9;
+            const a = (sex === 'female') ? -0.329 : -0.411;
+            const scrOverK = scr / k;
+            const minScrK = Math.min(scrOverK, 1);
+            const maxScrK = Math.max(scrOverK, 1);
+
+            let result = 141 *
+              Math.pow(minScrK, a) *
+              Math.pow(maxScrK, -1.209) *
+              Math.pow(0.993, age);
+
+            if (sex === 'female') {
+              result *= 1.018;
+            }
+            if (race === 'black') {
+              result *= 1.159;
+            }
+            ckdepi = result;
+          }
+
+          cgResultEl.textContent = formatResult(cg);
+          cgBsaResultEl.textContent = formatResult(cgBsa);
+          mdrdResultEl.textContent = formatResult(mdrd);
+          ckdepiResultEl.textContent = formatResult(ckdepi);
+        });
+
+        btnClear.addEventListener('click', function () {
+          form.reset();
+          cgResultEl.textContent = '—';
+          cgBsaResultEl.textContent = '—';
+          mdrdResultEl.textContent = '—';
+          ckdepiResultEl.textContent = '—';
+        });
+      })();
+    </script>
+  </body>
+</html>

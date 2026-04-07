@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Informações sobre câncer (oncologia) para pacientes e familiares, bem como conteúdo em pesquisa e bioestatística para profissionais de saúde." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <!-- Bootstrap 4.6.2 (CDN, minified) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.15.4 (single CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts – Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="site.css?v=3">
+
+    <title>Dr. Allan Pereira – Oncologista Clínico | Pesquisa e Informação</title>
+
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+  </head>
+  <body id="page-top">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Dr. Allan Pereira</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#curriculo" data-i18n="nav-curriculo">Currículo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-i18n="nav-depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="nav-contatos">Contatos</a>
+            </li>
+
+            <!-- Dropdown: Social Media -->
+            <li id="excluir1" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="collapse"
+                aria-haspopup="true" aria-expanded="false" data-target="#dropdown-menu01" data-i18n="nav-socials">Redes Sociais</a>
+              <div>
+                <div id="dropdown-menu01" class="dropdown-menu collapse" aria-labelledby="dropdown01" data-parent="#collapseExample">
+                  <a class="dropdown-item" href="https://www.facebook.com/allan.pereira.311" target="_blank">
+                    <i class="fab fa-facebook-square fa-fw mr-1"></i> Facebook
+                  </a>
+                  <a class="dropdown-item" href="https://twitter.com/DrAllanPereira" target="_blank">
+                    <i class="fab fa-twitter fa-fw mr-1"></i> Twitter
+                  </a>
+                  <a class="dropdown-item" href="https://www.instagram.com/DrAllanPereira/" target="_blank">
+                    <i class="fab fa-instagram fa-fw mr-1"></i> Instagram
+                  </a>
+                  <a class="dropdown-item" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank">
+                    <i class="fab fa-linkedin fa-fw mr-1"></i> LinkedIn
+                  </a>
+                  <a class="dropdown-item" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank">
+                    <i class="fab fa-youtube fa-fw mr-1"></i> YouTube
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Dropdown: Onc Calcs -->
+            <li id="excluir2" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="collapse"
+                aria-haspopup="true" aria-expanded="false" data-target="#dropdown-menu02" data-i18n="nav-onc-calcs">Onc Calcs</a>
+              <div>
+                <div id="dropdown-menu02" class="dropdown-menu collapse" aria-labelledby="dropdown02" data-parent="#collapseExample">
+                  <a class="dropdown-item" href="Calc_capecitabine_dose.html">Capecitabine Dose</a>
+                  <a class="dropdown-item" href="Calc_creatinine.html"><span data-i18n="calc-clearance">Clearance de Creatinina</span></a>
+                  <a class="dropdown-item" href="#"><span data-i18n="calc-bsa">Superfície Corpórea</span></a>
+                  <a class="dropdown-item" href="#"><span data-i18n="calc-carbodose">Dose de Carboplatina</span></a>
+                  <a class="dropdown-item" href="#"><span data-i18n="calc-psakinetics">Cinética PSA</span></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Language buttons + theme toggle -->
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2 text-center mb-5 mb-md-0">
+            <img src="img/Allan.jpg" class="hero-photo" alt="Dr. Allan Pereira – Oncologista Clínico">
+          </div>
+          <div class="col-md-7 order-md-1">
+            <span class="hero-badge" data-i18n="hero-badge">Oncologista Clínico</span>
+            <h1 class="hero-title">Dr. Allan<br>Pereira</h1>
+            <p class="hero-subtitle" data-i18n="hero-subtitle">
+              Informações sobre câncer para pacientes e familiares, além de conteúdo em pesquisa e bioestatística para profissionais de saúde.
+            </p>
+            <div class="hero-actions">
+              <a href="https://www.moffitt.org/eforms/patientregistrationform/" class="btn-ghost">
+                <span data-i18n="hero-cta-book">Agendar consulta: Link</span>
+              </a>
+              <a href="tel:+18445031339" class="btn-accent">
+                <i class="fas fa-phone mr-2"></i><span data-i18n="hero-cta-phone">Ou ligue</span>
+              </a>
+              <a href="https://www.moffitt.org/eforms/international-form/" class="btn-ghost">
+                <span data-i18n="hero-cta-book">International Patient Appointment Request</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features" id="temas">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label" data-i18n="features-label">Conteúdo</p>
+          <h2 class="section-title" data-i18n="features-title">O que você encontra aqui</h2>
+          <p class="section-subtitle" data-i18n="features-subtitle">Recursos para pacientes, familiares e profissionais de saúde</p>
+        </div>
+        <div class="row">
+
+          <!-- Card 1: General Topics -->
+          <div class="col-md-4 mb-4">
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <h3 data-i18n="card-general-title">Temas em Geral</h3>
+              <p data-i18n="card-general-desc">Conteúdo acessível para pacientes e familiares sobre prevenção, mitos e informações gerais sobre o câncer.</p>
+              <ul class="feature-links">
+                <li><a href="https://youtu.be/nh1ZhnJ_GDE" data-i18n="card-general-link-vaccines">Vacinas e câncer</a></li>
+                <li><a href="#" data-i18n="card-general-link-exercise">Atividade física e câncer</a></li>
+                <li><a href="mitos" data-i18n="card-general-link-myths">Mitos sobre câncer</a></li>
+              </ul>
+              <button class="btn-feature-more" data-toggle="modal" data-target="#siteModalGeral" data-i18n="card-more">Mais...</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Tumor Types -->
+          <div class="col-md-4 mb-4">
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+              <h3 data-i18n="card-tumors-title">Tipos de tumores</h3>
+              <p data-i18n="card-tumors-desc">Informações detalhadas sobre os principais tipos de câncer, com linguagem acessível e embasamento científico.</p>
+              <ul class="feature-links">
+                <li><a href="colorectal.html" target="_blank" data-i18n="card-tumors-link-colorectal">Câncer Colorretal</a></li>
+                <li><a href="#" data-i18n="card-tumors-link-breast">Câncer de Mama</a></li>
+                <li><a href="#" data-i18n="card-tumors-link-lung">Câncer de Pulmão</a></li>
+              </ul>
+              <button class="btn-feature-more" data-toggle="modal" data-target="#siteModalTumores" data-i18n="card-more">Mais...</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Research -->
+          <div class="col-md-4 mb-4">
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+              <h3 data-i18n="card-research-title">Pesquisa e Biostat</h3>
+              <p data-i18n="card-research-desc">Conteúdo em bioestatística e pesquisa clínica para profissionais de saúde, mestrandos e doutorandos.</p>
+              <ul class="feature-links">
+                <li><a href="#" data-i18n="card-research-link-intro">Introdução Bioestatística</a></li>
+                <li><a href="https://youtu.be/XZT0YdoGOmY" data-i18n="card-research-link-spss">SPSS Kaplan Meier</a></li>
+                <li><a href="https://youtu.be/8DXfohEFgpA" data-i18n="card-research-link-endnote">EndNote importando estilo</a></li>
+              </ul>
+              <button class="btn-feature-more" data-toggle="modal" data-target="#siteModalPesq" data-i18n="card-more">Mais...</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / CV -->
+    <section class="about-section" id="curriculo">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label" data-i18n="about-label">Currículo</p>
+          <h2 class="section-title" data-i18n="about-title">Sobre Dr. Allan Pereira</h2>
+          <p class="section-subtitle" data-i18n="about-subtitle">Saiba mais sobre o autor do Site</p>
+        </div>
+
+        <ul class="nav about-tabs justify-content-center mb-4" id="pills-nav" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#nav-item-01" id="nav-pills-01" data-toggle="pill">
+              <i class="fas fa-graduation-cap mr-2"></i><span data-i18n="tab-career">Formação e carreira</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nav-item-02" id="nav-pills-02" data-toggle="pill">
+              <i class="fas fa-trophy mr-2"></i><span data-i18n="tab-awards">Prêmios e Awards</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nav-item-03" id="nav-pills-03" data-toggle="pill">
+              <i class="fas fa-video mr-2"></i><span data-i18n="tab-media">Na mídia</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="nav-pills-content">
+
+          <!-- Tab 1: Career -->
+          <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+            <div class="row align-items-start pt-2">
+              <div class="col-md-3 text-center mb-4 mb-md-0">
+                <img src="img/Allan.jpg" alt="Dr. Allan Pereira" class="about-photo img-fluid">
+              </div>
+              <div class="col-md-9">
+                <ul class="career-list">
+                  <li data-i18n="career-1">Oncologista clínico titular do Hospital Sírio-Libanês.</li>
+                  <li data-i18n="career-2">Chefe do Serviço de Oncologia do Hospital de Base do DF.</li>
+                  <li data-i18n="career-3">Pós-doutorado na Universidade do Texas - M.D. Anderson Cancer Center (Houston, Tx, EUA).</li>
+                  <li data-i18n="career-4">Doutorado no programa de oncologia pela Universidade de São Paulo (USP).</li>
+                  <li data-i18n="career-5">Oncologista Clínico formado pelo Hospital Sírio-Libanês (São Paulo).</li>
+                  <li data-i18n="career-6">Título de especialista em Oncologia Clínica pela Sociedade Brasileira de Oncologia Clínica (SBOC).</li>
+                  <li data-i18n="career-7">Fez parte do Grupo de Tumores Gastrointestinais e do Grupo de Câncer de Mama do Instituto do Câncer do Estado de São Paulo (ICESP/FM USP).</li>
+                  <li data-i18n="career-8">É autor de publicações em periódicos internacionais e capítulos de livros em temas diversos da oncologia.</li>
+                  <li data-i18n="career-9">Membro da European Society for Medical Oncology (ESMO), da American Society of Clinical Oncology (ASCO) e da American Association for Cancer Research (AACR).</li>
+                  <li data-i18n="career-10">Graduação em medicina pela Universidade Federal do Rio Grande do Norte - UFRN (2007).</li>
+                  <li data-i18n="career-11">Título de Residência Médica em Clínica Médica pela Irmandade Santa Casa de Misericórdia de São Paulo - ISCMSP (2010).</li>
+                  <li data-i18n="career-12">Credenciado pelo Educational Commission of Foreign Medical Graduates (ECFMG) / United States Medical Licensing Examination (USMLE).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Awards -->
+          <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+            <div class="row align-items-start pt-2">
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ca957c2guBk" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <ul class="awards-list">
+                  <li>Travel Grant, 37th ESMO Congress 2012, European Society for Medical Oncology (ESMO) (2012)</li>
+                  <li>Fellowship Grant Recipient – Long-term International Fellowship award, The Conquer Cancer Foundation of American Society of Clinical Oncology (2016)</li>
+                  <li>2nd Best Oral Abstract Presentation – "Professor Carlos Inacio de Paula" award; Goiania Breast Cancer Symposium (Goiania, Brasil – 2017)</li>
+                  <li>ASCO Merit Award – 2018 Gastrointestinal Symposium; The Conquer Cancer Foundation of American Society of Clinical Oncology (ASCO) (2018)</li>
+                  <li>ASCO Merit Award – 2018 ASCO Annual Meeting; The Conquer Cancer Foundation of American Society of Clinical Oncology (ASCO) (2018)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Media -->
+          <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+            <div class="row pt-2">
+              <div class="col-md-4 mb-4">
+                <h6 class="media-video-title" data-i18n="media-video-1">Apresentação - Hospital Sírio-Libanês</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdH9gQcYcXY" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h6 class="media-video-title" data-i18n="media-video-2">Alô Enfermeiro - Hospital de Base do DF</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wGeLTE3HGIA" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h6 class="media-video-title" data-i18n="media-video-3">COVID-19 Orientações Pacientes SUS</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J_rdQ0o5fnY" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h6 class="media-video-title" data-i18n="media-video-4">Novidades ASCO - 2019</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Yzbwp-0BiNg" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h6 class="media-video-title" data-i18n="media-video-5">Julho Verde</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HVLCE3Yq6Mw?start=862&end=1033" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <p class="section-label" data-i18n="contact-label">Contato</p>
+            <h2 class="section-title" data-i18n="contact-title">Entre em Contato</h2>
+            <p class="section-subtitle" data-i18n="contact-subtitle">Envie uma mensagem ou agende diretamente pelo WhatsApp</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="mail/contact_me.php" method="POST">
+              <div class="form-group">
+                <label data-i18n="contact-name-label">Nome</label>
+                <input class="form-control" id="name" type="text"
+                  placeholder="Nome" data-i18n-placeholder="contact-name"
+                  required="required"
+                  data-validation-required-message="Por favor, seu nome aqui." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact-email-label">Email</label>
+                <input class="form-control" id="email" type="email"
+                  placeholder="Email" data-i18n-placeholder="contact-email"
+                  required="required"
+                  data-validation-required-message="Informe email para contato." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact-phone-label">Telefone/Celular</label>
+                <input class="form-control" id="phone" type="tel"
+                  placeholder="Telefone/Celular" data-i18n-placeholder="contact-phone"
+                  required="required"
+                  data-validation-required-message="Número de Telefone." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact-message-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="5"
+                  placeholder="Digite aqui..." data-i18n-placeholder="contact-message"
+                  required="required"
+                  data-validation-required-message="Digite sua mensagem aqui."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div id="success"></div>
+              <div class="text-center mt-4">
+                <button class="btn-accent" id="sendMessageButton" type="submit">
+                  <span data-i18n="contact-send">Enviar mensagem</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <!-- Col 1: Identity + Contact -->
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p data-i18n="hero-badge">Oncologista Clínico</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;" data-i18n="footer-book-btn">Agendar consulta</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;">
+              International Patient Appointment Request</a>
+          </div>
+
+          <!-- Col 2: Social -->
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5 data-i18n="footer-social-title">Redes Sociais</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 3: Offices -->
+          <div class="col-md-4">
+            <h5 data-i18n="footer-offices-title">Locations & Directions</h5>
+            <p data-i18n="footer-offices-cta">Clique para detalhes:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button>
+          </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright © Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Voltar ao topo">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ============================================================
+         MODALS – content unchanged, only structural cleanup
+    ============================================================ -->
+
+    <!-- Modal: General Topics -->
+    <div class="modal fade" id="siteModalGeral" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" data-i18n="modal-general-title">Temas em Geral</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p data-i18n="modal-general-desc">Este é um conteúdo direcionado a pacientes e familiares, com uso de linguagem mais acessível e com menos termos técnicos, sobre assuntos de interesse comum.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="https://youtu.be/nh1ZhnJ_GDE" target="_blank" data-i18n="modal-general-link-vaccines">Vacinas e câncer</a></li>
+              <li class="list-group-item"><a href="#" data-i18n="modal-general-link-exercise">Atividade física e câncer</a></li>
+              <li class="list-group-item"><a href="mitos" data-i18n="modal-general-link-myths">Mitos sobre o câncer</a></li>
+              <li class="list-group-item"><a href="#" data-i18n="modal-general-link-rights">Direitos do paciente</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal" data-i18n="modal-close">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Tumor Types -->
+    <div class="modal fade" id="siteModalTumores" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" data-i18n="modal-tumors-title">Tipos de Tumores</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p data-i18n="modal-tumors-desc">Informações completas com linguagem fácil.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="colorectal" target="_blank" data-i18n="modal-tumors-link-colorectal">Câncer Colorretal</a></li>
+              <li class="list-group-item"><a href="#" data-i18n="modal-tumors-link-breast">Câncer de Mama</a></li>
+              <li class="list-group-item"><a href="#" data-i18n="modal-tumors-link-lung">Câncer de Pulmão</a></li>
+              <li class="list-group-item"><a href="ccp" data-i18n="modal-tumors-link-hn">Câncer de Cabeça e Pescoço - Julho Verde</a></li>
+              <li class="list-group-item"><a href="https://youtu.be/eR0U5e4rKOk" data-i18n="modal-tumors-link-skin">Cânceres de Pele e Melanoma</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal" data-i18n="modal-close">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Research -->
+    <div class="modal fade" id="siteModalPesq" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" data-i18n="modal-research-title">Pesquisa e Bioestatística</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p data-i18n="modal-research-desc">Conteúdo destinado a pesquisadores, alunos de mestrado e doutorado. Aqui teremos discussões de temas relacionados à pesquisa clínica, bem como videoaulas com dicas sobre como conduzir as análises mais comuns.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal" data-i18n="modal-close">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Office map – Unit 1 -->
+    <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div id="map-container-google-16" class="map-container-9" style="height:400px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.6936548414246!2d-82.42413542408617!3d28.064376975979883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7a2d161d6d3%3A0xa59933ca9527a5ae!2s12902%20USF%20Magnolia%20Drive%2C%20Tampa%2C%20FL%2033612!5e0!3m2!1sen!2sus!4v1775567323007!5m2!1sen!2sus"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-info btn-sm"><span data-i18n="modal-save-location">Salvar Local</span> <i class="fas fa-map-marker-alt ml-1"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal"><span data-i18n="modal-close">Fechar</span> <i class="fas fa-times ml-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ============================================================
+         SCRIPTS
+    ============================================================ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="slidenav.js"></script>
+    <script src="scroolsmooth.js"></script>
+    <script src="navbar-hide.js"></script>
+    <script src="mail/jqBootstrapValidation.js"></script>
+    <script src="mail/contact_me.js"></script>
+    <script src="lang.js"></script>
+
+    <script>
+      // Dark mode toggle
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' ||
+            (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+
+      // Fade-in on scroll (IntersectionObserver)
+      (function () {
+        if (!('IntersectionObserver' in window)) {
+          document.querySelectorAll('.fade-in-up').forEach(function (el) {
+            el.classList.add('visible');
+          });
+          return;
+        }
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              observer.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in-up').forEach(function (el) {
+          observer.observe(el);
+        });
+      }());
+    </script>
+
+  </body>
+</html>

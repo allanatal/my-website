@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GI Oncology Digest — April 10, 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      background: #f4f6f8;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fff;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #003366 0%, #00528A 100%);
+      color: #fff;
+      padding: 40px 36px 32px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    header .date {
+      font-size: 15px;
+      color: #99ccff;
+    }
+    header .subtitle {
+      font-size: 12px;
+      color: #80b3e6;
+      margin-top: 4px;
+    }
+    .content { padding: 30px 36px 40px; }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #003366;
+      border-bottom: 3px solid #003366;
+      padding-bottom: 8px;
+      margin: 32px 0 20px;
+    }
+    .section-title:first-child { margin-top: 0; }
+
+    .paper-card {
+      background: #fff;
+      border: 1px solid #e2e6ea;
+      border-left: 5px solid #003366;
+      border-radius: 6px;
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+    .paper-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
+
+    .paper-rank {
+      display: inline-block;
+      background: #003366;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+    .paper-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .paper-title a {
+      color: #003366;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .paper-title a:hover { border-bottom-color: #003366; }
+
+    .paper-meta {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .paper-meta b { color: #444; }
+
+    .score-badge {
+      display: inline-block;
+      background: #007A33;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 3px;
+    }
+    .score-rationale {
+      font-size: 12px;
+      color: #555;
+      font-style: italic;
+      margin-left: 6px;
+    }
+    .score-line { margin-bottom: 12px; }
+
+    .paper-summary {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    .post-angle {
+      background: #EBF5FF;
+      border-left: 3px solid #0052CC;
+      padding: 10px 14px;
+      border-radius: 0 5px 5px 0;
+      font-size: 12px;
+      color: #0052CC;
+      font-style: italic;
+    }
+    .post-angle b { font-style: normal; }
+
+    .additional-list {
+      list-style: none;
+      padding: 0;
+    }
+    .additional-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    .additional-list li:last-child { border-bottom: none; }
+    .additional-list .add-title a {
+      color: #0052CC;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .additional-list .add-title a:hover { text-decoration: underline; }
+    .additional-list .add-source {
+      font-size: 12px;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    footer {
+      background: #003366;
+      color: #ccc;
+      padding: 20px 36px;
+      font-size: 11px;
+    }
+    footer p { margin-bottom: 4px; }
+    footer .gen { color: #80b3e6; font-style: italic; }
+
+    .back-link {
+      display: inline-block;
+      margin: 20px 0 0;
+      font-size: 13px;
+      color: #0052CC;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header { padding: 28px 20px 24px; }
+      header h1 { font-size: 22px; }
+      .content { padding: 20px; }
+      .paper-card { padding: 16px; }
+      footer { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>GI Oncology Daily Digest</h1>
+    <div class="date">April 10, 2026</div>
+    <div class="subtitle">Prepared for Dr. Allan Pereira &mdash; Moffitt Cancer Center</div>
+  </header>
+
+  <div class="content">
+
+    <h2 class="section-title" style="margin-top:0;">Top 5 Papers</h2>
+
+    <!-- Paper 1 -->
+    <div class="paper-card">
+      <span class="paper-rank">#1</span>
+      <div class="paper-title"><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2507874" target="_blank">ATOMIC Trial: Atezolizumab + mFOLFOX6 for Stage III Mismatch Repair-Deficient Colon Cancer</a></div>
+      <div class="paper-meta"><b>Source:</b> New England Journal of Medicine &nbsp;|&nbsp; <b>Authors:</b> Yothers G et al. (Alliance A021502)</div>
+      <div class="score-line"><span class="score-badge">Score: 10/10</span><span class="score-rationale"> &mdash; NEJM Phase III; practice-changing new adjuvant standard for dMMR stage III colon cancer</span></div>
+      <div class="paper-summary">The phase 3 ATOMIC trial randomized 712 patients with resected stage III dMMR colon cancer to adjuvant atezolizumab plus mFOLFOX6 (6 months chemo + 12 months total atezolizumab) versus mFOLFOX6 alone. At median follow-up of 40.9 months, 3-year disease-free survival was 86.3% vs 76.2% (HR 0.50; 95% CI 0.35-0.73; P&lt;0.001). Five-year overall survival was 89.7% vs 87.9% (HR 0.90). Grade 3-4 adverse events were higher with atezolizumab, mainly fatigue. This establishes atezolizumab + mFOLFOX6 as the new adjuvant standard of care for dMMR stage III colon cancer.</div>
+      <div class="post-angle"><b>Post angle:</b> Practice-changing for #ColonCancer: ATOMIC trial in NEJM shows adding atezolizumab to adjuvant chemo cuts recurrence risk by 50% in dMMR stage III patients. New standard of care. #CRCResearch #GIOncology</div>
+    </div>
+
+    <!-- Paper 2 -->
+    <div class="paper-card">
+      <span class="paper-rank">#2</span>
+      <div class="paper-title"><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2501912" target="_blank">BREAKWATER Trial: Encorafenib, Cetuximab, and mFOLFOX6 in BRAF V600E-Mutant Colorectal Cancer</a></div>
+      <div class="paper-meta"><b>Source:</b> New England Journal of Medicine &nbsp;|&nbsp; <b>Authors:</b> Tabernero J et al.</div>
+      <div class="score-line"><span class="score-badge">Score: 9.5/10</span><span class="score-rationale"> &mdash; NEJM Phase III; doubles OS in BRAF V600E mCRC (30.3 vs 15.1 months); FDA approved</span></div>
+      <div class="paper-summary">The phase 3 BREAKWATER trial evaluated first-line encorafenib + cetuximab + mFOLFOX6 versus standard chemotherapy (+/- bevacizumab) in BRAF V600E-mutant metastatic CRC. PFS was significantly improved (12.8 vs 7.1 months; HR 0.53; P&lt;0.001). In an interim analysis, median OS was 30.3 vs 15.1 months (HR 0.49; P&lt;0.001), representing an unprecedented survival gain in this aggressive CRC subtype. The triplet regimen received FDA approval and represents the new standard of care for first-line BRAF V600E mCRC.</div>
+      <div class="post-angle"><b>Post angle:</b> Landmark NEJM data: BREAKWATER doubles survival in BRAF V600E #mCRC with encorafenib/cetuximab/mFOLFOX6. OS 30 vs 15 months. From worst to manageable prognosis. #CRC #PrecisionOncology</div>
+    </div>
+
+    <!-- Paper 3 -->
+    <div class="paper-card">
+      <span class="paper-rank">#3</span>
+      <div class="paper-title"><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2600752" target="_blank">Setidegrasib (ASP3082): First-in-Class KRAS G12D Degrader in Advanced NSCLC and Pancreatic Cancer</a></div>
+      <div class="paper-meta"><b>Source:</b> New England Journal of Medicine &nbsp;|&nbsp; <b>Authors:</b> Park W et al. (Memorial Sloan Kettering)</div>
+      <div class="score-line"><span class="score-badge">Score: 9/10</span><span class="score-rationale"> &mdash; NEJM Phase I; first-in-class KRAS G12D degrader; breakthrough for pancreatic cancer</span></div>
+      <div class="paper-summary">This phase 1 study reports the first clinical results of setidegrasib (ASP3082), a first-in-class KRAS G12D-targeted protein degrader that forms a ternary complex with KRAS G12D and VHL E3 ligase. In patients with KRAS G12D-mutant pancreatic cancer, approximately 25% achieved objective responses with median OS of 10 months. Two-thirds of patients had progressed on 2+ prior lines. This represents a major breakthrough in targeting KRAS G12D, which drives ~40% of pancreatic adenocarcinomas and was previously considered undruggable.</div>
+      <div class="post-angle"><b>Post angle:</b> The 'undruggable' is now druggable: setidegrasib degrades KRAS G12D protein in #PancreaticCancer (NEJM). 25% response rate in heavily pretreated patients. A new era for KRAS-targeted therapy. #PancCancer #KRASG12D</div>
+    </div>
+
+    <!-- Paper 4 -->
+    <div class="paper-card">
+      <span class="paper-rank">#4</span>
+      <div class="paper-title"><a href="https://ascopubs.org/doi/10.1200/JCO.2026.44.2_suppl.14" target="_blank">COMMIT Trial: Triplet Therapy (FOLFOX/Bevacizumab/Atezolizumab) in First-Line dMMR/MSI-H Metastatic CRC</a></div>
+      <div class="paper-meta"><b>Source:</b> ASCO GI 2026 / Journal of Clinical Oncology &nbsp;|&nbsp; <b>Authors:</b> Lenz HJ et al. (NRG-GI004/SWOG-S1610)</div>
+      <div class="score-line"><span class="score-badge">Score: 8.5/10</span><span class="score-rationale"> &mdash; Phase III at ASCO GI; practice-changing for metastatic dMMR CRC</span></div>
+      <div class="paper-summary">The phase 3 COMMIT trial compared FOLFOX + bevacizumab + atezolizumab versus atezolizumab monotherapy in first-line dMMR/MSI-H metastatic CRC. The triplet achieved significantly longer PFS (&gt;2 years vs ~5 months; HR 0.44; P=0.01) and higher ORR (86.1% vs 46%, with complete responses in 36.1% vs 18.9%). Grade 3-4 AEs were higher with the triplet (73.2% vs 41.5%). No OS difference was noted at analysis. These results challenge the IO-monotherapy paradigm in dMMR mCRC.</div>
+      <div class="post-angle"><b>Post angle:</b> COMMIT challenges IO monotherapy in dMMR #mCRC: adding chemo+bev to atezolizumab boosts ORR to 86% and PFS to &gt;2 years. Is the triplet the new 1L standard? #ASCOGI2026 #CRC</div>
+    </div>
+
+    <!-- Paper 5 -->
+    <div class="paper-card">
+      <span class="paper-rank">#5</span>
+      <div class="paper-title"><a href="https://www.thelancet.com/journals/langas/article/PIIS2468-1253(26)00005-1/abstract" target="_blank">HERIZON-GEA-01: Zanidatamab Plus Chemotherapy in HER2-Positive Gastroesophageal Adenocarcinoma</a></div>
+      <div class="paper-meta"><b>Source:</b> ASCO GI 2026 / Lancet Gastroenterology &amp; Hepatology &nbsp;|&nbsp; <b>Authors:</b> Shitara K et al.</div>
+      <div class="score-line"><span class="score-badge">Score: 8/10</span><span class="score-rationale"> &mdash; Phase III; potential new standard HER2-targeting agent for 1L HER2+ GEA</span></div>
+      <div class="paper-summary">The phase 3 HERIZON-GEA-01 trial evaluated zanidatamab, a bispecific HER2-targeted antibody, combined with chemotherapy as first-line treatment in HER2-positive locally advanced/unresectable or metastatic gastroesophageal adenocarcinoma. Results presented at ASCO GI 2026 demonstrated that zanidatamab plus chemo can slow cancer growth and extend survival compared to standard trastuzumab-based therapy. Zanidatamab may become the new standard-of-care HER2-targeting agent in this setting.</div>
+      <div class="post-angle"><b>Post angle:</b> Could zanidatamab replace trastuzumab in HER2+ #GastricCancer? HERIZON-GEA-01 phase III results are compelling. A new bispecific era for GEA. #ASCOGI2026 #HER2 #UpperGI</div>
+    </div>
+
+    <!-- Additional Papers -->
+    <h2 class="section-title">Additional Papers of Interest</h2>
+    <ol class="additional-list">
+      <li>
+        <div class="add-title"><a href="https://www.cancernetwork.com/view/fda-grants-priority-review-to-lirafugratinib-in-fgfr2-cholangiocarcinoma" target="_blank">Lirafugratinib FDA Priority Review for FGFR2+ Cholangiocarcinoma (ReFocus Trial)</a></div>
+        <div class="add-source">FDA / OncLive &mdash; ORR 46.5%, mPFS 11.3 months in FGFR2-altered CCA; PDUFA date September 27, 2026.</div>
+      </li>
+      <li>
+        <div class="add-title"><a href="https://ascopubs.org/doi/10.1200/JCO.2026.44.2_suppl.13" target="_blank">BREAKWATER Cohort 3: Encorafenib/Cetuximab + FOLFIRI in BRAF V600E mCRC</a></div>
+        <div class="add-source">ASCO GI 2026 (Abstract 13) &mdash; ORR 64.4% vs 39.2%; supports encorafenib/cetuximab across chemo partners.</div>
+      </li>
+      <li>
+        <div class="add-title"><a href="https://www.onclive.com/view/ono-4578-plus-nivolumab-chemo-improves-pfs-in-her2-advanced-gastric-cancer" target="_blank">ONO-4578 Plus Nivolumab/Chemotherapy in HER2-Negative Advanced Gastric Cancer</a></div>
+        <div class="add-source">Phase 2 (ONO-4578-08) &mdash; EP4 antagonist added to nivo/chemo improved PFS in HER2-neg gastric cancer.</div>
+      </li>
+      <li>
+        <div class="add-title"><a href="https://dailynews.ascopubs.org/do/new-targeted-therapies-show-early-promise-kras-g12d--mutated-pancreatic-ductal" target="_blank">INCB161734: Novel KRAS G12D Inhibitor in Pancreatic Ductal Adenocarcinoma</a></div>
+        <div class="add-source">ASCO GI 2026 &mdash; ORR 37%, DCR 78% at 1,200 mg; encouraging activity in KRASG12D PDAC.</div>
+      </li>
+      <li>
+        <div class="add-title"><a href="https://www.nature.com/articles/s41575-025-01153-w" target="_blank">Cholangiocarcinoma 2026: Status Quo, Unmet Needs and Priorities</a></div>
+        <div class="add-source">Nature Reviews GI &amp; Hepatology &mdash; International expert consensus on latest CCA developments and research priorities.</div>
+      </li>
+    </ol>
+
+    <a href="index.html" class="back-link">&larr; Back to all digests</a>
+  </div>
+
+  <footer>
+    <p class="gen">Generated automatically by GI Oncology Digest Agent &mdash; April 10, 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>

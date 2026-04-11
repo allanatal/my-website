@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Site styles -->
-    <link rel="stylesheet" href="site.css?v=3">
+    <link rel="stylesheet" href="site.css?v=4">
 
     <title>Dr. Allan Pereira – Oncologista Clínico | Pesquisa e Informação</title>
 
@@ -138,6 +138,22 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GI DIGEST STRIP -->
+    <section class="gi-digest-strip">
+      <div class="container">
+        <div class="gi-digest-inner">
+          <div class="gi-digest-meta">
+            <span class="gi-digest-badge"><i class="fas fa-newspaper mr-1"></i>GI Digest</span>
+            <span class="gi-digest-desc">Curated GI oncology literature, updated regularly.</span>
+          </div>
+          <ul class="gi-digest-list" id="gi-digest-list">
+            <li class="gi-digest-loading">Loading…</li>
+          </ul>
+          <a href="digests/index_digest.html" class="gi-digest-all">View all <i class="fas fa-arrow-right ml-1"></i></a>
         </div>
       </div>
     </section>
@@ -559,6 +575,41 @@
         document.querySelectorAll('.fade-in-up').forEach(function (el) {
           observer.observe(el);
         });
+      }());
+
+      // GI Digest strip loader
+      (function () {
+        var list = document.getElementById('gi-digest-list');
+        if (!list) return;
+
+        fetch('digests/digest-feed.json')
+          .then(function (r) { return r.json(); })
+          .then(function (entries) {
+            // Sort newest first, take up to 3
+            entries.sort(function (a, b) { return b.date.localeCompare(a.date); });
+            var recent = entries.slice(0, 3);
+
+            list.innerHTML = '';
+            recent.forEach(function (entry) {
+              // Format date: "2026-04-10" → "Apr 10, 2026"
+              var parts = entry.date.split('-');
+              var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+              var label = months[parseInt(parts[1], 10) - 1] + ' ' + parseInt(parts[2], 10) + ', ' + parts[0];
+
+              var li = document.createElement('li');
+              li.innerHTML =
+                '<span class="gi-digest-date">' + label + '</span>' +
+                '<a href="' + entry.url + '">' + entry.title + '</a>';
+              list.appendChild(li);
+            });
+
+            if (recent.length === 0) {
+              list.innerHTML = '<li class="gi-digest-loading">No entries yet.</li>';
+            }
+          })
+          .catch(function () {
+            list.innerHTML = '<li class="gi-digest-loading">Could not load digest.</li>';
+          });
       }());
     </script>
 

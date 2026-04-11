@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GI Oncology Daily Digest Archive — Curated by Dr. Allan Pereira." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <!-- Bootstrap 4.6.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts – Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../site.css?v=3">
+
+    <title>GI Oncology Digest Archive | Dr. Allan Pereira</title>
+
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+
+    <style>
+      .digest-header {
+        background: linear-gradient(135deg, #003366 0%, #00528A 100%);
+        color: #fff;
+        padding: 3rem 0 2.5rem;
+        text-align: center;
+      }
+      .digest-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
+      .digest-header .digest-subtitle { font-size: .95rem; color: #99ccff; margin-top: .25rem; }
+
+      .digest-archive { padding: 2rem 0 3rem; }
+
+      .digest-intro {
+        font-size: .95rem;
+        color: #555;
+        margin-bottom: 2rem;
+        border-left: 3px solid #003366;
+        padding-left: 1rem;
+      }
+      [data-theme="dark"] .digest-intro { color: #aaa; border-left-color: #66aadd; }
+
+      .digest-list { list-style: none; padding: 0; }
+      .digest-list li {
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+      }
+      .digest-list li:last-child { border-bottom: none; }
+      [data-theme="dark"] .digest-list li { border-bottom-color: #2a3a4a; }
+
+      .digest-list a {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #003366;
+        text-decoration: none;
+      }
+      .digest-list a:hover { text-decoration: underline; }
+      [data-theme="dark"] .digest-list a { color: #88ccff; }
+
+      .digest-date-badge {
+        display: inline-block;
+        background: #EBF5FF;
+        color: #003366;
+        font-size: .75rem;
+        font-weight: 600;
+        padding: 2px 10px;
+        border-radius: 3px;
+        margin-right: .6rem;
+      }
+      [data-theme="dark"] .digest-date-badge { background: #1a2a3d; color: #88bbee; }
+
+      .digest-desc {
+        font-size: .82rem;
+        color: #666;
+        margin-top: .2rem;
+      }
+      [data-theme="dark"] .digest-desc { color: #999; }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <!-- NAVBAR (same as main site) -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Dr. Allan Pereira</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html#curriculo">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold active" href="index_digest.html">GI Digest</a></li>
+          </ul>
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="digest-header">
+      <div class="container">
+        <h1>GI Oncology Daily Digest</h1>
+        <div class="digest-subtitle">Dr. Allan Pereira — Moffitt Cancer Center</div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section class="digest-archive">
+      <div class="container" style="max-width:800px;">
+        <p class="digest-intro">A curated daily selection of the most practice-relevant GI oncology papers, trials, and presentations from high-impact journals, ASCO, ESMO, and the oncology community.</p>
+
+        <ul class="digest-list">
+          <!-- NEW ENTRIES GO HERE (at the top) -->
+
+          <li>
+            <span class="digest-date-badge">2026-04-10</span>
+            <a href="digest-2026-04-10.html">GI Oncology Digest — April 10, 2026</a>
+            <div class="digest-desc">ATOMIC trial (adjuvant IO in dMMR colon), BREAKWATER (BRAF V600E mCRC), Setidegrasib (KRAS G12D degrader), COMMIT trial (triplet in dMMR mCRC), HERIZON-GEA-01 (zanidatamab in HER2+ GEA)</div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER (same as main site) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p>Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;">Book appointment</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Locations &amp; Directions</h5>
+            <p>Moffitt Magnolia Campus</p>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright &copy; Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Dark mode toggle
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' ||
+            (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+    </script>
+
+  </body>
+</html>

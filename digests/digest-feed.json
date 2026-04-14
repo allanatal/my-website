@@ -1,13 +1,19 @@
 [
   {
+    "date": "2026-04-14",
+    "title": "GI Oncology Digest – April 14, 2026",
+    "url": "digests/digest-2026-04-14.html",
+    "desc": "BREAKWATER encorafenib in BRAF V600E mCRC (NEJM), HERIZON-GEA-01 zanidatamab in HER2+ GEA (ASCO GI), COMMIT triplet in dMMR/MSI-H mCRC (ASCO GI), PELICAN RFA negative trial in LAPC (JCO), GRAPE AI gastric cancer screening (Nature Medicine)"
+  },
+  {
     "date": "2026-04-12",
-    "title": "GI Oncology Digest \u2013 April 12, 2026",
+    "title": "GI Oncology Digest – April 12, 2026",
     "url": "digests/digest-2026-04-12.html",
     "desc": "TIGIT+PD-1 dual blockade in gastric/GEJ cancer (Nature Medicine), GRAPE AI gastric cancer screening (Nature Medicine), Setidegrasib KRAS G12D degrader in PDAC (NEJM), TOPGEAR perioperative CRT in gastric cancer (NEJM), ctDNA predicts ICI outcomes in mCRC (SAMCO-PRODIGE 54)"
   },
   {
     "date": "2026-04-10",
-    "title": "GI Oncology Digest \u2013 April 10, 2026",
+    "title": "GI Oncology Digest – April 10, 2026",
     "url": "digests/digest-2026-04-10.html",
     "desc": "ATOMIC trial adjuvant IO in dMMR stage III colon cancer (NEJM), BREAKWATER encorafenib/cetuximab in BRAF V600E mCRC (NEJM), Setidegrasib KRAS G12D degrader (NEJM), COMMIT triplet in dMMR mCRC (ASCO GI), HERIZON-GEA-01 zanidatamab in HER2+ GEA (Lancet)"
   }

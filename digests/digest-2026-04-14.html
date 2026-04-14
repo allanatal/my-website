@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GI Oncology Daily Digest — April 14, 2026. Curated by Dr. Allan Pereira." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <!-- Bootstrap 4.6.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts – Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../site.css?v=3">
+
+    <title>GI Oncology Digest — April 14, 2026 | Dr. Allan Pereira</title>
+
+    <!-- Anti-flash: apply saved theme before first paint -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+
+    <style>
+      /* Digest-specific styles — designed to work with site.css + dark mode */
+      .digest-header {
+        background: linear-gradient(135deg, #003366 0%, #00528A 100%);
+        color: #fff;
+        padding: 3rem 0 2.5rem;
+        text-align: center;
+      }
+      .digest-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
+      .digest-header .digest-date { font-size: 1rem; color: #99ccff; }
+      .digest-header .digest-subtitle { font-size: .85rem; color: #80b3e6; margin-top: .25rem; }
+
+      .digest-content { padding: 2rem 0 3rem; }
+
+      .digest-section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #003366;
+        border-bottom: 3px solid #003366;
+        padding-bottom: .5rem;
+        margin: 2rem 0 1.25rem;
+      }
+      .digest-section-title:first-child { margin-top: 0; }
+      [data-theme="dark"] .digest-section-title { color: #66aadd; border-bottom-color: #66aadd; }
+
+      .paper-card {
+        background: #fff;
+        border: 1px solid #e2e6ea;
+        border-left: 5px solid #003366;
+        border-radius: .4rem;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 1px 4px rgba(0,0,0,.06);
+        transition: box-shadow .2s;
+      }
+      .paper-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.1); }
+      [data-theme="dark"] .paper-card {
+        background: var(--card-bg, #1e2a38);
+        border-color: #2a3a4a;
+        border-left-color: #66aadd;
+      }
+
+      .paper-rank {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        font-size: .75rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 3px;
+        margin-bottom: .5rem;
+      }
+      .paper-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: .35rem;
+      }
+      .paper-title a { color: #003366; text-decoration: none; }
+      .paper-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .paper-title a { color: #88ccff; }
+
+      .paper-meta { font-size: .8rem; color: #666; margin-bottom: .6rem; }
+      .paper-meta b { color: #444; }
+      [data-theme="dark"] .paper-meta { color: #aaa; }
+      [data-theme="dark"] .paper-meta b { color: #ccc; }
+
+      .score-badge {
+        display: inline-block;
+        background: #007A33;
+        color: #fff;
+        font-size: .75rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 3px;
+      }
+      .score-rationale { font-size: .78rem; color: #555; font-style: italic; margin-left: .4rem; }
+      [data-theme="dark"] .score-rationale { color: #aaa; }
+      .score-line { margin-bottom: .75rem; }
+
+      .paper-summary { font-size: .9rem; margin-bottom: .85rem; }
+
+      .post-angle {
+        background: #EBF5FF;
+        border-left: 3px solid #0052CC;
+        padding: .6rem .85rem;
+        border-radius: 0 5px 5px 0;
+        font-size: .78rem;
+        color: #0052CC;
+        font-style: italic;
+      }
+      .post-angle b { font-style: normal; }
+      [data-theme="dark"] .post-angle { background: #1a2a3d; color: #88bbee; border-left-color: #4488cc; }
+
+      .additional-list { list-style: none; padding: 0; }
+      .additional-list li { padding: .75rem 0; border-bottom: 1px solid #eee; font-size: .9rem; }
+      .additional-list li:last-child { border-bottom: none; }
+      [data-theme="dark"] .additional-list li { border-bottom-color: #2a3a4a; }
+      .add-title a { color: #0052CC; font-weight: 600; text-decoration: none; }
+      .add-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .add-title a { color: #88bbee; }
+      .add-source { font-size: .8rem; color: #666; margin-top: .15rem; }
+      [data-theme="dark"] .add-source { color: #999; }
+
+      .digest-back { display: inline-block; margin: 1.5rem 0 0; font-size: .85rem; }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <!-- NAVBAR (same as main site) -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Dr. Allan Pereira</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html#curriculo">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="index_digest.html">GI Digest</a></li>
+          </ul>
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DIGEST HEADER -->
+    <section class="digest-header">
+      <div class="container">
+        <h1>GI Oncology Daily Digest</h1>
+        <div class="digest-date">April 14, 2026</div>
+        <div class="digest-subtitle">Curated by Dr. Allan Pereira &mdash; Moffitt Cancer Center</div>
+      </div>
+    </section>
+
+    <!-- DIGEST CONTENT -->
+    <section class="digest-content">
+      <div class="container" style="max-width:800px;">
+
+        <h2 class="digest-section-title" style="margin-top:0;">Top 5 Papers</h2>
+
+        <div class="paper-card">
+          <span class="paper-rank">#1</span>
+          <div class="paper-title"><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2501912" target="_blank">BREAKWATER: Encorafenib, Cetuximab, and mFOLFOX6 in BRAF V600E-Mutated Metastatic CRC</a></div>
+          <div class="paper-meta"><b>Source:</b> New England Journal of Medicine &nbsp;|&nbsp; <b>Authors:</b> Elez E et al. &nbsp;|&nbsp; <b>Published:</b> April 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9.5/10</span><span class="score-rationale"> &mdash; NEJM Phase III; FDA-approved Feb 2026; new SOC for BRAF V600E mCRC with PFS 12.8 vs 7.1 months (HR 0.53)</span></div>
+          <div class="paper-summary">This international Phase III trial demonstrated that encorafenib plus cetuximab plus mFOLFOX6 significantly improves progression-free survival compared to standard chemotherapy in BRAF V600E-mutant metastatic colorectal cancer (12.8 vs 7.1 months; HR 0.53; P<0.001). Interim overall survival analysis showed a median of 30.3 vs 15.1 months (HR 0.49). The triplet regimen received FDA approval on February 24, 2026, establishing a new standard of care for this molecularly-defined subgroup (~8-10% of mCRC patients).</div>
+          <div class="post-angle"><b>Post angle:</b> BREAKWATER in NEJM: encorafenib-based triplet doubles survival in BRAF V600E mCRC (30 vs 15 months). From worst prognosis to a treatable molecular subtype. Test early, treat precisely. #ColorectalCancer #BRAFV600E #PrecisionOncology #GIOncology</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#2</span>
+          <div class="paper-title"><a href="https://ascopubs.org/doi/10.1200/JCO.2026.44.2_suppl.LBA285" target="_blank">HERIZON-GEA-01: Zanidatamab + Chemotherapy ± Tislelizumab in First-Line HER2+ Gastroesophageal Adenocarcinoma</a></div>
+          <div class="paper-meta"><b>Source:</b> Journal of Clinical Oncology / ASCO GI 2026 (LBA) &nbsp;|&nbsp; <b>Authors:</b> Elimova E et al. &nbsp;|&nbsp; <b>Published:</b> January 2026 (ASCO GI 2026)</div>
+          <div class="score-line"><span class="score-badge">Score: 9.4/10</span><span class="score-rationale"> &mdash; Phase III LBA at ASCO GI; zanidatamab bispecific HER2 targeting; median OS >26.4 months; potential new 1L standard</span></div>
+          <div class="paper-summary">This global Phase III trial compared zanidatamab, a bispecific HER2-targeted antibody, plus chemotherapy with or without tislelizumab versus trastuzumab plus chemotherapy in HER2-positive metastatic gastroesophageal adenocarcinoma. The zanidatamab arm achieved median PFS of 12.4 vs 8.1 months and median OS exceeding 26.4 months vs 19.2 months for trastuzumab/chemo. These results position zanidatamab as a potential new standard-of-care HER2-targeting agent in the first-line setting.</div>
+          <div class="post-angle"><b>Post angle:</b> HERIZON-GEA-01: bispecific HER2 targeting with zanidatamab shows >7-month OS advantage over trastuzumab in first-line HER2+ gastric cancer. The bispecific antibody era has arrived. #GastricCancer #HER2 #ASCOGI2026 #GIOncology</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#3</span>
+          <div class="paper-title"><a href="https://ascopubs.org/doi/10.1200/JCO.2026.44.2_suppl.14" target="_blank">COMMIT: Atezolizumab + mFOLFOX6/Bevacizumab vs Atezolizumab Monotherapy in First-Line dMMR/MSI-H mCRC</a></div>
+          <div class="paper-meta"><b>Source:</b> Journal of Clinical Oncology / ASCO GI 2026 &nbsp;|&nbsp; <b>Authors:</b> Rocha Lima CMS et al. &nbsp;|&nbsp; <b>Published:</b> January 2026 (ASCO GI 2026)</div>
+          <div class="score-line"><span class="score-badge">Score: 9.2/10</span><span class="score-rationale"> &mdash; Phase III at ASCO GI; striking PFS benefit (24.5 vs 5.3 months; HR 0.44) in biomarker-selected dMMR/MSI-H population</span></div>
+          <div class="paper-summary">The COMMIT Phase III trial compared the triplet of mFOLFOX6/bevacizumab/atezolizumab versus atezolizumab monotherapy in first-line dMMR/MSI-H metastatic colorectal cancer. The triplet showed dramatically better PFS (24.5 vs 5.3 months; HR 0.439; P=0.01) and ORR (86.1% vs 46%, with CR 36.1% vs 18.9%). No OS difference was observed (HR 1.04). These results challenge the IO-monotherapy paradigm in dMMR mCRC, raising important questions about optimal first-line strategy.</div>
+          <div class="post-angle"><b>Post angle:</b> COMMIT in dMMR/MSI-H mCRC: adding chemo+bev to atezolizumab boosts ORR to 86% and PFS from 5 to 25 months. But no OS benefit. Does response depth matter if survival is the same? A key debate. #ColorectalCancer #MSI #Immunotherapy #ASCOGI2026</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#4</span>
+          <div class="paper-title"><a href="https://pubmed.ncbi.nlm.nih.gov/41915391/" target="_blank">PELICAN Trial: Radiofrequency Ablation + Chemotherapy vs Chemotherapy Alone in Locally Advanced Pancreatic Cancer</a></div>
+          <div class="paper-meta"><b>Source:</b> Journal of Clinical Oncology &nbsp;|&nbsp; <b>Authors:</b> Seelen LWF et al. &nbsp;|&nbsp; <b>Published:</b> April 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 8.1/10</span><span class="score-rationale"> &mdash; Phase III RCT; important negative trial — RFA did not improve OS and worsened quality of life in LAPC</span></div>
+          <div class="paper-summary">This international randomized Phase III trial compared radiofrequency ablation plus chemotherapy versus chemotherapy alone in patients with locally advanced pancreatic cancer who had stable disease after 2 months of induction chemotherapy. RFA did not improve overall survival and was associated with significantly worse quality of life. This important negative trial prevents unnecessary procedural intervention and will influence treatment algorithms for LAPC management.</div>
+          <div class="post-angle"><b>Post angle:</b> PELICAN: RFA doesn't improve outcomes in locally advanced pancreatic cancer and worsens QOL. Negative trials matter — they protect patients from futile interventions. #PancreaticCancer #ClinicalTrials #GIOncology</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#5</span>
+          <div class="paper-title"><a href="https://www.nature.com/articles/s41591-025-03785-6" target="_blank">GRAPE: AI-Based Large-Scale Screening of Gastric Cancer from Non-Contrast CT Imaging</a></div>
+          <div class="paper-meta"><b>Source:</b> Nature Medicine &nbsp;|&nbsp; <b>Authors:</b> Yang Y et al. &nbsp;|&nbsp; <b>Published:</b> 2025 (ongoing clinical discussion 2026)</div>
+          <div class="score-line"><span class="score-badge">Score: 8.8/10</span><span class="score-rationale"> &mdash; Nature Medicine; AI outperforms radiologists (+21.8% sensitivity); paradigm shift for non-invasive gastric cancer screening</span></div>
+          <div class="paper-summary">GRAPE (Gastric Cancer Risk Assessment with AI) is a deep learning algorithm that identifies gastric cancer from routine non-contrast CT scans with AUC 0.970 (internal) and 0.927 (external validation). In real-world screening, it detected gastric cancer with 21.8% higher sensitivity and 14.0% higher specificity compared to radiologists, including 23-27% early-stage cases. This approach leverages widely available imaging, potentially enabling non-invasive population-scale screening without dedicated endoscopy.</div>
+          <div class="post-angle"><b>Post angle:</b> AI reads routine CT scans to detect gastric cancer — outperforming radiologists by 22% sensitivity. GRAPE (Nature Medicine) could transform mass screening in high-incidence regions. #AI #GastricCancer #EarlyDetection #DigitalOncology</div>
+        </div>
+
+        <!-- Additional Papers -->
+        <h2 class="digest-section-title">Additional Papers of Interest</h2>
+        <ol class="additional-list">
+
+          <li>
+            <div class="add-title"><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2503701" target="_blank">Perioperative Durvalumab + FLOT in Resectable Gastric/GEJ Cancer (MATTERHORN)</a></div>
+            <div class="add-source">NEJM (June 2025) &mdash; Janjigian YY et al. &mdash; Phase III: perioperative durvalumab + FLOT improved EFS (median NR vs 32.8 mo); ~70% alive at 3 years; FDA-approved.</div>
+          </li>
+
+          <li>
+            <div class="add-title"><a href="https://ascopubs.org/doi/10.1200/JCO-25-00621" target="_blank">SCOT Trial Final Results: 3 vs 6 Months Adjuvant Chemotherapy in CRC</a></div>
+            <div class="add-source">Journal of Clinical Oncology (January 2026) &mdash; Kerr RS et al. &mdash; Phase III noninferiority: 3-month adjuvant chemo noninferior to 6 months (5-year OS 82.4% both arms) with better QOL.</div>
+          </li>
+
+          <li>
+            <div class="add-title"><a href="https://pubmed.ncbi.nlm.nih.gov/41251890/" target="_blank">Tislelizumab + Chemo in Gastric Cancer: Long-Term RATIONALE-305 Follow-Up</a></div>
+            <div class="add-source">Advances in Therapy (January 2026) &mdash; Qiu MZ et al. &mdash; 3-year follow-up confirms durable benefit of tislelizumab + chemo in first-line advanced gastric/GEJ cancer.</div>
+          </li>
+
+          <li>
+            <div class="add-title"><a href="https://pubmed.ncbi.nlm.nih.gov/40961426/" target="_blank">Low-Dose Aspirin for PI3K-Altered Localized CRC (ALASCCA Trial)</a></div>
+            <div class="add-source">NEJM (September 2025) &mdash; Hua X et al. &mdash; RCT: aspirin 160 mg daily for 3 years reduced 3-year recurrence from 14.1% to 7.7% (HR 0.49) in PI3K-altered CRC.</div>
+          </li>
+
+          <li>
+            <div class="add-title"><a href="https://ascopubs.org/doi/10.1200/JCO.2026.44.2_suppl.476" target="_blank">Lirafugratinib in FGFR2-Altered Cholangiocarcinoma (FDA Priority Review)</a></div>
+            <div class="add-source">ASCO GI 2026 (January 2026) &mdash; ASCO GI 2026 Abstract &mdash; Median DOR 11.8 months, DCR 96.5% in FGFR2-fusion CCA; FDA PDUFA date September 27, 2026.</div>
+          </li>
+        </ol>
+
+        <a href="index_digest.html" class="digest-back"><i class="fas fa-arrow-left mr-1"></i> Back to all digests</a>
+
+      </div>
+    </section>
+
+    <!-- FOOTER (same as main site) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p data-i18n="hero-badge">Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;" data-i18n="footer-book-btn">Book appointment</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;" data-i18n="hero-cta-intl">International Patient Appointment</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 data-i18n="footer-offices-title">Locations &amp; Directions</h5>
+            <p data-i18n="footer-offices-cta">Click for details:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright &copy; Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Dark mode toggle
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' ||
+            (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+    </script>
+
+  </body>
+</html>

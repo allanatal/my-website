@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="GI Oncology Digest Archive — Dr. Allan Pereira" />
-    <meta name="author" content="Allan Andresson Lima Pereira" />
+    <meta name="description" content="GI Oncology Daily Digest Archive — Dr. Allan Pereira" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,20 +22,19 @@
       }());
     </script>
     <style>
-      .digest-archive-header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }
-      .digest-archive-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
-      .digest-archive-header .digest-subtitle { font-size: .9rem; color: #80b3e6; margin-top: .25rem; }
-      .digest-list { list-style: none; padding: 0; }
-      .digest-list li { padding: 1rem 0; border-bottom: 1px solid #e2e6ea; }
-      .digest-list li:last-child { border-bottom: none; }
-      [data-theme="dark"] .digest-list li { border-bottom-color: #2a3a4a; }
-      .digest-date-badge { display: inline-block; background: #003366; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; margin-right: .5rem; }
-      .digest-list a { color: #0052CC; font-weight: 600; text-decoration: none; }
-      .digest-list a:hover { text-decoration: underline; }
-      [data-theme="dark"] .digest-list a { color: #88bbee; }
-      .digest-desc { font-size: .8rem; color: #666; margin-top: .25rem; margin-left: 5.5rem; }
-      [data-theme="dark"] .digest-desc { color: #999; }
-      .digest-back { display: inline-block; margin: 1.5rem 0 0; font-size: .85rem; }
+      .archive-header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }
+      .archive-header h1 { font-size: 2rem; font-weight: 700; }
+      .archive-header p { color: #99ccff; }
+      .digest-list { max-width: 800px; margin: 2rem auto 3rem; }
+      .digest-entry { display: block; background: #fff; border: 1px solid #e2e6ea; border-left: 5px solid #003366; border-radius: .4rem; padding: 1rem 1.25rem; margin-bottom: 1rem; text-decoration: none; color: inherit; transition: box-shadow .2s; }
+      .digest-entry:hover { box-shadow: 0 3px 12px rgba(0,0,0,.1); text-decoration: none; color: inherit; }
+      [data-theme="dark"] .digest-entry { background: var(--card-bg, #1e2a38); border-color: #2a3a4a; border-left-color: #66aadd; }
+      .digest-entry h3 { font-size: 1.05rem; font-weight: 700; color: #003366; margin-bottom: .25rem; }
+      [data-theme="dark"] .digest-entry h3 { color: #88ccff; }
+      .digest-entry .de-date { font-size: .8rem; color: #666; }
+      [data-theme="dark"] .digest-entry .de-date { color: #aaa; }
+      .digest-entry .de-desc { font-size: .85rem; color: #555; margin-top: .35rem; }
+      [data-theme="dark"] .digest-entry .de-desc { color: #999; }
     </style>
   </head>
   <body id="page-top">
@@ -62,46 +60,41 @@
         </div>
       </div>
     </nav>
-    <section class="digest-archive-header">
+    <section class="archive-header">
       <div class="container">
         <h1>GI Oncology Digest Archive</h1>
-        <div class="digest-subtitle">All past digests curated by Dr. Allan Pereira — Moffitt Cancer Center</div>
+        <p>Daily curated research by Dr. Allan Pereira</p>
       </div>
     </section>
-    <section class="digest-content" style="padding: 2rem 0 3rem;">
-      <div class="container" style="max-width:800px;">
-        <ul class="digest-list">
-            <li>
-              <span class="digest-date-badge">2026-04-15</span>
-              <a href="digest-2026-04-15.html">GI Oncology Digest – April 15, 2026</a>
-              <div class="digest-desc">RASolute 302 daraxonrasib OS in PDAC (Press Release), BREAKWATER full FDA approval BRAF mCRC (FDA), AMPLIFY-201 mKRAS vaccine (Nature Medicine), EMERALD-3 IO+TACE in HCC (AstraZeneca), Optune Pax FDA approval LAPC (FDA)</div>
-            </li>
-            <li>
-              <span class="digest-date-badge">2026-04-14</span>
-              <a href="digest-2026-04-14.html">GI Oncology Digest – April 14, 2026</a>
-              <div class="digest-desc">RASolute 302 daraxonrasib OS in PDAC (Press Release), EMERALD-3 IO+TACE in HCC (AstraZeneca), Tinengotinib in CCA (Lancet GI Hepatol), MATTERHORN durvalumab EU approval (AstraZeneca), Lirafugratinib Priority Review CCA (FDA)</div>
-            </li>
-            <li>
-              <span class="digest-date-badge">2026-04-12</span>
-              <a href="digest-2026-04-12.html">GI Oncology Digest – April 12, 2026</a>
-              <div class="digest-desc">TIGIT+PD-1 dual blockade in gastric/GEJ cancer (Nature Medicine), GRAPE AI gastric cancer screening (Nature Medicine), Setidegrasib KRAS G12D degrader in PDAC (NEJM), TOPGEAR perioperative CRT in gastric cancer (NEJM), ctDNA predicts ICI outcomes in mCRC (SAMCO-PRODIGE 54)</div>
-            </li>
-            <li>
-              <span class="digest-date-badge">2026-04-10</span>
-              <a href="digest-2026-04-10.html">GI Oncology Digest – April 10, 2026</a>
-              <div class="digest-desc">ATOMIC trial adjuvant IO in dMMR stage III colon cancer (NEJM), BREAKWATER encorafenib/cetuximab in BRAF V600E mCRC (NEJM), Setidegrasib KRAS G12D degrader (NEJM), COMMIT triplet in dMMR mCRC (ASCO GI), HERIZON-GEA-01 zanidatamab in HER2+ GEA (Lancet)</div>
-            </li>
-        </ul>
-        <a href="../index.html" class="digest-back"><i class="fas fa-arrow-left mr-1"></i> Back to main site</a>
-      </div>
-    </section>
+    <div class="container digest-list">
+      <a class="digest-entry" href="digest-2026-04-16.html">
+        <h3>GI Oncology Digest – April 16, 2026</h3>
+        <div class="de-date">2026-04-16</div>
+        <div class="de-desc">Romiplostim RECITE Phase III for CIT in GI cancers (NEJM), Elraglusib doubles 1-year survival in mPDAC (Nature Medicine), ESMO 2026 mCRC Guideline update (Annals of Oncology), Daraxonrasib FDA BTD for KRAS G12X PDAC (FDA), Givastomig accelerated approval pathway gastric cancer (FDA)</div>
+      </a>
+      <a class="digest-entry" href="digest-2026-04-15.html">
+        <h3>GI Oncology Digest – April 15, 2026</h3>
+        <div class="de-date">2026-04-15</div>
+        <div class="de-desc">RASolute 302 daraxonrasib OS in PDAC (Press Release), BREAKWATER full FDA approval BRAF mCRC (FDA), AMPLIFY-201 mKRAS vaccine (Nature Medicine), EMERALD-3 IO+TACE in HCC (AstraZeneca), Optune Pax FDA approval LAPC (FDA)</div>
+      </a>
+      <a class="digest-entry" href="digest-2026-04-14.html">
+        <h3>GI Oncology Digest – April 14, 2026</h3>
+        <div class="de-date">2026-04-14</div>
+        <div class="de-desc">RASolute 302 daraxonrasib OS in PDAC (Press Release), EMERALD-3 IO+TACE in HCC (AstraZeneca), Tinengotinib in CCA (Lancet GI Hepatol), MATTERHORN durvalumab EU approval (AstraZeneca), Lirafugratinib Priority Review CCA (FDA)</div>
+      </a>
+      <a class="digest-entry" href="digest-2026-04-12.html">
+        <h3>GI Oncology Digest – April 12, 2026</h3>
+        <div class="de-date">2026-04-12</div>
+        <div class="de-desc">TIGIT+PD-1 dual blockade in gastric/GEJ cancer (Nature Medicine), GRAPE AI gastric cancer screening (Nature Medicine), Setidegrasib KRAS G12D degrader in PDAC (NEJM), TOPGEAR perioperative CRT in gastric cancer (NEJM), ctDNA predicts ICI outcomes in mCRC (SAMCO-PRODIGE 54)</div>
+      </a>
+      <a class="digest-entry" href="digest-2026-04-10.html">
+        <h3>GI Oncology Digest – April 10, 2026</h3>
+        <div class="de-date">2026-04-10</div>
+        <div class="de-desc">ATOMIC trial adjuvant IO in dMMR stage III colon cancer (NEJM), BREAKWATER encorafenib/cetuximab in BRAF V600E mCRC (NEJM), Setidegrasib KRAS G12D degrader (NEJM), COMMIT triplet in dMMR mCRC (ASCO GI), HERIZON-GEA-01 zanidatamab in HER2+ GEA (Lancet)</div>
+      </a>
+    </div>
     <footer class="site-footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-md-0"><h5>Dr. Allan Pereira</h5><p data-i18n="hero-badge">Clinical Oncologist</p></div>
-          <div class="col-md-4 mb-5 mb-md-0"><h5>Social Media</h5><div class="mt-1"><a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank"><i class="fab fa-twitter"></i></a><a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div></div>
-          <div class="col-md-4"><h5 data-i18n="footer-offices-title">Locations &amp; Directions</h5><button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button></div>
-        </div>
         <div class="footer-divider"></div>
         <div class="row"><div class="col-12 text-center footer-copyright"><small>Copyright &copy; Dr. Allan Pereira 2025</small></div></div>
       </div>

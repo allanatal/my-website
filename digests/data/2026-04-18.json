@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-18",
+  "date_display": "April 18, 2026",
+  "subtitle": "AACR 2026 Special Edition",
+  "feed_desc": "Bezuclastinib NDA for GIST PEAK Phase III (FDA), VCN-01 VIRAGE oncolytic virus in mPDAC (AACR 2026), Elisrasib next-gen KRAS G12C 89% ORR in CRC (AACR 2026), BOT+BAL 1L MSS mCRC (AACR 2026), STC-1010 first-in-human MSS mCRC (AACR 2026)",
+  "papers": [
+    {
+      "title": "Bezuclastinib NDA Submitted for Imatinib-Resistant GIST Based on Phase 3 PEAK Trial",
+      "url": "https://investors.cogentbio.com/news-releases/news-release-details/cogent-biosciences-announces-submission-new-drug-application-0",
+      "source": "FDA NDA / Cogent Biosciences",
+      "authors": "Cogent Biosciences",
+      "published": "April 1, 2026",
+      "score": 13,
+      "score_rationale": "FDA NDA submission (8) + Phase III (+3) + new SOC (+2)",
+      "summary": "Cogent Biosciences completed submission of a New Drug Application to the FDA for bezuclastinib in imatinib-resistant or intolerant GIST, based on the Phase 3 PEAK trial. Bezuclastinib + sunitinib achieved median PFS of 16.5 months versus 9.2 months with sunitinib alone (HR 0.50; p<0.0001) and ORR of 46% versus 26% (p<0.0001). The NDA was submitted under FDA's Real-Time Oncology Review (RTOR) program. Bezuclastinib also received Breakthrough Therapy Designation. This selective KIT exon 17 inhibitor addresses the most common secondary resistance mutations seen after imatinib.",
+      "post_angle": "Bezuclastinib NDA filed for imatinib-resistant #GIST based on PEAK Phase III. mPFS 16.5 vs 9.2 mo (HR 0.50), ORR 46% vs 26%. Breakthrough Therapy + Real-Time Oncology Review. #GIOnc #TargetedTherapy #FDA"
+    },
+    {
+      "title": "VCN-01 VIRAGE Phase 2b: Oncolytic Adenovirus Improves Survival in Metastatic Pancreatic Cancer (AACR 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/04/17/3276482/0/en/Theriva-Biologics-Announces-Upcoming-Presentation-of-Additional-Data-from-the-VIRAGE-Phase-2b-Clinical-Trial-of-VCN-01-in-Metastatic-Pancreatic-Cancer-at-AACR-2026-Annual-Meeting.html",
+      "source": "AACR 2026 / Theriva Biologics",
+      "authors": "Theriva Biologics",
+      "published": "April 17, 2026",
+      "score": 11,
+      "score_rationale": "AACR presentation (6) + Phase IIb (+2) + survival benefit (+2) + novel mechanism (+1)",
+      "summary": "Theriva Biologics presented additional data from the VIRAGE Phase 2b trial of VCN-01 (zabilugene almadenorepvec), an oncolytic adenovirus, combined with gemcitabine/nab-paclitaxel in newly diagnosed metastatic PDAC at AACR 2026. Patients receiving 2 doses of VCN-01 achieved median OS of 14.8 months versus 11.6 months with chemotherapy alone. Safety was manageable with transient pyrexia and flu-like symptoms. The FDA agreed on a Phase 3 trial design at a Type B End-of-Phase 2 meeting in March 2026. VCN-01 selectively replicates in tumor cells with dysregulated Rb/E2F pathway and expresses hyaluronidase to degrade the tumor stroma.",
+      "post_angle": "AACR 2026: VCN-01 oncolytic adenovirus + chemo improves OS in frontline mPDAC (14.8 vs 11.6 mo). VIRAGE Phase 2b met all primary endpoints. FDA agreed on Phase 3 design. #PancreaticCancer #AACR2026 #Oncolytics"
+    },
+    {
+      "title": "Elisrasib (D3S-001): Next-Generation KRAS G12C Inhibitor Shows 89% ORR in CRC and 75% in PDAC (AACR 2026)",
+      "url": "https://www.nature.com/articles/s41571-025-01028-8",
+      "source": "AACR 2026 Oral / D3 Bio",
+      "authors": "Raghav K et al. (MD Anderson)",
+      "published": "April 2026",
+      "score": 10,
+      "score_rationale": "AACR oral presentation (7) + novel mechanism overcomes resistance (+2) + GI relevance (+1)",
+      "summary": "D3 Bio presented results of elisrasib, a next-generation KRAS G12C covalent inhibitor with faster target-binding kinetics and reduced susceptibility to resistance, at AACR 2026. In Phase 1a (42 patients), among KRAS G12C inhibitor-naive evaluable patients: ORR was 88.9% in CRC, 75.0% in PDAC, and 66.7% in NSCLC. Elisrasib addresses the key limitation of first-generation KRAS G12C inhibitors (sotorasib, adagrasib) by maintaining GDP-bound state binding despite rapid nucleotide exchange. D3 Bio raised $108M to advance elisrasib into Phase 3 trials.",
+      "post_angle": "AACR 2026 Oral: Elisrasib \u2014 next-gen KRAS G12C inhibitor. ORR 89% in CRC, 75% in PDAC (Phase 1a). Overcomes resistance to sotorasib/adagrasib. Phase 3 coming. #KRASG12C #CRC #PDAC #AACR2026"
+    },
+    {
+      "title": "Botensilimab + Balstilimab in First-Line MSS Metastatic CRC: Preliminary Results (AACR 2026)",
+      "url": "https://investor.agenusbio.com/news/news-details/2026/Agenus-Announces-Upcoming-AACR-2026-Presentation-Evaluating-Botensilimab-Plus-Balstilimab-in-First-Line-MSS-Metastatic-Colorectal-Cancer/default.aspx",
+      "source": "AACR 2026 Poster / Agenus",
+      "authors": "Agenus Inc.",
+      "published": "April 2026",
+      "score": 9,
+      "score_rationale": "AACR presentation (6) + Phase I in MSS CRC (+2) + colleague engagement (+1)",
+      "summary": "Agenus presented preliminary data from an investigator-sponsored study of botensilimab (anti-CTLA-4 Fc-enhanced) plus balstilimab (anti-PD-1) in first-line microsatellite stable (MSS) metastatic CRC at AACR 2026. This extends the prior refractory MSS mCRC data that showed sustained efficacy. France has already granted reimbursed compassionate access for BOT/BAL in refractory MSS CRC. The Phase 3 BATTMAN trial (first patient enrolled April 2026) will provide definitive randomized evidence. If confirmed, this could represent the first effective IO regimen in MSS CRC, which accounts for ~85% of all mCRC.",
+      "post_angle": "AACR 2026: BOT+BAL (anti-CTLA-4 + anti-PD-1) now in FIRST-LINE MSS mCRC. Preliminary data presented. Phase 3 BATTMAN enrolling. Could IO finally work in MSS CRC (~85% of mCRC)? #CRC #MSS #Immunotherapy #AACR2026"
+    },
+    {
+      "title": "STC-1010 First-in-Human: Novel Allogeneic Immunotherapy Shows 100% DCR in MSS Metastatic CRC (AACR 2026)",
+      "url": "https://www.biospace.com/press-releases/aacr-2026-first-in-human-stc-1010-data-show-favorable-safety-and-early-immune-engagement-in-metastatic-mss-colorectal-cancer",
+      "source": "AACR 2026 / Brenus Pharma",
+      "authors": "Brenus Pharma",
+      "published": "April 14, 2026",
+      "score": 8,
+      "score_rationale": "AACR presentation (6) + first-in-human novel platform (+1) + MSS CRC relevance (+1)",
+      "summary": "Brenus Pharma presented first-in-human data from the BreAK CRC001 Phase I/IIa trial of STC-1010, a next-generation in vivo allogeneic immunotherapy built on the Stimulated Ghost Cells (SGC) platform, in first-line unresectable metastatic MSS CRC at AACR 2026. Among 6 patients with median follow-up of 6 months: 100% disease control rate (DCR) by RECIST, no dose-limiting toxicities, and evidence of early immune engagement. The SGC platform uses dead tumor cells to stimulate the patient's immune system without need for cell manufacturing.",
+      "post_angle": "AACR 2026: STC-1010 first-in-human in MSS mCRC. 100% disease control rate (6 pts), no DLTs. Novel Stimulated Ghost Cell platform \u2014 off-the-shelf IO. #CRC #MSS #Immunotherapy #AACR2026"
+    }
+  ],
+  "additional": [
+    {
+      "title": "France Grants Reimbursed Compassionate Access for BOT/BAL in Refractory MSS Colorectal Cancer",
+      "url": "https://oncodaily.com/oncolibrary/bot-bal-refractory-mss-colorectal-cancer",
+      "source_line": "OncoDaily \u2014 First EU compassionate access for IO in MSS mCRC; botensilimab + balstilimab available outside clinical trials in France."
+    },
+    {
+      "title": "Cogent Biosciences Presents KRAS and ErbB2 Preclinical Pipeline Data at AACR 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/04/17/3276106/0/en/Cogent-Biosciences-Announces-Poster-Presentations-at-the-American-Association-for-Cancer-Research-AACR-Annual-Meeting-2026.html",
+      "source_line": "AACR 2026 Poster \u2014 Preclinical data on novel KRAS and ErbB2 targeted agents for GI and other solid tumors."
+    },
+    {
+      "title": "Garsorasib in KRAS G12C-Mutated Advanced Pancreatic Cancer: Efficacy and Safety",
+      "url": "https://www.nature.com/articles/s41416-025-03286-w",
+      "source_line": "British Journal of Cancer \u2014 Another KRAS G12C inhibitor showing activity in advanced PDAC; expanding the competitive landscape."
+    },
+    {
+      "title": "AACR 2026 RAS Conference: Advancing RAS-Targeted Therapies Across GI Cancers",
+      "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-ras/program/",
+      "source_line": "AACR \u2014 Dedicated RAS-targeted therapies conference with presentations on next-gen KRAS inhibitors, degraders, and vaccines for PDAC and CRC."
+    },
+    {
+      "title": "Rivoceranib + Camrelizumab NDA Resubmitted for First-Line HCC (PDUFA July 23, 2026)",
+      "url": "https://www.targetedonc.com/view/oncology-frontiers-recapping-a-milestone-february-for-fda-approvals",
+      "source_line": "FDA NDA Resubmission \u2014 Apatinib (rivoceranib) + camrelizumab for 1L unresectable or metastatic HCC; PDUFA date set."
+    },
+    {
+      "title": "Lirafugratinib FDA Priority Review for FGFR2+ Cholangiocarcinoma (PDUFA September 27, 2026)",
+      "url": "https://www.cancernetwork.com/view/fda-grants-priority-review-to-lirafugratinib-in-fgfr2-cholangiocarcinoma",
+      "source_line": "FDA Priority Review \u2014 ORR 46.5%, mPFS 11.3 mo in FGFR2 fusion+ CCA from ReFocus trial."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 \u2014 Hook",
+      "text": "\ud83e\uddec GI Oncology Digest \u2014 April 18, 2026\nAACR 2026 Special Edition \ud83c\udf0e\n\nKRAS G12C inhibitor hits 89% ORR in CRC, oncolytic virus improves PDAC survival, bezuclastinib NDA filed for GIST, and IO enters 1L MSS CRC.\n\nA thread \ud83e\uddf5\ud83d\udc47\n\n#GIOnc #AACR2026 #CancerResearch"
+    },
+    {
+      "label": "Post 2 \u2014 #1 Bezuclastinib GIST",
+      "text": "\ud83d\udd25 #1: Bezuclastinib NDA Filed for GIST (PEAK Phase III)\n\nCogent Biosciences | April 1, 2026\n\nBezuclastinib + sunitinib in imatinib-resistant GIST:\n\u2022 mPFS 16.5 vs 9.2 mo (HR 0.50)\n\u2022 ORR 46% vs 26%\n\u2022 FDA Breakthrough + RTOR pathway",
+      "url": "https://investors.cogentbio.com/news-releases/news-release-details/cogent-biosciences-announces-submission-new-drug-application-0"
+    },
+    {
+      "label": "Post 3 \u2014 #2 VCN-01 VIRAGE",
+      "text": "\ud83d\udd2c #2: VCN-01 Oncolytic Virus in mPDAC (VIRAGE Phase 2b)\n\nAACR 2026 | Theriva Biologics\n\nOncolytic adenovirus + GnP vs GnP:\n\u2022 mOS 14.8 vs 11.6 mo (2-dose arm)\n\u2022 Met all primary endpoints\n\u2022 FDA agreed on Phase 3 design",
+      "url": "https://www.globenewswire.com/news-release/2026/04/17/3276482/0/en/Theriva-Biologics-Announces-Upcoming-Presentation-of-Additional-Data-from-the-VIRAGE-Phase-2b-Clinical-Trial-of-VCN-01-in-Metastatic-Pancreatic-Cancer-at-AACR-2026-Annual-Meeting.html"
+    },
+    {
+      "label": "Post 4 \u2014 #3 Elisrasib KRAS G12C",
+      "text": "\ud83d\udcca #3: Elisrasib \u2014 Next-Gen KRAS G12C Inhibitor (AACR 2026 Oral)\n\nD3 Bio | Raghav K et al.\n\nPhase 1a in KRAS G12C-naive pts:\n\u2022 ORR 89% in CRC\n\u2022 ORR 75% in PDAC\n\u2022 Overcomes sotorasib/adagrasib resistance\n\nPhase 3 funded ($108M raised)",
+      "url": "https://www.nature.com/articles/s41571-025-01028-8"
+    },
+    {
+      "label": "Post 5 \u2014 #4 BOT/BAL MSS CRC",
+      "text": "\ud83c\udf0d #4: BOT+BAL in First-Line MSS mCRC (AACR 2026)\n\nAgenus | Investigator-sponsored study\n\nAnti-CTLA-4 + anti-PD-1 now in 1L MSS CRC.\nFrance grants compassionate access.\nPhase 3 BATTMAN enrolling.\n\nCould IO finally crack MSS CRC (~85% of mCRC)?",
+      "url": "https://investor.agenusbio.com/news/news-details/2026/Agenus-Announces-Upcoming-AACR-2026-Presentation-Evaluating-Botensilimab-Plus-Balstilimab-in-First-Line-MSS-Metastatic-Colorectal-Cancer/default.aspx"
+    },
+    {
+      "label": "Post 6 \u2014 #5 STC-1010 MSS CRC",
+      "text": "\ud83c\udfaf #5: STC-1010 First-in-Human in MSS mCRC (AACR 2026)\n\nBrenus Pharma | BreAK CRC001\n\n\u2022 100% DCR in 6 pts (RECIST)\n\u2022 No dose-limiting toxicities\n\u2022 Off-the-shelf Stimulated Ghost Cell IO\n\nNovel platform for the hardest CRC subtype.",
+      "url": "https://www.biospace.com/press-releases/aacr-2026-first-in-human-stc-1010-data-show-favorable-safety-and-early-immune-engagement-in-metastatic-mss-colorectal-cancer"
+    },
+    {
+      "label": "Post 7 \u2014 Additional Papers",
+      "text": "\ud83d\udcda Also at #AACR2026 and this week:\n\n\u2022 Garsorasib: KRAS G12C in PDAC\n\u2022 Cogent KRAS/ErbB2 preclinical data\n\u2022 Lirafugratinib Priority Review CCA\n\u2022 Rivoceranib+camrelizumab NDA 1L HCC\n\n\ud83d\udccb Full digest:\nhttps://allanatal.github.io/my-website/digests/digest-2026-04-18.html"
+    }
+  ]
+}

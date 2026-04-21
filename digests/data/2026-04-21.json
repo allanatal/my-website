@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-21",
+  "date_display": "April 21, 2026",
+  "subtitle": "AACR 2026 Week \u2014 Day 5",
+  "feed_desc": "ALASCCA aspirin halves recurrence in PI3K-altered CRC (NEJM), T-DXd real-world OS in HER2+ mCRC (AACR 2026), VS-7375 KRAS G12D ORR 52% in PDAC (AACR 2026), RZ-001 RNA-editing in HCC (AACR 2026), Early-onset CRC plenary (AACR 2026)",
+  "papers": [
+    {
+      "title": "ALASCCA Phase III: Low-Dose Aspirin Halves Recurrence in PI3K-Altered Localized Colorectal Cancer",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2504650",
+      "source": "NEJM / ALASCCA Investigators",
+      "authors": "ALASCCA Investigators (Sweden, Norway, Denmark, Finland)",
+      "published": "April 2026",
+      "score": 15,
+      "score_rationale": "NEJM (10) + Phase III RCT (+3) + biomarker-guided adjuvant therapy (+2)",
+      "summary": "The ALASCCA trial, a double-blind, randomized Phase III trial across 33 hospitals in Sweden, Norway, Denmark, and Finland, randomized over 3,500 patients with stage I\u2013III colorectal cancer harboring somatic PI3K pathway alterations (PIK3CA, PIK3R1, PTEN) to aspirin 160 mg daily or placebo for 3 years. In patients with PIK3CA hotspot mutations (exon 9 or 20), the 3-year recurrence rate was 7.7% with aspirin versus 14.1% with placebo (HR 0.49; 95% CI 0.24\u20130.98; p=0.04). Similar benefit was observed in patients with other PI3K pathway alterations (HR 0.42; 95% CI 0.21\u20130.83). This is the first randomized trial to demonstrate biomarker-guided adjuvant benefit of aspirin in colorectal cancer, potentially establishing a new precision medicine standard.",
+      "post_angle": "ALASCCA Phase III in NEJM: Aspirin 160mg daily cuts CRC recurrence by 51% in PI3K-altered patients (HR 0.49, p=0.04). First biomarker-guided adjuvant aspirin trial. Precision prevention at its best. #CRC #PrecisionMedicine #NEJM"
+    },
+    {
+      "title": "Trastuzumab Deruxtecan Real-World Overall Survival in HER2-Amplified MSS Metastatic Colorectal Cancer (AACR 2026)",
+      "url": "https://www.roswellpark.org/newsroom/202604-aacr-2026-real-world-data-show-targeted-therapy-extends-survival-aggressive-form",
+      "source": "AACR 2026 Minisymposium / Roswell Park",
+      "authors": "Roswell Park Comprehensive Cancer Center",
+      "published": "April 19, 2026",
+      "score": 10,
+      "score_rationale": "AACR minisymposium (7) + large real-world dataset (+1) + survival benefit (+2)",
+      "summary": "Roswell Park investigators presented real-world data from 11,112 patients (9,135 standard chemotherapy; 1,977 trastuzumab deruxtecan) with HER2-amplified microsatellite stable (MSS) metastatic colorectal cancer at AACR 2026 (Abstract 1303). While 1-year OS was similar between groups, T-DXd showed a clear long-term advantage at 5 years: 58% OS rate versus 49% with standard chemotherapy. The data support earlier use of T-DXd in HER2-positive mCRC rather than reserving it for later lines of therapy. This is the largest real-world study confirming the clinical trial benefit of T-DXd in this molecular subgroup.",
+      "post_angle": "AACR 2026 Minisymposium: T-DXd real-world data in HER2+ MSS mCRC (n=11,112). 5-year OS 58% vs 49% with standard chemo. Largest RWD study supports earlier use of T-DXd. #CRC #HER2 #ADC #AACR2026"
+    },
+    {
+      "title": "VS-7375: Oral KRAS G12D Dual ON/OFF Inhibitor Shows 52% ORR and 100% DCR in Pancreatic Cancer",
+      "url": "https://investor.verastem.com/news-releases/news-release-details/verastem-oncology-announces-encouraging-preliminary-data-ongoing/",
+      "source": "AACR 2026 / Verastem Oncology",
+      "authors": "Verastem Oncology / GenFleet Therapeutics",
+      "published": "April 2026",
+      "score": 10,
+      "score_rationale": "AACR presentation (6) + Phase 1/2 PDAC data (+2) + FDA Fast Track (+1) + novel dual mechanism (+1)",
+      "summary": "Verastem Oncology and partner GenFleet presented updated Phase 1/2 data for VS-7375, an oral selective KRAS G12D dual ON/OFF inhibitor, in KRAS G12D-mutated solid tumors at AACR 2026. Among 23 efficacy-evaluable patients with pancreatic ductal adenocarcinoma, the confirmed ORR was 52% (90% CI 34%\u201370%) and disease control rate was 100%. No dose-limiting toxicities were observed. VS-7375 has FDA Fast Track Designation for KRAS G12D-mutated PDAC in both first-line and previously treated settings. The dual ON/OFF mechanism targeting both active and inactive KRAS G12D states distinguishes VS-7375 from ON-only inhibitors and may provide deeper, more sustained responses.",
+      "post_angle": "AACR 2026: VS-7375, oral KRAS G12D dual ON/OFF inhibitor.\n\u2022 ORR 52%, DCR 100% in PDAC (n=23)\n\u2022 No DLTs\n\u2022 FDA Fast Track for 1L and 2L+ PDAC\n\nTargets both active AND inactive KRAS G12D. #PDAC #KRASG12D #AACR2026"
+    },
+    {
+      "title": "RZ-001: First RNA-Editing Therapy Shows ORR 38.5% in Hepatocellular Carcinoma Combined with Atezo/Bev (AACR 2026 Oral)",
+      "url": "https://www.manilatimes.net/2026/04/21/tmt-newswire/pr-newswire/rznomics-reports-interim-clinical-data-for-rz-001-in-hepatocellular-carcinoma-at-aacr-2026-demonstrating-encouraging-efficacy-and-favorable-safety-profile/2324500",
+      "source": "AACR 2026 Oral / Rznomics",
+      "authors": "Kim YJ et al. (Seoul National University Hospital)",
+      "published": "April 19, 2026",
+      "score": 9,
+      "score_rationale": "AACR oral presentation (7) + first-in-class RNA-editing therapy (+1) + HCC relevance (+1)",
+      "summary": "Rznomics presented interim data from the Phase 1/2 trial of RZ-001, a first-in-class trans-splicing ribozyme-based RNA-editing therapy, combined with atezolizumab and bevacizumab in treatment-naive hepatocellular carcinoma patients ineligible for or refractory to TACE at AACR 2026 (oral presentation, April 19). The combination achieved a confirmed ORR of 38.5% (unconfirmed 46.2%) by RECIST v1.1, with a favorable safety profile. RZ-001 has both FDA Orphan Drug and Fast Track Designations for HCC. This represents the first clinical demonstration of RNA-editing therapy in solid tumors and introduces a novel modality for liver cancer treatment.",
+      "post_angle": "AACR 2026 Oral: RZ-001, first RNA-editing therapy in cancer.\n\u2022 ORR 38.5% (confirmed) in 1L HCC\n\u2022 Combined with atezo/bev\n\u2022 FDA Orphan Drug + Fast Track\n\nNovel trans-splicing ribozyme platform. RNA editing enters oncology. #HCC #LiverCancer #AACR2026"
+    },
+    {
+      "title": "AACR 2026 Plenary: Early-Onset Colorectal Cancer Now Leading Cancer Death in Adults Under 50",
+      "url": "https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/cancer-institute-researchers-present-key-findings-at-aacr",
+      "source": "AACR 2026 Plenary / Mass General Brigham",
+      "authors": "Chan AT (Mass General Brigham Cancer Institute)",
+      "published": "April 21, 2026",
+      "score": 9,
+      "score_rationale": "AACR plenary session (8) + direct CRC relevance (+1)",
+      "summary": "In today's AACR 2026 plenary session \"Early-onset Cancers: Why Are More Young Adults Getting Cancer?\", Andrew T. Chan, MD, MPH, Director of Cancer Epidemiology at Mass General Brigham, presented \"Early-onset colorectal cancer: Advancing correlation to causation to prevention.\" CRC has become the leading cause of cancer death in US adults under age 50, with incidence rising sharply since the 1990s. Chan reviewed established risk factors (obesity, Western diet, sedentary lifestyle, antibiotic use in early life), emerging microbiome-mediated mechanisms, and strategies for moving from epidemiologic correlation to causal understanding and prevention. The session highlighted the urgent need for personalized screening approaches in younger populations.",
+      "post_angle": "AACR 2026 Plenary (TODAY): Early-onset CRC is now the #1 cancer killer in US adults under 50.\n\nAndrew Chan (MGH) reviewed:\n\u2022 Rising incidence since the 1990s\n\u2022 Risk factors: diet, obesity, microbiome\n\u2022 Path from correlation to prevention\n\nWe must act. #EarlyOnsetCRC #AACR2026 #CRC"
+    }
+  ],
+  "additional": [
+    {
+      "title": "H. pylori Screen-and-Treat Programs for Gastric Cancer Prevention \u2014 IARC Working Group Report",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMsb2515372",
+      "source_line": "NEJM / IARC Working Group \u2014 H. pylori eradication reduces gastric cancer risk (RR 0.64). NNT 228. Recommends population-based screening in intermediate-to-high-risk areas (\u226510 cases/100,000)."
+    },
+    {
+      "title": "Zoldonrasib KRAS G12D Plenary: ORR 52%, mPFS 11.1 mo in NSCLC; FDA Breakthrough Therapy",
+      "url": "https://www.aacr.org/about-the-aacr/newsroom/news-releases/investigational-krason-inhibitor-zoldonrasib-showed-effective-and-durable-responses-in-patients-with-advanced-g12d-mutated-lung-cancer/",
+      "source_line": "AACR 2026 Plenary / Revolution Medicines \u2014 RAS(ON) G12D inhibitor zoldonrasib: ORR 52%, mPFS 11.1 mo in NSCLC. KRAS G12D is the most common PDAC mutation (40%), making this pipeline highly GI-relevant."
+    },
+    {
+      "title": "GLP-1 Receptor Agonists Reduce Colorectal Cancer Risk by 36% Versus Aspirin",
+      "url": "https://www.asco.org/about-asco/press-center/news-releases/glp-1-receptor-agonists-may-help-reduce-risk-developing-colorectal-cancer",
+      "source_line": "ASCO GI 2026 \u2014 Real-world study of 281,656 patients: GLP-1 RAs (semaglutide, liraglutide, dulaglutide) reduced CRC risk by 36% vs aspirin regardless of obesity/diabetes status."
+    },
+    {
+      "title": "Muzastotug Combination Shows 66.7% ORR in Hepatocellular Carcinoma (AACR 2026)",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/adagene-presents-two-posters-aacr-200100813.html",
+      "source_line": "AACR 2026 Poster / Adagene \u2014 Muzastotug backbone combination therapy demonstrates 66.7% ORR in HCC, highlighting masked anti-CTLA-4 as a potential new HCC approach."
+    },
+    {
+      "title": "UCLA: KRAS G12D Inhibition Boosts mRNA Immunotherapy in Pancreatic Cancer (Preclinical)",
+      "url": "https://www.uclahealth.org/news/release/aacr-targeted-drug-delivery-colorectal-cancer-covid-19s",
+      "source_line": "AACR 2026 / UCLA \u2014 Preclinical data showing KRAS G12D targeted inhibition enhances tumor immune recognition and mRNA vaccine responses in PDAC models."
+    },
+    {
+      "title": "Cardiff Oncology: Onvansertib PLK1 Inhibitor + HER2-ADC Preclinical Data in CRC (AACR 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/04/17/3276475/0/en/Cardiff-Oncology-Presents-Preclinical-Data-on-its-PLK1-Inhibitor-Onvansertib-in-Combination-with-a-HER2-Targeted-ADC-at-the-2026-AACR-Annual-Meeting.html",
+      "source_line": "AACR 2026 Poster / Cardiff Oncology \u2014 PLK1 inhibitor onvansertib combined with HER2-targeted ADC shows enhanced antitumor activity in CRC preclinical models."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 \u2014 Hook",
+      "text": "\ud83e\uddec GI Oncology Digest \u2014 April 21, 2026\nAACR 2026 Week \u2014 Day 5 \ud83c\udf0e\n\nAspirin halves CRC recurrence in PI3K-mutant patients (NEJM), T-DXd extends survival in HER2+ mCRC, a new KRAS G12D inhibitor hits 52% ORR in PDAC, and RNA-editing therapy enters HCC.\n\nPlus: Today's plenary on early-onset CRC.\n\nA thread \ud83e\uddf5\ud83d\udc47\n\n#GIOnc #AACR2026 #CancerResearch"
+    },
+    {
+      "label": "Post 2 \u2014 #1 ALASCCA Aspirin CRC",
+      "text": "\ud83d\udd25 #1: ALASCCA Phase III (NEJM)\n\nAspirin 160mg daily \u00d7 3 years in PI3K-altered stage I\u2013III CRC:\n\n\u2022 3-year recurrence: 7.7% vs 14.1% (HR 0.49, p=0.04)\n\u2022 PIK3CA hotspot mutations (exon 9/20)\n\u2022 3,500+ patients across 33 hospitals\n\nFirst biomarker-guided adjuvant aspirin trial. $0.05/day precision prevention. This changes practice.\n\n#CRC #PrecisionMedicine #NEJM",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2504650"
+    },
+    {
+      "label": "Post 3 \u2014 #2 T-DXd HER2+ mCRC",
+      "text": "\ud83d\udcca #2: T-DXd Real-World Survival in HER2+ MSS mCRC (AACR 2026)\n\nRoswell Park | Abstract 1303 | n=11,112\n\n\u2022 5-year OS: 58% (T-DXd) vs 49% (standard chemo)\n\u2022 Benefit strongest with earlier use\n\u2022 Largest RWD study confirming clinical trial benefit\n\nDon't wait until late lines. HER2 testing matters in mCRC.\n\n#CRC #HER2 #AACR2026",
+      "url": "https://www.roswellpark.org/newsroom/202604-aacr-2026-real-world-data-show-targeted-therapy-extends-survival-aggressive-form"
+    },
+    {
+      "label": "Post 4 \u2014 #3 VS-7375 KRAS G12D PDAC",
+      "text": "\ud83e\udde9 #3: VS-7375 \u2014 Oral KRAS G12D Dual ON/OFF Inhibitor (AACR 2026)\n\nVerastem / GenFleet | Phase 1/2 in PDAC\n\n\u2022 ORR 52% (n=23)\n\u2022 DCR 100%\n\u2022 No dose-limiting toxicities\n\u2022 FDA Fast Track for 1L and 2L+ PDAC\n\nTargets both active AND inactive KRAS G12D \u2014 deeper, more sustained regression vs ON-only inhibitors. KRAS G12D is the most common PDAC mutation (40%).\n\n#PDAC #KRASG12D #AACR2026",
+      "url": "https://investor.verastem.com/news-releases/news-release-details/verastem-oncology-announces-encouraging-preliminary-data-ongoing/"
+    },
+    {
+      "label": "Post 5 \u2014 #4 RZ-001 HCC",
+      "text": "\ud83e\uddea #4: RZ-001 \u2014 First RNA-Editing Therapy in Cancer (AACR 2026 Oral)\n\nRznomics | Seoul National University Hospital\n\n\u2022 ORR 38.5% (confirmed) in 1L HCC\n\u2022 Combined with atezolizumab + bevacizumab\n\u2022 FDA Orphan Drug + Fast Track\n\nTrans-splicing ribozyme platform \u2014 a completely new modality enters oncology. RNA editing has arrived.\n\n#HCC #LiverCancer #RNAEditing #AACR2026",
+      "url": "https://www.manilatimes.net/2026/04/21/tmt-newswire/pr-newswire/rznomics-reports-interim-clinical-data-for-rz-001-in-hepatocellular-carcinoma-at-aacr-2026-demonstrating-encouraging-efficacy-and-favorable-safety-profile/2324500"
+    },
+    {
+      "label": "Post 6 \u2014 #5 Early-Onset CRC",
+      "text": "\ud83c\udfe5 #5: AACR 2026 Plenary (TODAY): Early-Onset CRC\n\nAndrew Chan, MD | Mass General Brigham\n\nCRC is now the #1 cancer killer in US adults under 50.\n\n\u2022 Incidence rising sharply since the 1990s\n\u2022 Risk factors: Western diet, obesity, microbiome shifts, early-life antibiotics\n\u2022 Moving from correlation to causation to prevention\n\nScreening age was lowered to 45. Should it go lower?\n\n#EarlyOnsetCRC #AACR2026 #CRC",
+      "url": "https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/cancer-institute-researchers-present-key-findings-at-aacr"
+    },
+    {
+      "label": "Post 7 \u2014 Additional Papers",
+      "text": "\ud83d\udcda Also this week at #AACR2026 and beyond:\n\n\u2022 H. pylori screen-and-treat for gastric CA prevention (NEJM/IARC)\n\u2022 Zoldonrasib KRAS G12D: ORR 52%, mPFS 11.1 mo in NSCLC \u2014 PDAC pipeline next\n\u2022 GLP-1 RAs cut CRC risk by 36% vs aspirin (n=281,656)\n\u2022 Muzastotug: 66.7% ORR in HCC\n\n\ud83d\udccb Full digest:\nhttps://allanatal.github.io/my-website/digests/digest-2026-04-21.html"
+    }
+  ]
+}

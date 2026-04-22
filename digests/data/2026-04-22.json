@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-22",
+  "date_display": "April 22, 2026",
+  "subtitle": "AACR 2026 Closing Day",
+  "feed_desc": "Autogene cevumeran mRNA vaccine 87.5% PDAC responders alive at 6 years (AACR 2026), Daraxonrasib 1L mPDAC ORR 58% combo + RASolute 303 enrolling (AACR 2026), NCCN gastric cancer v2.2026 durvalumab + tislelizumab (Guidelines), DYNAMIC-III ctDNA-guided adjuvant stage III colon cancer (Nature Medicine), BOT/BAL in treatment-refractory HCC (AACR)",
+  "papers": [
+    {
+      "title": "Autogene Cevumeran mRNA Vaccine: 87.5% of Pancreatic Cancer Vaccine Responders Alive at 6 Years (AACR 2026)",
+      "url": "https://www.mskcc.org/news/can-mrna-vaccines-fight-pancreatic-cancer-msk-clinical-researchers-are-trying-find-out",
+      "source": "AACR 2026 / Memorial Sloan Kettering",
+      "authors": "Balachandran VP et al. (MSK / BioNTech / Genentech)",
+      "published": "April 20, 2026",
+      "score": 12,
+      "score_rationale": "AACR presentation (7) + landmark 6-year survival data (+2) + novel mRNA vaccine platform (+2) + PDAC high unmet need (+1)",
+      "summary": "Vinod Balachandran, MD, presented 6-year follow-up data from the Phase 1 trial of autogene cevumeran (BNT122), an individualized mRNA neoantigen vaccine developed by BioNTech and Genentech, in resected pancreatic ductal adenocarcinoma at AACR 2026. Among 16 patients who received the vaccine post-surgery with atezolizumab and chemotherapy, 87.5% of vaccine responders (7 of 8) remained alive at 6 years versus only 25% of non-responders (2 of 8). Each vaccine was custom-made from up to 20 patient-specific neoantigens identified by tumor sequencing. Over 80% of the T-cell responses induced by the vaccine persisted through the 6-year follow-up. These results support the ongoing Phase 2 expansion and represent the longest survival data for a personalized cancer vaccine in PDAC.",
+      "post_angle": "AACR 2026: Personalized mRNA vaccine for pancreatic cancer \u2014 87.5% of vaccine responders alive at 6 YEARS (vs 25% non-responders). Autogene cevumeran (BioNTech/Genentech). T-cell responses persist for years. Phase 2 expanding. #PDAC #CancerVaccine #mRNA #AACR2026"
+    },
+    {
+      "title": "Daraxonrasib Updated Phase 1/2: ORR 58% in First-Line Metastatic PDAC with Chemotherapy; Phase 3 RASolute 303 Enrolling (AACR 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/04/21/3278575/0/en/Revolution-Medicines-to-Present-Updated-Phase-1-2-Clinical-Data-for-Daraxonrasib-in-First-Line-Metastatic-Pancreatic-Cancer-Across-Monotherapy-and-Combination-Cohorts-at-the-2026-A.html",
+      "source": "AACR 2026 / Revolution Medicines",
+      "authors": "Revolution Medicines",
+      "published": "April 21, 2026",
+      "score": 11,
+      "score_rationale": "AACR presentation (7) + ORR 58% in 1L PDAC (+2) + Phase 3 initiated (+1) + RAS(ON) mechanism (+1)",
+      "summary": "Revolution Medicines presented updated Phase 1/2 clinical data for daraxonrasib (RMC-6236) in previously untreated metastatic PDAC at AACR 2026 on April 21. Daraxonrasib combined with gemcitabine/nab-paclitaxel achieved a confirmed ORR of 58% with a 6-month PFS estimate of 84%. Daraxonrasib monotherapy showed ORR of 47% and 6-month PFS of 71%. These data support the Phase 3 RASolute 303 trial, which began enrolling patients on April 2, 2026, evaluating daraxonrasib monotherapy and combination versus standard gemcitabine/nab-paclitaxel in first-line mPDAC. This follows the RASolute 302 Phase 3 success in 2L+ PDAC (mOS 13.2 vs 6.7 mo, HR 0.40).",
+      "post_angle": "AACR 2026: Daraxonrasib 1L mPDAC updated data.\n\n\u2022 Combo + GnP: ORR 58%, 6-mo PFS 84%\n\u2022 Monotherapy: ORR 47%, 6-mo PFS 71%\n\u2022 Phase 3 RASolute 303 now enrolling\n\nAfter doubling OS in 2L (RASolute 302), now targeting frontline. RAS(ON) revolution continues. #PDAC #KRAS #AACR2026"
+    },
+    {
+      "title": "NCCN Gastric Cancer Guidelines v2.2026: Durvalumab Perioperative (Category 1) and Tislelizumab First-Line Added",
+      "url": "https://oncodaily.com/new-paper-alert/nccn-2026-updates-gastric-esophageal",
+      "source": "NCCN Guidelines Update",
+      "authors": "NCCN Gastric Cancer Panel",
+      "published": "April 2026",
+      "score": 10,
+      "score_rationale": "NCCN guideline update (7) + multiple category 1 changes (+2) + universal PD-L1 testing (+1)",
+      "summary": "The NCCN Gastric Cancer Guidelines Version 2.2026 introduces several practice-changing updates. FLOT plus durvalumab was added as a category 1 preferred perioperative regimen for patients with PD-L1 CPS or TAPS \u22651, based on the MATTERHORN trial (now EU-approved). Fluoropyrimidine, oxaliplatin, and tislelizumab was added as a category 1 first-line recommendation for HER2-negative disease. Universal PD-L1 testing is now recommended for all newly diagnosed patients. Entrectinib, larotrectinib, and repotrectinib were added for NTRK fusion-positive tumors (category 2B). The guidelines also refine biomarker assessment to include HER2, PD-L1, MMR/MSI, and CLDN18.2.",
+      "post_angle": "NCCN Gastric Cancer v2.2026 updates:\n\n\u2022 FLOT + durvalumab \u2192 Category 1 perioperative (PD-L1+)\n\u2022 Tislelizumab + chemo \u2192 Category 1 first-line (HER2\u2013)\n\u2022 Universal PD-L1 testing for ALL new diagnoses\n\u2022 CLDN18.2 now in biomarker panel\n\nIO is standard of care in gastric cancer. #GastricCancer #NCCN #GIOnc"
+    },
+    {
+      "title": "DYNAMIC-III: ctDNA-Guided Adjuvant Chemotherapy De-Escalation in Stage III Colon Cancer (Nature Medicine)",
+      "url": "https://www.nature.com/articles/s41591-025-04030-w",
+      "source": "Nature Medicine / AGITG",
+      "authors": "Tie J et al. (Peter MacCallum Cancer Centre)",
+      "published": "2025",
+      "score": 10,
+      "score_rationale": "Nature Medicine (9) + Phase 2/3 RCT (+3) \u2013 non-inferiority not met (\u20132)",
+      "summary": "The DYNAMIC-III trial, a multicenter randomized Phase 2/3 study published in Nature Medicine, evaluated ctDNA-guided adjuvant chemotherapy in 968 patients with stage III colon cancer. Patients were randomized to ctDNA-guided or standard management. In the ctDNA-guided arm, 72.5% tested ctDNA-negative and received de-escalated therapy, resulting in 90% overall de-escalation. This markedly reduced oxaliplatin use (34.8% vs 88.6%), grade \u22653 adverse events (6.2% vs 10.6%), and hospitalizations (8.5% vs 13.2%). However, non-inferiority in 3-year RFS was not achieved (85.3% vs 88.1%). A pre-planned subgroup analysis suggested de-escalation may be non-inferior in clinical low-risk patients (T1-3 N1). This trial shapes the ctDNA-guided adjuvant landscape discussed at the AACR 2026 plenary.",
+      "post_angle": "DYNAMIC-III (Nature Medicine): ctDNA-guided adjuvant chemo in stage III colon cancer (n=968).\n\n\u2022 90% of patients were de-escalated\n\u2022 Oxaliplatin use: 35% vs 89%\n\u2022 Grade 3+ AEs halved\n\u2022 Non-inferiority not met overall BUT promising in low-risk (T1-3 N1)\n\nctDNA is reshaping adjuvant CRC. #CRC #ctDNA #MRD"
+    },
+    {
+      "title": "Botensilimab + Balstilimab in Treatment-Refractory Hepatocellular Carcinoma: Durable Responses Post-IO (AACR Late-Breaking)",
+      "url": "https://www.onclive.com/view/botensilimab-plus-balstilimab-elicits-durable-responses-in-treatment-refractory-hcc",
+      "source": "AACR Late-Breaking / Agenus",
+      "authors": "Agenus Inc.",
+      "published": "April 2026",
+      "score": 9,
+      "score_rationale": "AACR late-breaking abstract (7) + post-IO refractory HCC setting (+1) + durable responses (+1)",
+      "summary": "A Phase 1 late-breaking abstract (LB365) presented data on botensilimab (Fc-enhanced anti-CTLA-4) plus balstilimab (anti-PD-1) in treatment-refractory HCC patients (n=18), all previously exposed to PD-(L)1 agents and 63% to prior TKIs. The combination achieved ORR of 17%, disease control rate of 72%, and clinical benefit rate of 50%. Median overall survival was 12.3 months with median PFS of 4.4 months. Crucially, the median duration of response was not reached (>9.8 months), suggesting durable benefit. No treatment-related deaths occurred. This data in the post-atezo/bev refractory HCC population addresses a critical unmet need where no standard second-line IO exists.",
+      "post_angle": "AACR Late-Breaking: BOT/BAL in IO-refractory HCC (n=18).\n\nAll patients had prior PD-(L)1 therapy:\n\u2022 ORR 17%, DCR 72%\n\u2022 Median OS 12.3 mo\n\u2022 Duration of response: NOT REACHED\n\nDurable benefit after atezo/bev failure. A critical unmet need. #HCC #Immunotherapy #AACR2026"
+    }
+  ],
+  "additional": [
+    {
+      "title": "IM156 + Chemotherapy Overcomes Resistance in Pancreatic Cancer Preclinical Models (AACR 2026, MD Anderson)",
+      "url": "https://www.mdanderson.org/cancerwise/top-3-ut-md-anderson-abstracts-at-aacr-2026.h00-159854556.html",
+      "source_line": "AACR 2026 / MD Anderson \u2014 OxPhos inhibitor IM156 + chemo overcomes chemoresistance and prolongs survival in PDAC models. Phase 1b trial underway."
+    },
+    {
+      "title": "KDM2A Identified as Epigenetic Driver of Esophageal Cancer Progression via Spatial Transcriptomics (AACR 2026)",
+      "url": "https://www.mdanderson.org/newsroom/research-newsroom/aacr-clinical-trial-feature-advances-across-cancer-care.h00-159854556.html",
+      "source_line": "AACR 2026 / MD Anderson \u2014 Spatial transcriptomics reveals KDM2A as key chromatin remodeler in esophageal cancer, offering new therapeutic target for early intervention."
+    },
+    {
+      "title": "RASolute 303 Phase 3: First Patients Treated with Daraxonrasib in First-Line Metastatic PDAC",
+      "url": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-begins-treating-patients-phase-3-rasolute/",
+      "source_line": "Revolution Medicines \u2014 Global Phase 3 RASolute 303 began enrolling April 2, 2026. Daraxonrasib mono and combo vs GnP in 1L mPDAC. Primary endpoints: PFS and OS."
+    },
+    {
+      "title": "Personalis Highlights Ultrasensitive ctDNA Monitoring and Therapy Resistance Tracking (AACR 2026)",
+      "url": "https://www.biospace.com/press-releases/personalis-highlights-clinical-impact-of-ultrasensitive-ctdna-monitoring-and-new-therapy-resistance-tracking-at-aacr-2026",
+      "source_line": "AACR 2026 / Personalis \u2014 Next-gen ctDNA monitoring platform for MRD detection and real-time resistance tracking across solid tumors including CRC."
+    },
+    {
+      "title": "IKF-035/ABC-HCC: Atezolizumab + Bevacizumab vs TACE in Intermediate-Stage HCC (Phase IIIb)",
+      "url": "https://binaytara.org/cancernews/article/2026-highlights-of-asco-gastrointestinal-cancer-symposium",
+      "source_line": "ASCO GI 2026 \u2014 Randomized Phase IIIb trial comparing systemic IO vs locoregional therapy in intermediate HCC, challenging the TACE paradigm."
+    },
+    {
+      "title": "AACR 2026 Meeting Wrap-Up: 6,000+ Presentations, AI Revolution, Cancer Vaccines, and Precision Medicine",
+      "url": "https://www.genengnews.com/topics/cancer/aacr-2026-chairs-identify-themes-and-highlights-from-the-conference/",
+      "source_line": "AACR 2026 \u2014 Final day of the 117th meeting. Key themes: AI in cancer research, personalized neoantigen vaccines, RAS-targeted therapies, and early-onset cancer prevention."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 \u2014 Hook",
+      "text": "\ud83e\uddec GI Oncology Digest \u2014 April 22, 2026\nAACR 2026 Closing Day \ud83c\udf0e\n\nmRNA vaccine keeps 87.5% of PDAC responders alive at 6 YEARS. Daraxonrasib hits 58% ORR in frontline PDAC. NCCN adds durvalumab + tislelizumab for gastric cancer. ctDNA reshapes adjuvant CRC.\n\nClosing out an incredible #AACR2026 \ud83e\uddf5\ud83d\udc47\n\n#GIOnc #CancerResearch"
+    },
+    {
+      "label": "Post 2 \u2014 #1 mRNA Vaccine PDAC",
+      "text": "\ud83d\udd25 #1: Personalized mRNA Vaccine in Pancreatic Cancer \u2014 6-Year Follow-Up (AACR 2026)\n\nBalachandran et al. | MSK / BioNTech / Genentech\n\n\u2022 87.5% of vaccine responders alive at 6 years\n\u2022 Only 25% of non-responders alive\n\u2022 T-cell responses persist >6 years\n\u2022 Custom neoantigen vaccine (up to 20 targets per patient)\n\nThis is what precision oncology looks like. Phase 2 expanding.\n\n#PDAC #mRNA #CancerVaccine #AACR2026",
+      "url": "https://www.mskcc.org/news/can-mrna-vaccines-fight-pancreatic-cancer-msk-clinical-researchers-are-trying-find-out"
+    },
+    {
+      "label": "Post 3 \u2014 #2 Daraxonrasib 1L PDAC",
+      "text": "\ud83d\udcca #2: Daraxonrasib in First-Line mPDAC \u2014 Updated Phase 1/2 (AACR 2026)\n\nRevolution Medicines | Presented April 21\n\n\u2022 Combo (+ GnP): ORR 58%, 6-mo PFS 84%\n\u2022 Monotherapy: ORR 47%, 6-mo PFS 71%\n\u2022 Phase 3 RASolute 303 now enrolling (started April 2)\n\nAfter doubling OS in 2L (RASolute 302, HR 0.40), now targeting frontline. The RAS(ON) revolution in PDAC is real.\n\n#PDAC #KRAS #AACR2026",
+      "url": "https://www.globenewswire.com/news-release/2026/04/21/3278575/0/en/Revolution-Medicines-to-Present-Updated-Phase-1-2-Clinical-Data-for-Daraxonrasib-in-First-Line-Metastatic-Pancreatic-Cancer-Across-Monotherapy-and-Combination-Cohorts-at-the-2026-A.html"
+    },
+    {
+      "label": "Post 4 \u2014 #3 NCCN Gastric Cancer",
+      "text": "\ud83d\udcd6 #3: NCCN Gastric Cancer Guidelines v2.2026\n\nMajor updates:\n\u2022 FLOT + durvalumab \u2192 Category 1 perioperative (PD-L1+)\n\u2022 Tislelizumab + chemo \u2192 Category 1 first-line (HER2\u2013)\n\u2022 Universal PD-L1 testing for ALL newly diagnosed patients\n\u2022 CLDN18.2 added to biomarker panel\n\nIO is now the standard of care in gastric cancer across settings. Test PD-L1 upfront.\n\n#GastricCancer #NCCN #GIOnc",
+      "url": "https://oncodaily.com/new-paper-alert/nccn-2026-updates-gastric-esophageal"
+    },
+    {
+      "label": "Post 5 \u2014 #4 DYNAMIC-III ctDNA CRC",
+      "text": "\ud83e\uddea #4: DYNAMIC-III \u2014 ctDNA-Guided Adjuvant in Stage III Colon Cancer (Nature Medicine)\n\nTie J et al. | Phase 2/3 | n=968\n\n\u2022 90% of patients de-escalated treatment\n\u2022 Oxaliplatin use: 35% vs 89%\n\u2022 Grade 3+ AEs halved (6% vs 11%)\n\u2022 Non-inferiority not met overall\n\u2022 BUT: promising in low-risk T1-3 N1 subgroup\n\nctDNA isn't ready to replace clinical staging yet \u2014 but it's getting close.\n\n#CRC #ctDNA #MRD #PrecisionMedicine",
+      "url": "https://www.nature.com/articles/s41591-025-04030-w"
+    },
+    {
+      "label": "Post 6 \u2014 #5 BOT/BAL HCC",
+      "text": "\ud83c\udfe5 #5: BOT/BAL in IO-Refractory HCC (AACR Late-Breaking)\n\nAgenus | Phase 1 | n=18\n\nAll patients had prior PD-(L)1 therapy:\n\u2022 ORR 17%, DCR 72%\n\u2022 Median OS 12.3 months\n\u2022 Duration of response: NOT REACHED (>9.8 mo)\n\u2022 No treatment-related deaths\n\nDurable benefit after atezo/bev failure. There's no approved 2L IO in HCC \u2014 this fills a real gap.\n\n#HCC #LiverCancer #Immunotherapy",
+      "url": "https://www.onclive.com/view/botensilimab-plus-balstilimab-elicits-durable-responses-in-treatment-refractory-hcc"
+    },
+    {
+      "label": "Post 7 \u2014 Additional + Wrap-Up",
+      "text": "\ud83d\udcda Also from #AACR2026 closing day:\n\n\u2022 IM156 overcomes PDAC chemoresistance (MD Anderson)\n\u2022 KDM2A: new esophageal cancer target via spatial transcriptomics\n\u2022 RASolute 303 Phase 3 enrolling for 1L PDAC\n\u2022 Ultrasensitive ctDNA monitoring advances (Personalis)\n\nWhat a week. AACR 2026 delivered.\n\n\ud83d\udccb Full digest:\nhttps://allanatal.github.io/my-website/digests/digest-2026-04-22.html"
+    }
+  ]
+}

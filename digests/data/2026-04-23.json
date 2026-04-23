@@ -1,0 +1,131 @@
+{
+  "date": "2026-04-23",
+  "date_display": "April 23, 2026",
+  "subtitle": "Post-AACR 2026 Edition",
+  "feed_desc": "Zolbetuximab + FOLFOX + nivolumab CLDN18.2+ gastric cancer mPFS 18 mo (Nature Medicine), Givastomig CLDN18.2 x 4-1BB ORR 77% FDA accelerated path (Phase 1b), Lancet Commission on global HCC burden (Lancet), Amivantamab + chemo durable 1L responses in WT mCRC (OrigAMI-1), Pelareorep FDA Fast Track KRAS-mut MSS mCRC",
+  "papers": [
+    {
+      "title": "Zolbetuximab + mFOLFOX6 + Nivolumab: Triplet Achieves mPFS 18.0 Months in CLDN18.2-High Gastric Cancer (Nature Medicine)",
+      "url": "https://www.nature.com/articles/s41591-026-04306-9",
+      "source": "Nature Medicine / ILUSTRO Phase 2",
+      "authors": "Shitara K et al.",
+      "published": "April 2026",
+      "score": 12,
+      "score_rationale": "Nature Medicine (9) + Phase 2 randomized data (+2) + novel CLDN18.2 + IO + chemo triplet (+1)",
+      "summary": "The ILUSTRO Phase 2 trial (cohort 4B, n=71) evaluated first-line zolbetuximab (anti-CLDN18.2) combined with mFOLFOX6 and nivolumab in CLDN18.2-positive, HER2-negative metastatic gastric or gastroesophageal junction adenocarcinoma, published in Nature Medicine. At median follow-up of 11.5 months, overall median PFS was 14.8 months (95% CI 8.3\u2013NE) with 12-month PFS rate of 59.1%. In CLDN18.2-high patients (n=59), median PFS reached 18.0 months with 12-month PFS of 64.2%. The combination was well-tolerated. These results support the rationale for combining CLDN18.2 targeting with immune checkpoint inhibition and chemotherapy, and a Phase 3 trial is planned. Lead author Kohei Shitara noted particular benefit in PD-L1 CPS \u22651 patients.",
+      "post_angle": "Nature Medicine: Zolbetuximab + FOLFOX + nivolumab in CLDN18.2+ gastric cancer. mPFS 18.0 mo in CLDN18.2-high pts (64% at 12 mo). CLDN18.2 + IO + chemo triplet. Phase 3 coming. #GastricCancer #CLDN182 #PrecisionMedicine"
+    },
+    {
+      "title": "Givastomig (CLDN18.2 x 4-1BB Bispecific): ORR 77%, mPFS 16.9 Months in 1L Gastric Cancer; FDA Accelerated Approval Pathway Confirmed",
+      "url": "https://www.targetedonc.com/view/fda-confirms-potential-accelerated-path-for-givastomig-in-ge-cancer",
+      "source": "FDA / NovaBridge Biosciences",
+      "authors": "NovaBridge Biosciences",
+      "published": "March\u2013April 2026",
+      "score": 11,
+      "score_rationale": "FDA accelerated pathway (8) + Phase 1b ORR 77% (+2) + novel CLDN18.2 x 4-1BB mechanism (+1)",
+      "summary": "NovaBridge Biosciences reported Phase 1b dose-expansion data for givastomig, a first-in-class CLDN18.2 x 4-1BB bispecific antibody, combined with immunochemotherapy in first-line CLDN18.2-positive, HER2-negative, PD-L1-positive metastatic gastric cancer. Among 52 efficacy-evaluable patients, ORR was 77% at the 8 mg/kg dose with median PFS of 16.9 months and 6-month PFS rate of 82%. The FDA confirmed eligibility for an accelerated approval pathway in a productive Type B meeting (March 2026). A registrational Phase 3 trial is planned for Q4 2026 with ORR as primary endpoint. The CLDN18.2 x 4-1BB mechanism provides dual tumor targeting and T-cell costimulation, differentiating from standard anti-CLDN18.2 approaches.",
+      "post_angle": "Givastomig: CLDN18.2 x 4-1BB bispecific in 1L gastric cancer.\n\n\u2022 ORR 77% at 8 mg/kg\n\u2022 mPFS 16.9 months\n\u2022 FDA: accelerated approval pathway confirmed\n\u2022 Phase 3 planned Q4 2026\n\nCLDN18.2 targeting gets a new dimension \u2014 dual tumor targeting + T-cell costimulation. #GastricCancer #CLDN182"
+    },
+    {
+      "title": "Lancet Commission on Addressing the Global Hepatocellular Carcinoma Burden: From Prevention to Treatment",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01042-6/abstract",
+      "source": "The Lancet / Global HCC Commission",
+      "authors": "Lancet HCC Commission",
+      "published": "April 2026",
+      "score": 10,
+      "score_rationale": "Lancet (9) + comprehensive global framework (+1)",
+      "summary": "The Lancet Commission on hepatocellular carcinoma presents a comprehensive global framework addressing the entire HCC continuum from prevention through treatment. The Commission outlines strategies including: universal HBV vaccination scale-up, HCV elimination through direct-acting antivirals, MASLD/MASH screening in high-risk metabolic populations, HCC surveillance optimization with biomarker-enhanced protocols, and treatment algorithm updates incorporating recent systemic therapy advances (atezo/bev, durvalumab/tremelimumab, TACE combinations). The Commission emphasizes the shifting epidemiology of HCC, with MASLD/MASH now surpassing viral hepatitis as the leading etiology in Western countries, and calls for integrated care pathways across hepatology and oncology.",
+      "post_angle": "The Lancet Commission on HCC: comprehensive global framework.\n\n\u2022 MASLD/MASH now leading HCC cause in the West\n\u2022 HBV/HCV elimination strategies\n\u2022 Biomarker-enhanced surveillance\n\u2022 Updated systemic therapy algorithms\n\nPrevention \u2192 screening \u2192 treatment. The full continuum. #HCC #LiverCancer #Lancet"
+    },
+    {
+      "title": "Amivantamab + Chemotherapy Shows Durable First-Line Responses in RAS/BRAF Wild-Type Metastatic CRC (OrigAMI-1 Updated)",
+      "url": "https://www.investor.jnj.com/investor-news/news-details/2026/RYBREVANT-amivantamab-vmjw-longer-term-results-show-promising-and-durable-responses-in-difficult-to-treat-colorectal-cancer/default.aspx",
+      "source": "ASCO GI 2026 / Johnson & Johnson",
+      "authors": "Arnold D et al.",
+      "published": "January 2026 (updated April 2026)",
+      "score": 9,
+      "score_rationale": "ASCO GI presentation (6) + durable 1L responses (+2) + novel EGFR-MET bispecific in CRC (+1)",
+      "summary": "Updated longer-term results from the OrigAMI-1 Phase 1b/2 study of amivantamab (EGFR-MET bispecific antibody) combined with FOLFOX or FOLFIRI chemotherapy in RAS/BRAF wild-type metastatic colorectal cancer showed promising and durable first-line responses with low treatment discontinuation rates. Amivantamab provides simultaneous EGFR and MET pathway blockade with immune cell-directing activity, offering a differentiated mechanism from standard anti-EGFR monoclonal antibodies (cetuximab, panitumumab). The Phase 3 OrigAMI-3 trial is being planned to evaluate amivantamab combinations in frontline mCRC. This bispecific approach may overcome resistance mechanisms seen with conventional anti-EGFR therapy.",
+      "post_angle": "Amivantamab + chemo in RAS/BRAF WT mCRC (OrigAMI-1 updated).\n\nEGFR-MET bispecific + FOLFOX/FOLFIRI in first line:\n\u2022 Durable responses, low discontinuation\n\u2022 Dual EGFR + MET blockade + immune cell-directing\n\u2022 Phase 3 OrigAMI-3 planned\n\nBeyond cetuximab/panitumumab. #CRC #EGFR #Bispecific"
+    },
+    {
+      "title": "Pelareorep + Bevacizumab + FOLFIRI Receives FDA Fast Track for KRAS-Mutated MSS Metastatic CRC (2L)",
+      "url": "https://www.targetedonc.com/view/q1-2026-5-fda-decisions-to-watch-in-oncology",
+      "source": "FDA Fast Track Designation",
+      "authors": "Oncolytics Biotech",
+      "published": "2026",
+      "score": 8,
+      "score_rationale": "FDA Fast Track (6) + MSS CRC unmet need (+1) + novel IO combo in KRAS-mut (+1)",
+      "summary": "The FDA granted Fast Track Designation to pelareorep, an oncolytic reovirus immunotherapy, in combination with bevacizumab and FOLFIRI for second-line treatment of patients with KRAS-mutated, microsatellite-stable (MSS) metastatic colorectal cancer. MSS mCRC represents approximately 85% of mCRC and has been largely unresponsive to immune checkpoint inhibitors. KRAS-mutated MSS mCRC has particularly limited options after first-line progression. Pelareorep selectively replicates in RAS-activated tumor cells, potentially converting immunologically cold tumors into hot targets. This designation accelerates the regulatory path for a population with critical unmet need.",
+      "post_angle": "Pelareorep + bev + FOLFIRI: FDA Fast Track for KRAS-mutated MSS mCRC (2L).\n\n\u2022 Oncolytic reovirus selectively targets RAS-activated cells\n\u2022 May convert \u201ccold\u201d MSS tumors to \u201chot\u201d\n\u2022 ~85% of mCRC is MSS, KRAS-mut is the hardest subset\n\nAnother approach tackling the MSS CRC problem. #CRC #MSS #Immunotherapy"
+    }
+  ],
+  "additional": [
+    {
+      "title": "TCX-201 Achieves Complete Tumor Regressions in CRC and PDAC Preclinical Models (AACR 2026)",
+      "url": "https://www.labiotech.eu/trends-news/aacr-2026-cancer-therapeutics/",
+      "source_line": "AACR 2026 \u2014 TCX-201 candidate delivers complete tumor regressions in colorectal and pancreatic cancer preclinical models, representing a novel therapeutic approach."
+    },
+    {
+      "title": "Encorafenib + Cetuximab + mFOLFOX6 Converts to Traditional FDA Approval for 1L BRAF V600E mCRC (BREAKWATER)",
+      "url": "https://www.aacr.org/blog/2026/04/01/fda-approvals-in-oncology-january-march-2026/",
+      "source_line": "FDA \u2014 BREAKWATER regimen receives traditional (full) approval for first-line BRAF V600E mCRC, converting from prior accelerated approval."
+    },
+    {
+      "title": "Gut Microbiota Influences Chronic Sleep Deprivation-Induced CRC Progression (AACR 2026)",
+      "url": "https://www.aacr.org/blog/2026/04/22/live-updates-from-the-aacr-annual-meeting-2026-wednesday-april-22/",
+      "source_line": "AACR 2026 \u2014 Translational research demonstrates gut microbiome-mediated mechanisms linking chronic sleep deprivation to CRC progression and treatment response."
+    },
+    {
+      "title": "DYNAMIC 5-Year Follow-Up: ctDNA-Guided Adjuvant Therapy in Stage II Colon Cancer (Nature Medicine)",
+      "url": "https://www.nature.com/articles/s41591-025-03579-w",
+      "source_line": "Nature Medicine \u2014 Five-year outcomes of the landmark DYNAMIC trial confirm long-term benefit of ctDNA-guided adjuvant therapy decisions in stage II colon cancer."
+    },
+    {
+      "title": "OrigAMI-3 Phase 3 Trial Planned: Amivantamab in Frontline Metastatic Colorectal Cancer",
+      "url": "https://www.targetedonc.com/view/origami-3-trial-a-novel-approach-for-metastatic-colorectal-cancer",
+      "source_line": "Targeted Oncology \u2014 Phase 3 OrigAMI-3 will evaluate amivantamab-based combinations in first-line mCRC, building on Phase 1b/2 durable response data."
+    },
+    {
+      "title": "CLDN18.2 Targeting in Gastric Cancer: Review of Emerging Biologic Agents (2026)",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/14712598.2026.2617271",
+      "source_line": "Expert Opinion on Biological Therapy (2026) \u2014 Comprehensive review of zolbetuximab, givastomig, and next-gen CLDN18.2 agents reshaping the gastric cancer landscape."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 \u2014 Hook",
+      "text": "\ud83e\uddec GI Oncology Digest \u2014 April 23, 2026\nPost-AACR 2026 Edition \ud83c\udf0e\n\nCLDN18.2 is having a moment. Zolbetuximab triplet hits 18-mo PFS in gastric cancer. Givastomig ORR 77% with FDA accelerated path. Plus: amivantamab enters CRC, pelareorep tackles KRAS-mut MSS CRC.\n\nA thread \ud83e\uddf5\ud83d\udc47\n\n#GIOnc #CLDN182 #GastricCancer",
+      "url": ""
+    },
+    {
+      "label": "Post 2 \u2014 #1 Zolbetuximab Triplet Gastric",
+      "text": "\ud83d\udd25 #1: Zolbetuximab + FOLFOX + Nivolumab in CLDN18.2+ Gastric Cancer (Nature Medicine)\n\nILUSTRO Phase 2 | Shitara K et al.\n\n\u2022 Overall mPFS: 14.8 months\n\u2022 CLDN18.2-high: mPFS 18.0 mo, 12-mo PFS 64%\n\u2022 Well-tolerated triplet\n\u2022 Phase 3 planned\n\nFirst data combining CLDN18.2 targeting + IO + chemo. The triplet era for gastric cancer is here.\n\n#GastricCancer #NatureMedicine",
+      "url": "https://www.nature.com/articles/s41591-026-04306-9"
+    },
+    {
+      "label": "Post 3 \u2014 #2 Givastomig Gastric",
+      "text": "\ud83c\udfaf #2: Givastomig \u2014 CLDN18.2 x 4-1BB Bispecific in 1L Gastric Cancer\n\nNovaBridge | Phase 1b dose expansion\n\n\u2022 ORR 77% at 8 mg/kg (n=26)\n\u2022 mPFS 16.9 months\n\u2022 6-mo PFS: 82%\n\u2022 FDA: accelerated approval pathway CONFIRMED\n\u2022 Phase 3 planned Q4 2026\n\nDual tumor targeting + T-cell costimulation. Not just binding CLDN18.2 \u2014 activating immunity through it.\n\n#GastricCancer #CLDN182 #Bispecific",
+      "url": "https://www.targetedonc.com/view/fda-confirms-potential-accelerated-path-for-givastomig-in-ge-cancer"
+    },
+    {
+      "label": "Post 4 \u2014 #3 Lancet HCC Commission",
+      "text": "\ud83c\udf0d #3: Lancet Commission on Global HCC Burden\n\nComprehensive framework: prevention \u2192 screening \u2192 treatment.\n\n\u2022 MASLD/MASH now the leading HCC cause in the West\n\u2022 HBV/HCV elimination as prevention\n\u2022 Biomarker-enhanced surveillance protocols\n\u2022 Integrated hepatology-oncology care pathways\n\nThe epidemiology is shifting. Our approach must shift too.\n\n#HCC #LiverCancer #Lancet",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01042-6/abstract"
+    },
+    {
+      "label": "Post 5 \u2014 #4 Amivantamab CRC",
+      "text": "\ud83e\udde9 #4: Amivantamab + Chemo in RAS/BRAF WT mCRC (OrigAMI-1 Updated)\n\nJ&J | EGFR-MET bispecific + FOLFOX/FOLFIRI\n\n\u2022 Durable first-line responses\n\u2022 Low treatment discontinuation\n\u2022 Dual EGFR + MET blockade + immune cell-directing\n\u2022 Phase 3 OrigAMI-3 planned\n\nBeyond cetuximab and panitumumab: bispecific antibodies enter the CRC arena.\n\n#CRC #EGFR #Bispecific",
+      "url": "https://www.investor.jnj.com/investor-news/news-details/2026/RYBREVANT-amivantamab-vmjw-longer-term-results-show-promising-and-durable-responses-in-difficult-to-treat-colorectal-cancer/default.aspx"
+    },
+    {
+      "label": "Post 6 \u2014 #5 Pelareorep MSS CRC",
+      "text": "\ud83e\uddea #5: Pelareorep FDA Fast Track for KRAS-Mutated MSS mCRC (2L)\n\nOncolytics Biotech | Oncolytic reovirus + bev + FOLFIRI\n\n\u2022 Selectively replicates in RAS-activated tumor cells\n\u2022 Converts \u201ccold\u201d MSS tumors to \u201chot\u201d\n\u2022 ~85% of mCRC is MSS, KRAS-mut is the hardest subset\n\nYet another approach tackling the MSS CRC challenge. The field is relentless.\n\n#CRC #MSS #Immunotherapy #Oncolytics",
+      "url": "https://www.targetedonc.com/view/q1-2026-5-fda-decisions-to-watch-in-oncology"
+    },
+    {
+      "label": "Post 7 \u2014 Additional Papers",
+      "text": "\ud83d\udcda Also this week:\n\n\u2022 BREAKWATER: full FDA approval 1L BRAF V600E mCRC\n\u2022 TCX-201: complete regressions in CRC/PDAC models (AACR 2026)\n\u2022 DYNAMIC 5-yr: ctDNA-guided adjuvant stage II CRC confirmed\n\u2022 CLDN18.2 review: zolbetuximab, givastomig, and next-gen agents\n\n\ud83d\udccb Full digest:\nhttps://allanatal.github.io/my-website/digests/digest-2026-04-23.html"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-24",
+  "date_display": "April 24, 2026",
+  "subtitle": "KRAS, Bispecifics & Liquid Biopsy Edition",
+  "feed_desc": "HER2-targeted neoadjuvant therapy 75% ORR in early rectal cancer with organ preservation (AACR 2026), BBO-11818 pan-KRAS inhibitor FDA Fast Track in PDAC (FDA/NCT06917079), Pfizer PD-1\u00d7VEGF bispecific Phase 3 in 1L mCRC (NCT07222800), Ultima Genomics ppmSeq WGS-based MRD in CRC (AACR 2026), PROACTIF Y90 radioembolization mOS 21.8 mo in HCC (EClinicalMedicine)",
+  "papers": [
+    {
+      "title": "HER2-Targeted Neoadjuvant Therapy Achieves 75% Response Rate in Early-Stage Rectal Cancer \u2014 Organ Preservation on the Horizon",
+      "url": "https://www.mskcc.org/news/treating-her2-amplified-early-stage-rectal-cancer-to-improve-quality-of-life",
+      "source": "AACR 2026 / Memorial Sloan Kettering",
+      "authors": "Michael Foote, MD et al. (MSK)",
+      "published": "April 19, 2026 (AACR 2026)",
+      "score": 10,
+      "score_rationale": "Base AACR oral presentation (7) + Phase II (+2) + biomarker-guided/precision (+1)",
+      "summary": "Presented at AACR 2026, this prospective single-arm MSK trial enrolled 10 patients with locally advanced HER2-positive, RAS wild-type, pMMR rectal adenocarcinoma (70% node-positive). Treatment consisted of 6 weeks of trastuzumab + tucatinib followed by 15 weeks of trastuzumab + tucatinib + FOLFOX/CAPOX. Six of eight evaluable patients responded (75% ORR), including four clinical complete responses (50% cCR). Patients achieving cCR transitioned to active surveillance without surgery or radiation. This precision neoadjuvant approach opens a potential watch-and-wait pathway for HER2-amplified rectal cancer, a particularly aggressive subtype.",
+      "post_angle": "HER2+ rectal cancer meets precision neoadjuvant therapy. 75% ORR, 50% complete responses \u2014 and the possibility of avoiding surgery. Organ preservation through molecular targeting is the future. #CRC #RectalCancer #HER2 #AACR2026 #OrganPreservation"
+    },
+    {
+      "title": "BBO-11818: FDA Grants Fast Track Designation for First-in-Class Pan-KRAS Inhibitor in Advanced KRAS-Mutant Pancreatic Cancer",
+      "url": "https://www.globenewswire.com/news-release/2026/04/20/3277472/0/en/BBOT-Granted-U-S-FDA-Fast-Track-Designation-for-BBO-11818-for-the-Treatment-of-Adult-Patients-with-Advanced-KRAS-Mutant-Pancreatic-Ductal-Adenocarcinoma.html",
+      "source": "FDA / GlobeNewswire",
+      "authors": "BridgeBio Oncology Therapeutics (BBOT)",
+      "published": "April 20, 2026",
+      "score": 9,
+      "score_rationale": "Base FDA regulatory action (8) + biomarker-guided/precision (+1)",
+      "summary": "The FDA granted Fast Track designation to BBO-11818 for adult patients with advanced KRAS-mutant PDAC. BBO-11818 is a first-in-class oral non-covalent small molecule targeting both active (ON) and inactive (OFF) KRAS states, providing pan-KRAS inhibition across G12D, G12V, and other mutations \u2014 not limited to G12C. Per ClinicalTrials.gov (NCT06917079), the Phase 1a/1b KONQUER-101 trial is enrolling 387 patients across PDAC, CRC, and NSCLC with combination arms including pembrolizumab, cetuximab, FOLFOX, and NALIRIFOX. Monotherapy has demonstrated confirmed partial responses in PDAC. Updated data expected H2 2026.",
+      "post_angle": "Pan-KRAS is the holy grail for PDAC. BBO-11818 hits KRAS in both ON and OFF states \u2014 covering G12D, G12V, and beyond. 387 patients enrolling with combo arms. Fast Track = FDA urgency. #PDAC #KRAS #PancreaticCancer #FDA #PrecisionMedicine"
+    },
+    {
+      "title": "Pfizer PF-08634404 (PD-1\u00d7VEGF Bispecific) Enters Phase 3 Symbiotic-GI-03 Trial in First-Line Metastatic Colorectal Cancer",
+      "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-showcases-oncology-innovation-and-next-generation",
+      "source": "Pfizer / BusinessWire",
+      "authors": "Pfizer Inc.",
+      "published": "April 21, 2026",
+      "score": 9,
+      "score_rationale": "Base Press Release Phase 3 (6) + Phase III RCT (+3)",
+      "summary": "Pfizer announced its Phase 3 Symbiotic-GI-03 trial (NCT07222800) evaluating PF-08634404, a novel bispecific antibody targeting both PD-1 and VEGF, combined with chemotherapy versus bevacizumab plus chemotherapy in first-line mCRC (non-BRAF-mutated, microsatellite-stable). Per ClinicalTrials.gov, the trial enrolls 800 patients across 156 sites, with primary completion expected March 2030. PF-08634404 combines immune checkpoint inhibition and anti-angiogenesis in a single molecule. Updated Phase 2 data will be presented at ASCO 2026 (May 29 \u2013 June 2).",
+      "post_angle": "One molecule, two mechanisms. Pfizer bets big on PD-1\u00d7VEGF bispecific vs bevacizumab in 1L mCRC. 800 patients, 156 sites. If this works, it rewrites the frontline playbook. #CRC #ColorectalCancer #VEGF #ASCO2026"
+    },
+    {
+      "title": "Ultima Genomics ppmSeq: Whole-Genome Sequencing MRD Detection at Single-Digit Parts-Per-Million Sensitivity in Colorectal Cancer",
+      "url": "https://www.prnewswire.com/news-releases/ultima-genomics-releases-groundbreaking-tracerx-mrd-data-showing-ppmseq-performance-and-unveils-clinical-progress-of-whole-genome-sequencing-at-inaugural-global-mrd-symposium-at-aacr-2026-302745369.html",
+      "source": "AACR 2026 / PR Newswire",
+      "authors": "Ultima Genomics",
+      "published": "April 17-22, 2026 (AACR 2026)",
+      "score": 8,
+      "score_rationale": "Base AACR oral presentation (7) + biomarker-guided/precision (+1)",
+      "summary": "At AACR 2026, Ultima Genomics presented six abstracts (including oral and plenary sessions) on its ppmSeq whole-genome sequencing technology for MRD detection. A validation pilot of 50 plasma samples achieved ctDNA detection at low single-digit parts-per-million sensitivity using tumor-specific variants from prior WGS \u2014 without customized assay panels. A multicenter prospective Netherlands Cancer Institute study is monitoring ctDNA-based treatment response in ~500 CRC patients on systemic chemotherapy. This panel-free approach could democratize MRD monitoring for every colon cancer patient.",
+      "post_angle": "MRD detection without custom panels? ppmSeq achieves parts-per-million ctDNA sensitivity using whole-genome sequencing. 500 CRC patients in prospective study. The future of surveillance just got more accessible. #MRD #ctDNA #CRC #AACR2026 #LiquidBiopsy"
+    },
+    {
+      "title": "PROACTIF: Y90 Radioembolization with Personalized Dosimetry Achieves 21.8-Month Median OS in 989 HCC Patients \u2014 Dose-Survival Relationship Confirmed",
+      "url": "https://doi.org/10.1016/j.eclinm.2026.103884",
+      "source": "EClinicalMedicine (Lancet family)",
+      "authors": "Guiu B, Bailly C, Vibert E et al.",
+      "published": "April 17, 2026",
+      "score": 7,
+      "score_rationale": "Base Other (5) + retrospective/real-world (+1) + biomarker-guided dosimetry (+1)",
+      "summary": "Based on PubMed data (DOI: 10.1016/j.eclinm.2026.103884), this prospective multicenter PROACTIF cohort from 34 French sites enrolled 989 HCC patients treated with Y90 glass microspheres (TheraSphere). Median OS was 21.8 months overall, 27.0 months for BCLC-B, and 48.6 months for patients who proceeded to curative surgery (10.7%). A strong dose-survival relationship was confirmed: mOS 16.8 months with tumor dose <200 Gy vs 30.7 months with \u2265400 Gy (p<0.001). Serious treatment-related AEs occurred in only 3.7%. Results support dosimetry-guided Y90 across all BCLC stages.",
+      "post_angle": "989 HCC patients, one clear message: dose matters. Y90 with \u2265400 Gy tumor dose = 30.7 months mOS. Personalized dosimetry is the key. And 10.7% converted to curative surgery. #HCC #LiverCancer #Y90 #SIRT #Dosimetry"
+    }
+  ],
+  "additional": [
+    {
+      "title": "ELEVATE CRC: Magrolimab (CD47) Plus Bevacizumab-FOLFIRI Does Not Improve Efficacy in mCRC",
+      "url": "https://doi.org/10.1016/j.esmogo.2026.100324",
+      "source_line": "ESMO GI Oncology \u2014 Phase II: CD47 inhibitor magrolimab + bev-FOLFIRI did not improve PFS vs control (6.2 vs 6.7 mo), increased grade \u22653 AEs"
+    },
+    {
+      "title": "Global GI Cancer Burden Projected to Double by 2050: $26.1 Trillion Economic Impact",
+      "url": "https://www.nature.com/articles/s44360-026-00113-1",
+      "source_line": "Nature Health \u2014 190-country analysis: 9.06M GI cancer cases by 2050 (+85%), CRC 11.6% of burden, biggest rises in PDAC diagnoses and CRC deaths"
+    },
+    {
+      "title": "Y90 with Personalized Dosimetry Achieves 71% Complete Response vs 33% with DEB-TACE in HCC",
+      "url": "https://doi.org/10.1097/HC9.0000000000000935",
+      "source_line": "Hepatology Communications \u2014 PSM study: Y90 personalized dosimetry outperforms DEB-TACE in target response (88% vs 58% ORR) and retreatment rates in BCLC A-B HCC"
+    },
+    {
+      "title": "Italian Nationwide GEP-NEN Prospective Database: 2,138 Patients from 38 Centers",
+      "url": "https://doi.org/10.1016/j.lanepe.2026.101684",
+      "source_line": "Lancet Regional Health Europe \u2014 Itanet registry: Ki-67 prognostic as continuous variable, 15% cutoff identifies worse outcomes, 58.6% diagnosed incidentally"
+    },
+    {
+      "title": "C2i Genomics Expands WGS MRD Data in Colon and Lung Cancer",
+      "url": "https://www.genomeweb.com/cancer/c2i-genomics-expands-data-whole-genome-sequencing-mrd-test-colon-lung-cancer",
+      "source_line": "AACR 2026 \u2014 Whole-genome sequencing MRD test shows expanded clinical utility in colon cancer surveillance"
+    },
+    {
+      "title": "CancerVax Lipid Nanoparticle Platform Expands to Colorectal Cancer",
+      "url": "https://www.globenewswire.com/news-release/2026/04/16/3275047/0/en/CancerVax-to-Target-Colorectal-Cancer-Following-Recent-Biodistribution-Breakthroughs.html",
+      "source_line": "GlobeNewswire \u2014 Novel targeted LNP bypasses liver accumulation, reaches colon tissue; CRC added alongside PDAC, ICC, and HCC as target indications"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 \u2014 Hook",
+      "text": "\ud83d\udd2c GI Oncology Daily Digest \u2014 April 24, 2026\nKRAS, Bispecifics & Liquid Biopsy Edition\n\n\u2022 HER2 neoadjuvant rectal cancer: 75% ORR, organ preservation potential\n\u2022 FDA Fast Track for pan-KRAS inhibitor in PDAC\n\u2022 Pfizer launches Phase 3 PD-1\u00d7VEGF bispecific in 1L mCRC\n\u2022 WGS-based MRD at parts-per-million sensitivity in CRC\n\nA thread \ud83e\uddf5\ud83d\udc47\n\n#GIOnc #CRC #PDAC #KRAS #AACR2026",
+      "url": ""
+    },
+    {
+      "label": "Post 2 \u2014 #1 HER2 Neoadjuvant Rectal",
+      "text": "\ud83d\udd25 #1: HER2-Targeted Neoadjuvant Therapy in Early Rectal Cancer (AACR 2026)\n\nMSK trial:\n\u2022 Trastuzumab + tucatinib + chemo in HER2+/RAS-WT/pMMR rectal cancer\n\u2022 6/8 patients responded (75% ORR)\n\u2022 4 clinical complete responses (50% cCR)\n\u2022 cCR patients \u2192 active surveillance, no surgery\n\nPrecision neoadjuvant therapy meets rectal cancer. When you match the right target, the scalpel may not be needed.\n\n#RectalCancer #HER2 #OrganPreservation #AACR2026",
+      "url": "https://www.mskcc.org/news/treating-her2-amplified-early-stage-rectal-cancer-to-improve-quality-of-life"
+    },
+    {
+      "label": "Post 3 \u2014 #2 BBO-11818 Pan-KRAS",
+      "text": "\ud83c\udfaf #2: BBO-11818 Pan-KRAS Inhibitor \u2014 FDA Fast Track for PDAC\n\n\u2022 First-in-class oral pan-KRAS: targets ON + OFF states\n\u2022 Covers G12D, G12V, and beyond \u2014 not just G12C\n\u2022 Confirmed PR in PDAC (KONQUER-101, NCT06917079)\n\u2022 387 patients enrolling with combo arms: pembro, cetux, FOLFOX, NALIRIFOX\n\nThe pan-KRAS race is on. BBO-11818 tackles the mutations that matter most in PDAC.\n\n#PDAC #KRAS #PancreaticCancer #FDA #PrecisionMedicine",
+      "url": "https://www.globenewswire.com/news-release/2026/04/20/3277472/0/en/BBOT-Granted-U-S-FDA-Fast-Track-Designation-for-BBO-11818-for-the-Treatment-of-Adult-Patients-with-Advanced-KRAS-Mutant-Pancreatic-Ductal-Adenocarcinoma.html"
+    },
+    {
+      "label": "Post 4 \u2014 #3 Pfizer PD-1\u00d7VEGF mCRC",
+      "text": "\ud83c\udf0d #3: Pfizer PD-1\u00d7VEGF Bispecific Enters Phase 3 in 1L mCRC\n\nSymbiotic-GI-03 (NCT07222800):\n\u2022 800 patients across 156 sites\n\u2022 PF-08634404 + chemo vs bevacizumab + chemo\n\u2022 1L MSS, non-BRAF mCRC\n\u2022 One molecule combining IO + anti-angiogenesis\n\nBig pharma is coming for bevacizumab. Phase 2 data at ASCO 2026 will hint at whether this bispecific can dethrone the standard.\n\n#CRC #ColorectalCancer #VEGF #ASCO2026",
+      "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-showcases-oncology-innovation-and-next-generation"
+    },
+    {
+      "label": "Post 5 \u2014 #4 Ultima Genomics MRD",
+      "text": "\ud83e\uddea #4: Ultima Genomics ppmSeq \u2014 WGS-Based MRD at Parts-Per-Million Sensitivity\n\nAACR 2026:\n\u2022 6 presentations including oral + plenary\n\u2022 Single-digit ppm ctDNA detection\n\u2022 No customized panels needed \u2014 tumor-informed WGS\n\u2022 500 CRC patients in prospective Dutch study\n\nMRD without custom panels = democratized ctDNA monitoring for every colon cancer patient. The future of surveillance is genomic.\n\n#MRD #ctDNA #CRC #AACR2026 #LiquidBiopsy",
+      "url": "https://www.prnewswire.com/news-releases/ultima-genomics-releases-groundbreaking-tracerx-mrd-data-showing-ppmseq-performance-and-unveils-clinical-progress-of-whole-genome-sequencing-at-inaugural-global-mrd-symposium-at-aacr-2026-302745369.html"
+    },
+    {
+      "label": "Post 6 \u2014 #5 PROACTIF Y90 HCC",
+      "text": "\ud83d\udcca #5: PROACTIF \u2014 Y90 Personalized Dosimetry in 989 HCC Patients\n\nProspective multicenter (34 French sites):\n\u2022 mOS 21.8 months overall\n\u2022 Tumor dose \u2265400 Gy: mOS 30.7 mo vs 16.8 mo (<200 Gy)\n\u2022 10.7% converted to curative surgery (mOS 48.6 mo)\n\u2022 Serious treatment-related AEs: only 3.7%\n\nDose matters. Personalized dosimetry is the key to unlocking Y90\u2019s full potential in HCC.\n\n#HCC #LiverCancer #Y90 #SIRT #Dosimetry",
+      "url": "https://doi.org/10.1016/j.eclinm.2026.103884"
+    },
+    {
+      "label": "Post 7 \u2014 Additional Papers",
+      "text": "\ud83d\udcda More from today\u2019s digest:\n\n\u2022 ELEVATE CRC: Magrolimab + bev-FOLFIRI negative in mCRC (ESMO GO)\n\u2022 Nature Health: GI cancers to double by 2050 \u2014 $26.1T burden\n\u2022 Y90 vs DEB-TACE: 71% vs 33% CR in HCC (Hepatol Commun)\n\u2022 Itanet: 2,138 GEP-NEN patients, Ki-67 as continuous biomarker\n\u2022 C2i Genomics: WGS MRD in colon cancer (AACR 2026)\n\u2022 CancerVax: LNP targets colon \u2014 CRC expansion\n\nFull digest \u2192",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-24.html"
+    }
+  ]
+}

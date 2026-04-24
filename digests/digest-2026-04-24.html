@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GI Oncology Daily Digest — April 24, 2026. KRAS, Bispecifics &amp; Liquid Biopsy Edition. Curated by Dr. Allan Pereira." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css?v=3">
+
+    <title>GI Oncology Digest — April 24, 2026 | Dr. Allan Pereira</title>
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+
+    <style>
+      .digest-header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }
+      .digest-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
+      .digest-header .digest-date { font-size: 1rem; color: #99ccff; }
+      .digest-header .digest-subtitle { font-size: .85rem; color: #80b3e6; margin-top: .25rem; }
+      .digest-content { padding: 2rem 0 3rem; }
+      .digest-section-title { font-size: 1.3rem; font-weight: 700; color: #003366; border-bottom: 3px solid #003366; padding-bottom: .5rem; margin: 2rem 0 1.25rem; }
+      .digest-section-title:first-child { margin-top: 0; }
+      [data-theme="dark"] .digest-section-title { color: #66aadd; border-bottom-color: #66aadd; }
+      .paper-card { background: #fff; border: 1px solid #e2e6ea; border-left: 5px solid #003366; border-radius: .4rem; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); transition: box-shadow .2s; }
+      .paper-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.1); }
+      [data-theme="dark"] .paper-card { background: var(--card-bg, #1e2a38); border-color: #2a3a4a; border-left-color: #66aadd; }
+      .paper-rank { display: inline-block; background: #003366; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; margin-bottom: .5rem; }
+      .paper-title { font-size: 1.05rem; font-weight: 700; margin-bottom: .35rem; }
+      .paper-title a { color: #003366; text-decoration: none; }
+      .paper-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .paper-title a { color: #88ccff; }
+      .paper-meta { font-size: .8rem; color: #666; margin-bottom: .6rem; }
+      .paper-meta b { color: #444; }
+      [data-theme="dark"] .paper-meta { color: #aaa; }
+      [data-theme="dark"] .paper-meta b { color: #ccc; }
+      .score-badge { display: inline-block; background: #007A33; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; }
+      .score-rationale { font-size: .78rem; color: #555; font-style: italic; margin-left: .4rem; }
+      [data-theme="dark"] .score-rationale { color: #aaa; }
+      .score-line { margin-bottom: .75rem; }
+      .paper-summary { font-size: .9rem; margin-bottom: .85rem; }
+      .post-angle { background: #EBF5FF; border-left: 3px solid #0052CC; padding: .6rem .85rem; border-radius: 0 5px 5px 0; font-size: .78rem; color: #0052CC; font-style: italic; }
+      .post-angle b { font-style: normal; }
+      [data-theme="dark"] .post-angle { background: #1a2a3d; color: #88bbee; border-left-color: #4488cc; }
+      .additional-list { list-style: none; padding: 0; }
+      .additional-list li { padding: .75rem 0; border-bottom: 1px solid #eee; font-size: .9rem; }
+      .additional-list li:last-child { border-bottom: none; }
+      [data-theme="dark"] .additional-list li { border-bottom-color: #2a3a4a; }
+      .add-title a { color: #0052CC; font-weight: 600; text-decoration: none; }
+      .add-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .add-title a { color: #88bbee; }
+      .add-source { font-size: .8rem; color: #666; margin-top: .15rem; }
+      [data-theme="dark"] .add-source { color: #999; }
+      .digest-back { display: inline-block; margin: 1.5rem 0 0; font-size: .85rem; }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Dr. Allan Pereira</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html#curriculo">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="index_digest.html">GI Digest</a></li>
+          </ul>
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="digest-header">
+      <div class="container">
+        <h1>GI Oncology Daily Digest</h1>
+        <div class="digest-date">April 24, 2026 — KRAS, Bispecifics &amp; Liquid Biopsy Edition</div>
+        <div class="digest-subtitle">Curated by Dr. Allan Pereira — Moffitt Cancer Center</div>
+      </div>
+    </section>
+
+    <section class="digest-content">
+      <div class="container" style="max-width:800px;">
+        <h2 class="digest-section-title" style="margin-top:0;">Top 5 Papers</h2>
+
+        <div class="paper-card">
+          <span class="paper-rank">#1</span>
+          <div class="paper-title"><a href="https://www.mskcc.org/news/treating-her2-amplified-early-stage-rectal-cancer-to-improve-quality-of-life" target="_blank">HER2-Targeted Neoadjuvant Therapy Achieves 75% Response Rate in Early-Stage Rectal Cancer — Organ Preservation on the Horizon</a></div>
+          <div class="paper-meta"><b>Source:</b> AACR 2026 / Memorial Sloan Kettering &nbsp;|&nbsp; <b>Authors:</b> Michael Foote, MD et al. (MSK) &nbsp;|&nbsp; <b>Published:</b> April 19, 2026 (AACR 2026)</div>
+          <div class="score-line"><span class="score-badge">Score: 10/20</span><span class="score-rationale"> — Base AACR oral presentation (7) + Phase II (+2) + biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">Presented at AACR 2026, this prospective single-arm MSK trial enrolled 10 patients with locally advanced HER2-positive, RAS wild-type, pMMR rectal adenocarcinoma (70% node-positive). Treatment consisted of 6 weeks of trastuzumab + tucatinib followed by 15 weeks of trastuzumab + tucatinib + FOLFOX/CAPOX. Six of eight evaluable patients responded (75% ORR), including four clinical complete responses (50% cCR). Patients achieving cCR transitioned to active surveillance without surgery or radiation. This precision neoadjuvant approach opens a potential watch-and-wait pathway for HER2-amplified rectal cancer, a particularly aggressive subtype.</div>
+          <div class="post-angle"><b>Post angle:</b> HER2+ rectal cancer meets precision neoadjuvant therapy. 75% ORR, 50% complete responses — and the possibility of avoiding surgery. Organ preservation through molecular targeting is the future. #CRC #RectalCancer #HER2 #AACR2026 #OrganPreservation</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#2</span>
+          <div class="paper-title"><a href="https://www.globenewswire.com/news-release/2026/04/20/3277472/0/en/BBOT-Granted-U-S-FDA-Fast-Track-Designation-for-BBO-11818-for-the-Treatment-of-Adult-Patients-with-Advanced-KRAS-Mutant-Pancreatic-Ductal-Adenocarcinoma.html" target="_blank">BBO-11818: FDA Grants Fast Track Designation for First-in-Class Pan-KRAS Inhibitor in Advanced KRAS-Mutant Pancreatic Cancer</a></div>
+          <div class="paper-meta"><b>Source:</b> FDA / GlobeNewswire &nbsp;|&nbsp; <b>Authors:</b> BridgeBio Oncology Therapeutics (BBOT) &nbsp;|&nbsp; <b>Published:</b> April 20, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9/20</span><span class="score-rationale"> — Base FDA regulatory action (8) + biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">The FDA granted Fast Track designation to BBO-11818 for adult patients with advanced KRAS-mutant PDAC. BBO-11818 is a first-in-class oral non-covalent small molecule targeting both active (ON) and inactive (OFF) KRAS states, providing pan-KRAS inhibition across G12D, G12V, and other mutations — not limited to G12C. Per ClinicalTrials.gov (NCT06917079), the Phase 1a/1b KONQUER-101 trial is enrolling 387 patients across PDAC, CRC, and NSCLC with combination arms including pembrolizumab, cetuximab, FOLFOX, and NALIRIFOX. Monotherapy has demonstrated confirmed partial responses in PDAC. Updated data expected H2 2026.</div>
+          <div class="post-angle"><b>Post angle:</b> Pan-KRAS is the holy grail for PDAC. BBO-11818 hits KRAS in both ON and OFF states — covering G12D, G12V, and beyond. 387 patients enrolling with combo arms. Fast Track = FDA urgency. #PDAC #KRAS #PancreaticCancer #FDA #PrecisionMedicine</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#3</span>
+          <div class="paper-title"><a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer-showcases-oncology-innovation-and-next-generation" target="_blank">Pfizer PF-08634404 (PD-1×VEGF Bispecific) Enters Phase 3 Symbiotic-GI-03 Trial in First-Line Metastatic Colorectal Cancer</a></div>
+          <div class="paper-meta"><b>Source:</b> Pfizer / BusinessWire &nbsp;|&nbsp; <b>Authors:</b> Pfizer Inc. &nbsp;|&nbsp; <b>Published:</b> April 21, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9/20</span><span class="score-rationale"> — Base Press Release Phase 3 (6) + Phase III RCT (+3)</span></div>
+          <div class="paper-summary">Pfizer announced its Phase 3 Symbiotic-GI-03 trial (NCT07222800) evaluating PF-08634404, a novel bispecific antibody targeting both PD-1 and VEGF, combined with chemotherapy versus bevacizumab plus chemotherapy in first-line mCRC (non-BRAF-mutated, microsatellite-stable). Per ClinicalTrials.gov, the trial enrolls 800 patients across 156 sites, with primary completion expected March 2030. PF-08634404 combines immune checkpoint inhibition and anti-angiogenesis in a single molecule. Updated Phase 2 data will be presented at ASCO 2026 (May 29 – June 2).</div>
+          <div class="post-angle"><b>Post angle:</b> One molecule, two mechanisms. Pfizer bets big on PD-1×VEGF bispecific vs bevacizumab in 1L mCRC. 800 patients, 156 sites. If this works, it rewrites the frontline playbook. #CRC #ColorectalCancer #VEGF #ASCO2026</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#4</span>
+          <div class="paper-title"><a href="https://www.prnewswire.com/news-releases/ultima-genomics-releases-groundbreaking-tracerx-mrd-data-showing-ppmseq-performance-and-unveils-clinical-progress-of-whole-genome-sequencing-at-inaugural-global-mrd-symposium-at-aacr-2026-302745369.html" target="_blank">Ultima Genomics ppmSeq: Whole-Genome Sequencing MRD Detection at Single-Digit Parts-Per-Million Sensitivity in Colorectal Cancer</a></div>
+          <div class="paper-meta"><b>Source:</b> AACR 2026 / PR Newswire &nbsp;|&nbsp; <b>Authors:</b> Ultima Genomics &nbsp;|&nbsp; <b>Published:</b> April 17-22, 2026 (AACR 2026)</div>
+          <div class="score-line"><span class="score-badge">Score: 8/20</span><span class="score-rationale"> — Base AACR oral presentation (7) + biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">At AACR 2026, Ultima Genomics presented six abstracts (including oral and plenary sessions) on its ppmSeq whole-genome sequencing technology for MRD detection. A validation pilot of 50 plasma samples achieved ctDNA detection at low single-digit parts-per-million sensitivity using tumor-specific variants from prior WGS — without customized assay panels. A multicenter prospective Netherlands Cancer Institute study is monitoring ctDNA-based treatment response in ~500 CRC patients on systemic chemotherapy. This panel-free approach could democratize MRD monitoring for every colon cancer patient.</div>
+          <div class="post-angle"><b>Post angle:</b> MRD detection without custom panels? ppmSeq achieves parts-per-million ctDNA sensitivity using whole-genome sequencing. 500 CRC patients in prospective study. The future of surveillance just got more accessible. #MRD #ctDNA #CRC #AACR2026 #LiquidBiopsy</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#5</span>
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.eclinm.2026.103884" target="_blank">PROACTIF: Y90 Radioembolization with Personalized Dosimetry Achieves 21.8-Month Median OS in 989 HCC Patients — Dose-Survival Relationship Confirmed</a></div>
+          <div class="paper-meta"><b>Source:</b> EClinicalMedicine (Lancet family) &nbsp;|&nbsp; <b>Authors:</b> Guiu B, Bailly C, Vibert E et al. &nbsp;|&nbsp; <b>Published:</b> April 17, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 7/20</span><span class="score-rationale"> — Base Other (5) + retrospective/real-world (+1) + biomarker-guided dosimetry (+1)</span></div>
+          <div class="paper-summary">Based on PubMed data (DOI: 10.1016/j.eclinm.2026.103884), this prospective multicenter PROACTIF cohort from 34 French sites enrolled 989 HCC patients treated with Y90 glass microspheres (TheraSphere). Median OS was 21.8 months overall, 27.0 months for BCLC-B, and 48.6 months for patients who proceeded to curative surgery (10.7%). A strong dose-survival relationship was confirmed: mOS 16.8 months with tumor dose &lt;200 Gy vs 30.7 months with ≥400 Gy (p&lt;0.001). Serious treatment-related AEs occurred in only 3.7%. Results support dosimetry-guided Y90 across all BCLC stages.</div>
+          <div class="post-angle"><b>Post angle:</b> 989 HCC patients, one clear message: dose matters. Y90 with ≥400 Gy tumor dose = 30.7 months mOS. Personalized dosimetry is the key. And 10.7% converted to curative surgery. #HCC #LiverCancer #Y90 #SIRT #Dosimetry</div>
+        </div>
+
+        <h2 class="digest-section-title">Additional Papers of Interest</h2>
+        <ol class="additional-list">
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1016/j.esmogo.2026.100324" target="_blank">ELEVATE CRC: Magrolimab (CD47) Plus Bevacizumab-FOLFIRI Does Not Improve Efficacy in mCRC</a></div>
+            <div class="add-source">ESMO GI Oncology — Phase II: CD47 inhibitor magrolimab + bev-FOLFIRI did not improve PFS vs control (6.2 vs 6.7 mo), increased grade ≥3 AEs</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://www.nature.com/articles/s44360-026-00113-1" target="_blank">Global GI Cancer Burden Projected to Double by 2050: $26.1 Trillion Economic Impact</a></div>
+            <div class="add-source">Nature Health — 190-country analysis: 9.06M GI cancer cases by 2050 (+85%), CRC 11.6% of burden, biggest rises in PDAC diagnoses and CRC deaths</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1097/HC9.0000000000000935" target="_blank">Y90 with Personalized Dosimetry Achieves 71% Complete Response vs 33% with DEB-TACE in HCC</a></div>
+            <div class="add-source">Hepatology Communications — PSM study: Y90 personalized dosimetry outperforms DEB-TACE in target response (88% vs 58% ORR) and retreatment rates in BCLC A-B HCC</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1016/j.lanepe.2026.101684" target="_blank">Italian Nationwide GEP-NEN Prospective Database: 2,138 Patients from 38 Centers</a></div>
+            <div class="add-source">Lancet Regional Health Europe — Itanet registry: Ki-67 prognostic as continuous variable, 15% cutoff identifies worse outcomes, 58.6% diagnosed incidentally</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://www.genomeweb.com/cancer/c2i-genomics-expands-data-whole-genome-sequencing-mrd-test-colon-lung-cancer" target="_blank">C2i Genomics Expands WGS MRD Data in Colon and Lung Cancer</a></div>
+            <div class="add-source">AACR 2026 — Whole-genome sequencing MRD test shows expanded clinical utility in colon cancer surveillance</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://www.globenewswire.com/news-release/2026/04/16/3275047/0/en/CancerVax-to-Target-Colorectal-Cancer-Following-Recent-Biodistribution-Breakthroughs.html" target="_blank">CancerVax Lipid Nanoparticle Platform Expands to Colorectal Cancer</a></div>
+            <div class="add-source">GlobeNewswire — Novel targeted LNP bypasses liver accumulation, reaches colon tissue; CRC added alongside PDAC, ICC, and HCC as target indications</div>
+          </li>
+        </ol>
+
+        <a href="index_digest.html" class="digest-back"><i class="fas fa-arrow-left mr-1"></i> Back to all digests</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p data-i18n="hero-badge">Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;" data-i18n="footer-book-btn">Book appointment</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;" data-i18n="hero-cta-intl">International Patient Appointment</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 data-i18n="footer-offices-title">Locations &amp; Directions</h5>
+            <p data-i18n="footer-offices-cta">Click for details:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright &copy; Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-25",
+  "date_display": "April 25, 2026",
+  "subtitle": "Netrin1 Breakthrough in PDAC Edition",
+  "feed_desc": "NP137 netrin1 antibody + mFOLFIRINOX mOS 16.4 mo in locally advanced PDAC with 23% conversion surgery (Nature), HAI oxaliplatin doubles hepatic RFS after ≥4 CRLM resection in randomized Phase II (JCO), Neoadjuvant toripalimab + CapeOX 25% pCR in EBV+ gastric cancer (Nature Communications), Consolidative camrelizumab 3-year PFS 62.5% in unresectable ESCC (IJROBP), Glissonian vs hilar dissection RCT shows shorter operative time for laparoscopic hepatectomy in HCC (British Journal of Cancer)",
+  "papers": [
+    {
+      "title": "NP137 Netrin1 Antibody Plus mFOLFIRINOX Achieves mOS 16.4 Months and 23% Conversion Surgery in Locally Advanced Pancreatic Cancer",
+      "url": "https://doi.org/10.1038/s41586-026-10436-4",
+      "source": "Nature",
+      "authors": "Roth G, Artru P, Bouche O, et al.",
+      "published": "April 22, 2026",
+      "score": 13,
+      "score_rationale": "Base 9 (Nature) + Phase Ib/II (+2) + Survival benefit OS (+2)",
+      "summary": "This phase 1b study evaluated NP137, a netrin1-blocking antibody, combined with mFOLFIRINOX as first-line therapy in 43 patients with locally advanced pancreatic cancer (LAPC). NP137 was well tolerated. Median PFS was 10.85 months (95% CI, 10.03–15.61) and median OS was 16.43 months (95% CI, 12.75–NR), with 21 patients still alive at data cut-off. Notably, 23% of patients underwent conversion surgery. Laser capture microdissection with RNA sequencing confirmed that the main downregulated pathway was EMT. Patients with high neogenin-expressing tumors had extended survival (mPFS 15.65 vs 10.22 months). These results support netrin1 blockade as a novel strategy to overcome chemoresistance by inhibiting epithelial-to-mesenchymal transition in PDAC. NCT05546853.",
+      "post_angle": "First-in-class netrin1 blockade in PDAC published in Nature — 23% conversion surgery in LAPC is remarkable. Biomarker-guided (neogenin expression) approach could define a precision medicine niche. #PDAC #PancreaticCancer #GIOnc #PrecisionMedicine"
+    },
+    {
+      "title": "Hepatic Arterial Infusion of Oxaliplatin Doubles Hepatic RFS After Curative Surgery of ≥4 Colorectal Liver Metastases: Randomized Phase II",
+      "url": "https://doi.org/10.1200/JCO-25-01737",
+      "source": "Journal of Clinical Oncology",
+      "authors": "Gelli M, Ewald J, Tanguy ML, et al.",
+      "published": "April 22, 2026",
+      "score": 12,
+      "score_rationale": "Base 8 (JCO) + Randomized Phase II (+2) + Survival benefit h-RFS & RFS (+2)",
+      "summary": "This randomized phase II trial enrolled 99 patients who underwent curative resection or ablation of ≥4 colorectal liver metastases (CRLM) after preoperative chemotherapy. Patients received adjuvant oxaliplatin via hepatic arterial infusion (HAI, n=50) or IV (n=49), both combined with LV5FU2. After median follow-up of 59 months, median hepatic RFS was 25 months with HAI vs 12 months with IV (HR 0.63, p=.047). Median RFS was 14 vs 9 months (HR 0.63, p=.03). Median OS trended favorably at 74 vs 57 months (HR 0.61, p=.11), with 5-year OS of 62% vs 47%. Grade 3-4 AEs were higher in HAI (58% vs 32%). These results support HAI oxaliplatin in high-risk CRLM and warrant a phase III trial.",
+      "post_angle": "HAI oxaliplatin is back! Doubles hepatic RFS in high-risk CRLM — 5-year OS 62% vs 47%. Phase III needed to confirm. Regional therapy isn't dead. #CRC #ColorectalCancer #LiverMets #GIOnc"
+    },
+    {
+      "title": "Neoadjuvant Toripalimab Plus CapeOX Achieves 25% pCR in EBV-Associated Gastric/GEJ Adenocarcinoma: Phase II Trial",
+      "url": "https://doi.org/10.1038/s41467-026-72059-7",
+      "source": "Nature Communications",
+      "authors": "Zhao L, Liu H, Hu Y, et al.",
+      "published": "April 23, 2026",
+      "score": 9,
+      "score_rationale": "Base 6 (Nature Communications) + Phase II (+2) + Biomarker/precision (+1)",
+      "summary": "In this phase II trial (NCT04744649), 17 patients with locally advanced EBV-associated gastric/GEJ adenocarcinoma (cT2-4aN1-3M0) received 4 cycles of neoadjuvant toripalimab plus capecitabine/oxaliplatin. Among 16 patients who underwent curative resection, major pathological response (MPR) was 37.5%, pathological complete response (pCR) was 25%, and ypN0 was an impressive 81.3%. MPR was more frequent in patients with PD-L1 ≥20% (57.1%). Higher pretreatment CD8+ T-cell density was associated with better responses. Grade 3-4 AEs occurred in 35.3%. These results support a biomarker-selected immunochemotherapy approach in EBV+ gastric cancer, a molecular subtype known for high immunogenicity.",
+      "post_angle": "EBV+ gastric cancer is an ideal immunotherapy target — 25% pCR with neoadjuvant toripalimab + CapeOX, 81% nodal clearance. Molecular subtyping matters! #GastricCancer #GIOnc #Immunotherapy #PrecisionMedicine"
+    },
+    {
+      "title": "Consolidative Camrelizumab After Definitive Chemoradiotherapy Yields 3-Year PFS of 62.5% in Unresectable Locally Advanced ESCC",
+      "url": "https://doi.org/10.1016/j.ijrobp.2026.04.026",
+      "source": "International Journal of Radiation Oncology, Biology, Physics",
+      "authors": "Cheng Y, Wang J, Lv X, et al.",
+      "published": "April 22, 2026",
+      "score": 9,
+      "score_rationale": "Base 5 (Other) + Phase II (+2) + Survival benefit PFS & OS (+2)",
+      "summary": "This single-arm phase II trial evaluated camrelizumab consolidation (200 mg IV q2w for 12 months) in 32 patients with unresectable locally advanced ESCC who had not progressed after definitive concurrent chemoradiotherapy (dCCRT). The 1-year, 2-year, and 3-year PFS rates were 81.3%, 62.5%, and 62.5%, respectively. OS rates were 96.9%, 77.7%, and 63.0% at 1, 2, and 3 years. Neither median PFS nor OS was reached. Most AEs were grade 1-2; pneumonitis occurred in 31.3% (all grade 1-2). No treatment-related deaths. These results, building on the CheckMate 577 paradigm, suggest consolidation anti-PD-1 after dCCRT is a promising strategy for unresectable ESCC. NCT04286958.",
+      "post_angle": "Consolidation IO after chemoRT in unresectable ESCC — 3-year PFS 62.5% with camrelizumab. Builds on CheckMate 577 concept for the non-surgical setting. Manageable toxicity. #EsophagealCancer #ESCC #Immunotherapy #GIOnc"
+    },
+    {
+      "title": "Glissonian vs Hilar Dissection for Laparoscopic Major Hepatectomy in HCC: Phase III RCT Shows Equivalent Survival with Shorter Operative Time",
+      "url": "https://doi.org/10.1038/s41416-026-03458-2",
+      "source": "British Journal of Cancer",
+      "authors": "Peng Y, Yang Y, Chen K, et al.",
+      "published": "April 22, 2026",
+      "score": 9,
+      "score_rationale": "Base 6 (British Journal of Cancer) + Phase III RCT (+3)",
+      "summary": "This randomized controlled trial compared the extrahepatic Glissonian approach with hilar dissection for laparoscopic major hepatectomy (LMH) in 240 HCC patients (119 Glissonian, 121 hilar). Five-year OS and DFS were comparable between groups. However, the Glissonian approach had significantly shorter operative time (p=0.044) and hilar dissection time (p<0.001). For patients with liver cirrhosis, the Glissonian group had shorter operative time (p=0.002) and less blood loss (p=0.004). Postoperative complications, including bile duct injury, leakage, and stricture, did not differ. This is the first RCT comparing these approaches, establishing the Glissonian technique as a preferred option for selected HCC patients, especially those with cirrhosis.",
+      "post_angle": "First RCT comparing Glissonian vs hilar dissection for laparoscopic hepatectomy in HCC — equivalent survival, shorter OR time, less blood loss in cirrhotics. Practice-informing data. #HCC #LiverCancer #SurgicalOncology #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "MoST-CIRCUIT: Nivolumab + Ipilimumab in Intrahepatic Cholangiocarcinoma and Gallbladder Cancer",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-25-4009",
+      "source_line": "Clinical Cancer Research — Largest dual checkpoint blockade cohort in BTC (n=60): ORR 12% overall, 26% in GBC subgroup"
+    },
+    {
+      "title": "Cetuximab Q3W Plus Capecitabine as 1L Maintenance in RAS/BRAF WT mCRC: Phase Ib",
+      "url": "https://doi.org/10.1038/s41698-026-01429-7",
+      "source_line": "NPJ Precision Oncology — Cetuximab 700 mg/m² Q3W achieves mPFS 13.4 mo with reduced infusion burden"
+    },
+    {
+      "title": "Prophylactic HIPEC Survival Benefit in Elderly Locally Advanced CRC",
+      "url": "https://doi.org/10.1186/s12885-026-16073-4",
+      "source_line": "BMC Cancer — Propensity-matched analysis shows survival benefit of prophylactic HIPEC in geriatric CRC patients"
+    },
+    {
+      "title": "Sex-Based Responses to Immunotherapy in Esophageal Cancer: Meta-Analysis",
+      "url": "https://doi.org/10.1186/s12876-026-04834-1",
+      "source_line": "BMC Gastroenterology — Meta-analysis reveals sex-dependent differences in IO outcomes in esophageal cancer"
+    },
+    {
+      "title": "βIII-Tubulin as a Brake on Extrinsic Apoptosis in Pancreatic Cancer",
+      "url": "https://doi.org/10.1038/s41419-026-08657-6",
+      "source_line": "Cell Death & Disease — Silencing βIII-tubulin activates TRAIL-mediated apoptosis in PDAC, a novel therapeutic strategy"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🔬 GI Oncology Daily Digest — April 25, 2026\nNetrin1 Breakthrough in PDAC Edition\n\n• First-in-class netrin1 blockade + mFOLFIRINOX in PDAC — published in Nature\n• HAI oxaliplatin DOUBLES hepatic RFS in CRLM — randomized data in JCO\n• EBV+ gastric cancer: 25% pCR with neoadjuvant IO\n\nA thread 🧵👇\n\n#GIOnc #PancreaticCancer #CRC #GastricCancer #ESCC #HCC #Oncology",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 NP137 PDAC",
+      "text": "🔥 #1 — NP137 + mFOLFIRINOX in Locally Advanced PDAC\n📰 Nature | Phase 1b | n=43\n\n• First-in-class netrin1 antibody blocking EMT-driven chemoresistance\n• mPFS 10.85 mo | mOS 16.43 mo\n• 23% conversion surgery rate — remarkable for LAPC\n• Neogenin-high tumors: mPFS 15.65 vs 10.22 mo\n• RNA-seq confirms EMT is the key downregulated pathway\n\nNetrin1 blockade is a completely new axis in PDAC. Biomarker-guided, mechanistically elegant, and clinically meaningful.\n\n#PDAC #PancreaticCancer #GIOnc #PrecisionMedicine",
+      "url": "https://doi.org/10.1038/s41586-026-10436-4"
+    },
+    {
+      "label": "Post 3 — #2 HAI Oxaliplatin CRLM",
+      "text": "📊 #2 — HAI Oxaliplatin After ≥4 CRLM Resection\n📰 JCO | Randomized Phase II | n=99\n\n• Hepatic RFS: 25 vs 12 mo (HR 0.63, p=.047)\n• RFS: 14 vs 9 mo (HR 0.63, p=.03)\n• mOS: 74 vs 57 mo (HR 0.61, trend)\n• 5-year OS: 62% vs 47%\n\nHAI oxaliplatin is making a strong comeback for high-risk CRLM. Doubles hepatic RFS. Regional therapy deserves a phase III.\n\n#CRC #ColorectalCancer #LiverMets #GIOnc",
+      "url": "https://doi.org/10.1200/JCO-25-01737"
+    },
+    {
+      "label": "Post 4 — #3 Toripalimab EBV+ Gastric",
+      "text": "🎯 #3 — Neoadjuvant Toripalimab + CapeOX in EBV+ Gastric Cancer\n📰 Nature Communications | Phase II | n=17\n\n• MPR 37.5% | pCR 25%\n• ypN0 rate: 81.3% — exceptional nodal clearance\n• PD-L1 ≥20%: MPR 57.1%\n• CD8+ T-cell density predicts response\n• Grade 3-4 AEs: 35.3%\n\nEBV+ gastric is the quintessential immunotherapy-sensitive subtype. Molecular selection + IO = deep responses.\n\n#GastricCancer #Immunotherapy #GIOnc #PrecisionMedicine",
+      "url": "https://doi.org/10.1038/s41467-026-72059-7"
+    },
+    {
+      "label": "Post 5 — #4 Camrelizumab ESCC",
+      "text": "🌍 #4 — Consolidation Camrelizumab After dCCRT in Unresectable ESCC\n📰 IJROBP | Phase II | n=32\n\n• 3-year PFS: 62.5% | 3-year OS: 63%\n• Median PFS and OS not reached\n• Pneumonitis 31% — all grade 1-2\n• No treatment-related deaths\n\nBuilds on CheckMate 577 concept for the non-surgical setting. Consolidation anti-PD-1 after chemoRT looks promising.\n\n#ESCC #EsophagealCancer #Immunotherapy #GIOnc",
+      "url": "https://doi.org/10.1016/j.ijrobp.2026.04.026"
+    },
+    {
+      "label": "Post 6 — #5 Glissonian vs Hilar HCC RCT",
+      "text": "🧪 #5 — Glissonian vs Hilar Dissection for Laparoscopic Hepatectomy in HCC\n📰 British Journal of Cancer | Phase III RCT | n=240\n\n• 5-year OS and DFS: equivalent between groups\n• Operative time: significantly shorter with Glissonian (p=.044)\n• Cirrhotic patients: shorter OR time (p=.002) + less blood loss (p=.004)\n• First RCT comparing these approaches\n\nLevel 1 evidence for the Glissonian approach — especially valuable for cirrhotics.\n\n#HCC #LiverCancer #SurgicalOncology #GIOnc",
+      "url": "https://doi.org/10.1038/s41416-026-03458-2"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 More from this week's GI oncology literature:\n\n• MoST-CIRCUIT: Nivo+Ipi in iCCA/GBC — ORR 26% in GBC (CCR)\n• Cetuximab Q3W + cape maintenance in WT mCRC — mPFS 13.4 mo (NPJ Precis Oncol)\n• Prophylactic HIPEC survival benefit in elderly CRC (BMC Cancer)\n• βIII-tubulin + TRAIL in PDAC — novel apoptosis target (Cell Death Dis)\n\n📖 Full digest + references:\n\n#GIOnc #Oncology #MedTwitter",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-25.html"
+    }
+  ]
+}

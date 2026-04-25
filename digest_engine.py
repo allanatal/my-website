@@ -4,7 +4,7 @@ GI Oncology Daily Digest Engine
 ================================
 Stable generation engine that reads a daily JSON data file and produces:
   1. digests/digest-YYYY-MM-DD.html  (main digest page)
-  2. digests/x-thread-YYYY-MM-DD.html (X/Twitter thread draft)
+  2. digests/xdigest-YYYY-MM-DD.html (X/Twitter thread draft)
   3. digests/digest-feed.json (updated feed, single source of truth)
   4. digests/index_digest.html (rebuilt archive page)
 
@@ -480,7 +480,7 @@ def main():
 
     # 2. X Thread HTML
     thread_html = build_x_thread_html(data)
-    thread_path = os.path.join(DIGESTS_DIR, "x-thread-" + date_str + ".html")
+    thread_path = os.path.join(DIGESTS_DIR, "xdigest-" + date_str + ".html")
     with open(thread_path, "w", encoding="utf-8") as f:
         f.write(thread_html)
     print("X thread saved: " + thread_path)

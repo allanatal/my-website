@@ -15,31 +15,54 @@ Automated daily digest system that curates GI oncology research, generates a pol
 
 When Allan says **"run"**, execute this exact workflow:
 
-1. **Check mount path** — Run `ls /sessions/*/mnt/` to find the correct mount. It varies between sessions (`Claude_projects` or `CURSO_DE_PESQUISA--Claude_projects`).
-2. **Web searches** (7-8 searches, date-filtered to last 7 days using `after:YYYY-MM-DD`)
-3. **Score and rank** papers using the scoring system below
-4. **Write JSON data file** to `digests/data/YYYY-MM-DD.json`
-5. **Run engine**: `python3 digest_engine.py digests/data/YYYY-MM-DD.json`
-6. **Verify**: Check IIFE count (`}());` = 2 in digest + index), thread-card count, link count
-7. **Git commit** (never push — Allan pushes manually from Terminal)
-8. **Report run stats**: searches count, total tool calls, session usage %
+1. **Check mount path** — Run `ls /sessions/*/mnt/` to find the correct mount. It varies between sessions.
+2. **Check `digest-feed.json`** for recent papers to avoid duplicates.
+3. **Search for papers** using the strategy below (PubMed MCP first, then WebSearch).
+4. **Score and rank** papers using the scoring system below.
+5. **Write JSON data file** to `digests/data/YYYY-MM-DD.json`.
+6. **Run engine**: `python3 digest_engine.py digests/data/YYYY-MM-DD.json`
+7. **Verify**: IIFE count (`}());` = 2 in digest + index), char counts (300–800), thread-card count, link count.
+8. **Git commit** (never push — Allan pushes manually from Terminal).
+9. **Report run stats**: searches, total tool calls, session usage %.
 
-**Target efficiency:** 7-8 searches, ~11 total tool calls per run.
+**Target efficiency:** 5–7 searches, ~11 total tool calls, ~15–20% session usage per run.
 
 ---
 
-## Search Sources (in priority order)
+## Search Strategy
 
-1. **Journals**: NEJM, Lancet, JCO, JAMA Oncology, Annals of Oncology, Nature Medicine
+### Available MCPs (use these first — structured data, lower token cost)
+
+**PubMed MCP** (`search_articles`, `get_article_metadata`)
+- Primary source for journal articles. Returns PMIDs, DOIs, full abstracts, author affiliations.
+- Use `date_from` / `date_to` in `YYYY/MM/DD` format (e.g., `2026/04/18` to `2026/04/25`).
+- **Efficiency rules:**
+  - Run 2–3 PubMed searches max (one broad GI query, one NEJM safety-net query, one optional targeted query).
+  - When fetching metadata, limit to **15 PMIDs per call**. Large batches (40+) produce 60–70 KB responses that waste context.
+  - Scan titles from `search_articles` first, then fetch metadata only for the most promising candidates.
+
+**ClinicalTrials.gov MCP** (`search_trials`, `get_trial_details`)
+- Use to enrich papers with NCT numbers, enrollment counts, site counts, and phase details.
+- Only call when a paper references a trial that needs enrichment (e.g., missing NCT number or enrollment data).
+- Typically 0–2 calls per run.
+
+### WebSearch (supplement, not primary)
+- Use 2–3 WebSearch calls for: FDA actions, press releases, conference coverage, and anything PubMed doesn't index.
+- Always date-filter: add `after:YYYY-MM-DD` (7 days back).
+- **WebFetch is often blocked** — many oncology sites are blocked by the egress proxy. Rely on WebSearch summaries instead.
+
+### Search Sources (in priority order)
+1. **Journals**: NEJM, Lancet, JCO, JAMA Oncology, Annals of Oncology, Nature Medicine, Nature
 2. **Conferences**: ASCO, ASCO GI, ESMO, AACR (when in season)
 3. **Press releases**: GlobeNewswire, PR Newswire, BusinessWire (Phase 2/3 results)
 4. **FDA**: New approvals, accelerated approvals, breakthrough therapy, fast track, priority review
 5. **News**: OncoDaily, OncLive, Targeted Oncology, Cancer Network
-6. **X/Twitter colleagues**: Engagement signals from GI oncology KOLs
+6. **X/Twitter colleagues**: Engagement signals from GI oncology KOLs (planned — no MCP yet)
 
-**Date filtering**: Always add `after:YYYY-MM-DD` (7 days back) to search queries to avoid stale results consuming tokens.
+### GI Cancer Scope
+Colorectal, pancreatic, gastric/GEJ, hepatocellular, cholangiocarcinoma, GIST, esophageal, small bowel, anal. Include general oncology only if directly relevant (e.g., pan-tumor IO approvals).
 
-**GI cancer scope**: Colorectal, pancreatic, gastric/GEJ, hepatocellular, cholangiocarcinoma, GIST, esophageal, small bowel, anal. Include general oncology if directly relevant (e.g., pan-tumor IO approvals).
+**Top 5 papers must be GI-focused.** Non-GI papers (bladder, lung, prostate, etc.) go to Additional at most, never Top 5.
 
 ---
 
@@ -49,12 +72,13 @@ When Allan says **"run"**, execute this exact workflow:
 | Source | Score |
 |--------|-------|
 | NEJM | 10 |
-| Lancet, Nature Medicine | 9 |
+| Lancet, Nature, Nature Medicine | 9 |
 | JCO | 8 |
 | Annals of Oncology, JAMA Oncology | 7 |
 | FDA regulatory action | 8 |
 | ASCO/ESMO plenary | 8 |
 | AACR oral presentation | 7 |
+| Nature Communications, Clinical Cancer Research, British Journal of Cancer | 6 |
 | AACR poster / conference presentation | 6 |
 | Press release (Phase 3) | 6 |
 | NCCN guideline update | 7 |
@@ -162,13 +186,13 @@ Allan has **X Premium** — posts can be 300-800 characters (text only; URLs don
 
 ## Digest Engine
 
-**Location**: `my-website/digest_engine.py`
+**Location**: `digest_engine.py` (repo root)
 
 **Usage**: `python3 digest_engine.py digests/data/YYYY-MM-DD.json`
 
 **Outputs** (all generated automatically):
-1. `digests/digest-YYYY-MM-DD.html` — Main digest page (Bootstrap 4.6.2, Font Awesome 5, Inter font, site.css, anti-flash IIFE, paper-card divs, navbar, full footer)
-2. `digests/x-thread-YYYY-MM-DD.html` — Polished X thread draft (gradient header, thread-card layout, post-label badges, char-count display, clickable links, dark mode)
+1. `digests/digest-YYYY-MM-DD.html` — Main digest page
+2. `digests/xdigest-YYYY-MM-DD.html` — Polished X thread draft
 3. `digests/digest-feed.json` — Updated feed (single source of truth for website listing)
 4. `digests/index_digest.html` — Rebuilt archive page from feed JSON
 
@@ -190,7 +214,7 @@ The digest and index HTML files use an Immediately Invoked Function Expression f
 ### Files to commit per run
 ```
 git add digests/digest-YYYY-MM-DD.html \
-       digests/x-thread-YYYY-MM-DD.html \
+       digests/xdigest-YYYY-MM-DD.html \
        digests/data/YYYY-MM-DD.json \
        digests/digest-feed.json \
        digests/index_digest.html
@@ -205,11 +229,10 @@ Top stories: [1-line per paper with source in parentheses]
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
 ```
 
-### Git lock files
-If `fatal: cannot lock ref 'HEAD'` occurs, run:
-```bash
-rm -f .git/HEAD.lock .git/objects/maintenance.lock
-```
+### Git safety rules
+- **Always make new commits.** Never `git commit --amend` from the sandbox.
+- **Never use `GIT_INDEX_FILE` workarounds.** This caused a destructive commit that deleted 78 files in a prior session.
+- If lock files block a commit, tell Allan to run `rm -f .git/HEAD.lock .git/index.lock .git/objects/maintenance.lock` from Terminal. These are stale lock files safe to delete when no git operation is running.
 
 ---
 
@@ -231,9 +254,11 @@ rm -f .git/HEAD.lock .git/objects/maintenance.lock
 3. **Mount path changes every session** — always check `ls /sessions/*/mnt/` first.
 4. **Don't ask Allan for folder permission** — he has already authorized Cowork access to his Dropbox/Claude_projects folder.
 5. **Don't push to git** — it fails from the sandbox. Tell Allan to push.
-6. **Date-filter searches** — use `after:YYYY-MM-DD` to avoid old results wasting tokens.
-7. **Avoid duplicate papers** — check what was covered in the most recent digest(s) via `digest-feed.json`.
-8. **WebFetch is often blocked** — many oncology sites are blocked by the egress proxy. Rely on WebSearch summaries instead of trying to fetch full pages.
+6. **Date-filter all searches** — PubMed: `date_from`/`date_to`; WebSearch: `after:YYYY-MM-DD`.
+7. **Avoid duplicate papers** — check `digest-feed.json` before every run.
+8. **Top 5 must be GI-focused** — never include non-GI papers (bladder, lung, prostate, etc.) in the Top 5.
+9. **Limit PubMed metadata fetches to 15 PMIDs per call** — larger batches waste context with 60+ KB responses.
+10. **Never amend commits or use GIT_INDEX_FILE** — see Git safety rules above.
 
 ---
 
@@ -244,7 +269,7 @@ Report at the end of every run:
 Run stats — [Date]:
 - Searches: X
 - Total tool calls: Y
-- Session usage: Z% (ask Allan if not known)
+- Session usage: Z%
 ```
 
-Baseline targets: 7-8 searches, ~11 tool calls, ~15-20% session usage per run.
+Baseline targets: 5–7 searches, ~11 tool calls, ~15–20% session usage per run.

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Thread Draft — April 26, 2026 | GI Oncology Digest</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 0; }
+    .header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 2rem 1.5rem; text-align: center; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+    .header .subtitle { font-size: .9rem; color: #99ccff; }
+    .header .instructions { font-size: .8rem; color: #80b3e6; margin-top: .75rem; line-height: 1.4; }
+    .container { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .thread-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .thread-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid #f0f0f0; }
+    .post-label { font-weight: 700; font-size: .85rem; color: #003366; background: #e8f0fe; padding: 3px 10px; border-radius: 4px; }
+    .char-count { font-size: .75rem; color: #888; font-style: italic; }
+    .post-text { font-size: .95rem; line-height: 1.55; white-space: pre-wrap; word-wrap: break-word; }
+    .post-text a { color: #1da1f2; text-decoration: none; }
+    .post-text a:hover { text-decoration: underline; }
+    .footer-note { text-align: center; font-size: .8rem; color: #888; margin-top: 1rem; padding: 1rem; }
+    .copy-btn { background: #1da1f2; color: #fff; border: none; border-radius: 6px; padding: 6px 14px; font-size: .78rem; font-weight: 600; cursor: pointer; transition: background .2s; }
+    .copy-btn:hover { background: #0d8ddb; }
+    .copy-btn.copied { background: #28a745; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #c9d1d9; }
+      .thread-card { background: #161b22; border-color: #30363d; }
+      .thread-card-header { border-bottom-color: #21262d; }
+      .post-label { background: #1a2a3d; color: #66aadd; }
+    }
+  </style>
+  <script>
+  function copyPost(btn) {
+    var card = btn.closest('.thread-card');
+    var text = card.getAttribute('data-copy');
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>X Thread Draft</h1>
+    <div class="subtitle">GI Oncology Digest — April 26, 2026 — Biomarker Discovery Edition</div>
+    <div class="instructions">Review each post below, then copy and paste into X as a thread.<br>Post 1 first, then reply to it with Posts 2-7 in order.</div>
+  </div>
+  <div class="container">
+
+    <div class="thread-card" data-copy="🔬 GI Oncology Digest — April 26, 2026
+Biomarker Discovery Edition
+
+Today&#x27;s highlights:
+• MAYA trial spatial atlas reveals WHY some MSS CRC patients respond to IO
+• Blood-based 5-gene methylation test with AUC 0.96 for gastric cancer
+• Bile acids sabotaging chemo in PDAC — a druggable target
+• Cuproptosis nanogel breaking through TACE resistance in HCC
+
+A thread 🧵👇
+
+#GIOnc #CRC #PDAC #HCC #GastricCancer #PrecisionMedicine">
+      <div class="thread-card-header">
+        <span class="post-label">Post 1 — Hook</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">424 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔬 GI Oncology Digest — April 26, 2026
+Biomarker Discovery Edition
+
+Today&#x27;s highlights:
+• MAYA trial spatial atlas reveals WHY some MSS CRC patients respond to IO
+• Blood-based 5-gene methylation test with AUC 0.96 for gastric cancer
+• Bile acids sabotaging chemo in PDAC — a druggable target
+• Cuproptosis nanogel breaking through TACE resistance in HCC
+
+A thread 🧵👇
+
+#GIOnc #CRC #PDAC #HCC #GastricCancer #PrecisionMedicine</div>
+    </div>
+
+    <div class="thread-card" data-copy="🔥 #1 MAYA Trial — Spatial Immune Atlas in MSS CRC
+(Nature Communications)
+
+• First integrated spatial + transcriptomic profiling of MAYA trial samples
+• Responders: cytotoxic T cells enriched across tumor + stroma
+• Non-responders: fibroblast-T cell proximity = immune barriers
+• Early TIGIT + PD-1 upregulation post-TMZ predicts resistance
+• Post-TMZ TMB increase → better PFS
+
+This is why one-size-fits-all IO doesn&#x27;t work in MSS CRC. The tumor microenvironment is the gatekeeper. Fibroblast barriers are the next therapeutic frontier.
+
+#CRC #MSS #MAYA #ImmunoProfiling #GIOnc
+https://doi.org/10.1038/s41467-026-72204-2">
+      <div class="thread-card-header">
+        <span class="post-label">Post 2 — #1 MAYA Spatial Profiling</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">578 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔥 #1 MAYA Trial — Spatial Immune Atlas in MSS CRC
+(Nature Communications)
+
+• First integrated spatial + transcriptomic profiling of MAYA trial samples
+• Responders: cytotoxic T cells enriched across tumor + stroma
+• Non-responders: fibroblast-T cell proximity = immune barriers
+• Early TIGIT + PD-1 upregulation post-TMZ predicts resistance
+• Post-TMZ TMB increase → better PFS
+
+This is why one-size-fits-all IO doesn&#x27;t work in MSS CRC. The tumor microenvironment is the gatekeeper. Fibroblast barriers are the next therapeutic frontier.
+
+#CRC #MSS #MAYA #ImmunoProfiling #GIOnc
+
+<a href="https://doi.org/10.1038/s41467-026-72204-2" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41467-026-72204-2</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📊 #2 Liquid Biopsy Methylation Panel for Gastric Cancer Screening
+(Clinical Epigenetics)
+
+• 5-gene panel: ELMO1, FGF12, NPY, SEPTIN9, ZNF671
+• Training (n=605): AUC 0.96, sensitivity 82%, specificity 92%
+• Validation (n=152): AUC 0.89
+• Detects early stage (0-IB): AUC 0.82
+• Simple blood draw — no gastroscopy needed
+
+Population-level gastric cancer screening from a blood test? If this validates at scale, it could be transformative for high-incidence regions.
+
+#GastricCancer #LiquidBiopsy #EarlyDetection #GIOnc
+https://doi.org/10.1186/s13148-026-02143-8">
+      <div class="thread-card-header">
+        <span class="post-label">Post 3 — #2 Gastric Cancer Methylation</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">515 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📊 #2 Liquid Biopsy Methylation Panel for Gastric Cancer Screening
+(Clinical Epigenetics)
+
+• 5-gene panel: ELMO1, FGF12, NPY, SEPTIN9, ZNF671
+• Training (n=605): AUC 0.96, sensitivity 82%, specificity 92%
+• Validation (n=152): AUC 0.89
+• Detects early stage (0-IB): AUC 0.82
+• Simple blood draw — no gastroscopy needed
+
+Population-level gastric cancer screening from a blood test? If this validates at scale, it could be transformative for high-incidence regions.
+
+#GastricCancer #LiquidBiopsy #EarlyDetection #GIOnc
+
+<a href="https://doi.org/10.1186/s13148-026-02143-8" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1186/s13148-026-02143-8</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🎯 #3 Bile Acid TUDCA Drives Gemcitabine Resistance in PDAC
+(Cell Mol Life Sci)
+
+• TUDCA activates MAPK signaling → chemoresistance
+• TUDCA levels predict survival in PDAC patients
+• Dual role: resistance mechanism + prognostic biomarker
+• Opens bile acid metabolism as therapeutic target
+
+PDAC&#x27;s microenvironment keeps finding new ways to defeat us. But every resistance mechanism is also a potential drug target. Bile acid-MAPK axis deserves clinical exploration.
+
+#PDAC #PancreaticCancer #Chemoresistance #GIOnc
+https://doi.org/10.1007/s00018-026-06210-4">
+      <div class="thread-card-header">
+        <span class="post-label">Post 4 — #3 TUDCA PDAC Resistance</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">513 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🎯 #3 Bile Acid TUDCA Drives Gemcitabine Resistance in PDAC
+(Cell Mol Life Sci)
+
+• TUDCA activates MAPK signaling → chemoresistance
+• TUDCA levels predict survival in PDAC patients
+• Dual role: resistance mechanism + prognostic biomarker
+• Opens bile acid metabolism as therapeutic target
+
+PDAC&#x27;s microenvironment keeps finding new ways to defeat us. But every resistance mechanism is also a potential drug target. Bile acid-MAPK axis deserves clinical exploration.
+
+#PDAC #PancreaticCancer #Chemoresistance #GIOnc
+
+<a href="https://doi.org/10.1007/s00018-026-06210-4" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1007/s00018-026-06210-4</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🌍 #4 AQP1 Methylation Predicts Cholangiocarcinoma Prognosis
+(Scientific Reports)
+
+• High-resolution bisulfite sequencing of AQP1 promoter
+• t-SNE classification → 2 subgroups with distinct OS
+• HR 0.322 (p=0.001) — strong independent prognostic signal
+• Epigenetic field effect: similar changes in non-neoplastic tissue
+
+HR 0.32 is a powerful signal. The field effect is especially interesting — could we detect CCA risk from adjacent &quot;normal&quot; tissue? Less invasive risk stratification is the goal.
+
+#CCA #Cholangiocarcinoma #Epigenetics #GIOnc
+https://doi.org/10.1038/s41598-026-49380-8">
+      <div class="thread-card-header">
+        <span class="post-label">Post 5 — #4 AQP1 Cholangiocarcinoma</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">544 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🌍 #4 AQP1 Methylation Predicts Cholangiocarcinoma Prognosis
+(Scientific Reports)
+
+• High-resolution bisulfite sequencing of AQP1 promoter
+• t-SNE classification → 2 subgroups with distinct OS
+• HR 0.322 (p=0.001) — strong independent prognostic signal
+• Epigenetic field effect: similar changes in non-neoplastic tissue
+
+HR 0.32 is a powerful signal. The field effect is especially interesting — could we detect CCA risk from adjacent &quot;normal&quot; tissue? Less invasive risk stratification is the goal.
+
+#CCA #Cholangiocarcinoma #Epigenetics #GIOnc
+
+<a href="https://doi.org/10.1038/s41598-026-49380-8" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41598-026-49380-8</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🧪 #5 Cuproptosis Nanogel Overcomes TACE Refractoriness in HCC
+(J Nanobiotechnology)
+
+• TACE-refractory patients: elevated serum copper + ATOX1/ATP7B
+• Cu²⁺/DC_AC50 nanogel targets copper homeostasis
+• In vivo: suppressed tumors, reduced metastasis, prolonged survival
+• Mechanism: cuproptosis + HIF-1a/VEGF blockade + CD8⁺ T-cell boost
+
+When TACE fails, copper metabolism dysregulation may be the culprit. This cuproptosis-based nanoembolization is creative translational science. Watch this space.
+
+#HCC #TACE #Cuproptosis #LiverCancer #GIOnc
+https://doi.org/10.1186/s12951-026-04456-5">
+      <div class="thread-card-header">
+        <span class="post-label">Post 6 — #5 Cuproptosis HCC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">543 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧪 #5 Cuproptosis Nanogel Overcomes TACE Refractoriness in HCC
+(J Nanobiotechnology)
+
+• TACE-refractory patients: elevated serum copper + ATOX1/ATP7B
+• Cu²⁺/DC_AC50 nanogel targets copper homeostasis
+• In vivo: suppressed tumors, reduced metastasis, prolonged survival
+• Mechanism: cuproptosis + HIF-1a/VEGF blockade + CD8⁺ T-cell boost
+
+When TACE fails, copper metabolism dysregulation may be the culprit. This cuproptosis-based nanoembolization is creative translational science. Watch this space.
+
+#HCC #TACE #Cuproptosis #LiverCancer #GIOnc
+
+<a href="https://doi.org/10.1186/s12951-026-04456-5" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1186/s12951-026-04456-5</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📚 More from today&#x27;s digest:
+
+• p53 mucosal vaccine shows anti-tumor immunity in CRC model (Cancer Gene Ther)
+• Dual-layer spectral CT predicts perineural invasion in PDAC — AUC 0.86 (Abdom Radiol)
+• IL-1a as PDAC biomarker + immunotherapy target — DCR 62% in combo trials (Clin Transl Oncol)
+• Gastric venous congestion after pancreatic surgery — 16% incidence (Langenbeck&#x27;s)
+
+Full digest with all papers and references 👇
+https://allanatal.github.io/my-website/digests/digest-2026-04-26.html">
+      <div class="thread-card-header">
+        <span class="post-label">Post 7 — Additional Papers</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">421 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📚 More from today&#x27;s digest:
+
+• p53 mucosal vaccine shows anti-tumor immunity in CRC model (Cancer Gene Ther)
+• Dual-layer spectral CT predicts perineural invasion in PDAC — AUC 0.86 (Abdom Radiol)
+• IL-1a as PDAC biomarker + immunotherapy target — DCR 62% in combo trials (Clin Transl Oncol)
+• Gastric venous congestion after pancreatic surgery — 16% incidence (Langenbeck&#x27;s)
+
+Full digest with all papers and references 👇
+
+<a href="https://allanatal.github.io/my-website/digests/digest-2026-04-26.html" target="_blank" style="color:#1da1f2;word-break:break-all;">https://allanatal.github.io/my-website/digests/digest-2026-04-26.html</a></div>
+    </div>
+
+    <div class="footer-note">
+      Generated by Dr. Allan Pereira's GI Oncology Digest system<br>
+      Full digest: <a href="https://allanatal.github.io/my-website/digests/digest-2026-04-26.html" style="color:#1da1f2;">https://allanatal.github.io/my-website/digests/digest-2026-04-26.html</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-26",
+  "date_display": "April 26, 2026",
+  "subtitle": "Biomarker Discovery Edition",
+  "feed_desc": "MAYA trial spatial immune profiling predicts chemo-IO response in MSS mCRC (Nature Communications), 5-gene liquid biopsy methylation panel AUC 0.96 for gastric cancer screening (Clinical Epigenetics), TUDCA bile acid drives gemcitabine resistance via MAPK in PDAC (Cell Mol Life Sci), AQP1 methylation signature independently predicts CCA prognosis HR 0.32 (Scientific Reports), ATOX1-targeted cuproptosis nanogel overcomes TACE refractoriness in HCC (J Nanobiotechnology)",
+  "papers": [
+    {
+      "title": "MAYA Trial Spatial Immune Profiling Reveals Predictors of Chemo-Immunotherapy Response in MSS Colorectal Cancer",
+      "url": "https://doi.org/10.1038/s41467-026-72204-2",
+      "source": "Nature Communications",
+      "authors": "Choo J, Zhao JJ, Lau MC, Raimondi A, et al.",
+      "published": "April 25, 2026",
+      "score": 9,
+      "score_rationale": "Base 6 (Nature Communications) + Phase II trial data (+2) + Biomarker-guided/precision (+1)",
+      "summary": "Integrated spatial, transcriptomic, and immune profiling of longitudinal samples from the MAYA trial (NCT03832621) in MGMT-silenced MSS mCRC. Post-temozolomide increases in tumor mutational burden associated with improved PFS. Spatial profiling showed clinical benefit was greatest in permissive tumor microenvironments: responders had enrichment of cytotoxic T cells across tumor and stromal compartments, while non-responders displayed fibroblast-T cell proximity barriers to immune-mediated clearance. Longitudinal peripheral immune profiling revealed that early TIGIT and PD-1 upregulation after TMZ predicted resistance. These findings show both mutational evolution and spatial immune architecture contribute to immune sensitization in MSS CRC.",
+      "post_angle": "First spatial immune atlas of the MAYA trial — now we know WHY some MSS CRC patients respond to IO and others don't. Fibroblast barriers are the next therapeutic target. #CRC #MSS #ImmunoProfiling #GIOnc #PrecisionMedicine"
+    },
+    {
+      "title": "Liquid Biopsy Multi-Methylation Panel Achieves AUC 0.96 for Minimally Invasive Gastric Cancer Screening",
+      "url": "https://doi.org/10.1186/s13148-026-02143-8",
+      "source": "Clinical Epigenetics",
+      "authors": "Long F, Xu Y, Wu K, Fu X, et al.",
+      "published": "April 25, 2026",
+      "score": 6,
+      "score_rationale": "Base 5 (Other journal) + Biomarker-guided/precision (+1)",
+      "summary": "A 5-gene blood-based methylation panel (ELMO1, FGF12, NPY, SEPTIN9, ZNF671) was developed for gastric cancer screening using Random Forest modeling. In a training cohort of 605 subjects, the model achieved AUC 0.9585, sensitivity 81.85%, and specificity 92.49%. In an independent validation cohort of 152 subjects, AUC was 0.8868 with 82.19% sensitivity and 81.01% specificity. The model detected across all pathological stages with AUCs ranging from 0.82 (stage 0-IB) to 0.94 (stage IV), demonstrating potential for early-stage detection through a minimally invasive peripheral blood test.",
+      "post_angle": "A simple blood test with AUC 0.96 for gastric cancer screening? This 5-gene methylation panel could replace gastroscopy for population screening. Validation needed at scale. #GastricCancer #LiquidBiopsy #EarlyDetection #GIOnc"
+    },
+    {
+      "title": "Bile Acid TUDCA Drives Gemcitabine Resistance Through MAPK Signaling in Pancreatic Cancer",
+      "url": "https://doi.org/10.1007/s00018-026-06210-4",
+      "source": "Cellular and Molecular Life Sciences",
+      "authors": "Wang Y, Xue S, Xu H, Ma J, et al.",
+      "published": "April 25, 2026",
+      "score": 6,
+      "score_rationale": "Base 5 (Other journal) + Biomarker-guided/precision (+1)",
+      "summary": "This study identified the bile acid tauroursodeoxycholic acid (TUDCA) as a promoter of chemoresistance in pancreatic ductal adenocarcinoma through MAPK signaling pathway activation. TUDCA levels predicted survival outcomes in PDAC patients, establishing it as both a mechanistic driver of gemcitabine resistance and a potential prognostic biomarker. The findings open new avenues for targeting bile acid metabolism to overcome chemotherapy resistance in PDAC, a cancer with notoriously poor treatment responses.",
+      "post_angle": "Your bile acids might be sabotaging your chemo. TUDCA promotes gemcitabine resistance in PDAC via MAPK — a druggable axis and new prognostic biomarker. #PDAC #Chemoresistance #BileAcids #GIOnc #PrecisionMedicine"
+    },
+    {
+      "title": "AQP1 Promoter Methylation Signature Independently Predicts Cholangiocarcinoma Prognosis",
+      "url": "https://doi.org/10.1038/s41598-026-49380-8",
+      "source": "Scientific Reports",
+      "authors": "Yokoyama S, Noguchi H, Hamada T, Matsuo K, et al.",
+      "published": "April 25, 2026",
+      "score": 6,
+      "score_rationale": "Base 5 (Other journal) + Biomarker-guided/precision (+1)",
+      "summary": "Using high-resolution bisulfite amplicon sequencing, researchers identified AQP1 promoter methylation haplotypes as a prognostic biomarker in cholangiocarcinoma. A t-SNE-based classification of methylation signatures identified two subgroups with distinct overall survival. Multivariate Firth's penalized Cox regression confirmed independent prognostic significance (HR 0.322, p=0.001). Notably, similar haplotype alterations were found in non-neoplastic and neoplastic tissues, consistent with an epigenetic field effect — suggesting the biomarker could potentially be detected in less-invasive tissue samples adjacent to the tumor.",
+      "post_angle": "HR 0.32 — AQP1 methylation is a powerful independent prognostic marker in cholangiocarcinoma with evidence of an epigenetic field effect. Could enable less invasive risk stratification. #CCA #Cholangiocarcinoma #Epigenetics #GIOnc"
+    },
+    {
+      "title": "ATOX1-Targeted Cuproptosis Nanogel Overcomes TACE Refractoriness in Hepatocellular Carcinoma",
+      "url": "https://doi.org/10.1186/s12951-026-04456-5",
+      "source": "Journal of Nanobiotechnology",
+      "authors": "Chen C, Song S, Wu W, Yu N, et al.",
+      "published": "April 26, 2026",
+      "score": 5,
+      "score_rationale": "Base 5 (Other journal)",
+      "summary": "A thermosensitive nanogel (Cu2+/DC_AC50@PNA) co-loaded with copper ions and the ATOX1 inhibitor DC_AC50 was developed to overcome TACE refractoriness in HCC. Clinical analysis showed TACE-refractory patients had elevated serum copper and ATOX1/ATP7B expression. In VX2 orthotopic liver tumor models, the nanoembolization system markedly suppressed tumor growth, increased necrosis, reduced metastasis, and prolonged survival vs conventional TACE. Mechanistically, it disrupted copper transport, activated cuproptosis, inhibited HIF-1a/VEGF angiogenesis, and enhanced CD8+ T-cell infiltration.",
+      "post_angle": "When TACE stops working, copper metabolism may be the culprit. This cuproptosis-inducing nanogel reverses TACE refractoriness in HCC — fascinating translational science. #HCC #TACE #Cuproptosis #LiverCancer #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "Mucosal p53 Peptide Vaccine Induces Anti-Tumor Immunity in Colorectal Cancer Model",
+      "url": "https://doi.org/10.1038/s41417-026-01035-6",
+      "source_line": "Cancer Gene Therapy — Intranasal vaccine targeting mutant p53 (R270H) with nanoemulsion adjuvant decreased tumor size and prolonged survival in murine CRC model via Th1/Th17 and anti-p53 IgG responses"
+    },
+    {
+      "title": "Dual-Layer Spectral CT Predicts Perineural Invasion in Pancreatic Cancer",
+      "url": "https://doi.org/10.1007/s00261-026-05529-7",
+      "source_line": "Abdominal Radiology — Normalized iodine concentration (nDIa) from dual-layer spectral CT achieves AUC 0.86 for preoperative PNI prediction in PDAC, outperforming conventional CT (AUC 0.68)"
+    },
+    {
+      "title": "IL-1a in PDAC: Biomarker and Immunotherapy Target",
+      "url": "https://doi.org/10.1007/s12094-026-04325-5",
+      "source_line": "Clinical & Translational Oncology — Review of IL-1a as prognostic biomarker (HR 1.99) and therapeutic target in PDAC; IL-1a blockers (anakinra, canakinumab) show DCR up to 62% in combination trials"
+    },
+    {
+      "title": "Gastric Venous Congestion After Pancreatic Surgery: Systematic Review",
+      "url": "https://doi.org/10.1007/s00423-026-04049-8",
+      "source_line": "Langenbeck's Archives of Surgery — Pooled intraoperative GVC incidence 16.3% in pancreatic surgery; associated with DGE (17.3%), major complications (13.5%), and 4.3% 90-day mortality"
+    },
+    {
+      "title": "Cost-Effectiveness of Atezolizumab + Bevacizumab in Unresectable HCC (Malaysia)",
+      "url": "https://doi.org/10.1080/13696998.2026.2658448",
+      "source_line": "Journal of Medical Economics — Atezo+bev yields 0.87 additional QALYs vs lenvatinib with ICER of ~0.91x GDP/capita, supporting cost-effectiveness in Malaysian healthcare system"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🔬 GI Oncology Digest — April 26, 2026\nBiomarker Discovery Edition\n\nToday's highlights:\n• MAYA trial spatial atlas reveals WHY some MSS CRC patients respond to IO\n• Blood-based 5-gene methylation test with AUC 0.96 for gastric cancer\n• Bile acids sabotaging chemo in PDAC — a druggable target\n• Cuproptosis nanogel breaking through TACE resistance in HCC\n\nA thread 🧵👇\n\n#GIOnc #CRC #PDAC #HCC #GastricCancer #PrecisionMedicine",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 MAYA Spatial Profiling",
+      "text": "🔥 #1 MAYA Trial — Spatial Immune Atlas in MSS CRC\n(Nature Communications)\n\n• First integrated spatial + transcriptomic profiling of MAYA trial samples\n• Responders: cytotoxic T cells enriched across tumor + stroma\n• Non-responders: fibroblast-T cell proximity = immune barriers\n• Early TIGIT + PD-1 upregulation post-TMZ predicts resistance\n• Post-TMZ TMB increase → better PFS\n\nThis is why one-size-fits-all IO doesn't work in MSS CRC. The tumor microenvironment is the gatekeeper. Fibroblast barriers are the next therapeutic frontier.\n\n#CRC #MSS #MAYA #ImmunoProfiling #GIOnc",
+      "url": "https://doi.org/10.1038/s41467-026-72204-2"
+    },
+    {
+      "label": "Post 3 — #2 Gastric Cancer Methylation",
+      "text": "📊 #2 Liquid Biopsy Methylation Panel for Gastric Cancer Screening\n(Clinical Epigenetics)\n\n• 5-gene panel: ELMO1, FGF12, NPY, SEPTIN9, ZNF671\n• Training (n=605): AUC 0.96, sensitivity 82%, specificity 92%\n• Validation (n=152): AUC 0.89\n• Detects early stage (0-IB): AUC 0.82\n• Simple blood draw — no gastroscopy needed\n\nPopulation-level gastric cancer screening from a blood test? If this validates at scale, it could be transformative for high-incidence regions.\n\n#GastricCancer #LiquidBiopsy #EarlyDetection #GIOnc",
+      "url": "https://doi.org/10.1186/s13148-026-02143-8"
+    },
+    {
+      "label": "Post 4 — #3 TUDCA PDAC Resistance",
+      "text": "🎯 #3 Bile Acid TUDCA Drives Gemcitabine Resistance in PDAC\n(Cell Mol Life Sci)\n\n• TUDCA activates MAPK signaling → chemoresistance\n• TUDCA levels predict survival in PDAC patients\n• Dual role: resistance mechanism + prognostic biomarker\n• Opens bile acid metabolism as therapeutic target\n\nPDAC's microenvironment keeps finding new ways to defeat us. But every resistance mechanism is also a potential drug target. Bile acid-MAPK axis deserves clinical exploration.\n\n#PDAC #PancreaticCancer #Chemoresistance #GIOnc",
+      "url": "https://doi.org/10.1007/s00018-026-06210-4"
+    },
+    {
+      "label": "Post 5 — #4 AQP1 Cholangiocarcinoma",
+      "text": "🌍 #4 AQP1 Methylation Predicts Cholangiocarcinoma Prognosis\n(Scientific Reports)\n\n• High-resolution bisulfite sequencing of AQP1 promoter\n• t-SNE classification → 2 subgroups with distinct OS\n• HR 0.322 (p=0.001) — strong independent prognostic signal\n• Epigenetic field effect: similar changes in non-neoplastic tissue\n\nHR 0.32 is a powerful signal. The field effect is especially interesting — could we detect CCA risk from adjacent \"normal\" tissue? Less invasive risk stratification is the goal.\n\n#CCA #Cholangiocarcinoma #Epigenetics #GIOnc",
+      "url": "https://doi.org/10.1038/s41598-026-49380-8"
+    },
+    {
+      "label": "Post 6 — #5 Cuproptosis HCC",
+      "text": "🧪 #5 Cuproptosis Nanogel Overcomes TACE Refractoriness in HCC\n(J Nanobiotechnology)\n\n• TACE-refractory patients: elevated serum copper + ATOX1/ATP7B\n• Cu²⁺/DC_AC50 nanogel targets copper homeostasis\n• In vivo: suppressed tumors, reduced metastasis, prolonged survival\n• Mechanism: cuproptosis + HIF-1a/VEGF blockade + CD8⁺ T-cell boost\n\nWhen TACE fails, copper metabolism dysregulation may be the culprit. This cuproptosis-based nanoembolization is creative translational science. Watch this space.\n\n#HCC #TACE #Cuproptosis #LiverCancer #GIOnc",
+      "url": "https://doi.org/10.1186/s12951-026-04456-5"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 More from today's digest:\n\n• p53 mucosal vaccine shows anti-tumor immunity in CRC model (Cancer Gene Ther)\n• Dual-layer spectral CT predicts perineural invasion in PDAC — AUC 0.86 (Abdom Radiol)\n• IL-1a as PDAC biomarker + immunotherapy target — DCR 62% in combo trials (Clin Transl Oncol)\n• Gastric venous congestion after pancreatic surgery — 16% incidence (Langenbeck's)\n\nFull digest with all papers and references 👇",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-26.html"
+    }
+  ]
+}

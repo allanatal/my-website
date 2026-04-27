@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-27",
+  "date_display": "April 27, 2026",
+  "subtitle": "Surgical Oncology Edition",
+  "feed_desc": "Adequate LND improves OS in esophageal cancer pCR after neoadjuvant HR 0.70 meta-analysis (Annals of Surgical Oncology), Pulmonary mets after PDAC surgery mOS 30 mo vs liver 13 mo prognostic hierarchy (Annals of Surgical Oncology), Perioperative chemo completion HR 0.20 for 1-year OS after total gastrectomy (World J Surg Oncol), EOCRC vs LOCRC 5-year survival in 92K patients with distinct prognostic profiles (J Gastroenterol Hepatol), SLC1A3 aspartate transporter promotes CRC via MDM2-p53 and M2 macrophage polarization (Cancer Science)",
+  "papers": [
+    {
+      "title": "Adequate Lymph Node Dissection Improves Overall Survival in Esophageal Cancer Complete Responders After Neoadjuvant Therapy: A Meta-Analysis",
+      "url": "https://doi.org/10.1245/s10434-026-19610-4",
+      "source": "Annals of Surgical Oncology",
+      "authors": "Zhou X, Chen D, Song P, Zheng Y, et al.",
+      "published": "April 27, 2026",
+      "score": 9,
+      "score_rationale": "Base 5 (Other journal) + Meta-analysis (+2) + Survival benefit (+2)",
+      "summary": "Meta-analysis of 8 studies involving 2,578 patients with pathologic complete response (pCR) after neoadjuvant therapy for esophageal cancer. Adequate lymph node dissection (LND) was significantly associated with improved overall survival (HR 0.70; 95% CI 0.58-0.84, p<0.001). No additional benefit was observed when harvested lymph nodes exceeded 40. Subgroup analyses revealed that adequate LND was significantly associated with superior OS in Western and adenocarcinoma-predominant populations but not in Eastern populations or squamous cell carcinoma, suggesting histology-tailored lymphadenectomy strategies.",
+      "post_angle": "Even after pCR, lymph node dissection matters in esophageal cancer — but context is everything. Adenocarcinoma benefits, SCC doesn't. Personalized surgery. #Esophageal #SurgOnc #GIOnc #PrecisionMedicine"
+    },
+    {
+      "title": "Pulmonary Metastases After PDAC Resection Show Superior Survival: A Prognostic Hierarchy of Recurrence Patterns",
+      "url": "https://doi.org/10.1245/s10434-026-19586-1",
+      "source": "Annals of Surgical Oncology",
+      "authors": "D'Souza M, Andree M, Feili A, Sadr-Azodi O, Holmberg M.",
+      "published": "April 27, 2026",
+      "score": 8,
+      "score_rationale": "Base 5 (Other journal) + Retrospective (+1) + Survival benefit (+2)",
+      "summary": "Analysis of 343 resected PDAC patients from Karolinska University Hospital. 85% recurred within 3 years, with a clear prognostic hierarchy: pulmonary metastases mOS 30 months (95% CI 27-35), other sites 20 months (95% CI 19-26), and liver 13 months (95% CI 12-16), p<0.001. Mortality risk compared to no recurrence was 7-fold for lung, 12-fold for other, and 23-fold for liver. These findings support consideration of targeted treatment strategies — including potentially aggressive local approaches — for the lung recurrence subgroup.",
+      "post_angle": "Not all PDAC recurrences are equal. Lung mets: mOS 30 mo. Liver mets: 13 mo. A 23-fold vs 7-fold mortality gap. This prognostic hierarchy should guide treatment intensity. #PDAC #PancreaticCancer #SurgOnc #GIOnc"
+    },
+    {
+      "title": "Completion of Perioperative Chemotherapy Dramatically Improves 1-Year Survival After Total Gastrectomy for Gastric Cancer",
+      "url": "https://doi.org/10.1186/s12957-026-04364-w",
+      "source": "World Journal of Surgical Oncology",
+      "authors": "Aldarwish M, Hoelzen JP, El-Sourani N, et al.",
+      "published": "April 25, 2026",
+      "score": 8,
+      "score_rationale": "Base 5 (Other journal) + Retrospective (+1) + Survival benefit (+2)",
+      "summary": "Retrospective analysis of 145 patients undergoing total gastrectomy for gastric cancer (2012-2023). Completion of the perioperative chemotherapy sequence was independently associated with markedly improved 1-year OS compared to neoadjuvant alone (HR 0.20; 95% CI 0.08-0.50, p=0.001), remaining significant in 60-day landmark analysis. Critically, 55.3% of patients who started neoadjuvant chemotherapy did not proceed to the adjuvant phase, primarily due to patient refusal or medical contraindications. Poorer tumor regression grade showed a prognostic trend (HR 1.60, p=0.059).",
+      "post_angle": "HR 0.20 — completing perioperative chemo after gastrectomy is an 80% mortality reduction at 1 year. Yet 55% of patients never finish. This is a quality gap we can close. #GastricCancer #SurgOnc #GIOnc #QualityOfCare"
+    },
+    {
+      "title": "Early-Onset vs Later-Onset Colorectal Cancer: Distinct Survival Profiles in 92,365 Patients From Taiwan",
+      "url": "https://doi.org/10.1111/jgh.70401",
+      "source": "Journal of Gastroenterology and Hepatology",
+      "authors": "Kuan TC, Wu CY, Chen CC, Giovannucci E, Liu JJ.",
+      "published": "April 26, 2026",
+      "score": 6,
+      "score_rationale": "Base 5 (Other journal) + Retrospective/real-world (+1)",
+      "summary": "Nationwide study of 92,365 CRC patients from the Taiwan Cancer Registry (2002-2015). EOCRC patients (<50 years) presented with more advanced staging but demonstrated slightly better 5-year CRC-specific survival than LOCRC after adjusting for sex and tumor characteristics — across all CRC sites. EOCRC patients had more females, more current alcohol/cigarette users, and less right-sided disease. Notably, female sex and treatment delay <30 days were associated with improved survival in LOCRC but not EOCRC, suggesting distinct biology. Underweight BMI was a risk factor only in LOCRC.",
+      "post_angle": "92K patients confirm: early-onset CRC is a different disease. More advanced at diagnosis yet better cancer-specific survival. The biology differs — we need age-specific screening & treatment strategies. #EOCRC #CRC #GIOnc"
+    },
+    {
+      "title": "Aspartate Transporter SLC1A3 Drives Colorectal Cancer Through MDM2-p53 Pathway and M2 Macrophage Polarization",
+      "url": "https://doi.org/10.1111/cas.70396",
+      "source": "Cancer Science",
+      "authors": "Deng C, Zhou Y, Song S, Liu H, et al.",
+      "published": "April 26, 2026",
+      "score": 6,
+      "score_rationale": "Base 5 (Other journal) + Biomarker-guided/precision (+1)",
+      "summary": "SLC1A3, the primary aspartate transporter, is significantly overexpressed in CRC and associated with poor prognosis. This study reveals a dual mechanism: SLC1A3 enhances CRC cell proliferation, invasion, and migration through the DAG/PKC/MDM2 signaling axis (suppressing p53), while simultaneously inducing immunosuppressive M2 macrophage polarization via upregulation of IL17c and CSF2. This dual tumor-intrinsic and immune-modulatory role makes SLC1A3 a promising therapeutic target that could simultaneously address tumor growth and immune evasion.",
+      "post_angle": "One transporter, two mechanisms: SLC1A3 drives CRC growth via MDM2-p53 AND reshapes the immune microenvironment via M2 macrophage polarization. A dual-target opportunity. #CRC #Immunology #PrecisionMedicine #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "Emerging and Established Targets in CRC: Translating Biology Into Therapeutics",
+      "url": "https://doi.org/10.1200/EDBK-26-516576",
+      "source_line": "ASCO Educational Book — Comprehensive review of KRAS G12C combos, BRAF strategies, ADCs, bispecific antibodies, DDR inhibitors, and TME-modulating agents reshaping precision CRC oncology (Lenz HJ et al.)"
+    },
+    {
+      "title": "Updated Epidemiology of GI Cancers in the Asia-Pacific Region",
+      "url": "https://doi.org/10.1111/jgh.70404",
+      "source_line": "J Gastroenterol Hepatol — GBD 2021 + GLOBOCAN 2022 analysis: CRC ranks highest ASIR across Asia-Pacific; Mongolia disproportionately burdened by esophageal, gastric, and liver cancers"
+    },
+    {
+      "title": "METTL3-m6A-MALAT1-NF-kB Regulatory Axis in Colorectal Cancer Progression",
+      "url": "https://doi.org/10.1186/s12967-026-08114-0",
+      "source_line": "J Translational Medicine — METTL3 stabilizes MALAT1 via m6A modification, activating NF-kB through IkBa degradation and p65 nuclear translocation; METTL3 inhibitor suppresses xenograft growth"
+    },
+    {
+      "title": "Histotripsy Dose Optimization in Preclinical HCC Model",
+      "url": "https://doi.org/10.1038/s41598-026-48331-7",
+      "source_line": "Scientific Reports — Histotripsy dose impacts cellular damage and treatment outcomes in HCC; dose optimization enables abscopal immune effects"
+    },
+    {
+      "title": "Rubimaillin as Natural Product KRAS G12D Inhibitor in Pancreatic Cancer",
+      "url": "https://doi.org/10.1007/s11030-026-11554-x",
+      "source_line": "Molecular Diversity — TCM-derived rubimaillin shows IC50 1.10 uM in MIA PaCa-2 cells, reduces KRAS protein, modulates p53/BCL2, inhibits migration in PDAC cell lines"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🔪 GI Oncology Digest — April 27, 2026\nSurgical Oncology Edition\n\nToday's highlights:\n• Even after pCR, lymphadenectomy matters in esophageal cancer — but NOT for SCC\n• Not all PDAC recurrences are equal: lung mets mOS 30 mo vs liver 13 mo\n• Finishing perioperative chemo = 80% mortality reduction in gastric cancer\n• 92K-patient study redefines EOCRC as a distinct disease\n\nA thread 🧵👇\n\n#GIOnc #SurgOnc #EsophagealCancer #PDAC #GastricCancer #EOCRC",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 LND Esophageal pCR",
+      "text": "🔥 #1 Lymph Node Dissection in Esophageal Cancer pCR\n(Annals of Surgical Oncology)\n\n• Meta-analysis: 2,578 pCR patients across 8 studies\n• Adequate LND → HR 0.70 for OS (p<0.001)\n• No extra benefit beyond 40 lymph nodes\n• Key caveat: benefit seen in adenocarcinoma + Western patients\n• No significant OS benefit in SCC or Eastern populations\n\nThis is why biology trumps one-size-fits-all surgery. Histology should guide the extent of lymphadenectomy — even after complete pathologic response.\n\n#Esophageal #SurgOnc #GIOnc #PrecisionSurgery",
+      "url": "https://doi.org/10.1245/s10434-026-19610-4"
+    },
+    {
+      "label": "Post 3 — #2 PDAC Recurrence Hierarchy",
+      "text": "📊 #2 PDAC Recurrence Prognostic Hierarchy\n(Annals of Surgical Oncology)\n\n• 343 resected PDAC patients, 85% recurred within 3 years\n• Lung mets: mOS 30 mo\n• Other sites: mOS 20 mo\n• Liver mets: mOS 13 mo\n• Mortality risk: lung 7x, other 12x, liver 23x vs no recurrence\n\nThis changes the conversation about recurrent PDAC. Lung-only recurrence patients deserve a different treatment paradigm — potentially even oligometastatic approaches.\n\n#PDAC #PancreaticCancer #SurgOnc #GIOnc",
+      "url": "https://doi.org/10.1245/s10434-026-19586-1"
+    },
+    {
+      "label": "Post 4 — #3 Perioperative Chemo Gastric",
+      "text": "🎯 #3 Completing Perioperative Chemo After Gastrectomy\n(World J Surg Oncol)\n\n• 145 total gastrectomy patients\n• Completing perioperative chemo vs neoadjuvant alone: HR 0.20 (p=0.001)\n• That's an 80% reduction in 1-year mortality\n• BUT 55% of patients never finished the adjuvant phase\n• Main barriers: patient refusal + medical contraindications\n\nThe biggest gap in gastric cancer outcomes isn't drug discovery — it's treatment completion. We must do better at supporting patients through the full course.\n\n#GastricCancer #SurgOnc #QualityOfCare #GIOnc",
+      "url": "https://doi.org/10.1186/s12957-026-04364-w"
+    },
+    {
+      "label": "Post 5 — #4 EOCRC Taiwan",
+      "text": "🌍 #4 Early-Onset CRC: A Distinct Disease in 92K Patients\n(J Gastroenterol Hepatol)\n\n• Taiwan Cancer Registry: 92,365 CRC patients (2002-2015)\n• EOCRC (<50y): more advanced staging BUT better CRC-specific survival\n• Female sex + treatment delay protected LOCRC but NOT EOCRC\n• Underweight BMI = risk factor only in LOCRC\n• EOCRC: more left-sided, more females, more alcohol/tobacco use\n\nWith Giovannucci as co-author, this massive dataset confirms EOCRC has fundamentally different biology. Age-specific treatment strategies are overdue.\n\n#EOCRC #CRC #Epidemiology #GIOnc",
+      "url": "https://doi.org/10.1111/jgh.70401"
+    },
+    {
+      "label": "Post 6 — #5 SLC1A3 CRC",
+      "text": "🧪 #5 SLC1A3: One Transporter, Two Cancer Mechanisms\n(Cancer Science)\n\n• Aspartate transporter SLC1A3 overexpressed in CRC = poor prognosis\n• Mechanism 1: DAG/PKC/MDM2 axis → p53 suppression → proliferation\n• Mechanism 2: IL17c/CSF2 → M2 macrophage polarization → immune evasion\n• Enhances proliferation, invasion, migration in cells + organoids\n\nA metabolic transporter that simultaneously drives tumor growth AND immune escape? That's a dual-target opportunity worth pursuing.\n\n#CRC #Immunology #MetabolicOncology #GIOnc",
+      "url": "https://doi.org/10.1111/cas.70396"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 More from today's digest:\n\n• Emerging CRC targets: KRAS combos, BRAF strategies, ADCs, bispecifics — ASCO Ed Book review by Lenz et al.\n• GI cancer epidemiology update: Asia-Pacific GBD 2021 + GLOBOCAN 2022 analysis\n• METTL3-m6A-MALAT1 axis drives CRC via NF-kB pathway (J Transl Med)\n• Rubimaillin: natural product KRAS G12D inhibitor IC50 1.1 uM in PDAC cells\n\nFull digest with all papers and references 👇",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-27.html"
+    }
+  ]
+}

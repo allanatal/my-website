@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-28",
+  "date_display": "April 28, 2026",
+  "subtitle": "Tumor Microenvironment Edition",
+  "feed_desc": "Lenvatinib + PD-1 benefits GC with abundant immunosuppressive macrophages EPOC1706 correlative (Cancer Immunology Research), CAFs regulate DNA repair in PDAC through NDRG1-mediated R-loop processing Nature Cell Biology, CCNE1 gain = lethal outcome + immune desert in 1273 gastric cancer patients across 6 cohorts (British Journal of Cancer), GPR34 in damage-associated macrophages enhances anti-tumor immunity with surufatinib in PDAC (Signal Transduction and Targeted Therapy), Site-specific genomic markers predict PD-1 response in gastric/GEJ cancer C-CAT registry 912 patients (BioDrugs)",
+  "papers": [
+    {
+      "title": "Lenvatinib Combined with PD-1 Blockade Benefits Gastric Cancers Through Immunosuppressive Macrophage Modulation: EPOC1706 Translational Analysis",
+      "url": "https://doi.org/10.1158/2326-6066.CIR-25-0982",
+      "source": "Cancer Immunology Research",
+      "authors": "Lin NY, Machiyama H, Kawazoe A, Shitara K, Nishikawa H, Koyama S, et al.",
+      "published": "April 27, 2026",
+      "score": 9,
+      "score_rationale": "Base 6 (Cancer Immunol Res) + Phase II trial data (+2) + Biomarker-guided/precision (+1)",
+      "summary": "Translational analysis from the EPOC1706 clinical trial of lenvatinib plus pembrolizumab in advanced gastric cancer. Longitudinal immunoprofiling of paired tumor samples revealed that lenvatinib selectively reduced CD206+CD163+ immunosuppressive macrophages in the TME and increased antitumor immunity. Patients with abundant immunosuppressive macrophage infiltration (>440/mm²) had favorable responses to combination therapy — 8 of 9 responded — while none of 8 such patients responded to PD-1 monotherapy. Mechanistically, lenvatinib inhibited PDGFRα/FGFR-dependent p38 MAPK and AKT signaling in immunosuppressive macrophages, triggering ER stress and apoptosis. This identifies immunosuppressive macrophage abundance as a predictive biomarker for patient stratification in anti-PD-1 combination therapy.",
+      "post_angle": "EPOC1706 reveals the mechanism: lenvatinib kills immunosuppressive macrophages via PDGFRα/FGFR → ER stress. 8/9 macrophage-rich tumors responded to combo vs 0/8 on IO alone. A predictive biomarker for GC. #GastricCancer #Immunotherapy #PrecisionMedicine #GIOnc"
+    },
+    {
+      "title": "Cancer-Associated Fibroblasts Regulate DNA Repair in Pancreatic Cancer Through NDRG1-Mediated R-Loop Processing",
+      "url": "https://doi.org/10.1038/s41556-026-01938-4",
+      "source": "Nature Cell Biology",
+      "authors": "Kozlova N, Cruz KA, Doh HM, Scully R, Muranen T, et al.",
+      "published": "April 27, 2026",
+      "score": 8,
+      "score_rationale": "Base 7 (Nature Cell Biology) + Biomarker-guided/precision (+1)",
+      "summary": "This study reveals an unexpected link between CAF-secreted extracellular matrix proteins and enhanced DNA repair in PDAC. NDRG1 was identified as a key mediator that senses ECM signals via adhesion receptors and SGK kinase, physically associates with replication forks, maintains DNA replication, resolves stalled forks caused by chemotherapies, and reduces R-loops (RNA-DNA hybrids causing genomic instability). High NDRG1 expression in PDAC tumors correlates with poor disease-specific survival and poor chemotherapy response. This mechanistically links tumor stroma to replication fork homeostasis and explains a major resistance mechanism.",
+      "post_angle": "CAFs aren't just structural — they're actively protecting PDAC cancer cells from chemo damage. NDRG1 senses ECM signals and resolves DNA replication stress. High NDRG1 = poor survival. The stroma fights back. #PDAC #CAFs #DNARepair #NatureCellBiology #GIOnc"
+    },
+    {
+      "title": "Lethal Clinical Outcome and Immune Desert Contexture in Refractory Gastric Cancer Harboring CCNE1 Amplification",
+      "url": "https://doi.org/10.1038/s41416-026-03461-7",
+      "source": "British Journal of Cancer",
+      "authors": "Gu Y, Wang J, Ling Z, Xu J, et al.",
+      "published": "April 28, 2026",
+      "score": 8,
+      "score_rationale": "Base 6 (British Journal of Cancer) + Retrospective (+1) + Biomarker-guided/precision (+1)",
+      "summary": "Analysis of 1,273 gastric cancer patients across six independent cohorts (ZSHS, TCGA, ACRG, SMC, MSKCC, ZSHS NGS). CCNE1 gain (amplification or Cyclin E1 overexpression) affects >10% of patients and defines a therapy-refractory subtype beyond the epithelial-mesenchymal framework. These tumors retain E-cadherin positivity but exhibit aggressive proliferative behavior and an immune-desert phenotype with reduced lymphocyte infiltration, impaired cytotoxicity, increased M2 macrophage polarization, and elevated TGF-β. CCNE1 gain was associated with poor prognosis and reduced response to adjuvant chemotherapy, HER2-targeted therapy, anti-angiogenic agents, and PD-1 blockade.",
+      "post_angle": "CCNE1 gain in gastric cancer: >10% of patients, resistant to everything — chemo, HER2, anti-angiogenics, AND IO. Why? Immune desert + M2 macrophage dominance. A clinic-ready biomarker defining an unmet need. #GastricCancer #CCNE1 #ImmuneDesert #GIOnc"
+    },
+    {
+      "title": "Targeting GPR34 in Damage-Associated Macrophages Enhances Anti-Tumor Immunity and Surufatinib Efficacy in Pancreatic Cancer",
+      "url": "https://doi.org/10.1038/s41392-026-02641-4",
+      "source": "Signal Transduction and Targeted Therapy",
+      "authors": "Guo X, Liu Y, Li T, Yu J, Gao S, Hao J, et al.",
+      "published": "April 28, 2026",
+      "score": 7,
+      "score_rationale": "Base 6 (Signal Transduct Target Ther) + Biomarker-guided/precision (+1)",
+      "summary": "Using scRNA-seq on specimens from PDAC patients treated with surufatinib plus chemotherapy, researchers identified a distinct subset of damage-associated macrophages (DAMs) characterized by high GPR34 expression. GPR34+ macrophages respond to tissue damage by releasing lysophosphatidylserine (LysoPS), enhancing CXCL16 secretion and efferocytosis. This efferocytosis promotes MHC-I degradation via the macrophage lysosomal pathway, leading to CD8+ T cell exhaustion. Combining a GPR34 antagonist with chemotherapy and surufatinib significantly enhanced anti-tumor responses in preclinical models, identifying GPR34 as a promising immune therapeutic target in PDAC.",
+      "post_angle": "scRNA-seq from surufatinib-treated PDAC reveals GPR34+ macrophages eating dead cells and degrading MHC-I → CD8 T cell exhaustion. GPR34 antagonist + surufatinib = enhanced anti-tumor immunity. A new combination target. #PDAC #Macrophages #Immunotherapy #GIOnc"
+    },
+    {
+      "title": "Site-Specific Genomic Markers Associated with PD-1 Blockade Outcomes in Gastric and Esophagogastric Junction Cancer: Japan C-CAT Registry",
+      "url": "https://doi.org/10.1007/s40259-026-00779-9",
+      "source": "BioDrugs",
+      "authors": "Sato Y, Yagi K, Ishigaki K, Fujishiro M, et al.",
+      "published": "April 27, 2026",
+      "score": 7,
+      "score_rationale": "Base 5 (Other journal) + Retrospective/real-world (+1) + Biomarker-guided/precision (+1)",
+      "summary": "Retrospective nationwide analysis of Japan's C-CAT registry including 798 patients with gastric cancer and 114 with EGJ adenocarcinoma treated with nivolumab monotherapy. Genomic associations with nivolumab outcomes differed by tumor site. In gastric cancer, ASXL1 mutation was independently associated with longer TTF (HR 0.59), MSI-H with longer OS (HR 0.16), and CDH1 mutation with shorter OS (HR 1.51). In EGJ cancer, NTRK1 mutation correlated with longer TTF and MUTYH with shorter OS (HR 5.68). These site-specific genomic markers could guide rational immunotherapy decisions beyond MSI/PD-L1.",
+      "post_angle": "912 patients from Japan's C-CAT registry reveal site-specific genomic markers for PD-1 response. ASXL1 = benefit in gastric, CDH1 = poor OS. Different tumor sites need different biomarkers. #GastricCancer #GEJ #Genomics #PrecisionMedicine #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "Temporal Lymph Node Imaging Features for Prognostic Risk Stratification After Neoadjuvant Immunotherapy in Esophageal Cancer",
+      "url": "https://doi.org/10.1007/s00330-026-12566-9",
+      "source_line": "European Radiology — TLNS score from CT imaging outperforms clinical N staging for ypN0 risk stratification in esophageal SCC after neoadjuvant immunochemotherapy; high TLNS patients benefit from adjuvant therapy (n=325, multicenter)"
+    },
+    {
+      "title": "TREM1-SPP1 Axis: Bidirectional Macrophage-Fibroblast Crosstalk in Colorectal Cancer",
+      "url": "https://doi.org/10.1007/s00535-026-02430-4",
+      "source_line": "Journal of Gastroenterology — scRNA-seq reveals TREM1+ myeloid cells engage CAFs via SPP1 signaling while CAFs reinforce immunosuppression via TGF-β; TREM1 inhibition reduces SPP1 and M2 polarization in CRC"
+    },
+    {
+      "title": "South Korea's National GI Cancer Screening Programme Reduces Incidence and Mortality",
+      "url": "https://doi.org/10.1136/bmjopen-2025-112558",
+      "source_line": "BMJ Open — Difference-in-differences analysis: gastric incidence -28%, CRC incidence -22%, liver cancer mortality -38% after organized screening implementation (1999-2021)"
+    },
+    {
+      "title": "L. reuteri Enhances Anti-PD1 in Colorectal Cancer via Arachidonic Acid Metabolism",
+      "url": "https://doi.org/10.1186/s12967-026-08170-6",
+      "source_line": "Journal of Translational Medicine — Tissue-resident Limosilactobacillus reuteri modulates intratumoral arachidonic acid metabolism to enhance CD8+ T cell-mediated anti-PD1 response in CRC"
+    },
+    {
+      "title": "Rivaroxaban as Core Adjuvant in Combined Therapy for HCC with Portal Vein Tumor Thrombus",
+      "url": "https://doi.org/10.1136/jitc-2025-014060",
+      "source_line": "Journal for ImmunoTherapy of Cancer — FXa inhibitor rivaroxaban disrupts FXa/PAR-2/PD-L1 axis, restoring T cell function; proposed as core adjuvant in 'local-targeted-immune' strategy for advanced HCC with PVTT"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🧬 GI Oncology Digest — April 28, 2026\nTumor Microenvironment Edition\n\nToday's highlights:\n• EPOC1706 reveals why lenvatinib + PD-1 works: macrophage killing via PDGFRα/FGFR\n• CAFs protect PDAC from chemo via NDRG1-mediated DNA repair — Nature Cell Biology\n• CCNE1 gain = immune desert + therapy-refractory gastric cancer\n• GPR34+ macrophages: a new immunotherapy target in PDAC\n\nA thread 🧵👇\n\n#GIOnc #GastricCancer #PDAC #TME #Immunotherapy #PrecisionMedicine",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 Lenvatinib PD-1 GC EPOC1706",
+      "text": "🔥 #1 Lenvatinib + PD-1 in Gastric Cancer — EPOC1706 Translational Data\n(Cancer Immunology Research)\n\n• Longitudinal immunoprofiling of paired tumor samples\n• Lenvatinib selectively kills CD206+CD163+ immunosuppressive macrophages\n• Mechanism: PDGFRα/FGFR → p38 MAPK/AKT → ER stress → apoptosis\n• >440 macrophages/mm²: 8/9 responded to combo vs 0/8 on IO alone\n• A predictive biomarker for patient stratification\n\nShitara's group delivers again. Now we know WHO benefits from lenvatinib+IO in GC — patients with macrophage-rich tumors. Precision immunotherapy.\n\n#GastricCancer #EPOC1706 #Lenvatinib #Immunotherapy #GIOnc",
+      "url": "https://doi.org/10.1158/2326-6066.CIR-25-0982"
+    },
+    {
+      "label": "Post 3 — #2 NDRG1 CAFs PDAC",
+      "text": "📊 #2 CAFs Regulate DNA Repair in PDAC via NDRG1\n(Nature Cell Biology)\n\n• CAF-secreted ECM → NDRG1 activation via adhesion receptors + SGK\n• NDRG1 physically associates with replication forks\n• Resolves R-loops (RNA-DNA hybrids causing genomic instability)\n• Resolves stalled forks caused by chemotherapy\n• High NDRG1 = poor survival + poor chemo response\n\nThis changes how we think about PDAC chemoresistance. The stroma isn't passive — it's actively repairing cancer cell DNA. Targeting NDRG1 could sensitize PDAC to chemo.\n\n#PDAC #PancreaticCancer #CAFs #NatureCellBiology #GIOnc",
+      "url": "https://doi.org/10.1038/s41556-026-01938-4"
+    },
+    {
+      "label": "Post 4 — #3 CCNE1 Gastric Cancer",
+      "text": "🎯 #3 CCNE1 Gain = Immune Desert in Gastric Cancer\n(British Journal of Cancer)\n\n• 1,273 patients across 6 cohorts (TCGA, ACRG, SMC, MSKCC, ZSHS)\n• CCNE1 gain affects >10% of GC patients\n• Resistant to: chemo, HER2 therapy, anti-angiogenics, AND PD-1\n• Immune desert: ↓lymphocytes, ↓cytotoxicity, ↑M2 macrophages, ↑TGF-β\n• Retains epithelial morphology — deceptively aggressive\n\nOver 1 in 10 gastric cancer patients have this subtype, and nothing works well. CCNE1 gain is a clinic-ready biomarker defining our biggest unmet need.\n\n#GastricCancer #CCNE1 #ImmuneDesert #PrecisionMedicine #GIOnc",
+      "url": "https://doi.org/10.1038/s41416-026-03461-7"
+    },
+    {
+      "label": "Post 5 — #4 GPR34 PDAC Macrophages",
+      "text": "🌍 #4 GPR34+ Macrophages: A New Target in PDAC\n(Signal Transduction and Targeted Therapy)\n\n• scRNA-seq from surufatinib+chemo treated PDAC patients\n• GPR34+ damage-associated macrophages identified\n• These macrophages eat dead cells (efferocytosis) → degrade MHC-I\n• Result: CD8+ T cell exhaustion\n• GPR34 antagonist + surufatinib + chemo = enhanced anti-tumor response\n\nPDAC keeps finding new ways to exhaust T cells. But every mechanism is a target. GPR34 antagonists deserve clinical exploration.\n\n#PDAC #PancreaticCancer #Macrophages #Immunotherapy #GIOnc",
+      "url": "https://doi.org/10.1038/s41392-026-02641-4"
+    },
+    {
+      "label": "Post 6 — #5 Genomic Markers GC/GEJ",
+      "text": "🧪 #5 Site-Specific Genomic Markers for PD-1 in GC/GEJ\n(BioDrugs)\n\n• Japan C-CAT registry: 798 GC + 114 GEJ patients on nivolumab\n• Gastric: ASXL1 mutation → longer TTF (HR 0.59)\n• Gastric: MSI-H → longer OS (HR 0.16), CDH1 → shorter OS (HR 1.51)\n• EGJ: NTRK1 → longer TTF, MUTYH → shorter OS (HR 5.68)\n• Different sites = different biomarkers\n\nBeyond MSI and PD-L1 — site-specific genomics could refine IO patient selection. CDH1 as a negative predictor is particularly intriguing.\n\n#GastricCancer #GEJ #Genomics #Immunotherapy #GIOnc",
+      "url": "https://doi.org/10.1007/s40259-026-00779-9"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 More from today's digest:\n\n• TLNS imaging score outperforms cN staging for esophageal SCC ypN0 risk stratification (Eur Radiol)\n• TREM1-SPP1 axis: bidirectional macrophage-CAF crosstalk drives immunosuppression in CRC (J Gastroenterol)\n• South Korea's cancer screening: gastric -28%, CRC -22%, liver mortality -38% (BMJ Open)\n• L. reuteri enhances anti-PD1 in CRC via arachidonic acid metabolism (J Transl Med)\n\nFull digest with all papers and references 👇",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-28.html"
+    }
+  ]
+}

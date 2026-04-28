@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Thread Draft — April 28, 2026 | GI Oncology Digest</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 0; }
+    .header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 2rem 1.5rem; text-align: center; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+    .header .subtitle { font-size: .9rem; color: #99ccff; }
+    .header .instructions { font-size: .8rem; color: #80b3e6; margin-top: .75rem; line-height: 1.4; }
+    .container { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .thread-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .thread-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid #f0f0f0; }
+    .post-label { font-weight: 700; font-size: .85rem; color: #003366; background: #e8f0fe; padding: 3px 10px; border-radius: 4px; }
+    .char-count { font-size: .75rem; color: #888; font-style: italic; }
+    .post-text { font-size: .95rem; line-height: 1.55; white-space: pre-wrap; word-wrap: break-word; }
+    .post-text a { color: #1da1f2; text-decoration: none; }
+    .post-text a:hover { text-decoration: underline; }
+    .footer-note { text-align: center; font-size: .8rem; color: #888; margin-top: 1rem; padding: 1rem; }
+    .copy-btn { background: #1da1f2; color: #fff; border: none; border-radius: 6px; padding: 6px 14px; font-size: .78rem; font-weight: 600; cursor: pointer; transition: background .2s; }
+    .copy-btn:hover { background: #0d8ddb; }
+    .copy-btn.copied { background: #28a745; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #c9d1d9; }
+      .thread-card { background: #161b22; border-color: #30363d; }
+      .thread-card-header { border-bottom-color: #21262d; }
+      .post-label { background: #1a2a3d; color: #66aadd; }
+    }
+  </style>
+  <script>
+  function copyPost(btn) {
+    var card = btn.closest('.thread-card');
+    var text = card.getAttribute('data-copy');
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>X Thread Draft</h1>
+    <div class="subtitle">GI Oncology Digest — April 28, 2026 — Tumor Microenvironment Edition</div>
+    <div class="instructions">Review each post below, then copy and paste into X as a thread.<br>Post 1 first, then reply to it with Posts 2-7 in order.</div>
+  </div>
+  <div class="container">
+
+    <div class="thread-card" data-copy="🧬 GI Oncology Digest — April 28, 2026
+Tumor Microenvironment Edition
+
+Today&#x27;s highlights:
+• EPOC1706 reveals why lenvatinib + PD-1 works: macrophage killing via PDGFRα/FGFR
+• CAFs protect PDAC from chemo via NDRG1-mediated DNA repair — Nature Cell Biology
+• CCNE1 gain = immune desert + therapy-refractory gastric cancer
+• GPR34+ macrophages: a new immunotherapy target in PDAC
+
+A thread 🧵👇
+
+#GIOnc #GastricCancer #PDAC #TME #Immunotherapy #PrecisionMedicine">
+      <div class="thread-card-header">
+        <span class="post-label">Post 1 — Hook</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">458 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧬 GI Oncology Digest — April 28, 2026
+Tumor Microenvironment Edition
+
+Today&#x27;s highlights:
+• EPOC1706 reveals why lenvatinib + PD-1 works: macrophage killing via PDGFRα/FGFR
+• CAFs protect PDAC from chemo via NDRG1-mediated DNA repair — Nature Cell Biology
+• CCNE1 gain = immune desert + therapy-refractory gastric cancer
+• GPR34+ macrophages: a new immunotherapy target in PDAC
+
+A thread 🧵👇
+
+#GIOnc #GastricCancer #PDAC #TME #Immunotherapy #PrecisionMedicine</div>
+    </div>
+
+    <div class="thread-card" data-copy="🔥 #1 Lenvatinib + PD-1 in Gastric Cancer — EPOC1706 Translational Data
+(Cancer Immunology Research)
+
+• Longitudinal immunoprofiling of paired tumor samples
+• Lenvatinib selectively kills CD206+CD163+ immunosuppressive macrophages
+• Mechanism: PDGFRα/FGFR → p38 MAPK/AKT → ER stress → apoptosis
+• &gt;440 macrophages/mm²: 8/9 responded to combo vs 0/8 on IO alone
+• A predictive biomarker for patient stratification
+
+Shitara&#x27;s group delivers again. Now we know WHO benefits from lenvatinib+IO in GC — patients with macrophage-rich tumors. Precision immunotherapy.
+
+#GastricCancer #EPOC1706 #Lenvatinib #Immunotherapy #GIOnc
+https://doi.org/10.1158/2326-6066.CIR-25-0982">
+      <div class="thread-card-header">
+        <span class="post-label">Post 2 — #1 Lenvatinib PD-1 GC EPOC1706</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">619 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔥 #1 Lenvatinib + PD-1 in Gastric Cancer — EPOC1706 Translational Data
+(Cancer Immunology Research)
+
+• Longitudinal immunoprofiling of paired tumor samples
+• Lenvatinib selectively kills CD206+CD163+ immunosuppressive macrophages
+• Mechanism: PDGFRα/FGFR → p38 MAPK/AKT → ER stress → apoptosis
+• &gt;440 macrophages/mm²: 8/9 responded to combo vs 0/8 on IO alone
+• A predictive biomarker for patient stratification
+
+Shitara&#x27;s group delivers again. Now we know WHO benefits from lenvatinib+IO in GC — patients with macrophage-rich tumors. Precision immunotherapy.
+
+#GastricCancer #EPOC1706 #Lenvatinib #Immunotherapy #GIOnc
+
+<a href="https://doi.org/10.1158/2326-6066.CIR-25-0982" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1158/2326-6066.CIR-25-0982</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📊 #2 CAFs Regulate DNA Repair in PDAC via NDRG1
+(Nature Cell Biology)
+
+• CAF-secreted ECM → NDRG1 activation via adhesion receptors + SGK
+• NDRG1 physically associates with replication forks
+• Resolves R-loops (RNA-DNA hybrids causing genomic instability)
+• Resolves stalled forks caused by chemotherapy
+• High NDRG1 = poor survival + poor chemo response
+
+This changes how we think about PDAC chemoresistance. The stroma isn&#x27;t passive — it&#x27;s actively repairing cancer cell DNA. Targeting NDRG1 could sensitize PDAC to chemo.
+
+#PDAC #PancreaticCancer #CAFs #NatureCellBiology #GIOnc
+https://doi.org/10.1038/s41556-026-01938-4">
+      <div class="thread-card-header">
+        <span class="post-label">Post 3 — #2 NDRG1 CAFs PDAC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">581 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📊 #2 CAFs Regulate DNA Repair in PDAC via NDRG1
+(Nature Cell Biology)
+
+• CAF-secreted ECM → NDRG1 activation via adhesion receptors + SGK
+• NDRG1 physically associates with replication forks
+• Resolves R-loops (RNA-DNA hybrids causing genomic instability)
+• Resolves stalled forks caused by chemotherapy
+• High NDRG1 = poor survival + poor chemo response
+
+This changes how we think about PDAC chemoresistance. The stroma isn&#x27;t passive — it&#x27;s actively repairing cancer cell DNA. Targeting NDRG1 could sensitize PDAC to chemo.
+
+#PDAC #PancreaticCancer #CAFs #NatureCellBiology #GIOnc
+
+<a href="https://doi.org/10.1038/s41556-026-01938-4" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41556-026-01938-4</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🎯 #3 CCNE1 Gain = Immune Desert in Gastric Cancer
+(British Journal of Cancer)
+
+• 1,273 patients across 6 cohorts (TCGA, ACRG, SMC, MSKCC, ZSHS)
+• CCNE1 gain affects &gt;10% of GC patients
+• Resistant to: chemo, HER2 therapy, anti-angiogenics, AND PD-1
+• Immune desert: ↓lymphocytes, ↓cytotoxicity, ↑M2 macrophages, ↑TGF-β
+• Retains epithelial morphology — deceptively aggressive
+
+Over 1 in 10 gastric cancer patients have this subtype, and nothing works well. CCNE1 gain is a clinic-ready biomarker defining our biggest unmet need.
+
+#GastricCancer #CCNE1 #ImmuneDesert #PrecisionMedicine #GIOnc
+https://doi.org/10.1038/s41416-026-03461-7">
+      <div class="thread-card-header">
+        <span class="post-label">Post 4 — #3 CCNE1 Gastric Cancer</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">591 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🎯 #3 CCNE1 Gain = Immune Desert in Gastric Cancer
+(British Journal of Cancer)
+
+• 1,273 patients across 6 cohorts (TCGA, ACRG, SMC, MSKCC, ZSHS)
+• CCNE1 gain affects &gt;10% of GC patients
+• Resistant to: chemo, HER2 therapy, anti-angiogenics, AND PD-1
+• Immune desert: ↓lymphocytes, ↓cytotoxicity, ↑M2 macrophages, ↑TGF-β
+• Retains epithelial morphology — deceptively aggressive
+
+Over 1 in 10 gastric cancer patients have this subtype, and nothing works well. CCNE1 gain is a clinic-ready biomarker defining our biggest unmet need.
+
+#GastricCancer #CCNE1 #ImmuneDesert #PrecisionMedicine #GIOnc
+
+<a href="https://doi.org/10.1038/s41416-026-03461-7" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41416-026-03461-7</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🌍 #4 GPR34+ Macrophages: A New Target in PDAC
+(Signal Transduction and Targeted Therapy)
+
+• scRNA-seq from surufatinib+chemo treated PDAC patients
+• GPR34+ damage-associated macrophages identified
+• These macrophages eat dead cells (efferocytosis) → degrade MHC-I
+• Result: CD8+ T cell exhaustion
+• GPR34 antagonist + surufatinib + chemo = enhanced anti-tumor response
+
+PDAC keeps finding new ways to exhaust T cells. But every mechanism is a target. GPR34 antagonists deserve clinical exploration.
+
+#PDAC #PancreaticCancer #Macrophages #Immunotherapy #GIOnc
+https://doi.org/10.1038/s41392-026-02641-4">
+      <div class="thread-card-header">
+        <span class="post-label">Post 5 — #4 GPR34 PDAC Macrophages</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">558 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🌍 #4 GPR34+ Macrophages: A New Target in PDAC
+(Signal Transduction and Targeted Therapy)
+
+• scRNA-seq from surufatinib+chemo treated PDAC patients
+• GPR34+ damage-associated macrophages identified
+• These macrophages eat dead cells (efferocytosis) → degrade MHC-I
+• Result: CD8+ T cell exhaustion
+• GPR34 antagonist + surufatinib + chemo = enhanced anti-tumor response
+
+PDAC keeps finding new ways to exhaust T cells. But every mechanism is a target. GPR34 antagonists deserve clinical exploration.
+
+#PDAC #PancreaticCancer #Macrophages #Immunotherapy #GIOnc
+
+<a href="https://doi.org/10.1038/s41392-026-02641-4" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41392-026-02641-4</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🧪 #5 Site-Specific Genomic Markers for PD-1 in GC/GEJ
+(BioDrugs)
+
+• Japan C-CAT registry: 798 GC + 114 GEJ patients on nivolumab
+• Gastric: ASXL1 mutation → longer TTF (HR 0.59)
+• Gastric: MSI-H → longer OS (HR 0.16), CDH1 → shorter OS (HR 1.51)
+• EGJ: NTRK1 → longer TTF, MUTYH → shorter OS (HR 5.68)
+• Different sites = different biomarkers
+
+Beyond MSI and PD-L1 — site-specific genomics could refine IO patient selection. CDH1 as a negative predictor is particularly intriguing.
+
+#GastricCancer #GEJ #Genomics #Immunotherapy #GIOnc
+https://doi.org/10.1007/s40259-026-00779-9">
+      <div class="thread-card-header">
+        <span class="post-label">Post 6 — #5 Genomic Markers GC/GEJ</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">534 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧪 #5 Site-Specific Genomic Markers for PD-1 in GC/GEJ
+(BioDrugs)
+
+• Japan C-CAT registry: 798 GC + 114 GEJ patients on nivolumab
+• Gastric: ASXL1 mutation → longer TTF (HR 0.59)
+• Gastric: MSI-H → longer OS (HR 0.16), CDH1 → shorter OS (HR 1.51)
+• EGJ: NTRK1 → longer TTF, MUTYH → shorter OS (HR 5.68)
+• Different sites = different biomarkers
+
+Beyond MSI and PD-L1 — site-specific genomics could refine IO patient selection. CDH1 as a negative predictor is particularly intriguing.
+
+#GastricCancer #GEJ #Genomics #Immunotherapy #GIOnc
+
+<a href="https://doi.org/10.1007/s40259-026-00779-9" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1007/s40259-026-00779-9</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📚 More from today&#x27;s digest:
+
+• TLNS imaging score outperforms cN staging for esophageal SCC ypN0 risk stratification (Eur Radiol)
+• TREM1-SPP1 axis: bidirectional macrophage-CAF crosstalk drives immunosuppression in CRC (J Gastroenterol)
+• South Korea&#x27;s cancer screening: gastric -28%, CRC -22%, liver mortality -38% (BMJ Open)
+• L. reuteri enhances anti-PD1 in CRC via arachidonic acid metabolism (J Transl Med)
+
+Full digest with all papers and references 👇
+https://allanatal.github.io/my-website/digests/digest-2026-04-28.html">
+      <div class="thread-card-header">
+        <span class="post-label">Post 7 — Additional Papers</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">458 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📚 More from today&#x27;s digest:
+
+• TLNS imaging score outperforms cN staging for esophageal SCC ypN0 risk stratification (Eur Radiol)
+• TREM1-SPP1 axis: bidirectional macrophage-CAF crosstalk drives immunosuppression in CRC (J Gastroenterol)
+• South Korea&#x27;s cancer screening: gastric -28%, CRC -22%, liver mortality -38% (BMJ Open)
+• L. reuteri enhances anti-PD1 in CRC via arachidonic acid metabolism (J Transl Med)
+
+Full digest with all papers and references 👇
+
+<a href="https://allanatal.github.io/my-website/digests/digest-2026-04-28.html" target="_blank" style="color:#1da1f2;word-break:break-all;">https://allanatal.github.io/my-website/digests/digest-2026-04-28.html</a></div>
+    </div>
+
+    <div class="footer-note">
+      Generated by Dr. Allan Pereira's GI Oncology Digest system<br>
+      Full digest: <a href="https://allanatal.github.io/my-website/digests/digest-2026-04-28.html" style="color:#1da1f2;">https://allanatal.github.io/my-website/digests/digest-2026-04-28.html</a>
+    </div>
+  </div>
+</body>
+</html>

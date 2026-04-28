@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GI Oncology Daily Digest — April 28, 2026. Tumor Microenvironment Edition. Curated by Dr. Allan Pereira." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css?v=3">
+
+    <title>GI Oncology Digest — April 28, 2026 | Dr. Allan Pereira</title>
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+
+    <style>
+      .digest-header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }
+      .digest-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
+      .digest-header .digest-date { font-size: 1rem; color: #99ccff; }
+      .digest-header .digest-subtitle { font-size: .85rem; color: #80b3e6; margin-top: .25rem; }
+      .digest-content { padding: 2rem 0 3rem; }
+      .digest-section-title { font-size: 1.3rem; font-weight: 700; color: #003366; border-bottom: 3px solid #003366; padding-bottom: .5rem; margin: 2rem 0 1.25rem; }
+      .digest-section-title:first-child { margin-top: 0; }
+      [data-theme="dark"] .digest-section-title { color: #66aadd; border-bottom-color: #66aadd; }
+      .paper-card { background: #fff; border: 1px solid #e2e6ea; border-left: 5px solid #003366; border-radius: .4rem; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); transition: box-shadow .2s; }
+      .paper-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.1); }
+      [data-theme="dark"] .paper-card { background: var(--card-bg, #1e2a38); border-color: #2a3a4a; border-left-color: #66aadd; }
+      .paper-rank { display: inline-block; background: #003366; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; margin-bottom: .5rem; }
+      .paper-title { font-size: 1.05rem; font-weight: 700; margin-bottom: .35rem; }
+      .paper-title a { color: #003366; text-decoration: none; }
+      .paper-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .paper-title a { color: #88ccff; }
+      .paper-meta { font-size: .8rem; color: #666; margin-bottom: .6rem; }
+      .paper-meta b { color: #444; }
+      [data-theme="dark"] .paper-meta { color: #aaa; }
+      [data-theme="dark"] .paper-meta b { color: #ccc; }
+      .score-badge { display: inline-block; background: #007A33; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; }
+      .score-rationale { font-size: .78rem; color: #555; font-style: italic; margin-left: .4rem; }
+      [data-theme="dark"] .score-rationale { color: #aaa; }
+      .score-line { margin-bottom: .75rem; }
+      .paper-summary { font-size: .9rem; margin-bottom: .85rem; }
+      .post-angle { background: #EBF5FF; border-left: 3px solid #0052CC; padding: .6rem .85rem; border-radius: 0 5px 5px 0; font-size: .78rem; color: #0052CC; font-style: italic; }
+      .post-angle b { font-style: normal; }
+      [data-theme="dark"] .post-angle { background: #1a2a3d; color: #88bbee; border-left-color: #4488cc; }
+      .additional-list { list-style: none; padding: 0; }
+      .additional-list li { padding: .75rem 0; border-bottom: 1px solid #eee; font-size: .9rem; }
+      .additional-list li:last-child { border-bottom: none; }
+      [data-theme="dark"] .additional-list li { border-bottom-color: #2a3a4a; }
+      .add-title a { color: #0052CC; font-weight: 600; text-decoration: none; }
+      .add-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .add-title a { color: #88bbee; }
+      .add-source { font-size: .8rem; color: #666; margin-top: .15rem; }
+      [data-theme="dark"] .add-source { color: #999; }
+      .digest-back { display: inline-block; margin: 1.5rem 0 0; font-size: .85rem; }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Dr. Allan Pereira</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html#curriculo">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="index_digest.html">GI Digest</a></li>
+          </ul>
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="digest-header">
+      <div class="container">
+        <h1>GI Oncology Daily Digest</h1>
+        <div class="digest-date">April 28, 2026 — Tumor Microenvironment Edition</div>
+        <div class="digest-subtitle">Curated by Dr. Allan Pereira — Moffitt Cancer Center</div>
+      </div>
+    </section>
+
+    <section class="digest-content">
+      <div class="container" style="max-width:800px;">
+        <h2 class="digest-section-title" style="margin-top:0;">Top 5 Papers</h2>
+
+        <div class="paper-card">
+          <span class="paper-rank">#1</span>
+          <div class="paper-title"><a href="https://doi.org/10.1158/2326-6066.CIR-25-0982" target="_blank">Lenvatinib Combined with PD-1 Blockade Benefits Gastric Cancers Through Immunosuppressive Macrophage Modulation: EPOC1706 Translational Analysis</a></div>
+          <div class="paper-meta"><b>Source:</b> Cancer Immunology Research &nbsp;|&nbsp; <b>Authors:</b> Lin NY, Machiyama H, Kawazoe A, Shitara K, Nishikawa H, Koyama S, et al. &nbsp;|&nbsp; <b>Published:</b> April 27, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9/20</span><span class="score-rationale"> — Base 6 (Cancer Immunol Res) + Phase II trial data (+2) + Biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">Translational analysis from the EPOC1706 clinical trial of lenvatinib plus pembrolizumab in advanced gastric cancer. Longitudinal immunoprofiling of paired tumor samples revealed that lenvatinib selectively reduced CD206+CD163+ immunosuppressive macrophages in the TME and increased antitumor immunity. Patients with abundant immunosuppressive macrophage infiltration (&gt;440/mm²) had favorable responses to combination therapy — 8 of 9 responded — while none of 8 such patients responded to PD-1 monotherapy. Mechanistically, lenvatinib inhibited PDGFRα/FGFR-dependent p38 MAPK and AKT signaling in immunosuppressive macrophages, triggering ER stress and apoptosis. This identifies immunosuppressive macrophage abundance as a predictive biomarker for patient stratification in anti-PD-1 combination therapy.</div>
+          <div class="post-angle"><b>Post angle:</b> EPOC1706 reveals the mechanism: lenvatinib kills immunosuppressive macrophages via PDGFRα/FGFR → ER stress. 8/9 macrophage-rich tumors responded to combo vs 0/8 on IO alone. A predictive biomarker for GC. #GastricCancer #Immunotherapy #PrecisionMedicine #GIOnc</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#2</span>
+          <div class="paper-title"><a href="https://doi.org/10.1038/s41556-026-01938-4" target="_blank">Cancer-Associated Fibroblasts Regulate DNA Repair in Pancreatic Cancer Through NDRG1-Mediated R-Loop Processing</a></div>
+          <div class="paper-meta"><b>Source:</b> Nature Cell Biology &nbsp;|&nbsp; <b>Authors:</b> Kozlova N, Cruz KA, Doh HM, Scully R, Muranen T, et al. &nbsp;|&nbsp; <b>Published:</b> April 27, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 8/20</span><span class="score-rationale"> — Base 7 (Nature Cell Biology) + Biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">This study reveals an unexpected link between CAF-secreted extracellular matrix proteins and enhanced DNA repair in PDAC. NDRG1 was identified as a key mediator that senses ECM signals via adhesion receptors and SGK kinase, physically associates with replication forks, maintains DNA replication, resolves stalled forks caused by chemotherapies, and reduces R-loops (RNA-DNA hybrids causing genomic instability). High NDRG1 expression in PDAC tumors correlates with poor disease-specific survival and poor chemotherapy response. This mechanistically links tumor stroma to replication fork homeostasis and explains a major resistance mechanism.</div>
+          <div class="post-angle"><b>Post angle:</b> CAFs aren&#x27;t just structural — they&#x27;re actively protecting PDAC cancer cells from chemo damage. NDRG1 senses ECM signals and resolves DNA replication stress. High NDRG1 = poor survival. The stroma fights back. #PDAC #CAFs #DNARepair #NatureCellBiology #GIOnc</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#3</span>
+          <div class="paper-title"><a href="https://doi.org/10.1038/s41416-026-03461-7" target="_blank">Lethal Clinical Outcome and Immune Desert Contexture in Refractory Gastric Cancer Harboring CCNE1 Amplification</a></div>
+          <div class="paper-meta"><b>Source:</b> British Journal of Cancer &nbsp;|&nbsp; <b>Authors:</b> Gu Y, Wang J, Ling Z, Xu J, et al. &nbsp;|&nbsp; <b>Published:</b> April 28, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 8/20</span><span class="score-rationale"> — Base 6 (British Journal of Cancer) + Retrospective (+1) + Biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">Analysis of 1,273 gastric cancer patients across six independent cohorts (ZSHS, TCGA, ACRG, SMC, MSKCC, ZSHS NGS). CCNE1 gain (amplification or Cyclin E1 overexpression) affects &gt;10% of patients and defines a therapy-refractory subtype beyond the epithelial-mesenchymal framework. These tumors retain E-cadherin positivity but exhibit aggressive proliferative behavior and an immune-desert phenotype with reduced lymphocyte infiltration, impaired cytotoxicity, increased M2 macrophage polarization, and elevated TGF-β. CCNE1 gain was associated with poor prognosis and reduced response to adjuvant chemotherapy, HER2-targeted therapy, anti-angiogenic agents, and PD-1 blockade.</div>
+          <div class="post-angle"><b>Post angle:</b> CCNE1 gain in gastric cancer: &gt;10% of patients, resistant to everything — chemo, HER2, anti-angiogenics, AND IO. Why? Immune desert + M2 macrophage dominance. A clinic-ready biomarker defining an unmet need. #GastricCancer #CCNE1 #ImmuneDesert #GIOnc</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#4</span>
+          <div class="paper-title"><a href="https://doi.org/10.1038/s41392-026-02641-4" target="_blank">Targeting GPR34 in Damage-Associated Macrophages Enhances Anti-Tumor Immunity and Surufatinib Efficacy in Pancreatic Cancer</a></div>
+          <div class="paper-meta"><b>Source:</b> Signal Transduction and Targeted Therapy &nbsp;|&nbsp; <b>Authors:</b> Guo X, Liu Y, Li T, Yu J, Gao S, Hao J, et al. &nbsp;|&nbsp; <b>Published:</b> April 28, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 7/20</span><span class="score-rationale"> — Base 6 (Signal Transduct Target Ther) + Biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">Using scRNA-seq on specimens from PDAC patients treated with surufatinib plus chemotherapy, researchers identified a distinct subset of damage-associated macrophages (DAMs) characterized by high GPR34 expression. GPR34+ macrophages respond to tissue damage by releasing lysophosphatidylserine (LysoPS), enhancing CXCL16 secretion and efferocytosis. This efferocytosis promotes MHC-I degradation via the macrophage lysosomal pathway, leading to CD8+ T cell exhaustion. Combining a GPR34 antagonist with chemotherapy and surufatinib significantly enhanced anti-tumor responses in preclinical models, identifying GPR34 as a promising immune therapeutic target in PDAC.</div>
+          <div class="post-angle"><b>Post angle:</b> scRNA-seq from surufatinib-treated PDAC reveals GPR34+ macrophages eating dead cells and degrading MHC-I → CD8 T cell exhaustion. GPR34 antagonist + surufatinib = enhanced anti-tumor immunity. A new combination target. #PDAC #Macrophages #Immunotherapy #GIOnc</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#5</span>
+          <div class="paper-title"><a href="https://doi.org/10.1007/s40259-026-00779-9" target="_blank">Site-Specific Genomic Markers Associated with PD-1 Blockade Outcomes in Gastric and Esophagogastric Junction Cancer: Japan C-CAT Registry</a></div>
+          <div class="paper-meta"><b>Source:</b> BioDrugs &nbsp;|&nbsp; <b>Authors:</b> Sato Y, Yagi K, Ishigaki K, Fujishiro M, et al. &nbsp;|&nbsp; <b>Published:</b> April 27, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 7/20</span><span class="score-rationale"> — Base 5 (Other journal) + Retrospective/real-world (+1) + Biomarker-guided/precision (+1)</span></div>
+          <div class="paper-summary">Retrospective nationwide analysis of Japan&#x27;s C-CAT registry including 798 patients with gastric cancer and 114 with EGJ adenocarcinoma treated with nivolumab monotherapy. Genomic associations with nivolumab outcomes differed by tumor site. In gastric cancer, ASXL1 mutation was independently associated with longer TTF (HR 0.59), MSI-H with longer OS (HR 0.16), and CDH1 mutation with shorter OS (HR 1.51). In EGJ cancer, NTRK1 mutation correlated with longer TTF and MUTYH with shorter OS (HR 5.68). These site-specific genomic markers could guide rational immunotherapy decisions beyond MSI/PD-L1.</div>
+          <div class="post-angle"><b>Post angle:</b> 912 patients from Japan&#x27;s C-CAT registry reveal site-specific genomic markers for PD-1 response. ASXL1 = benefit in gastric, CDH1 = poor OS. Different tumor sites need different biomarkers. #GastricCancer #GEJ #Genomics #PrecisionMedicine #GIOnc</div>
+        </div>
+
+        <h2 class="digest-section-title">Additional Papers of Interest</h2>
+        <ol class="additional-list">
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1007/s00330-026-12566-9" target="_blank">Temporal Lymph Node Imaging Features for Prognostic Risk Stratification After Neoadjuvant Immunotherapy in Esophageal Cancer</a></div>
+            <div class="add-source">European Radiology — TLNS score from CT imaging outperforms clinical N staging for ypN0 risk stratification in esophageal SCC after neoadjuvant immunochemotherapy; high TLNS patients benefit from adjuvant therapy (n=325, multicenter)</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1007/s00535-026-02430-4" target="_blank">TREM1-SPP1 Axis: Bidirectional Macrophage-Fibroblast Crosstalk in Colorectal Cancer</a></div>
+            <div class="add-source">Journal of Gastroenterology — scRNA-seq reveals TREM1+ myeloid cells engage CAFs via SPP1 signaling while CAFs reinforce immunosuppression via TGF-β; TREM1 inhibition reduces SPP1 and M2 polarization in CRC</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1136/bmjopen-2025-112558" target="_blank">South Korea&#x27;s National GI Cancer Screening Programme Reduces Incidence and Mortality</a></div>
+            <div class="add-source">BMJ Open — Difference-in-differences analysis: gastric incidence -28%, CRC incidence -22%, liver cancer mortality -38% after organized screening implementation (1999-2021)</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1186/s12967-026-08170-6" target="_blank">L. reuteri Enhances Anti-PD1 in Colorectal Cancer via Arachidonic Acid Metabolism</a></div>
+            <div class="add-source">Journal of Translational Medicine — Tissue-resident Limosilactobacillus reuteri modulates intratumoral arachidonic acid metabolism to enhance CD8+ T cell-mediated anti-PD1 response in CRC</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1136/jitc-2025-014060" target="_blank">Rivaroxaban as Core Adjuvant in Combined Therapy for HCC with Portal Vein Tumor Thrombus</a></div>
+            <div class="add-source">Journal for ImmunoTherapy of Cancer — FXa inhibitor rivaroxaban disrupts FXa/PAR-2/PD-L1 axis, restoring T cell function; proposed as core adjuvant in &#x27;local-targeted-immune&#x27; strategy for advanced HCC with PVTT</div>
+          </li>
+        </ol>
+
+        <a href="index_digest.html" class="digest-back"><i class="fas fa-arrow-left mr-1"></i> Back to all digests</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p data-i18n="hero-badge">Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;" data-i18n="footer-book-btn">Book appointment</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;" data-i18n="hero-cta-intl">International Patient Appointment</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 data-i18n="footer-offices-title">Locations &amp; Directions</h5>
+            <p data-i18n="footer-offices-cta">Click for details:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright &copy; Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+    </script>
+  </body>
+</html>

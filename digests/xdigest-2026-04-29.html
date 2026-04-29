@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Thread Draft — April 29, 2026 | GI Oncology Digest</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 0; }
+    .header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 2rem 1.5rem; text-align: center; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+    .header .subtitle { font-size: .9rem; color: #99ccff; }
+    .header .instructions { font-size: .8rem; color: #80b3e6; margin-top: .75rem; line-height: 1.4; }
+    .container { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .thread-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .thread-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid #f0f0f0; }
+    .post-label { font-weight: 700; font-size: .85rem; color: #003366; background: #e8f0fe; padding: 3px 10px; border-radius: 4px; }
+    .char-count { font-size: .75rem; color: #888; font-style: italic; }
+    .post-text { font-size: .95rem; line-height: 1.55; white-space: pre-wrap; word-wrap: break-word; }
+    .post-text a { color: #1da1f2; text-decoration: none; }
+    .post-text a:hover { text-decoration: underline; }
+    .footer-note { text-align: center; font-size: .8rem; color: #888; margin-top: 1rem; padding: 1rem; }
+    .copy-btn { background: #1da1f2; color: #fff; border: none; border-radius: 6px; padding: 6px 14px; font-size: .78rem; font-weight: 600; cursor: pointer; transition: background .2s; }
+    .copy-btn:hover { background: #0d8ddb; }
+    .copy-btn.copied { background: #28a745; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #c9d1d9; }
+      .thread-card { background: #161b22; border-color: #30363d; }
+      .thread-card-header { border-bottom-color: #21262d; }
+      .post-label { background: #1a2a3d; color: #66aadd; }
+    }
+  </style>
+  <script>
+  function copyPost(btn) {
+    var card = btn.closest('.thread-card');
+    var text = card.getAttribute('data-copy');
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>X Thread Draft</h1>
+    <div class="subtitle">GI Oncology Digest — April 29, 2026 — Metabolic Immunology Edition</div>
+    <div class="instructions">Review each post below, then copy and paste into X as a thread.<br>Post 1 first, then reply to it with Posts 2-7 in order.</div>
+  </div>
+  <div class="container">
+
+    <div class="thread-card" data-copy="🔬 GI Oncology Daily Digest — April 29, 2026
+
+Metabolic Immunology Edition
+
+• A game-changing dual PI3Kγ/STING strategy cracks PDAC immunosuppression (Nature Cancer)
+• Serotonin fuels gastric cancer via a brand-new protein modification
+• The metabolic switch that lets HCC evade immunotherapy — and how to flip it
+
+A thread 🧵👇
+
+#GIOnc #Oncology #MedTwitter #CancerResearch">
+      <div class="thread-card-header">
+        <span class="post-label">Post 1 — Hook</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">371 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔬 GI Oncology Daily Digest — April 29, 2026
+
+Metabolic Immunology Edition
+
+• A game-changing dual PI3Kγ/STING strategy cracks PDAC immunosuppression (Nature Cancer)
+• Serotonin fuels gastric cancer via a brand-new protein modification
+• The metabolic switch that lets HCC evade immunotherapy — and how to flip it
+
+A thread 🧵👇
+
+#GIOnc #Oncology #MedTwitter #CancerResearch</div>
+    </div>
+
+    <div class="thread-card" data-copy="🔥 #1 — Dual PI3Kγ/STING Targeting in Pancreatic Cancer
+
+Nature Cancer | Li et al.
+
+• STING agonists activate myeloid cells BUT also expand immunosuppressive Breg cells
+• Breg expansion depends on PI3Kγ — myeloid activation does not
+• Nano-273 nanoformulation: stimulates STING + blocks PI3Kγ simultaneously
+• Combined with anti-PD-1 → durable responses in KPC transgenic mice
+
+This is exactly the kind of dual-target thinking PDAC immunotherapy needs. Tackling both myeloid AND B cell suppression is a paradigm shift.
+
+#PDAC #Immunotherapy #PrecisionMedicine #GIOnc
+https://doi.org/10.1038/s43018-026-01158-7">
+      <div class="thread-card-header">
+        <span class="post-label">Post 2 — #1 PI3Kγ/STING PDAC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">565 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔥 #1 — Dual PI3Kγ/STING Targeting in Pancreatic Cancer
+
+Nature Cancer | Li et al.
+
+• STING agonists activate myeloid cells BUT also expand immunosuppressive Breg cells
+• Breg expansion depends on PI3Kγ — myeloid activation does not
+• Nano-273 nanoformulation: stimulates STING + blocks PI3Kγ simultaneously
+• Combined with anti-PD-1 → durable responses in KPC transgenic mice
+
+This is exactly the kind of dual-target thinking PDAC immunotherapy needs. Tackling both myeloid AND B cell suppression is a paradigm shift.
+
+#PDAC #Immunotherapy #PrecisionMedicine #GIOnc
+
+<a href="https://doi.org/10.1038/s43018-026-01158-7" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s43018-026-01158-7</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📊 #2 — Global CRC Burden: The Early-Onset Crisis
+
+Nat Rev Clin Oncol | Lee, Parikh, Chan et al.
+
+• CRC now rising globally beyond Western high-income countries
+• Early-onset CRC (&lt;50 yrs) driving the increase worldwide
+• Birth cohort effect from 1960s → environmental, not genetic
+• Key suspects: diet, microbiome shifts, environmental contaminants from urbanization
+• Non-Western populations grossly under-represented in genomic studies
+
+We cannot solve the early-onset CRC puzzle without diverse global cohorts. Period.
+
+#CRC #EarlyOnsetCRC #CancerPrevention #GIOnc
+https://doi.org/10.1038/s41571-026-01149-8">
+      <div class="thread-card-header">
+        <span class="post-label">Post 3 — #2 Global CRC Burden</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">567 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📊 #2 — Global CRC Burden: The Early-Onset Crisis
+
+Nat Rev Clin Oncol | Lee, Parikh, Chan et al.
+
+• CRC now rising globally beyond Western high-income countries
+• Early-onset CRC (&lt;50 yrs) driving the increase worldwide
+• Birth cohort effect from 1960s → environmental, not genetic
+• Key suspects: diet, microbiome shifts, environmental contaminants from urbanization
+• Non-Western populations grossly under-represented in genomic studies
+
+We cannot solve the early-onset CRC puzzle without diverse global cohorts. Period.
+
+#CRC #EarlyOnsetCRC #CancerPrevention #GIOnc
+
+<a href="https://doi.org/10.1038/s41571-026-01149-8" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41571-026-01149-8</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🎯 #3 — JOSD1: A Metabolic-Immune Master Switch in HCC
+
+Gut | Li et al.
+
+• Deubiquitinase JOSD1 flips PGAM1 from ubiquitination → lactylation via AARS1
+• Stabilized PGAM1 drives glycolysis → lactate accumulation
+• Lactate kills CD8+ T cell infiltration and function
+• Liver-targeted JOSD1 inhibition + anti-PD-1 = prolonged survival
+
+Post-translational modification crosstalk as a metabolic-immune checkpoint? This is the kind of HCC biology that could unlock combination strategies.
+
+#HCC #LiverCancer #Immunotherapy #GIOnc
+https://doi.org/10.1136/gutjnl-2025-337331">
+      <div class="thread-card-header">
+        <span class="post-label">Post 4 — #3 JOSD1 HCC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">523 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🎯 #3 — JOSD1: A Metabolic-Immune Master Switch in HCC
+
+Gut | Li et al.
+
+• Deubiquitinase JOSD1 flips PGAM1 from ubiquitination → lactylation via AARS1
+• Stabilized PGAM1 drives glycolysis → lactate accumulation
+• Lactate kills CD8+ T cell infiltration and function
+• Liver-targeted JOSD1 inhibition + anti-PD-1 = prolonged survival
+
+Post-translational modification crosstalk as a metabolic-immune checkpoint? This is the kind of HCC biology that could unlock combination strategies.
+
+#HCC #LiverCancer #Immunotherapy #GIOnc
+
+<a href="https://doi.org/10.1136/gutjnl-2025-337331" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1136/gutjnl-2025-337331</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🧪 #4 — Serotonin Drives Gastric Cancer via Protein Serotonylation
+
+Cell Discovery | Bai et al.
+
+• Plasma serotonin (5-HT) elevated in GC patients
+• 5-HT promotes GC growth dose-dependently — receptor-INDEPENDENT
+• TGM2 serotonylates GPX4 at Gln55/Gln77 → blocks ubiquitin degradation
+• Stabilized GPX4 = ferroptosis resistance → tumor growth
+• TGM2 correlates with GPX4 expression clinically
+
+The neural-tumor axis just got a whole new chapter. Protein serotonylation is an emerging PTM with huge implications.
+
+#GastricCancer #Ferroptosis #NeuralTumor #GIOnc
+https://doi.org/10.1038/s41421-026-00885-6">
+      <div class="thread-card-header">
+        <span class="post-label">Post 5 — #4 TGM2/GPX4 Gastric Cancer</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">559 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧪 #4 — Serotonin Drives Gastric Cancer via Protein Serotonylation
+
+Cell Discovery | Bai et al.
+
+• Plasma serotonin (5-HT) elevated in GC patients
+• 5-HT promotes GC growth dose-dependently — receptor-INDEPENDENT
+• TGM2 serotonylates GPX4 at Gln55/Gln77 → blocks ubiquitin degradation
+• Stabilized GPX4 = ferroptosis resistance → tumor growth
+• TGM2 correlates with GPX4 expression clinically
+
+The neural-tumor axis just got a whole new chapter. Protein serotonylation is an emerging PTM with huge implications.
+
+#GastricCancer #Ferroptosis #NeuralTumor #GIOnc
+
+<a href="https://doi.org/10.1038/s41421-026-00885-6" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1038/s41421-026-00885-6</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🌍 #5 — MARCO: A New Immunotherapy Target in Cholangiocarcinoma
+
+Signal Transduction &amp; Targeted Therapy
+
+• Scavenger receptor MARCO highly expressed on TAMs in CCA
+• High MARCO = worse OS, T cell dysfunction, fibrosis
+• Marco-knockout mice protected from cholangiocarcinogenesis
+• Anti-MARCO antibody significantly reduced tumor burden
+
+CCA desperately needs new targets beyond chemo + PD-L1. MARCO on macrophages could be the next frontier for combination immunotherapy.
+
+#CCA #BiliaryCancer #Immunotherapy #GIOnc
+https://pubmed.ncbi.nlm.nih.gov/42049706/">
+      <div class="thread-card-header">
+        <span class="post-label">Post 6 — #5 MARCO CCA</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">513 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🌍 #5 — MARCO: A New Immunotherapy Target in Cholangiocarcinoma
+
+Signal Transduction &amp; Targeted Therapy
+
+• Scavenger receptor MARCO highly expressed on TAMs in CCA
+• High MARCO = worse OS, T cell dysfunction, fibrosis
+• Marco-knockout mice protected from cholangiocarcinogenesis
+• Anti-MARCO antibody significantly reduced tumor burden
+
+CCA desperately needs new targets beyond chemo + PD-L1. MARCO on macrophages could be the next frontier for combination immunotherapy.
+
+#CCA #BiliaryCancer #Immunotherapy #GIOnc
+
+<a href="https://pubmed.ncbi.nlm.nih.gov/42049706/" target="_blank" style="color:#1da1f2;word-break:break-all;">https://pubmed.ncbi.nlm.nih.gov/42049706/</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📚 Also in today&#x27;s digest:
+
+• Mitochondrial dsRNA fuels PDAC via RIG-I/TLR3 inflammation (PNAS)
+• CAF plasticity redefined: ADH1B/ITGA3 markers in CRC (Oncogene)
+• SLIRP maintains OXPHOS in CRC — a metabolic vulnerability (Br J Cancer)
+• OLFM4/TGFβ/CEACAM6 axis drives gallbladder carcinogenesis (Oncogene)
+• MFN1/ROS drives HCC-CCA phenotypic switching (PNAS)
+
+Full digest with all papers + links 👇
+
+#GIOnc #CancerResearch #Oncology
+https://allanatal.github.io/my-website/digests/digest-2026-04-29.html">
+      <div class="thread-card-header">
+        <span class="post-label">Post 7 — Additional Papers</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">432 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📚 Also in today&#x27;s digest:
+
+• Mitochondrial dsRNA fuels PDAC via RIG-I/TLR3 inflammation (PNAS)
+• CAF plasticity redefined: ADH1B/ITGA3 markers in CRC (Oncogene)
+• SLIRP maintains OXPHOS in CRC — a metabolic vulnerability (Br J Cancer)
+• OLFM4/TGFβ/CEACAM6 axis drives gallbladder carcinogenesis (Oncogene)
+• MFN1/ROS drives HCC-CCA phenotypic switching (PNAS)
+
+Full digest with all papers + links 👇
+
+#GIOnc #CancerResearch #Oncology
+
+<a href="https://allanatal.github.io/my-website/digests/digest-2026-04-29.html" target="_blank" style="color:#1da1f2;word-break:break-all;">https://allanatal.github.io/my-website/digests/digest-2026-04-29.html</a></div>
+    </div>
+
+    <div class="footer-note">
+      Generated by Dr. Allan Pereira's GI Oncology Digest system<br>
+      Full digest: <a href="https://allanatal.github.io/my-website/digests/digest-2026-04-29.html" style="color:#1da1f2;">https://allanatal.github.io/my-website/digests/digest-2026-04-29.html</a>
+    </div>
+  </div>
+</body>
+</html>

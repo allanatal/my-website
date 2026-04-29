@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-29",
+  "date_display": "April 29, 2026",
+  "subtitle": "Metabolic Immunology Edition",
+  "feed_desc": "PI3Kγ/STING dual targeting overcomes immune suppression in PDAC (Nature Cancer), global CRC burden and early-onset trends (Nat Rev Clin Oncol), JOSD1 metabolic-immune axis in HCC (Gut), TGM2-mediated ferroptosis resistance in gastric cancer (Cell Discovery), MARCO-driven immunosuppression in cholangiocarcinoma (STTT)",
+  "papers": [
+    {
+      "title": "Dual Targeting of PI3Kγ and STING Overcomes Regulatory B Cell– and Myeloid Cell–Driven Immune Suppression in Pancreatic Cancer",
+      "url": "https://doi.org/10.1038/s43018-026-01158-7",
+      "source": "Nature Cancer",
+      "authors": "Li C, Ke F, Zhao H, et al.",
+      "published": "April 28, 2026",
+      "score": 10,
+      "score_rationale": "Base 9 (Nature Cancer) + 1 (biomarker-guided/precision)",
+      "summary": "This study identifies PI3Kγ as a critical dependency of STING agonist–expanded regulatory B cells in pancreatic cancer, while STING-activated myeloid cells remain PI3Kγ-independent. The authors developed Nano-273, an albumin nanoformulation that simultaneously stimulates STING to activate myeloid cells and inhibits PI3Kγ to block Breg expansion. Nano-273 effectively delivered to tumors and lymph nodes, overcoming dual myeloid/Breg immunosuppression. Combined with anti-PD-1, Nano-273 achieved durable efficacy in transgenic KPC mice, offering a novel therapeutic strategy for pancreatic cancer immunotherapy.",
+      "post_angle": "Finally a strategy that tackles BOTH myeloid AND B cell immunosuppression in PDAC! Nano-273 + anti-PD-1 = durable responses in KPC mice. This dual PI3Kγ/STING approach could change how we think about PDAC immunotherapy. #PDAC #Immunotherapy #PrecisionMedicine #GIOnc"
+    },
+    {
+      "title": "Emerging Trends in the Global Burden of Colorectal Cancer",
+      "url": "https://doi.org/10.1038/s41571-026-01149-8",
+      "source": "Nature Reviews Clinical Oncology",
+      "authors": "Lee DJ, Parikh A, Sirohi B, Cao Y, Chan AT",
+      "published": "April 28, 2026",
+      "score": 9,
+      "score_rationale": "Base 9 (Nature Reviews Clinical Oncology / Lancet-tier journal)",
+      "summary": "This comprehensive review in Nature Reviews Clinical Oncology examines the shifting global epidemiology of colorectal cancer, highlighting the alarming rise in early-onset CRC in individuals under 50 years old. A birth cohort effect beginning with those born in the 1960s suggests environmental rather than genetic drivers. Key hypothesized risk factors include dietary changes, gut microbiome shifts, and environmental contaminants linked to rapid urbanization. The authors emphasize that under-representation of non-Western populations in genomic and epigenomic studies limits progress in global CRC prevention and control.",
+      "post_angle": "Essential reading: early-onset CRC is rising GLOBALLY, not just in the West. Birth cohort data points to environmental drivers beyond genetics. Until we include diverse populations in our research, we're flying blind on prevention. #CRC #EarlyOnsetCRC #GIOnc #CancerPrevention"
+    },
+    {
+      "title": "JOSD1 Drives Hepatocellular Carcinoma Malignancy by Modulating the Ubiquitination–Lactylation Switch on PGAM1",
+      "url": "https://doi.org/10.1136/gutjnl-2025-337331",
+      "source": "Gut",
+      "authors": "Li Q, Yu K, Zhou S, et al.",
+      "published": "April 28, 2026",
+      "score": 9,
+      "score_rationale": "Base 8 (Gut, top-tier GI journal) + 1 (biomarker-guided/precision)",
+      "summary": "This multi-omics study reveals that deubiquitinase JOSD1 orchestrates a ubiquitination-to-lactylation PTM switch on PGAM1 via the JOSD1-AARS1 axis, driving glycolytic reprogramming in HCC. Stabilized PGAM1 enhances lactate accumulation, which impairs CD8+ T cell infiltration and function, creating an immunosuppressive microenvironment. Liver-targeted JOSD1 inhibition suppressed tumor progression and synergized with anti-PD-1 therapy, prolonging survival in preclinical models. This identifies JOSD1 as a druggable metabolic-immune checkpoint in HCC.",
+      "post_angle": "A metabolic-immune master switch in HCC: JOSD1 flips PGAM1 from ubiquitination → lactylation, fueling glycolysis and killing CD8+ T cells. Targeting JOSD1 + anti-PD-1 = synergy in preclinical models. New druggable target alert! #HCC #LiverCancer #Immunotherapy #GIOnc"
+    },
+    {
+      "title": "TGM2-Mediated Serotonylation of GPX4 Confers Ferroptosis Resistance to Promote Gastric Tumorigenesis",
+      "url": "https://doi.org/10.1038/s41421-026-00885-6",
+      "source": "Cell Discovery",
+      "authors": "Bai J, Geng D, Chen X, et al.",
+      "published": "April 28, 2026",
+      "score": 7,
+      "score_rationale": "Base 6 (Cell Discovery) + 1 (biomarker-guided/precision)",
+      "summary": "Using untargeted plasma metabolomics, this study found serotonin (5-HT) levels are significantly elevated in gastric cancer patients and promote tumor growth dose-dependently. The oncogenic mechanism is receptor-independent: transglutaminase 2 (TGM2) serotonylates GPX4 at Gln55 and Gln77, stabilizing GPX4 by blocking ubiquitin-mediated degradation and conferring ferroptosis resistance. Chemoproteomic profiling identified a broad spectrum of serotonylation targets beyond GPX4. TGM2 levels correlated with GPX4 expression clinically, establishing TGM2-mediated GPX4 serotonylation as a novel diagnostic biomarker and therapeutic target within the neural-tumor axis.",
+      "post_angle": "The gut-brain-cancer connection gets real: serotonin directly fuels gastric cancer growth via a novel protein serotonylation mechanism. TGM2 modifies GPX4 → ferroptosis resistance → tumor growth. A whole new layer of neural-tumor biology! #GastricCancer #Ferroptosis #GIOnc"
+    },
+    {
+      "title": "MARCO Promotes Cholangiocarcinogenesis and Immunosuppression; Anti-MARCO Antibody Reduces Tumor Burden",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42049706/",
+      "source": "Signal Transduction and Targeted Therapy",
+      "authors": "MARCO study authors (STTT)",
+      "published": "April 28, 2026",
+      "score": 7,
+      "score_rationale": "Base 6 (STTT) + 1 (biomarker-guided/precision)",
+      "summary": "This study demonstrates that the scavenger receptor MARCO is highly expressed on tumor-associated macrophages in cholangiocarcinoma, where it drives T cell dysfunction, fibrosis, and immunosuppression. High MARCO expression correlates with worse overall survival. Marco-knockout mice were protected from cholangiocarcinogenesis, and anti-MARCO antibody therapy significantly reduced tumor burden in preclinical models. These findings position MARCO as both a prognostic biomarker and a novel immunotherapeutic target in cholangiocarcinoma.",
+      "post_angle": "New immunotherapy target in cholangiocarcinoma: MARCO on tumor macrophages drives T cell dysfunction + fibrosis. Anti-MARCO antibody shrinks tumors in preclinical models. Much-needed progress for a disease with limited options! #CCA #BiliaryCancer #Immunotherapy #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "Mitochondrial dsRNA Fuels PDAC Growth via RIG-I/TLR3 Inflammation",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42048448/",
+      "source_line": "PNAS — Mic60-low mitochondria release dsRNA engaging TLR3/RIG-I → NFκB → PDAC proliferation; preclinical targeting inhibits tumor growth"
+    },
+    {
+      "title": "Fibroblast Dynamics in Colorectal Cancer: Stability, Plasticity, and Novel Markers",
+      "url": "https://doi.org/10.1038/s41388-026-03809-6",
+      "source_line": "Oncogene — ADH1B marks normal fibroblasts, ITGA3 delineates CAFs; TGF-β stably induces myCAFs while TNF-α promotes transient piCAF emergence in CRC"
+    },
+    {
+      "title": "SLIRP Maintains Energy Metabolism Homeostasis in CRC by Stabilizing Mitochondrial-Encoded mRNAs",
+      "url": "https://doi.org/10.1038/s41416-026-03453-7",
+      "source_line": "British Journal of Cancer — SLIRP knockdown triggers ATP crisis and tumor suppression; potential OXPHOS-targeted therapeutic strategy for CRC"
+    },
+    {
+      "title": "OLFM4 Drives Gallbladder Carcinogenesis via TGFβ/CEACAM6/EMT Axis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42050078/",
+      "source_line": "Oncogene — OLFM4 activates TGFβ signaling and CEACAM6-mediated EMT to promote gallbladder cancer progression"
+    },
+    {
+      "title": "Mitochondrial Fusion Heterogeneity Drives Bidirectional Tumor Phenotypic Transition in Combined HCC-CCA",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42048452/",
+      "source_line": "PNAS — MFN1 impairment generates ROS gradients driving HCC/ICC differentiation in combined hepatocellular-cholangiocarcinoma"
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🔬 GI Oncology Daily Digest — April 29, 2026\n\nMetabolic Immunology Edition\n\n• A game-changing dual PI3Kγ/STING strategy cracks PDAC immunosuppression (Nature Cancer)\n• Serotonin fuels gastric cancer via a brand-new protein modification\n• The metabolic switch that lets HCC evade immunotherapy — and how to flip it\n\nA thread 🧵👇\n\n#GIOnc #Oncology #MedTwitter #CancerResearch",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 PI3Kγ/STING PDAC",
+      "text": "🔥 #1 — Dual PI3Kγ/STING Targeting in Pancreatic Cancer\n\nNature Cancer | Li et al.\n\n• STING agonists activate myeloid cells BUT also expand immunosuppressive Breg cells\n• Breg expansion depends on PI3Kγ — myeloid activation does not\n• Nano-273 nanoformulation: stimulates STING + blocks PI3Kγ simultaneously\n• Combined with anti-PD-1 → durable responses in KPC transgenic mice\n\nThis is exactly the kind of dual-target thinking PDAC immunotherapy needs. Tackling both myeloid AND B cell suppression is a paradigm shift.\n\n#PDAC #Immunotherapy #PrecisionMedicine #GIOnc",
+      "url": "https://doi.org/10.1038/s43018-026-01158-7"
+    },
+    {
+      "label": "Post 3 — #2 Global CRC Burden",
+      "text": "📊 #2 — Global CRC Burden: The Early-Onset Crisis\n\nNat Rev Clin Oncol | Lee, Parikh, Chan et al.\n\n• CRC now rising globally beyond Western high-income countries\n• Early-onset CRC (<50 yrs) driving the increase worldwide\n• Birth cohort effect from 1960s → environmental, not genetic\n• Key suspects: diet, microbiome shifts, environmental contaminants from urbanization\n• Non-Western populations grossly under-represented in genomic studies\n\nWe cannot solve the early-onset CRC puzzle without diverse global cohorts. Period.\n\n#CRC #EarlyOnsetCRC #CancerPrevention #GIOnc",
+      "url": "https://doi.org/10.1038/s41571-026-01149-8"
+    },
+    {
+      "label": "Post 4 — #3 JOSD1 HCC",
+      "text": "🎯 #3 — JOSD1: A Metabolic-Immune Master Switch in HCC\n\nGut | Li et al.\n\n• Deubiquitinase JOSD1 flips PGAM1 from ubiquitination → lactylation via AARS1\n• Stabilized PGAM1 drives glycolysis → lactate accumulation\n• Lactate kills CD8+ T cell infiltration and function\n• Liver-targeted JOSD1 inhibition + anti-PD-1 = prolonged survival\n\nPost-translational modification crosstalk as a metabolic-immune checkpoint? This is the kind of HCC biology that could unlock combination strategies.\n\n#HCC #LiverCancer #Immunotherapy #GIOnc",
+      "url": "https://doi.org/10.1136/gutjnl-2025-337331"
+    },
+    {
+      "label": "Post 5 — #4 TGM2/GPX4 Gastric Cancer",
+      "text": "🧪 #4 — Serotonin Drives Gastric Cancer via Protein Serotonylation\n\nCell Discovery | Bai et al.\n\n• Plasma serotonin (5-HT) elevated in GC patients\n• 5-HT promotes GC growth dose-dependently — receptor-INDEPENDENT\n• TGM2 serotonylates GPX4 at Gln55/Gln77 → blocks ubiquitin degradation\n• Stabilized GPX4 = ferroptosis resistance → tumor growth\n• TGM2 correlates with GPX4 expression clinically\n\nThe neural-tumor axis just got a whole new chapter. Protein serotonylation is an emerging PTM with huge implications.\n\n#GastricCancer #Ferroptosis #NeuralTumor #GIOnc",
+      "url": "https://doi.org/10.1038/s41421-026-00885-6"
+    },
+    {
+      "label": "Post 6 — #5 MARCO CCA",
+      "text": "🌍 #5 — MARCO: A New Immunotherapy Target in Cholangiocarcinoma\n\nSignal Transduction & Targeted Therapy\n\n• Scavenger receptor MARCO highly expressed on TAMs in CCA\n• High MARCO = worse OS, T cell dysfunction, fibrosis\n• Marco-knockout mice protected from cholangiocarcinogenesis\n• Anti-MARCO antibody significantly reduced tumor burden\n\nCCA desperately needs new targets beyond chemo + PD-L1. MARCO on macrophages could be the next frontier for combination immunotherapy.\n\n#CCA #BiliaryCancer #Immunotherapy #GIOnc",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42049706/"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 Also in today's digest:\n\n• Mitochondrial dsRNA fuels PDAC via RIG-I/TLR3 inflammation (PNAS)\n• CAF plasticity redefined: ADH1B/ITGA3 markers in CRC (Oncogene)\n• SLIRP maintains OXPHOS in CRC — a metabolic vulnerability (Br J Cancer)\n• OLFM4/TGFβ/CEACAM6 axis drives gallbladder carcinogenesis (Oncogene)\n• MFN1/ROS drives HCC-CCA phenotypic switching (PNAS)\n\nFull digest with all papers + links 👇\n\n#GIOnc #CancerResearch #Oncology",
+      "url": "https://allanatal.github.io/my-website/digests/digest-2026-04-29.html"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-05-01",
+  "date_display": "May 1, 2026",
+  "subtitle": "May Day Edition — Early-Onset CRC, Pan-RAS, and the Oligo Endpoints Problem",
+  "feed_desc": "Early-onset CRC exposome risk factors (Nature Medicine), EORTC-ESTRO OligoCare Delphi consensus on metastases-directed therapy endpoints (Lancet Oncology), ERAS-0015 pan-RAS inhibitor delivers 40% ORR in 2L KRAS G12X PDAC (Erasca/OncLive), Fruquintinib + TAS-102 ± SBRT yields mPFS 8.6 mo in 3L+ mCRC Phase II (Cancer Medicine), HAIC + regorafenib + sintilimab doubles OS vs regorafenib alone in MSS/pMMR CRC liver mets (Cancer Medicine).",
+  "papers": [
+    {
+      "title": "Nature Medicine: Exposome-Wide Analysis Identifies Modifiable Risk Factors Driving Early-Onset Colorectal Cancer (Dana-Farber)",
+      "url": "https://doi.org/10.1038/s41591-026-04369-8",
+      "source": "Nature Medicine",
+      "authors": "Lee DJ, Baca S, Ng K (Dana-Farber Cancer Institute / Harvard Medical School)",
+      "published": "April 30, 2026",
+      "score": 11,
+      "score_rationale": "Nature Medicine (9) + early-onset CRC focus / population-level epidemiology (+1) + biomarker / precision-prevention angle (+1)",
+      "summary": "Kimmie Ng's group at Dana-Farber published an exposome-wide analysis in Nature Medicine on April 30 systematically dissecting modifiable and environmental risk factors associated with early-onset colorectal cancer (EOCRC, age <50). The work integrates large-scale exposure datasets with cancer registries to identify drivers beyond inherited genetics — implicating dietary patterns, ultra-processed foods, microbiome perturbation, antibiotic exposure, sedentary behavior, and metabolic factors in the rising EOCRC incidence. EOCRC has nearly doubled in incidence among Americans <50 over the past two decades, and this paper provides the most granular exposome map yet for prevention and risk stratification. Practice implication: supports calls for earlier screening in higher-risk profiles and dietary/lifestyle counseling at primary-care level. Coming from arguably the leading EOCRC clinical research group, this is a landmark for the field.",
+      "post_angle": "🚨 Nature Medicine: Dana-Farber's Kimmie Ng group maps the EOCRC exposome.\n\n• Early-onset CRC up ~2x in <50s over 2 decades\n• Diet, microbiome, antibiotics, sedentariness all implicated\n• Sets the stage for risk-stratified earlier screening\n\nPrevention is the next frontier for EOCRC. #CRC #EOCRC #Prevention #PrecisionOncology"
+    },
+    {
+      "title": "Lancet Oncology: EORTC-ESTRO OligoCare Delphi Consensus — New Endpoints for Metastases-Directed Therapy in Oligometastatic Disease",
+      "url": "https://doi.org/10.1016/S1470-2045(26)00075-6",
+      "source": "Lancet Oncology",
+      "authors": "Widder J, Bol GM, ... Guckenberger M (EORTC-ESTRO OligoCare consortium)",
+      "published": "May 2026",
+      "score": 10,
+      "score_rationale": "Lancet Oncology (8) + Delphi consensus / systematic review (+2)",
+      "summary": "An EORTC-ESTRO OligoCare consortium consensus (30 experts + 5 patient representatives, 4 Delphi rounds) reviewed 121 trials of metastases-directed therapy (MDT) and proposed standardized endpoints for oligometastatic disease — relevant across colorectal, pancreatic, gastric, esophageal, and HCC oligomets. Overall survival reached the highest consensus as primary endpoint, but the panel formally endorsed two novel endpoints: polymetastatic progression-free survival (polyPFS) and start-or-switch of systemic therapy-free survival (SST-FS) — both designed to allow repeat MDT without classifying it as treatment failure. Time-to-deterioration of quality-of-life was added as a patient-prioritized secondary endpoint. Practice impact: this should reshape how SBRT, ablation, and metastasectomy trials in oligometastatic GI cancers are designed and reported, and aligns radiation oncology, medical oncology, and surgical trialists on a common vocabulary.",
+      "post_angle": "📐 Lancet Oncology: EORTC-ESTRO OligoCare Delphi consensus drops new endpoints for oligomets MDT trials.\n\n• OS still king\n• NEW: polymetastatic PFS, systemic-therapy-free survival\n• Repeat MDT no longer = treatment failure\n• Time to QoL deterioration prioritized by patients\n\nGame-changer for SBRT/ablation trials in oligo CRC, HCC, PDAC. #Oligomets #Radonc #GIOnc"
+    },
+    {
+      "title": "ERAS-0015 Pan-RAS(ON) Inhibitor: 40% ORR in 2L KRAS G12X-Mutant PDAC, 62% in NSCLC — First-in-Human Phase 1 (Erasca / AACR)",
+      "url": "https://www.onclive.com/view/eras-0015-shows-early-antitumor-activity-safety-in-ras-mutant-nsclc-and-pdac",
+      "source": "Erasca press release / OncLive coverage of AACR 2026 data",
+      "authors": "Erasca, Inc.",
+      "published": "April 27–28, 2026",
+      "score": 9,
+      "score_rationale": "Press release / AACR data (6) + Phase 1 dose escalation with strong efficacy (+2) + biomarker-guided / KRAS precision (+1)",
+      "summary": "Erasca's pan-RAS(ON) inhibitor ERAS-0015 — designed to inhibit signaling across both mutant and wild-type RAS isoforms — produced unconfirmed ORRs of 40% in second-line-or-later KRAS G12X-mutant metastatic PDAC and 62% in 2L+ KRAS G12X-mutant NSCLC at pharmacologically active 16–32 mg QD doses in the first-in-human dose-escalation study. Adverse events were predominantly low-grade and no dose-limiting toxicities were reported. ERAS-0015 joins daraxonrasib (RMC-6236) in the emerging pan-RAS(ON) class targeting active GTP-bound RAS — the same mechanism that produced 13.2-vs-6.7-mo OS gains in RASolute 302 in 2L PDAC. With ~90% of PDAC harboring KRAS mutations, two clinically active pan-RAS inhibitors in this space transforms the trajectory for what was, for decades, the least druggable target in the GI cancer playbook.",
+      "post_angle": "🎯 ERAS-0015 pan-RAS(ON) Phase 1 data drop:\n\n• 2L KRAS G12X PDAC: 40% ORR\n• 2L KRAS G12X NSCLC: 62% ORR\n• Mostly low-grade AEs, no DLTs\n\nSecond clinically active pan-RAS(ON) after daraxonrasib. The KRAS-PDAC fortress is officially under siege. #PDAC #KRAS #PanRAS #AACR2026"
+    },
+    {
+      "title": "Phase II: Fruquintinib + TAS-102 ± SBRT Yields Median PFS 8.6 Months in 3L+ Metastatic Colorectal Cancer (Cancer Medicine)",
+      "url": "https://doi.org/10.1002/cam4.71884",
+      "source": "Cancer Medicine",
+      "authors": "Wang Y, Xu J, ... Rao C (Ningbo No. 2 Hospital, China)",
+      "published": "May 2026",
+      "score": 9,
+      "score_rationale": "Other journal (5) + prospective Phase II (+2) + impressive PFS in heavily pre-treated mCRC (+2)",
+      "summary": "A Chinese prospective Phase II two-arm trial enrolled 40 patients with mCRC after ≥2 prior lines and tested oral fruquintinib (4 mg QD d1–21) + TAS-102 (30 mg/m² BID d1–5, 15–19) every 4 weeks, with or without SBRT to a metastatic site. Among 36 evaluable patients (50% had ≥3 metastatic organs; 80% had >5 lesions), ORR was 19.4% and DCR was 88.9%. Median PFS was 8.58 months — striking, given that single-agent fruquintinib (FRESCO-2) and TAS-102 each show ~3-month PFS in this setting. Median OS was not yet reached. The most common grade 3/4 AE was decreased lymphocyte count (12.5%); neutropenia/leukopenia were universal but mostly low-grade. No treatment-related deaths. The combination (with or without SBRT) is a plausible salvage option for fit, multi-line-refractory mCRC patients and warrants randomized validation against either monotherapy.",
+      "post_angle": "📊 Phase II: Fruquintinib + TAS-102 ± SBRT in 3L+ mCRC (n=40):\n\n• ORR 19.4%, DCR 88.9%\n• mPFS 8.58 mo (vs ~3 mo for either alone)\n• 80% had >5 mets, 50% had ≥3 organs\n• Manageable toxicity, no treatment-related deaths\n\nPromising salvage signal — needs randomized validation. #CRC #mCRC #Fruquintinib #TAS102"
+    },
+    {
+      "title": "HAIC + Regorafenib + Sintilimab Doubles OS vs Regorafenib Alone in MSS/pMMR CRC Liver Metastases After 2L Failure (Cancer Medicine)",
+      "url": "https://doi.org/10.1002/cam4.71894",
+      "source": "Cancer Medicine",
+      "authors": "You R, Xu Q, ... Yin G (Jiangsu Cancer Hospital, China)",
+      "published": "May 2026",
+      "score": 8,
+      "score_rationale": "Other journal (5) + retrospective propensity-matched (+1) + OS + PFS benefit (+2)",
+      "summary": "Retrospective single-center, propensity-matched (45 pairs, n=90) study of hepatic artery infusion chemotherapy (FOLFOX via HAIC) combined with regorafenib + sintilimab versus regorafenib monotherapy in MSS/pMMR colorectal cancer liver metastases refractory to ≥2 prior systemic lines. The HAIC-R-S triplet doubled both PFS (6.5 vs 3.4 mo, p<0.001) and OS (14.1 vs 8.1 mo, p<0.001), with ORR 37.8% vs 2.2% (p<0.001) and DCR 71.1% vs 42.2% (p=0.006). Grade ≥3 AEs were higher with the combination (26.7% vs 13.3%), driven by hematologic toxicity. This is hypothesis-generating only — no randomized data yet — but the magnitude of benefit in a population (refractory MSS CRCLM) with virtually no effective options is striking, and consistent with prior HAIC + checkpoint inhibitor signals in liver-dominant disease. Prospective multicenter trials needed before MSS CRCLM patients should be routinely offered this approach outside trials.",
+      "post_angle": "🩸 Retrospective propensity-matched: HAIC FOLFOX + rego + sintilimab vs regorafenib alone in 3L+ MSS/pMMR CRC liver mets (n=90):\n\n• mOS 14.1 vs 8.1 mo (p<0.001)\n• mPFS 6.5 vs 3.4 mo (p<0.001)\n• ORR 37.8% vs 2.2%\n• Grade ≥3 AEs 26.7% vs 13.3%\n\nMSS CRCLM remains the toughest niche — needs randomized validation. #CRC #LiverMets #HAIC #MSS"
+    }
+  ],
+  "additional": [
+    {
+      "title": "Lancet Oncology: Global Cancer Survival and Mortality Simulation 1990–2050 — 17 Cancers Modeled",
+      "url": "https://doi.org/10.1016/S1470-2045(26)00037-9",
+      "source_line": "Lancet Oncology — Modeling study projects rising global cancer mortality through 2050, with GI cancers (CRC, gastric, liver, pancreatic, esophageal) representing major drivers in low- and middle-income countries. Workforce companion paper estimates oncology personnel scaling needed to bend mortality curves."
+    },
+    {
+      "title": "ASCO Educational Book: Emerging and Established Targets in Colorectal Cancer — Translating Biology Into Therapeutics",
+      "url": "https://doi.org/10.1200/EDBK-26-450470",
+      "source_line": "ASCO Educational Book — Comprehensive review covering KRAS G12C, BRAF V600E, HER2, MSI-H/dMMR, FGFR, EGFR, and emerging targets in mCRC; integrates BREAKWATER, SUNLIGHT, KEYNOTE-177, and ctDNA-guided escalation/de-escalation strategies."
+    },
+    {
+      "title": "Oncolytics Aligns with FDA on Pivotal Phase 3 Anal Cancer Study for Pelareorep + Atezolizumab",
+      "url": "https://www.globenewswire.com/news-release/2026/04/27/3281595/0/en/Oncolytics-Aligns-with-FDA-on-Planned-Pivotal-Anal-Cancer-Study.html",
+      "source_line": "Oncolytics Biotech press release (Apr 27) — FDA Type C meeting alignment on pivotal study design for pelareorep (oncolytic reovirus) + atezolizumab in unresectable metastatic anal SCC; potential first-line registrational path in a rare GI cancer subtype with limited options."
+    },
+    {
+      "title": "Phase I: SOX (S-1 + Oxaliplatin) After Preoperative Chemoradiotherapy for Advanced Lower Rectal Cancer",
+      "url": "https://doi.org/10.21873/invivo.13923",
+      "source_line": "In Vivo — Single-arm Phase I shows acceptable safety and pCR signal for adjuvant SOX following standard CRT in locally advanced low rectal cancer; supports SOX backbone for future TNT regimens in Asian populations."
+    },
+    {
+      "title": "PNAS: Fra-2 Controls Response to KRAS Inhibitor MRTX-1133 in Pancreatic Ductal Adenocarcinoma",
+      "url": "https://doi.org/10.1073/pnas.2601788123",
+      "source_line": "PNAS — Mechanistic study identifies the AP-1 transcription factor Fra-2 as a key determinant of response to the KRAS-G12D inhibitor MRTX-1133; Fra-2 high tumors are more resistant, suggesting a candidate biomarker for KRAS-G12D inhibitor patient selection in PDAC."
+    },
+    {
+      "title": "T-Cell Markers (CD45+CD3+, CD3+CD8+) Improve Prognostic Nomograms for Gastroesophageal Junction Carcinoma",
+      "url": "https://doi.org/10.1038/s41598-026-09815-w",
+      "source_line": "Scientific Reports — Integration of intratumoral CD45+CD3+ and CD3+CD8+ T-cell densities into multivariate nomograms improves overall and disease-free survival prediction in GEJ adenocarcinoma; supports a low-cost IHC-based stratification tool ahead of the molecular era."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🧬 GI Oncology Digest — May 1, 2026\nMay Day Edition 🌷\n\nThis week:\n• Dana-Farber maps the early-onset CRC exposome (Nature Medicine)\n• EORTC-ESTRO drops new oligomets endpoints (Lancet Oncology)\n• Second pan-RAS inhibitor (ERAS-0015) hits 40% ORR in PDAC\n• Fruq + TAS-102 ± SBRT: mPFS 8.6 mo in 3L mCRC\n\nA thread 🧵👇\n\n#GIOnc #CRC #PDAC #KRAS #Oligomets",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 EOCRC Exposome (Nature Medicine)",
+      "text": "🚨 #1: Mapping the Exposome of Early-Onset Colorectal Cancer\n\nNature Medicine | Lee, Baca, Ng (Dana-Farber/Harvard) | Apr 30\n\n• EOCRC incidence ~2x in Americans <50 over two decades\n• Diet, ultra-processed food, microbiome, antibiotics, sedentariness all implicated\n• Most granular exposome map yet for risk stratification\n\nThis is from Kimmie Ng's group — the field's leading EOCRC voice. Prevention is the next frontier.\n\n#CRC #EOCRC #Prevention #GIOnc",
+      "url": "https://doi.org/10.1038/s41591-026-04369-8"
+    },
+    {
+      "label": "Post 3 — #2 OligoCare Delphi Consensus (Lancet Oncology)",
+      "text": "📐 #2: EORTC-ESTRO OligoCare Delphi Consensus on MDT Endpoints\n\nLancet Oncology | Widder et al | May 2026\n\n• 30 experts + 5 patients, 4 Delphi rounds, 121 trials reviewed\n• OS confirmed as primary\n• NEW: polymetastatic PFS + systemic-therapy-free survival\n• Repeat MDT no longer = failure\n• Time-to-QoL deterioration prioritized\n\nThis should reshape SBRT/ablation trial design in oligo CRC, HCC, PDAC.\n\n#Oligomets #Radonc #SBRT #GIOnc",
+      "url": "https://doi.org/10.1016/S1470-2045(26)00075-6"
+    },
+    {
+      "label": "Post 4 — #3 ERAS-0015 Pan-RAS",
+      "text": "🎯 #3: ERAS-0015 Pan-RAS(ON) Inhibitor — First-in-Human Phase 1\n\nErasca / AACR 2026 | Apr 27–28\n\n• 2L KRAS G12X PDAC: 40% ORR\n• 2L KRAS G12X NSCLC: 62% ORR\n• 16–32 mg QD oral, mostly low-grade AEs, no DLTs\n\nSecond pan-RAS(ON) inhibitor with clinical activity after daraxonrasib (RASolute 302: 13.2 vs 6.7 mo OS in 2L PDAC). The KRAS fortress is officially falling.\n\n#PDAC #KRAS #PanRAS #AACR2026",
+      "url": "https://www.onclive.com/view/eras-0015-shows-early-antitumor-activity-safety-in-ras-mutant-nsclc-and-pdac"
+    },
+    {
+      "label": "Post 5 — #4 Fruq + TAS-102 ± SBRT mCRC",
+      "text": "🌍 #4: Fruquintinib + TAS-102 ± SBRT in 3L+ mCRC — Phase II\n\nCancer Medicine | Wang et al (Ningbo) | May 2026\n\n• n=40, heavily pretreated (80% with >5 mets)\n• ORR 19.4%, DCR 88.9%\n• mPFS 8.58 mo (vs ~3 mo for either monotherapy)\n• Manageable hematologic toxicity, no Tx-related deaths\n\nStriking salvage signal — needs randomized validation, but the mPFS is hard to ignore.\n\n#CRC #mCRC #Fruquintinib",
+      "url": "https://doi.org/10.1002/cam4.71884"
+    },
+    {
+      "label": "Post 6 — #5 HAIC + Rego + Sintilimab in MSS CRCLM",
+      "text": "🧪 #5: HAIC + Regorafenib + Sintilimab vs Regorafenib Alone — MSS/pMMR CRC Liver Mets (3L+)\n\nCancer Medicine | You et al (Jiangsu) | May 2026\n\nRetrospective, propensity-matched (n=90):\n• mOS 14.1 vs 8.1 mo (p<0.001)\n• mPFS 6.5 vs 3.4 mo (p<0.001)\n• ORR 37.8% vs 2.2%\n• Grade ≥3 AEs 26.7% vs 13.3%\n\nMSS CRCLM is the hardest niche. Magnitude is real, but needs RCTs.\n\n#CRC #LiverMets #HAIC #MSS",
+      "url": "https://doi.org/10.1002/cam4.71894"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 Also worth your attention this week:\n\n• Lancet Oncology — global cancer survival/mortality simulation 1990–2050 (GI cancers driving LMIC mortality)\n• ASCO Educational Book — emerging & established CRC targets review\n• Oncolytics + FDA align on pivotal Phase 3 pelareorep trial in anal SCC (Apr 27)\n• PNAS — Fra-2 as candidate biomarker for KRAS-G12D inhibitor (MRTX-1133) response in PDAC\n\nFull digest 👇\nhttps://allanatal.github.io/my-website/digests/digest-2026-05-01.html\n\n#GIOnc",
+      "url": ""
+    }
+  ]
+}

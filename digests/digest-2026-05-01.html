@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GI Oncology Daily Digest — May 1, 2026. May Day Edition — Early-Onset CRC, Pan-RAS, and the Oligo Endpoints Problem. Curated by Dr. Allan Pereira." />
+    <meta name="author" content="Allan Andresson Lima Pereira" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../site.css?v=3">
+
+    <title>GI Oncology Digest — May 1, 2026 | Dr. Allan Pereira</title>
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('site-theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (e) {}
+      }());
+    </script>
+
+    <style>
+      .digest-header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }
+      .digest-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
+      .digest-header .digest-date { font-size: 1rem; color: #99ccff; }
+      .digest-header .digest-subtitle { font-size: .85rem; color: #80b3e6; margin-top: .25rem; }
+      .digest-content { padding: 2rem 0 3rem; }
+      .digest-section-title { font-size: 1.3rem; font-weight: 700; color: #003366; border-bottom: 3px solid #003366; padding-bottom: .5rem; margin: 2rem 0 1.25rem; }
+      .digest-section-title:first-child { margin-top: 0; }
+      [data-theme="dark"] .digest-section-title { color: #66aadd; border-bottom-color: #66aadd; }
+      .paper-card { background: #fff; border: 1px solid #e2e6ea; border-left: 5px solid #003366; border-radius: .4rem; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); transition: box-shadow .2s; }
+      .paper-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.1); }
+      [data-theme="dark"] .paper-card { background: var(--card-bg, #1e2a38); border-color: #2a3a4a; border-left-color: #66aadd; }
+      .paper-rank { display: inline-block; background: #003366; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; margin-bottom: .5rem; }
+      .paper-title { font-size: 1.05rem; font-weight: 700; margin-bottom: .35rem; }
+      .paper-title a { color: #003366; text-decoration: none; }
+      .paper-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .paper-title a { color: #88ccff; }
+      .paper-meta { font-size: .8rem; color: #666; margin-bottom: .6rem; }
+      .paper-meta b { color: #444; }
+      [data-theme="dark"] .paper-meta { color: #aaa; }
+      [data-theme="dark"] .paper-meta b { color: #ccc; }
+      .score-badge { display: inline-block; background: #007A33; color: #fff; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 3px; }
+      .score-rationale { font-size: .78rem; color: #555; font-style: italic; margin-left: .4rem; }
+      [data-theme="dark"] .score-rationale { color: #aaa; }
+      .score-line { margin-bottom: .75rem; }
+      .paper-summary { font-size: .9rem; margin-bottom: .85rem; }
+      .post-angle { background: #EBF5FF; border-left: 3px solid #0052CC; padding: .6rem .85rem; border-radius: 0 5px 5px 0; font-size: .78rem; color: #0052CC; font-style: italic; }
+      .post-angle b { font-style: normal; }
+      [data-theme="dark"] .post-angle { background: #1a2a3d; color: #88bbee; border-left-color: #4488cc; }
+      .additional-list { list-style: none; padding: 0; }
+      .additional-list li { padding: .75rem 0; border-bottom: 1px solid #eee; font-size: .9rem; }
+      .additional-list li:last-child { border-bottom: none; }
+      [data-theme="dark"] .additional-list li { border-bottom-color: #2a3a4a; }
+      .add-title a { color: #0052CC; font-weight: 600; text-decoration: none; }
+      .add-title a:hover { text-decoration: underline; }
+      [data-theme="dark"] .add-title a { color: #88bbee; }
+      .add-source { font-size: .8rem; color: #666; margin-top: .15rem; }
+      [data-theme="dark"] .add-source { color: #999; }
+      .digest-back { display: inline-block; margin: 1.5rem 0 0; font-size: .85rem; }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-nav" id="collapseExample">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Dr. Allan Pereira</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" id="btnCollapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html#curriculo">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="index_digest.html">GI Digest</a></li>
+          </ul>
+          <div class="d-flex align-items-center ml-3">
+            <button class="btn-lang mr-1" id="btn-pt">PT</button>
+            <button class="btn-lang" id="btn-en">EN</button>
+            <button class="btn-theme" id="btn-theme" aria-label="Toggle dark mode">
+              <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+              <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="digest-header">
+      <div class="container">
+        <h1>GI Oncology Daily Digest</h1>
+        <div class="digest-date">May 1, 2026 — May Day Edition — Early-Onset CRC, Pan-RAS, and the Oligo Endpoints Problem</div>
+        <div class="digest-subtitle">Curated by Dr. Allan Pereira — Moffitt Cancer Center</div>
+      </div>
+    </section>
+
+    <section class="digest-content">
+      <div class="container" style="max-width:800px;">
+        <h2 class="digest-section-title" style="margin-top:0;">Top 5 Papers</h2>
+
+        <div class="paper-card">
+          <span class="paper-rank">#1</span>
+          <div class="paper-title"><a href="https://doi.org/10.1038/s41591-026-04369-8" target="_blank">Nature Medicine: Exposome-Wide Analysis Identifies Modifiable Risk Factors Driving Early-Onset Colorectal Cancer (Dana-Farber)</a></div>
+          <div class="paper-meta"><b>Source:</b> Nature Medicine &nbsp;|&nbsp; <b>Authors:</b> Lee DJ, Baca S, Ng K (Dana-Farber Cancer Institute / Harvard Medical School) &nbsp;|&nbsp; <b>Published:</b> April 30, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 11/20</span><span class="score-rationale"> — Nature Medicine (9) + early-onset CRC focus / population-level epidemiology (+1) + biomarker / precision-prevention angle (+1)</span></div>
+          <div class="paper-summary">Kimmie Ng&#x27;s group at Dana-Farber published an exposome-wide analysis in Nature Medicine on April 30 systematically dissecting modifiable and environmental risk factors associated with early-onset colorectal cancer (EOCRC, age &lt;50). The work integrates large-scale exposure datasets with cancer registries to identify drivers beyond inherited genetics — implicating dietary patterns, ultra-processed foods, microbiome perturbation, antibiotic exposure, sedentary behavior, and metabolic factors in the rising EOCRC incidence. EOCRC has nearly doubled in incidence among Americans &lt;50 over the past two decades, and this paper provides the most granular exposome map yet for prevention and risk stratification. Practice implication: supports calls for earlier screening in higher-risk profiles and dietary/lifestyle counseling at primary-care level. Coming from arguably the leading EOCRC clinical research group, this is a landmark for the field.</div>
+          <div class="post-angle"><b>Post angle:</b> 🚨 Nature Medicine: Dana-Farber&#x27;s Kimmie Ng group maps the EOCRC exposome.
+
+• Early-onset CRC up ~2x in &lt;50s over 2 decades
+• Diet, microbiome, antibiotics, sedentariness all implicated
+• Sets the stage for risk-stratified earlier screening
+
+Prevention is the next frontier for EOCRC. #CRC #EOCRC #Prevention #PrecisionOncology</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#2</span>
+          <div class="paper-title"><a href="https://doi.org/10.1016/S1470-2045(26)00075-6" target="_blank">Lancet Oncology: EORTC-ESTRO OligoCare Delphi Consensus — New Endpoints for Metastases-Directed Therapy in Oligometastatic Disease</a></div>
+          <div class="paper-meta"><b>Source:</b> Lancet Oncology &nbsp;|&nbsp; <b>Authors:</b> Widder J, Bol GM, ... Guckenberger M (EORTC-ESTRO OligoCare consortium) &nbsp;|&nbsp; <b>Published:</b> May 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 10/20</span><span class="score-rationale"> — Lancet Oncology (8) + Delphi consensus / systematic review (+2)</span></div>
+          <div class="paper-summary">An EORTC-ESTRO OligoCare consortium consensus (30 experts + 5 patient representatives, 4 Delphi rounds) reviewed 121 trials of metastases-directed therapy (MDT) and proposed standardized endpoints for oligometastatic disease — relevant across colorectal, pancreatic, gastric, esophageal, and HCC oligomets. Overall survival reached the highest consensus as primary endpoint, but the panel formally endorsed two novel endpoints: polymetastatic progression-free survival (polyPFS) and start-or-switch of systemic therapy-free survival (SST-FS) — both designed to allow repeat MDT without classifying it as treatment failure. Time-to-deterioration of quality-of-life was added as a patient-prioritized secondary endpoint. Practice impact: this should reshape how SBRT, ablation, and metastasectomy trials in oligometastatic GI cancers are designed and reported, and aligns radiation oncology, medical oncology, and surgical trialists on a common vocabulary.</div>
+          <div class="post-angle"><b>Post angle:</b> 📐 Lancet Oncology: EORTC-ESTRO OligoCare Delphi consensus drops new endpoints for oligomets MDT trials.
+
+• OS still king
+• NEW: polymetastatic PFS, systemic-therapy-free survival
+• Repeat MDT no longer = treatment failure
+• Time to QoL deterioration prioritized by patients
+
+Game-changer for SBRT/ablation trials in oligo CRC, HCC, PDAC. #Oligomets #Radonc #GIOnc</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#3</span>
+          <div class="paper-title"><a href="https://www.onclive.com/view/eras-0015-shows-early-antitumor-activity-safety-in-ras-mutant-nsclc-and-pdac" target="_blank">ERAS-0015 Pan-RAS(ON) Inhibitor: 40% ORR in 2L KRAS G12X-Mutant PDAC, 62% in NSCLC — First-in-Human Phase 1 (Erasca / AACR)</a></div>
+          <div class="paper-meta"><b>Source:</b> Erasca press release / OncLive coverage of AACR 2026 data &nbsp;|&nbsp; <b>Authors:</b> Erasca, Inc. &nbsp;|&nbsp; <b>Published:</b> April 27–28, 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9/20</span><span class="score-rationale"> — Press release / AACR data (6) + Phase 1 dose escalation with strong efficacy (+2) + biomarker-guided / KRAS precision (+1)</span></div>
+          <div class="paper-summary">Erasca&#x27;s pan-RAS(ON) inhibitor ERAS-0015 — designed to inhibit signaling across both mutant and wild-type RAS isoforms — produced unconfirmed ORRs of 40% in second-line-or-later KRAS G12X-mutant metastatic PDAC and 62% in 2L+ KRAS G12X-mutant NSCLC at pharmacologically active 16–32 mg QD doses in the first-in-human dose-escalation study. Adverse events were predominantly low-grade and no dose-limiting toxicities were reported. ERAS-0015 joins daraxonrasib (RMC-6236) in the emerging pan-RAS(ON) class targeting active GTP-bound RAS — the same mechanism that produced 13.2-vs-6.7-mo OS gains in RASolute 302 in 2L PDAC. With ~90% of PDAC harboring KRAS mutations, two clinically active pan-RAS inhibitors in this space transforms the trajectory for what was, for decades, the least druggable target in the GI cancer playbook.</div>
+          <div class="post-angle"><b>Post angle:</b> 🎯 ERAS-0015 pan-RAS(ON) Phase 1 data drop:
+
+• 2L KRAS G12X PDAC: 40% ORR
+• 2L KRAS G12X NSCLC: 62% ORR
+• Mostly low-grade AEs, no DLTs
+
+Second clinically active pan-RAS(ON) after daraxonrasib. The KRAS-PDAC fortress is officially under siege. #PDAC #KRAS #PanRAS #AACR2026</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#4</span>
+          <div class="paper-title"><a href="https://doi.org/10.1002/cam4.71884" target="_blank">Phase II: Fruquintinib + TAS-102 ± SBRT Yields Median PFS 8.6 Months in 3L+ Metastatic Colorectal Cancer (Cancer Medicine)</a></div>
+          <div class="paper-meta"><b>Source:</b> Cancer Medicine &nbsp;|&nbsp; <b>Authors:</b> Wang Y, Xu J, ... Rao C (Ningbo No. 2 Hospital, China) &nbsp;|&nbsp; <b>Published:</b> May 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 9/20</span><span class="score-rationale"> — Other journal (5) + prospective Phase II (+2) + impressive PFS in heavily pre-treated mCRC (+2)</span></div>
+          <div class="paper-summary">A Chinese prospective Phase II two-arm trial enrolled 40 patients with mCRC after ≥2 prior lines and tested oral fruquintinib (4 mg QD d1–21) + TAS-102 (30 mg/m² BID d1–5, 15–19) every 4 weeks, with or without SBRT to a metastatic site. Among 36 evaluable patients (50% had ≥3 metastatic organs; 80% had &gt;5 lesions), ORR was 19.4% and DCR was 88.9%. Median PFS was 8.58 months — striking, given that single-agent fruquintinib (FRESCO-2) and TAS-102 each show ~3-month PFS in this setting. Median OS was not yet reached. The most common grade 3/4 AE was decreased lymphocyte count (12.5%); neutropenia/leukopenia were universal but mostly low-grade. No treatment-related deaths. The combination (with or without SBRT) is a plausible salvage option for fit, multi-line-refractory mCRC patients and warrants randomized validation against either monotherapy.</div>
+          <div class="post-angle"><b>Post angle:</b> 📊 Phase II: Fruquintinib + TAS-102 ± SBRT in 3L+ mCRC (n=40):
+
+• ORR 19.4%, DCR 88.9%
+• mPFS 8.58 mo (vs ~3 mo for either alone)
+• 80% had &gt;5 mets, 50% had ≥3 organs
+• Manageable toxicity, no treatment-related deaths
+
+Promising salvage signal — needs randomized validation. #CRC #mCRC #Fruquintinib #TAS102</div>
+        </div>
+
+        <div class="paper-card">
+          <span class="paper-rank">#5</span>
+          <div class="paper-title"><a href="https://doi.org/10.1002/cam4.71894" target="_blank">HAIC + Regorafenib + Sintilimab Doubles OS vs Regorafenib Alone in MSS/pMMR CRC Liver Metastases After 2L Failure (Cancer Medicine)</a></div>
+          <div class="paper-meta"><b>Source:</b> Cancer Medicine &nbsp;|&nbsp; <b>Authors:</b> You R, Xu Q, ... Yin G (Jiangsu Cancer Hospital, China) &nbsp;|&nbsp; <b>Published:</b> May 2026</div>
+          <div class="score-line"><span class="score-badge">Score: 8/20</span><span class="score-rationale"> — Other journal (5) + retrospective propensity-matched (+1) + OS + PFS benefit (+2)</span></div>
+          <div class="paper-summary">Retrospective single-center, propensity-matched (45 pairs, n=90) study of hepatic artery infusion chemotherapy (FOLFOX via HAIC) combined with regorafenib + sintilimab versus regorafenib monotherapy in MSS/pMMR colorectal cancer liver metastases refractory to ≥2 prior systemic lines. The HAIC-R-S triplet doubled both PFS (6.5 vs 3.4 mo, p&lt;0.001) and OS (14.1 vs 8.1 mo, p&lt;0.001), with ORR 37.8% vs 2.2% (p&lt;0.001) and DCR 71.1% vs 42.2% (p=0.006). Grade ≥3 AEs were higher with the combination (26.7% vs 13.3%), driven by hematologic toxicity. This is hypothesis-generating only — no randomized data yet — but the magnitude of benefit in a population (refractory MSS CRCLM) with virtually no effective options is striking, and consistent with prior HAIC + checkpoint inhibitor signals in liver-dominant disease. Prospective multicenter trials needed before MSS CRCLM patients should be routinely offered this approach outside trials.</div>
+          <div class="post-angle"><b>Post angle:</b> 🩸 Retrospective propensity-matched: HAIC FOLFOX + rego + sintilimab vs regorafenib alone in 3L+ MSS/pMMR CRC liver mets (n=90):
+
+• mOS 14.1 vs 8.1 mo (p&lt;0.001)
+• mPFS 6.5 vs 3.4 mo (p&lt;0.001)
+• ORR 37.8% vs 2.2%
+• Grade ≥3 AEs 26.7% vs 13.3%
+
+MSS CRCLM remains the toughest niche — needs randomized validation. #CRC #LiverMets #HAIC #MSS</div>
+        </div>
+
+        <h2 class="digest-section-title">Additional Papers of Interest</h2>
+        <ol class="additional-list">
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1016/S1470-2045(26)00037-9" target="_blank">Lancet Oncology: Global Cancer Survival and Mortality Simulation 1990–2050 — 17 Cancers Modeled</a></div>
+            <div class="add-source">Lancet Oncology — Modeling study projects rising global cancer mortality through 2050, with GI cancers (CRC, gastric, liver, pancreatic, esophageal) representing major drivers in low- and middle-income countries. Workforce companion paper estimates oncology personnel scaling needed to bend mortality curves.</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1200/EDBK-26-450470" target="_blank">ASCO Educational Book: Emerging and Established Targets in Colorectal Cancer — Translating Biology Into Therapeutics</a></div>
+            <div class="add-source">ASCO Educational Book — Comprehensive review covering KRAS G12C, BRAF V600E, HER2, MSI-H/dMMR, FGFR, EGFR, and emerging targets in mCRC; integrates BREAKWATER, SUNLIGHT, KEYNOTE-177, and ctDNA-guided escalation/de-escalation strategies.</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://www.globenewswire.com/news-release/2026/04/27/3281595/0/en/Oncolytics-Aligns-with-FDA-on-Planned-Pivotal-Anal-Cancer-Study.html" target="_blank">Oncolytics Aligns with FDA on Pivotal Phase 3 Anal Cancer Study for Pelareorep + Atezolizumab</a></div>
+            <div class="add-source">Oncolytics Biotech press release (Apr 27) — FDA Type C meeting alignment on pivotal study design for pelareorep (oncolytic reovirus) + atezolizumab in unresectable metastatic anal SCC; potential first-line registrational path in a rare GI cancer subtype with limited options.</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.21873/invivo.13923" target="_blank">Phase I: SOX (S-1 + Oxaliplatin) After Preoperative Chemoradiotherapy for Advanced Lower Rectal Cancer</a></div>
+            <div class="add-source">In Vivo — Single-arm Phase I shows acceptable safety and pCR signal for adjuvant SOX following standard CRT in locally advanced low rectal cancer; supports SOX backbone for future TNT regimens in Asian populations.</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1073/pnas.2601788123" target="_blank">PNAS: Fra-2 Controls Response to KRAS Inhibitor MRTX-1133 in Pancreatic Ductal Adenocarcinoma</a></div>
+            <div class="add-source">PNAS — Mechanistic study identifies the AP-1 transcription factor Fra-2 as a key determinant of response to the KRAS-G12D inhibitor MRTX-1133; Fra-2 high tumors are more resistant, suggesting a candidate biomarker for KRAS-G12D inhibitor patient selection in PDAC.</div>
+          </li>
+          <li>
+            <div class="add-title"><a href="https://doi.org/10.1038/s41598-026-09815-w" target="_blank">T-Cell Markers (CD45+CD3+, CD3+CD8+) Improve Prognostic Nomograms for Gastroesophageal Junction Carcinoma</a></div>
+            <div class="add-source">Scientific Reports — Integration of intratumoral CD45+CD3+ and CD3+CD8+ T-cell densities into multivariate nomograms improves overall and disease-free survival prediction in GEJ adenocarcinoma; supports a low-cost IHC-based stratification tool ahead of the molecular era.</div>
+          </li>
+        </ol>
+
+        <a href="index_digest.html" class="digest-back"><i class="fas fa-arrow-left mr-1"></i> Back to all digests</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Dr. Allan Pereira</h5>
+            <p data-i18n="hero-badge">Clinical Oncologist</p>
+            <a href="https://www.moffitt.org/eforms/patientregistrationform/" style="font-size:.875rem;" data-i18n="footer-book-btn">Book appointment</a>
+            <a href="https://www.moffitt.org/eforms/international-form/" class="d-flex align-items-center mb-2" style="gap:.5rem; font-size:.875rem;" data-i18n="hero-cta-intl">International Patient Appointment</a>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <h5>Social Media</h5>
+            <div class="mt-1">
+              <a class="social-icon" href="https://www.facebook.com/allan.pereira.311" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-icon" href="https://twitter.com/DrAllanPereira" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/in/allan-pereira-onco/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/DrAllanPereira/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCVR9xfo3yI7U8VjuKQt7a7A" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 data-i18n="footer-offices-title">Locations &amp; Directions</h5>
+            <p data-i18n="footer-offices-cta">Click for details:</p>
+            <button type="button" class="btn-ghost d-block mb-2" style="font-size:.8rem; padding:.4rem 1rem;" data-toggle="modal" data-target="#modalRegular" data-i18n="footer-unit1">Moffitt Magnolia Campus</button>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <small>Copyright &copy; Dr. Allan Pereira 2025</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="back-to-top" href="#page-top" role="button" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        var btn = document.getElementById('btn-theme');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var isDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var next = isDark ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('site-theme', next); } catch (e) {}
+        });
+      }());
+    </script>
+  </body>
+</html>

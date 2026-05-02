@@ -1,0 +1,132 @@
+{
+  "date": "2026-05-02",
+  "date_display": "May 2, 2026",
+  "subtitle": "Pancreatic PARP Maintenance & a Novel c-Met ADC in mCRC",
+  "feed_desc": "Long-term update of maintenance rucaparib in BRCA1/2 or PALB2-mutant pancreatic cancer (JAMA Oncology), first phase I of the c-Met ADC telisotuzumab adizutecan (ABBV-400) in late-line mCRC (JCO), NEJM Clinical Practice review on Barrett's esophagus, ASCO 2026 Educational Book on immunotherapy in localized CRC, and a network meta-analysis comparing five AI systems for adenoma detection at colonoscopy.",
+  "papers": [
+    {
+      "title": "JAMA Oncology: Long-Term Outcomes of BRCA1/2 or PALB2-Mutant Pancreatic Cancer Treated With Maintenance Rucaparib — Median OS 23.5 Months, Sustained Long Responders Beyond 4 Years",
+      "url": "https://doi.org/10.1001/jamaoncol.2026.0870",
+      "source": "JAMA Oncology",
+      "authors": "Reiss KA, Xia M, Akamandisa M, et al. (Penn / Abramson Cancer Center)",
+      "published": "April 30, 2026",
+      "score": 12,
+      "score_rationale": "Base: JAMA Oncology (7) + Phase II maintenance trial (+2) + Biomarker-guided/precision (+1) + Survival benefit signal (+2) = 12",
+      "summary": "Long-term follow-up of the investigator-initiated phase II trial of maintenance rucaparib in platinum-sensitive advanced pancreatic cancer with germline or somatic BRCA1, BRCA2 or PALB2 pathogenic variants (n=42 evaluable: 27 germline BRCA2, 7 germline BRCA1, 6 germline PALB2, 2 somatic BRCA2). Reiss and colleagues report a 6-month PFS rate of 59.5%, median PFS 13.1 months, and median OS 23.5 months. Among 36 patients with measurable disease, ORR was 41.7% (3 CRs, 12 PRs). Crucially, with extended follow-up 7 of 42 patients remained progression-free for over 4 years, including patients who discontinued rucaparib for AEs years earlier without progression — supporting durable, biology-driven benefit in HR-deficient PDAC and reinforcing the case for genomic profiling at diagnosis.",
+      "post_angle": "Maintenance PARP inhibition is a real long-term strategy in HR-deficient PDAC. Test germline + somatic BRCA1/2 and PALB2 in every metastatic pancreatic case. #PDAC #PARP #PrecisionOncology #GIOnc"
+    },
+    {
+      "title": "JCO Phase I: Telisotuzumab Adizutecan (Temab-A, ABBV-400) — A Novel c-Met TOP1i Antibody-Drug Conjugate Achieves 15.6% ORR in Late-Line MSS mCRC",
+      "url": "https://doi.org/10.1200/JCO-25-01525",
+      "source": "Journal of Clinical Oncology",
+      "authors": "Sharma MR, Powderly J, Kuboki Y, Strickler JH, et al.",
+      "published": "May 1, 2026",
+      "score": 10,
+      "score_rationale": "Base: JCO (8) + Phase I (~+1) + Biomarker-driven (c-Met) novel ADC payload (+1) = 10",
+      "summary": "First-in-human phase I of telisotuzumab adizutecan (Temab-A / ABBV-400), a c-Met-targeting antibody conjugated to a novel topoisomerase-1 inhibitor payload, in 122 patients with KRAS wild-type, MSS/pMMR metastatic colorectal cancer. The 3.0 mg/kg q3w dose was the MTD; across all doses the overall response rate was 15.6% (95% CI 9.6-23.2), disease control rate 74.6%, median duration of response 5.9 months, median PFS 4.6 months, and median OS 10.4 months — with higher activity at 2.4 and 3.0 mg/kg. AEs were predominantly GI (78%) and hematologic (71%), with treatment-related discontinuations 10% and treatment-related deaths 3%. Selected dose 2.4 mg/kg q3w for further development. A meaningful new biomarker-defined option in heavily pre-treated MSS mCRC.",
+      "post_angle": "The c-Met ADC space is finally moving in MSS mCRC. 15.6% ORR / 74.6% DCR in late-line is signal worth tracking. Watch for randomized data. #mCRC #ADC #cMET #GIOnc"
+    },
+    {
+      "title": "NEJM Clinical Practice: Barrett's Esophagus — Modern Surveillance, Risk Stratification & Endoscopic Eradication Therapy",
+      "url": "https://doi.org/10.1056/NEJMcp2506887",
+      "source": "New England Journal of Medicine",
+      "authors": "Fitzgerald RC. (Early Cancer Institute, University of Cambridge)",
+      "published": "April 30, 2026",
+      "score": 10,
+      "score_rationale": "Base: NEJM (10) — Clinical Practice review; NEJM safety-net rule applies",
+      "summary": "Definitive NEJM Clinical Practice review by Fitzgerald on Barrett's esophagus as the primary precursor to esophageal adenocarcinoma. The article reframes diagnosis (≥1 cm columnar segment with intestinal metaplasia + goblet cells), articulates a risk-stratified surveillance strategy aimed at catching high-grade dysplasia and intramucosal cancer at a stage curable by endoscopic resection plus ablation (vs morbid esophagectomy or palliative chemo), and underscores the under-diagnosis problem given Barrett's lacks specific symptoms beyond reflux. Importantly for medical oncology referral patterns, she emphasises participation in trials testing detection biomarkers and chemoprevention.",
+      "post_angle": "If we want to bend the EAC mortality curve, the action is upstream — better Barrett's case-finding, better risk stratification, more endoscopic cures. Required reading for any GI/thoracic onc team. #BarrettsEsophagus #EsophagealCancer #GIOnc"
+    },
+    {
+      "title": "ASCO 2026 Educational Book: Immunotherapy in Localized Colorectal Cancer — From dMMR Neoadjuvant Wins to MSS Combinations and ctDNA-Guided De-escalation",
+      "url": "https://doi.org/10.1200/EDBK-26-520600",
+      "source": "ASCO Educational Book",
+      "authors": "Wong EYT, Damle SR, Shiu KK, Cohen SA, Lieu CH",
+      "published": "May 1, 2026",
+      "score": 8,
+      "score_rationale": "Base: ASCO Educational Book / plenary-adjacent (6) + Practice-changing topic synthesis (+2) = 8",
+      "summary": "ASCO 2026 educational review synthesizing where immunotherapy fits — and doesn't — in localized colorectal cancer. Neoadjuvant single-agent or doublet PD-1 blockade in dMMR/MSI-H colon and rectal cancer continues to deliver near-universal major pathologic responses and rising rates of pathologic and clinical complete responses; in dMMR rectal cancer, organ preservation via 'watch-and-wait' after immunotherapy is emerging as a credible standard for highly selected patients on rigorous surveillance. The authors weigh open questions (regimen, duration, when ctDNA can replace pathology, MSS-specific strategies including IO + chemo/RT/novel modulators) and call for response-adapted, biomarker-driven trial designs.",
+      "post_angle": "dMMR localized CRC is becoming a non-operative disease for selected patients. The MSS arm of the field is the next frontier — combinations + ctDNA + smarter trial designs. #CRC #Immunotherapy #ctDNA #ASCO26 #GIOnc"
+    },
+    {
+      "title": "Network Meta-Analysis (48 RCTs, 34,106 Patients): EndoAngel Tops Five AI Systems for Adenoma Detection at Colonoscopy",
+      "url": "https://doi.org/10.1097/MEG.0000000000003179",
+      "source": "European Journal of Gastroenterology & Hepatology",
+      "authors": "Rafi R, Yasmin N, Ghani M, et al.",
+      "published": "April 28, 2026",
+      "score": 7,
+      "score_rationale": "Base: Other journal (5) + Meta-analysis / NMA (+2) = 7",
+      "summary": "Bayesian network meta-analysis of 48 RCTs (34,106 colonoscopies) comparing AI-assisted vs standard colonoscopy and indirectly comparing five commercial AI systems. All AI systems improved adenoma detection rate vs standard colonoscopy: EndoAngel had the largest effect (OR 1.84, SUCRA 0.9), followed by EndoAID (OR 1.64), CAD-EYE (OR 1.46) and GI Genius (OR 1.45). EndoAID showed the largest gain in adenomas per colonoscopy (mean difference 0.62). However, no system significantly improved detection of advanced or sessile serrated lesions, and EndoAngel modestly increased withdrawal time (+1.14 min). Heterogeneity was low and certainty moderate.",
+      "post_angle": "AI-assisted colonoscopy reliably bumps ADR — but the differences between vendors are small and high-risk lesion detection still lags. Choose by integration & cost, not just OR. #Colonoscopy #ColorectalCancer #AIinMedicine #GIOnc"
+    }
+  ],
+  "additional": [
+    {
+      "title": "JCO Editorial: Watch-and-Wait for Rectal Cancer With a Near-Complete Response — Risky Gamble or Safe Strategy?",
+      "url": "https://doi.org/10.1200/JCO-25-01752",
+      "source_line": "JCO — Dossa, Yeung, and Garcia-Aguilar parse how to safely select near-cCR patients for organ preservation after total neoadjuvant therapy."
+    },
+    {
+      "title": "ASCO 2026 Educational Book: Harnessing Artificial Intelligence for the Management of Patients With GI Cancers",
+      "url": "https://doi.org/10.1200/EDBK-26-515754",
+      "source_line": "ASCO Educational Book — Goyal, Chung, Mori et al. on context-aware AI across endoscopy, trial design, and EHR-driven trial-matching pipelines for GI oncology."
+    },
+    {
+      "title": "Nature Medicine Perspective: Uncovering Risk Factors in the Exposome for Early-Onset Colorectal Cancer",
+      "url": "https://doi.org/10.1038/s41591-026-04369-8",
+      "source_line": "Nature Medicine — Lee, Baca and Ng (Dana-Farber) frame the modifiable-exposure roadmap underlying the rise in early-onset CRC."
+    },
+    {
+      "title": "Cardio-Oncology: Carcinoid Heart Disease Independently Predicts Worse OS in Neuroendocrine Tumors (HR 7.09)",
+      "url": "https://doi.org/10.1186/s40959-026-00475-1",
+      "source_line": "Cardio-Oncology (Emory) — In 270 NET patients, 41% of those with carcinoid syndrome developed CHD; CHD was independently associated with markedly worse survival (HR 7.09)."
+    },
+    {
+      "title": "Cost-Effectiveness Analysis: Atezolizumab + Bevacizumab Cost-Effective vs Lenvatinib for Unresectable HCC in Malaysia",
+      "url": "https://doi.org/10.1080/13696998.2026.2658448",
+      "source_line": "J Med Econ — Atezo+bev added 0.873 QALYs vs lenvatinib at ICER ~RM 51,399/QALY (~0.91× Malaysia GDP/capita), supporting public-payer adoption."
+    },
+    {
+      "title": "Hepatic Oncology Preclinical: Omaveloxolone (RTA-408) Triggers p38-Dependent Apoptosis in HCC Cell Lines",
+      "url": "https://doi.org/10.1080/20450923.2026.2659967",
+      "source_line": "Hepatic Oncology — In HepG2 and PLC/PRF/5 HCC cells, RTA-408 reduced viability dose-dependently and induced ~18-25% apoptosis at 600 nM via p38 MAPK / NRF2 stress signaling."
+    }
+  ],
+  "x_thread": [
+    {
+      "label": "Post 1 — Hook",
+      "text": "🧬 GI Oncology Daily Digest — May 2, 2026\n\nPancreatic PARP maintenance lives up to its promise (mOS 23.5 mo, long responders >4 yr) + the c-Met ADC space finally moves in MSS mCRC + NEJM puts Barrett's esophagus back on the radar + ASCO 2026 reframes immunotherapy in localized CRC + AI colonoscopy NMA: which system actually wins?\n\nA thread 🧵👇\n\n#GIOnc #PDAC #CRC #BarrettsEsophagus #PrecisionMedicine",
+      "url": ""
+    },
+    {
+      "label": "Post 2 — #1 Maintenance Rucaparib in HR-deficient PDAC",
+      "text": "🔥 #1 — Maintenance Rucaparib in BRCA1/2 or PALB2-mutant PDAC (JAMA Oncology — Reiss et al, Penn)\n\n• n = 42 evaluable, platinum-sensitive advanced PDAC\n• 6-mo PFS 59.5% • median PFS 13.1 mo • median OS 23.5 mo\n• ORR 41.7% (3 CRs, 12 PRs) in measurable disease\n• 7/42 patients PFS >4 years — including some off drug for AEs\n\nLong-term data say loud and clear: HR-deficient PDAC is a different disease. Test germline + somatic BRCA1/2 + PALB2 in EVERY metastatic pancreatic patient.\n\n#PDAC #PARP #PrecisionOncology #GIOnc",
+      "url": "https://doi.org/10.1001/jamaoncol.2026.0870"
+    },
+    {
+      "label": "Post 3 — #2 c-Met ADC in mCRC (Temab-A / ABBV-400)",
+      "text": "📊 #2 — Telisotuzumab Adizutecan (Temab-A, ABBV-400), a c-Met TOP1i ADC, in late-line mCRC (JCO — Sharma et al.)\n\n• Phase I, n = 122 KRAS-WT, MSS/pMMR mCRC\n• MTD 3.0 mg/kg q3w • RP2D selected 2.4 mg/kg q3w\n• ORR 15.6% • DCR 74.6% • mDOR 5.9 mo\n• mPFS 4.6 mo • mOS 10.4 mo\n• AEs: GI 78%, heme 71%; tx-related discontinuation 10%, deaths 3%\n\nThe c-Met ADC story in MSS mCRC is real. Watch for randomized confirmation.\n\n#mCRC #ADC #cMET #GIOnc",
+      "url": "https://doi.org/10.1200/JCO-25-01525"
+    },
+    {
+      "label": "Post 4 — #3 NEJM Barrett's Esophagus",
+      "text": "🎯 #3 — NEJM Clinical Practice: Barrett's Esophagus (Fitzgerald, Cambridge)\n\n• Diagnosis: ≥1 cm columnar segment + intestinal metaplasia (goblet cells)\n• Risk-stratified surveillance to catch HGD / intramucosal cancer\n• Endoscopic resection + ablation curative — avoids esophagectomy & palliative chemo\n• Underdiagnosed: most Barrett's patients have no specific symptoms\n\nIf we want to move the needle on EAC mortality, the action is upstream. Required reading for GI/thoracic onc teams.\n\n#BarrettsEsophagus #EsophagealCancer #GIOnc",
+      "url": "https://doi.org/10.1056/NEJMcp2506887"
+    },
+    {
+      "label": "Post 5 — #4 Immunotherapy in localized CRC",
+      "text": "🌍 #4 — Immunotherapy in Localized CRC (ASCO 2026 Educational Book — Wong et al.)\n\n• Neoadjuvant PD-1 in dMMR colon/rectal: near-universal major pathologic response, rising pCR/cCR rates\n• dMMR rectal: organ-preserving non-operative management is becoming a defensible standard for selected pts\n• Open: regimen, duration, ctDNA as surrogate, MSS strategies (IO + chemo/RT/novel modulators)\n• Calls for response-adapted, biomarker-driven trial designs\n\ndMMR localized CRC is becoming a non-operative disease. MSS is the next mountain.\n\n#CRC #Immunotherapy #ctDNA #ASCO26 #GIOnc",
+      "url": "https://doi.org/10.1200/EDBK-26-520600"
+    },
+    {
+      "label": "Post 6 — #5 AI colonoscopy NMA",
+      "text": "🧪 #5 — AI for Adenoma Detection: Network Meta-Analysis of 48 RCTs / 34,106 patients (Eur J Gastroenterol Hepatol — Rafi et al.)\n\n• All AI systems > standard colonoscopy for ADR\n• EndoAngel OR 1.84 (SUCRA 0.9) — top performer\n• EndoAID 1.64, CAD-EYE 1.46, GI Genius 1.45\n• EndoAID best on adenomas per colonoscopy (Δ +0.62)\n• No system meaningfully helped detect advanced or sessile serrated lesions\n• EndoAngel +1.14 min withdrawal time\n\nAI raises ADR — but vendor differences are small and high-risk lesion detection still lags.\n\n#Colonoscopy #ColorectalCancer #AIinMedicine #GIOnc",
+      "url": "https://doi.org/10.1097/MEG.0000000000003179"
+    },
+    {
+      "label": "Post 7 — Additional Papers",
+      "text": "📚 Also worth your time this week:\n\n• JCO editorial — Watch-and-Wait for rectal cancer near-cCR: risky gamble or safe strategy? (Dossa, Yeung, Garcia-Aguilar)\n• ASCO Ed Book — AI across the GI cancer continuum: endoscopy, trial design, EHR matching (Goyal, Chung, Mori)\n• Nature Medicine perspective — exposome roadmap for early-onset CRC (Lee, Baca, Ng — Dana-Farber)\n• Cardio-Oncology — Carcinoid heart disease independently predicts worse OS in NETs (HR 7.09)\n\nFull digest 👇\nhttps://allanatal.github.io/my-website/digests/digest-2026-05-02.html\n\n#GIOnc #MedTwitter",
+      "url": ""
+    }
+  ]
+}

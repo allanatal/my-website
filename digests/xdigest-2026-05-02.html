@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Thread Draft — May 2, 2026 | GI Oncology Digest</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 0; }
+    .header { background: linear-gradient(135deg, #003366 0%, #00528A 100%); color: #fff; padding: 2rem 1.5rem; text-align: center; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+    .header .subtitle { font-size: .9rem; color: #99ccff; }
+    .header .instructions { font-size: .8rem; color: #80b3e6; margin-top: .75rem; line-height: 1.4; }
+    .container { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .thread-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .thread-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid #f0f0f0; }
+    .post-label { font-weight: 700; font-size: .85rem; color: #003366; background: #e8f0fe; padding: 3px 10px; border-radius: 4px; }
+    .char-count { font-size: .75rem; color: #888; font-style: italic; }
+    .post-text { font-size: .95rem; line-height: 1.55; white-space: pre-wrap; word-wrap: break-word; }
+    .post-text a { color: #1da1f2; text-decoration: none; }
+    .post-text a:hover { text-decoration: underline; }
+    .footer-note { text-align: center; font-size: .8rem; color: #888; margin-top: 1rem; padding: 1rem; }
+    .copy-btn { background: #1da1f2; color: #fff; border: none; border-radius: 6px; padding: 6px 14px; font-size: .78rem; font-weight: 600; cursor: pointer; transition: background .2s; }
+    .copy-btn:hover { background: #0d8ddb; }
+    .copy-btn.copied { background: #28a745; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #c9d1d9; }
+      .thread-card { background: #161b22; border-color: #30363d; }
+      .thread-card-header { border-bottom-color: #21262d; }
+      .post-label { background: #1a2a3d; color: #66aadd; }
+    }
+  </style>
+  <script>
+  function copyPost(btn) {
+    var card = btn.closest('.thread-card');
+    var text = card.getAttribute('data-copy');
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>X Thread Draft</h1>
+    <div class="subtitle">GI Oncology Digest — May 2, 2026 — Pancreatic PARP Maintenance &amp; a Novel c-Met ADC in mCRC</div>
+    <div class="instructions">Review each post below, then copy and paste into X as a thread.<br>Post 1 first, then reply to it with Posts 2-7 in order.</div>
+  </div>
+  <div class="container">
+
+    <div class="thread-card" data-copy="🧬 GI Oncology Daily Digest — May 2, 2026
+
+Pancreatic PARP maintenance lives up to its promise (mOS 23.5 mo, long responders &gt;4 yr) + the c-Met ADC space finally moves in MSS mCRC + NEJM puts Barrett&#x27;s esophagus back on the radar + ASCO 2026 reframes immunotherapy in localized CRC + AI colonoscopy NMA: which system actually wins?
+
+A thread 🧵👇
+
+#GIOnc #PDAC #CRC #BarrettsEsophagus #PrecisionMedicine">
+      <div class="thread-card-header">
+        <span class="post-label">Post 1 — Hook</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">400 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧬 GI Oncology Daily Digest — May 2, 2026
+
+Pancreatic PARP maintenance lives up to its promise (mOS 23.5 mo, long responders &gt;4 yr) + the c-Met ADC space finally moves in MSS mCRC + NEJM puts Barrett&#x27;s esophagus back on the radar + ASCO 2026 reframes immunotherapy in localized CRC + AI colonoscopy NMA: which system actually wins?
+
+A thread 🧵👇
+
+#GIOnc #PDAC #CRC #BarrettsEsophagus #PrecisionMedicine</div>
+    </div>
+
+    <div class="thread-card" data-copy="🔥 #1 — Maintenance Rucaparib in BRCA1/2 or PALB2-mutant PDAC (JAMA Oncology — Reiss et al, Penn)
+
+• n = 42 evaluable, platinum-sensitive advanced PDAC
+• 6-mo PFS 59.5% • median PFS 13.1 mo • median OS 23.5 mo
+• ORR 41.7% (3 CRs, 12 PRs) in measurable disease
+• 7/42 patients PFS &gt;4 years — including some off drug for AEs
+
+Long-term data say loud and clear: HR-deficient PDAC is a different disease. Test germline + somatic BRCA1/2 + PALB2 in EVERY metastatic pancreatic patient.
+
+#PDAC #PARP #PrecisionOncology #GIOnc
+https://doi.org/10.1001/jamaoncol.2026.0870">
+      <div class="thread-card-header">
+        <span class="post-label">Post 2 — #1 Maintenance Rucaparib in HR-deficient PDAC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">518 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🔥 #1 — Maintenance Rucaparib in BRCA1/2 or PALB2-mutant PDAC (JAMA Oncology — Reiss et al, Penn)
+
+• n = 42 evaluable, platinum-sensitive advanced PDAC
+• 6-mo PFS 59.5% • median PFS 13.1 mo • median OS 23.5 mo
+• ORR 41.7% (3 CRs, 12 PRs) in measurable disease
+• 7/42 patients PFS &gt;4 years — including some off drug for AEs
+
+Long-term data say loud and clear: HR-deficient PDAC is a different disease. Test germline + somatic BRCA1/2 + PALB2 in EVERY metastatic pancreatic patient.
+
+#PDAC #PARP #PrecisionOncology #GIOnc
+
+<a href="https://doi.org/10.1001/jamaoncol.2026.0870" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1001/jamaoncol.2026.0870</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📊 #2 — Telisotuzumab Adizutecan (Temab-A, ABBV-400), a c-Met TOP1i ADC, in late-line mCRC (JCO — Sharma et al.)
+
+• Phase I, n = 122 KRAS-WT, MSS/pMMR mCRC
+• MTD 3.0 mg/kg q3w • RP2D selected 2.4 mg/kg q3w
+• ORR 15.6% • DCR 74.6% • mDOR 5.9 mo
+• mPFS 4.6 mo • mOS 10.4 mo
+• AEs: GI 78%, heme 71%; tx-related discontinuation 10%, deaths 3%
+
+The c-Met ADC story in MSS mCRC is real. Watch for randomized confirmation.
+
+#mCRC #ADC #cMET #GIOnc
+https://doi.org/10.1200/JCO-25-01525">
+      <div class="thread-card-header">
+        <span class="post-label">Post 3 — #2 c-Met ADC in mCRC (Temab-A / ABBV-400)</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">439 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📊 #2 — Telisotuzumab Adizutecan (Temab-A, ABBV-400), a c-Met TOP1i ADC, in late-line mCRC (JCO — Sharma et al.)
+
+• Phase I, n = 122 KRAS-WT, MSS/pMMR mCRC
+• MTD 3.0 mg/kg q3w • RP2D selected 2.4 mg/kg q3w
+• ORR 15.6% • DCR 74.6% • mDOR 5.9 mo
+• mPFS 4.6 mo • mOS 10.4 mo
+• AEs: GI 78%, heme 71%; tx-related discontinuation 10%, deaths 3%
+
+The c-Met ADC story in MSS mCRC is real. Watch for randomized confirmation.
+
+#mCRC #ADC #cMET #GIOnc
+
+<a href="https://doi.org/10.1200/JCO-25-01525" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1200/JCO-25-01525</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🎯 #3 — NEJM Clinical Practice: Barrett&#x27;s Esophagus (Fitzgerald, Cambridge)
+
+• Diagnosis: ≥1 cm columnar segment + intestinal metaplasia (goblet cells)
+• Risk-stratified surveillance to catch HGD / intramucosal cancer
+• Endoscopic resection + ablation curative — avoids esophagectomy &amp; palliative chemo
+• Underdiagnosed: most Barrett&#x27;s patients have no specific symptoms
+
+If we want to move the needle on EAC mortality, the action is upstream. Required reading for GI/thoracic onc teams.
+
+#BarrettsEsophagus #EsophagealCancer #GIOnc
+https://doi.org/10.1056/NEJMcp2506887">
+      <div class="thread-card-header">
+        <span class="post-label">Post 4 — #3 NEJM Barrett&#x27;s Esophagus</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">531 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🎯 #3 — NEJM Clinical Practice: Barrett&#x27;s Esophagus (Fitzgerald, Cambridge)
+
+• Diagnosis: ≥1 cm columnar segment + intestinal metaplasia (goblet cells)
+• Risk-stratified surveillance to catch HGD / intramucosal cancer
+• Endoscopic resection + ablation curative — avoids esophagectomy &amp; palliative chemo
+• Underdiagnosed: most Barrett&#x27;s patients have no specific symptoms
+
+If we want to move the needle on EAC mortality, the action is upstream. Required reading for GI/thoracic onc teams.
+
+#BarrettsEsophagus #EsophagealCancer #GIOnc
+
+<a href="https://doi.org/10.1056/NEJMcp2506887" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1056/NEJMcp2506887</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🌍 #4 — Immunotherapy in Localized CRC (ASCO 2026 Educational Book — Wong et al.)
+
+• Neoadjuvant PD-1 in dMMR colon/rectal: near-universal major pathologic response, rising pCR/cCR rates
+• dMMR rectal: organ-preserving non-operative management is becoming a defensible standard for selected pts
+• Open: regimen, duration, ctDNA as surrogate, MSS strategies (IO + chemo/RT/novel modulators)
+• Calls for response-adapted, biomarker-driven trial designs
+
+dMMR localized CRC is becoming a non-operative disease. MSS is the next mountain.
+
+#CRC #Immunotherapy #ctDNA #ASCO26 #GIOnc
+https://doi.org/10.1200/EDBK-26-520600">
+      <div class="thread-card-header">
+        <span class="post-label">Post 5 — #4 Immunotherapy in localized CRC</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">575 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🌍 #4 — Immunotherapy in Localized CRC (ASCO 2026 Educational Book — Wong et al.)
+
+• Neoadjuvant PD-1 in dMMR colon/rectal: near-universal major pathologic response, rising pCR/cCR rates
+• dMMR rectal: organ-preserving non-operative management is becoming a defensible standard for selected pts
+• Open: regimen, duration, ctDNA as surrogate, MSS strategies (IO + chemo/RT/novel modulators)
+• Calls for response-adapted, biomarker-driven trial designs
+
+dMMR localized CRC is becoming a non-operative disease. MSS is the next mountain.
+
+#CRC #Immunotherapy #ctDNA #ASCO26 #GIOnc
+
+<a href="https://doi.org/10.1200/EDBK-26-520600" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1200/EDBK-26-520600</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="🧪 #5 — AI for Adenoma Detection: Network Meta-Analysis of 48 RCTs / 34,106 patients (Eur J Gastroenterol Hepatol — Rafi et al.)
+
+• All AI systems &gt; standard colonoscopy for ADR
+• EndoAngel OR 1.84 (SUCRA 0.9) — top performer
+• EndoAID 1.64, CAD-EYE 1.46, GI Genius 1.45
+• EndoAID best on adenomas per colonoscopy (Δ +0.62)
+• No system meaningfully helped detect advanced or sessile serrated lesions
+• EndoAngel +1.14 min withdrawal time
+
+AI raises ADR — but vendor differences are small and high-risk lesion detection still lags.
+
+#Colonoscopy #ColorectalCancer #AIinMedicine #GIOnc
+https://doi.org/10.1097/MEG.0000000000003179">
+      <div class="thread-card-header">
+        <span class="post-label">Post 6 — #5 AI colonoscopy NMA</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">582 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">🧪 #5 — AI for Adenoma Detection: Network Meta-Analysis of 48 RCTs / 34,106 patients (Eur J Gastroenterol Hepatol — Rafi et al.)
+
+• All AI systems &gt; standard colonoscopy for ADR
+• EndoAngel OR 1.84 (SUCRA 0.9) — top performer
+• EndoAID 1.64, CAD-EYE 1.46, GI Genius 1.45
+• EndoAID best on adenomas per colonoscopy (Δ +0.62)
+• No system meaningfully helped detect advanced or sessile serrated lesions
+• EndoAngel +1.14 min withdrawal time
+
+AI raises ADR — but vendor differences are small and high-risk lesion detection still lags.
+
+#Colonoscopy #ColorectalCancer #AIinMedicine #GIOnc
+
+<a href="https://doi.org/10.1097/MEG.0000000000003179" target="_blank" style="color:#1da1f2;word-break:break-all;">https://doi.org/10.1097/MEG.0000000000003179</a></div>
+    </div>
+
+    <div class="thread-card" data-copy="📚 Also worth your time this week:
+
+• JCO editorial — Watch-and-Wait for rectal cancer near-cCR: risky gamble or safe strategy? (Dossa, Yeung, Garcia-Aguilar)
+• ASCO Ed Book — AI across the GI cancer continuum: endoscopy, trial design, EHR matching (Goyal, Chung, Mori)
+• Nature Medicine perspective — exposome roadmap for early-onset CRC (Lee, Baca, Ng — Dana-Farber)
+• Cardio-Oncology — Carcinoid heart disease independently predicts worse OS in NETs (HR 7.09)
+
+Full digest 👇
+https://allanatal.github.io/my-website/digests/digest-2026-05-02.html
+
+#GIOnc #MedTwitter">
+      <div class="thread-card-header">
+        <span class="post-label">Post 7 — Additional Papers</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="char-count">566 chars</span>
+          <button class="copy-btn" onclick="copyPost(this)">Copy</button>
+        </div>
+      </div>
+      <div class="post-text">📚 Also worth your time this week:
+
+• JCO editorial — Watch-and-Wait for rectal cancer near-cCR: risky gamble or safe strategy? (Dossa, Yeung, Garcia-Aguilar)
+• ASCO Ed Book — AI across the GI cancer continuum: endoscopy, trial design, EHR matching (Goyal, Chung, Mori)
+• Nature Medicine perspective — exposome roadmap for early-onset CRC (Lee, Baca, Ng — Dana-Farber)
+• Cardio-Oncology — Carcinoid heart disease independently predicts worse OS in NETs (HR 7.09)
+
+Full digest 👇
+https://allanatal.github.io/my-website/digests/digest-2026-05-02.html
+
+#GIOnc #MedTwitter</div>
+    </div>
+
+    <div class="footer-note">
+      Generated by Dr. Allan Pereira's GI Oncology Digest system<br>
+      Full digest: <a href="https://allanatal.github.io/my-website/digests/digest-2026-05-02.html" style="color:#1da1f2;">https://allanatal.github.io/my-website/digests/digest-2026-05-02.html</a>
+    </div>
+  </div>
+</body>
+</html>
